@@ -34,9 +34,18 @@
 			$this->RequestHandler->renderAs($this, 'json');
 			$this->layout = null;
 
+			$check_pseudo = $this->Pseudo->find('all');
+
 			$check = 'OK';
 
-			if($name !== '') {
+			foreach($check_pseudo as $this_pseudo) {
+				if($name === $this_pseudo['Pseudo']['name']) {
+					$check = 'KO';
+					continue;
+				}
+			}
+
+			if($name !== '' && $check === 'OK') {
 				$this->Pseudo->save(array(
 					'name' => $name
 				));

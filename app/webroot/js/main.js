@@ -1,18 +1,18 @@
 $(document).ready(function() {
 
 
-	window.current_cap = 1;
+	window.current_cap = 1; // On initie la variable pour récupérer le CAP à l'ID 1
 	var pseudo = '';
 
 	$('.form_add_pseudo').hide();
 
-	$('.valid-cap').off('click');
-	$('.valid-cap').on('click', function() {
+	$('.valid-cap').off('click'); 
+	$('.valid-cap').on('click', function() { // Lorsqu'on clique sur CAP
 		$('.form_add_pseudo').show();
 	});
 
-	$('.form_add_pseudo').off('submit');
-	$('.form_add_pseudo').on('submit', function() {
+	$('.form_add_pseudo form').off('submit');
+	$('.form_add_pseudo form').on('submit', function() { // Lorsqu'on valide un pseudo
 
 		pseudo = $('.get_pseudo').val();
 
@@ -25,11 +25,11 @@ $(document).ready(function() {
 			url : "/BlackSheep/Cap/addPseudo/"+pseudo,
 			success: function(response){
 				console.log(response);
-
+				$('.form_add_pseudo .info_add').text('');
 				if(response.check === 'KO') {
-					$('#content').append('Erreur');
+					$('.form_add_pseudo .info_add_error').text('Erreur');
 				} else {
-					$('#content').append('Votre pseudo a bien été ajouté !');
+					$('.form_add_pseudo .info_add_success').text('Votre pseudo a bien été ajouté !');
 				}
 			},
 
@@ -39,8 +39,6 @@ $(document).ready(function() {
 		});
 		return false;
 	});
-
-
 
 
 	$('.pas-cap a').off('click');
