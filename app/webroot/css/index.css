@@ -31,3 +31,22 @@ header, footer {
 .publish {
 	text-align: left;
 }
+
+.publications {
+	text-align: left;
+	width: 800px;
+	margin: 0 auto;
+}
+
+.publication_picture, .publication_txt {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.publication_txt {
+	margin-left: 15px;
+}
+
+.publication_pseudo {
+	font-weight: bold;
+}

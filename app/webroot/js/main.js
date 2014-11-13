@@ -101,11 +101,11 @@ $(document).ready(function() {
 					var publication =
 						' <div class="publication">' +
 
-							'<div>' +
-								'<img src="publi.picture" width="300" />' +
-							'</div class="publication_picture">' + 
+							'<div class="publication_picture">' +
+								'<img src="'+publi.picture+'" width="300" />' +
+							'</div>' + 
 
-							'<div class="publication_txt>' +
+							'<div class="publication_txt">' +
 
 								'<div class="publication_pseudo">' +
 									publi.pseudo +
