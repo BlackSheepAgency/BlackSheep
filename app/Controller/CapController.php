@@ -1,7 +1,7 @@
 <?php
 	class CapController extends AppController {
 
-		public $uses = array('Cap');
+		public $uses = array('Cap', 'Pseudo', 'Publication');
 		public $components = array('RequestHandler');
 
 		public function index() {
@@ -12,11 +12,51 @@
 			$this->RequestHandler->renderAs($this, 'json');
 			$this->layout = null;
 
+			$check = 'OK';
+
 			$current_cap = $this->Cap->findById($cap);
+
+			if(count($current_cap) === 0) {
+				$check = 'KO';
+			}
 
 			$this->set(array(
             	'current_cap' => $current_cap,
-	            '_serialize' => array('current_cap')
+            	'check' => $check,
+	            '_serialize' => array('current_cap', 'check')
+	        ));
+		}
+
+		public function addPseudo($name = '') {
+			$this->RequestHandler->renderAs($this, 'json');
+			$this->layout = null;
+
+			$check = 'OK';
+
+			if($name !== '') {
+				$this->Pseudo->save(array(
+					'name' => $name
+				));
+			} else {
+				$check = 'KO';
+			}
+
+			$this->set(array(
+            	'check' => $check,
+	            '_serialize' => array('check')
+	        ));
+		}
+
+
+		public function getPublications() {
+			$this->RequestHandler->renderAs($this, 'json');
+			$this->layout = null;
+
+			$publications = $this->Publication->find('all');
+
+			$this->set(array(
+            	'publications' => $publications,
+	            '_serialize' => array('publications')
 	        ));
 		}
 
