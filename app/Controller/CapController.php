@@ -5,7 +5,11 @@
 		public $components = array('RequestHandler');
 
 		public function index() {
-			$koko = "";
+
+		}
+
+		public function test() {
+
 		}
 
 		public function switchCap($new_cap = 0) {
