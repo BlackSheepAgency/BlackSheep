@@ -71,3 +71,11 @@ header, footer {
 .show{
 	display: block;
 }
+
+.close{
+	text-align: right;
+	position: absolute;
+	left:208px;
+	top:0;
+	cursor:pointer;
+}

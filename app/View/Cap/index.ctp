@@ -1,5 +1,6 @@
 <div class="pop-up">
 	<input type="text" name="input" value="Entrez votre pseudo">
+	<div class="close">x</div>
 	<button class="valid-pseudo">Valider</button>
 </div>
 
