@@ -8,18 +8,15 @@
 			$koko = "";
 		}
 
-		public function switchCap($new_cap = 0) {
+		public function switchCap($cap = 1) {
 			$this->RequestHandler->renderAs($this, 'json');
 			$this->layout = null;
 
-			$current_cap = $this->Cap->findById($new_cap);
-
-
-
+			$current_cap = $this->Cap->findById($cap);
 
 			$this->set(array(
             	'current_cap' => $current_cap,
-	            '_serialize' => array('projects')
+	            '_serialize' => array('current_cap')
 	        ));
 		}
 

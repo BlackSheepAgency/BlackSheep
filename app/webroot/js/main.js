@@ -1,8 +1,7 @@
 $(document).ready(function() {
 
 
-	var current_cap = 0;
-
+	window.current_cap = 1;
 
 	$('.valid-cap').off('click');
 	$('.valid-cap').on('click', function() {
@@ -12,27 +11,28 @@ $(document).ready(function() {
 	$('.pas-cap a').off('click');
 	$('.pas-cap a').on('click', function(e) {
 		e.preventDefault();
-		alert('Vous êtes pas cap !');
+		displayProjects(window.current_cap);
 	});
-
 
 	$('.publish').off('click');
 	$('.publish').on('click', function() {
 		alert('Publication !');
 	});
 
+	displayProjects(window.current_cap);
 
-	function displayProjects(type, callback) {
 
-		current_cap = current_cap +1;
+	function displayProjects(cap, callback) {
 
 		$.ajax({
 			type : "POST",
-			url : "/Blacksheep/Cap/switchCap/"+current_cap,
+			url : "/BlackSheep/Cap/switchCap/"+cap,
 			success: function(response){
 				console.log(response);
+				$('.txt-cap').text('');
+				$('.txt-cap').text(response.current_cap.Cap.text);
 
-				alert(response)
+				window.current_cap = window.current_cap +1;
 			},
 
 			error: function(){
@@ -42,10 +42,4 @@ $(document).ready(function() {
 
 		if(callback) callback();
 	}
-
-
-
-
-
-
 });
