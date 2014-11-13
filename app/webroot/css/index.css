@@ -1,0 +1,33 @@
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+header, footer {
+	height: 50px;
+	text-align: center;
+	background: grey;
+}
+
+#content {
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.cap {
+	text-align: center;
+}
+
+.valid-cap {
+	margin-top: 25px;
+}
+
+.pas-cap {
+	text-align: right;
+}
+
+.publish {
+	text-align: left;
+}
