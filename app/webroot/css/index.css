@@ -31,3 +31,25 @@ header, footer {
 .publish {
 	text-align: left;
 }
+
+.pop-up{
+	width:200px;
+	border: solid 1px #000;
+	background-color: #eee;
+	position: absolute;
+	left:50%;
+	margin: 0 auto;
+	display: none;
+	text-align: center;
+	padding:10px;
+}
+
+.pop-up input{
+	margin-bottom: 10px;
+	text-transform: italic;
+	text-align: center;
+}
+
+.show{
+	display: block;
+}

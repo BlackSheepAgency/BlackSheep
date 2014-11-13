@@ -14,11 +14,6 @@ $(document).ready(function() {
 		displayProjects(window.current_cap);
 	});
 
-	$('.publish').off('click');
-	$('.publish').on('click', function() {
-		alert('Publication !');
-	});
-
 	displayProjects(window.current_cap);
 
 
@@ -42,4 +37,10 @@ $(document).ready(function() {
 
 		if(callback) callback();
 	}
+
+	$('.publish').off('click');
+	$('.publish').on('click', function() {
+		$('.pop-up').show();
+	});
+
 });
