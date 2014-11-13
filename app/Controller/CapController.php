@@ -8,6 +8,9 @@
 			$koko = "";
 		}
 
+		public function landing() {
+		}
+
 		public function switchCap($cap = 1) {
 			$this->RequestHandler->renderAs($this, 'json');
 			$this->layout = null;

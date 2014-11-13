@@ -1,3 +1,8 @@
+<div class="pop-up">
+	<input type="text" name="input" value="Entrez votre pseudo">
+	<button class="valid-pseudo">Valider</button>
+</div>
+
 <button class="publish">Publier un Cap</button>
 
 <div class="cap">
