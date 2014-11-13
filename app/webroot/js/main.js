@@ -22,7 +22,7 @@ $(document).ready(function() {
 
 		$.ajax({
 			type : "POST",
-			url : "/BlackSheep/Cap/addPseudo/"+pseudo,
+			url : "Cap/addPseudo/"+pseudo,
 			success: function(response){
 				console.log(response);
 				$('.form_add_pseudo .info_add').text('');
@@ -55,7 +55,7 @@ $(document).ready(function() {
 
 		$.ajax({
 			type : "POST",
-			url : "/BlackSheep/Cap/switchCap/"+cap,
+			url : "Cap/switchCap/"+cap,
 			success: function(response){
 				console.log(response);
 
@@ -98,7 +98,7 @@ $(document).ready(function() {
 
 		$.ajax({
 			type : "POST",
-			url : "/BlackSheep/Cap/addPublication/"+publi_pseudo+'/'+publi_url+'/Comment',
+			url : "Cap/addPublication/"+publi_pseudo+'/'+publi_url+'/Comment',
 			success: function(response){
 				console.log(response);
 				$('.form_add_pseudo .info_add').text('');
@@ -124,7 +124,7 @@ $(document).ready(function() {
 	function getPublications() {
 		$.ajax({
 			type : "POST",
-			url : "/BlackSheep/Cap/getPublications/",
+			url : "Cap/getPublications/",
 			success: function(response){
 				console.log(response);
 
