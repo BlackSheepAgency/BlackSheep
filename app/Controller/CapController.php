@@ -95,5 +95,4 @@
 	            '_serialize' => array('check')
 	        ));
 		}
-
-}
+	}
