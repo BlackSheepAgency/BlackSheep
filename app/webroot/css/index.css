@@ -20,6 +20,13 @@ header, footer {
 	text-align: center;
 }
 
+.red {
+	color: red;
+}
+.green {
+	color: green;
+}
+
 .valid-cap {
 	margin-top: 25px;
 }
@@ -36,6 +43,7 @@ header, footer {
 	text-align: left;
 	width: 800px;
 	margin: 0 auto;
+	margin-top: 20px;
 }
 
 .publication_picture, .publication_txt {

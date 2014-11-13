@@ -18,8 +18,10 @@
 </div>
 
 <div class="form_add_pseudo"> Insérez un pseudo !
+	<div class="info_add info_add_error red"></div>
+	<div class="info_add info_add_success green"></div>
 	<form action="" method="post">
-		<input type="text" class="get_pseudo" />
+		<input type="text" name="pseudo" class="get_pseudo" />
 		<input type="submit" value="Valider" />
 	</form>
 </div>
