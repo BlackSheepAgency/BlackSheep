@@ -44,14 +44,14 @@ $(document).ready(function() {
 	$('.pas-cap a').off('click');
 	$('.pas-cap a').on('click', function(e) {
 		e.preventDefault();
-		displayProjects(window.current_cap);
+		displayCap(window.current_cap);
 	});
 
-	displayProjects(window.current_cap);
+	displayCap(window.current_cap);
 
 	getPublications();
 
-	function displayProjects(cap, callback) {
+	function displayCap(cap, callback) {
 
 		$.ajax({
 			type : "POST",
@@ -90,6 +90,36 @@ $(document).ready(function() {
 		$('.pop-up').hide();
 	});
 
+	$('.add_publication').off('submit');
+	$('.add_publication').on('submit', function() {
+		var publi_pseudo = $('.publi_pseudo').val();
+		var publi_url = $('.publi_url').val();
+		//var publi_comment = $('.publi_comment').text();
+
+		$.ajax({
+			type : "POST",
+			url : "/BlackSheep/Cap/addPublication/"+publi_pseudo+'/'+publi_url+'/Comment',
+			success: function(response){
+				console.log(response);
+				$('.form_add_pseudo .info_add').text('');
+				if(response.check === 'KO') {
+					$('.form_add_pseudo .info_add_error').text('Erreur');
+				} else {
+					$('.form_add_pseudo .info_add_success').text('Votre pseudo a bien été ajouté !');
+				}
+
+				$('.pop-up').hide();
+
+				getPublications();
+			},
+
+			error: function(){
+				console.log('error');
+            }
+		});
+		return false;
+	});
+
 
 	function getPublications() {
 		$.ajax({
@@ -97,6 +127,8 @@ $(document).ready(function() {
 			url : "/BlackSheep/Cap/getPublications/",
 			success: function(response){
 				console.log(response);
+
+				$('.publications').empty();
 
 				for (var p = 0; p < response.publications.length; p++) {
 					console.log(response.publications[p].Publication);

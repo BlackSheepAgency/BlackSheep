@@ -1,7 +1,13 @@
 <div class="pop-up">
-	<input type="text" name="input" value="Entrez votre pseudo">
-	<div class="close">x</div>
-	<button class="valid-pseudo">Valider</button>
+	<form class="add_publication">
+		Pseudo<input type="text" name="publi_pseudo" class="publi_pseudo" placeholder="Entrez votre pseudo" />
+		URL<input type="text" name="publi_url" class="publi_url"  />
+		<textarea class="comment" name="publi_comment" class="publi_comment">Comment</textarea>
+		
+		<input type="submit" class="valid-pseudo" value="Valider" />
+
+		<div class="close">x</div>
+	</form>
 </div>
 
 <button class="publish">Publier un Cap</button>

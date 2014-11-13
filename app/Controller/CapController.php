@@ -41,7 +41,7 @@
 			foreach($check_pseudo as $this_pseudo) {
 				if($name === $this_pseudo['Pseudo']['name']) {
 					$check = 'KO';
-					continue;
+					continue; 
 				}
 			}
 
@@ -69,6 +69,30 @@
 			$this->set(array(
             	'publications' => $publications,
 	            '_serialize' => array('publications')
+	        ));
+		}
+
+		public function addPublication($pseudo = '', $url = '', $comment = '') {
+			$this->RequestHandler->renderAs($this, 'json');
+			$this->layout = null;
+
+			$url = 'img/'.$url;
+
+			$check = 'OK';
+
+			if($name !== '' && $url !== '') {
+				$this->Publication->save(array(
+					'pseudo' => $pseudo,
+					'picture' => $url,
+					'comment' => $comment
+				));
+			} else {
+				$check = 'KO';
+			}
+
+			$this->set(array(
+            	'check' => $check,
+	            '_serialize' => array('check')
 	        ));
 		}
 
