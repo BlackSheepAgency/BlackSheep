@@ -107,9 +107,15 @@ $(document).ready(function() {
 				} else {
 					$('.form_add_pseudo .info_add_success').text('Votre pseudo a bien été ajouté !');
 				}
+<<<<<<< HEAD
 
 				$('.pop-up').hide();
 
+=======
+
+				$('.pop-up').hide();
+
+>>>>>>> e0f4ce9d431490236a6e2af470e4b326eaa93c17
 				getPublications();
 			},
 
@@ -133,6 +139,7 @@ $(document).ready(function() {
 				for (var p = 0; p < response.publications.length; p++) {
 					console.log(response.publications[p].Publication);
 					var publi = response.publications[p].Publication;
+<<<<<<< HEAD
 
 					var publication =
 						' <div class="publication">' +
@@ -156,10 +163,36 @@ $(document).ready(function() {
 						'</div>'
 					;
 
+=======
+
+					var publication =
+						' <div class="publication">' +
+
+							'<div class="publication_picture">' +
+								'<img src="'+publi.picture+'" width="300" />' +
+							'</div>' + 
+
+							'<div class="publication_txt">' +
+
+								'<div class="publication_pseudo">' +
+									publi.pseudo +
+								'</div>' +
+
+								'<div class="publication_comment">' + 
+								publi.comment +
+								'</div>' +
+
+							'</div>' +
+
+						'</div>'
+					;
+
+>>>>>>> e0f4ce9d431490236a6e2af470e4b326eaa93c17
 					$('.publications').append(publication);
 				}
 			
 			},
+<<<<<<< HEAD
 
 			error: function(){
 				console.log('error');
@@ -167,4 +200,38 @@ $(document).ready(function() {
 
 		});
 	}
+=======
+
+			error: function(){
+				console.log('error');
+            }
+
+		});
+	}
+
+	var totaltime = 20;
+
+	function update(percent) {
+    	var deg;
+    		if (percent < (totaltime / 2)) {
+        	deg = 90 + (360 * percent / totaltime);
+        	$('.pie').css('background-image',
+            'linear-gradient(' + deg + 'deg, transparent 50%, white 50%),linear-gradient(90deg, white 50%, transparent 50%)'
+       		 );
+    		} else if (percent >= (totaltime / 2)) {
+        deg = -90 + (360 * percent / totaltime);
+        $('.pie').css('background-image',
+            'linear-gradient(' + deg + 'deg, transparent 50%, #00b5e8 50%),linear-gradient(90deg, white 50%, transparent 50%)'
+       		 );
+   		 }
+	}
+
+	var count = parseInt($('#time').text());
+	myCounter = setInterval(function () {
+    count += 1;
+    $('#time').html(count);
+    update(count);
+    if (count == totaltime) clearInterval(myCounter);
+	}, 1000);
+>>>>>>> e0f4ce9d431490236a6e2af470e4b326eaa93c17
 });

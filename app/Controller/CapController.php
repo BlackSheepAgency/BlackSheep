@@ -8,10 +8,13 @@
 
 		}
 
+<<<<<<< HEAD
 		public function test() {
 
 		}
 
+=======
+>>>>>>> e0f4ce9d431490236a6e2af470e4b326eaa93c17
 		public function landing() {
 		}
 
@@ -60,6 +63,7 @@
 			$this->set(array(
             	'check' => $check,
 	            '_serialize' => array('check')
+<<<<<<< HEAD
 	        ));
 		}
 
@@ -76,6 +80,24 @@
 	        ));
 		}
 
+=======
+	        ));
+		}
+
+
+		public function getPublications() {
+			$this->RequestHandler->renderAs($this, 'json');
+			$this->layout = null;
+
+			$publications = $this->Publication->find('all');
+
+			$this->set(array(
+            	'publications' => $publications,
+	            '_serialize' => array('publications')
+	        ));
+		}
+
+>>>>>>> e0f4ce9d431490236a6e2af470e4b326eaa93c17
 		public function addPublication($pseudo = '', $url = '', $comment = '') {
 			$this->RequestHandler->renderAs($this, 'json');
 			$this->layout = null;
@@ -99,4 +121,8 @@
 	            '_serialize' => array('check')
 	        ));
 		}
+<<<<<<< HEAD
 	}
+=======
+	}
+>>>>>>> e0f4ce9d431490236a6e2af470e4b326eaa93c17
