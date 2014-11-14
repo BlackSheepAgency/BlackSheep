@@ -23,7 +23,7 @@
 				$check = 'KO';
 			} else {
 				$c = 0;
-				while(intval($current_cap['Cap']['validated']) !== 1) {
+				while($current_cap['Cap']['validated'] != 1) {
 					$current_cap = $this->Cap->findById($cap+1);
 					$c++;
 				}

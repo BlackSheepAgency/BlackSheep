@@ -90,5 +90,5 @@
 	<div class="close">X</div>
 </div>
 
-<div class="publications">
-</div>
+<ul class="publications">
+</ul>

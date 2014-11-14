@@ -73,9 +73,9 @@ $(document).ready(function() {
 		return false;
 	});
 
-
 	$('.pas-cap a').off('click');
 	$('.pas-cap a').on('click', function(e) {
+		console.log(window.current_cap);
 		e.preventDefault();
 		displayCap(window.current_cap);
 	});
@@ -85,12 +85,13 @@ $(document).ready(function() {
 	getPublications();
 
 	function displayCap(cap, callback) {
+		console.log('called');
 
 		$.ajax({
 			type : "POST",
 			url : "Cap/switchCap/"+cap,
 			success: function(response){
-				//console.log(response);
+				console.log(response);
 
 				if(response.check === 'KO') {
 					$('.txt-cap').hide(400);
@@ -178,7 +179,7 @@ $(document).ready(function() {
 					//console.log(response.publications[p].Publication);
 					var publi = response.publications[p].Publication;
 					var publication =
-						' <div class="publication">' +
+						' <li class="publication">' +
 
 							'<div class="publication_picture">' +
 								'<img src="'+publi.picture+'" width="300" />' +
@@ -196,30 +197,7 @@ $(document).ready(function() {
 
 							'</div>' +
 
-						'</div>'
-					;
-
-
-					var publication =
-						' <div class="publication">' +
-
-							'<div class="publication_picture">' +
-								'<img src="'+publi.picture+'" width="300" />' +
-							'</div>' + 
-
-							'<div class="publication_txt">' +
-
-								'<div class="publication_pseudo">' +
-									publi.pseudo +
-								'</div>' +
-
-								'<div class="publication_comment">' + 
-								publi.comment +
-								'</div>' +
-
-							'</div>' +
-
-						'</div>'
+						'</li>'
 					;
 
 					$('.publications').append(publication);
@@ -235,7 +213,7 @@ $(document).ready(function() {
 
 	$(function () {
 		var releaseDate = new Date();
-		releaseDate = new Date(releaseDate.getFullYear() +0, 11 - 1, 28);
+		releaseDate = new Date(releaseDate.getFullYear() +0, 11 - 1, 22);
 		$('#defaultCountdown').countdown({until: releaseDate});
 		$('#year').text(releaseDate.getFullYear());
 	});

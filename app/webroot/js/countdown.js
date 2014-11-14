@@ -186,7 +186,7 @@
 					(perfAvail ? (performance.now() + performance.timing.navigationStart) : now()) :
 					// Integer milliseconds since unix epoch
 					timestamp || now());
-				if (drawStart - animationStartTime >= 155000) {
+				if (drawStart - animationStartTime >= 1000) {
 							self._updateElems();
 					animationStartTime = drawStart;
 				}

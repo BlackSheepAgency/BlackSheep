@@ -14,7 +14,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
+$cakeDescription = __d('cake_dev', 'Comme des Gosses');
 $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 ?>
 <!DOCTYPE html>
@@ -28,6 +28,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
 	<?= $this->Html->css('index') ?>
 	<?= $this->Html->css('countdown') ?>
+	<?= $this->Html->script('jquery-1.11.1.min') ?>
 </head>
 <body>
 	<div id="container">
@@ -51,7 +52,6 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
-	<?= $this->Html->script('jquery-1.11.1.min') ?>
 	<?= $this->Html->script('jquery.plugin') ?>
 	<?= $this->Html->script('countdown.js') ?>
 	<?= $this->Html->script('main') ?>
