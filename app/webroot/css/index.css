@@ -12,6 +12,8 @@ orange: #ef9d33
 
 */
 
+
+
 body, html {
 	margin: 0;
 	padding: 0;
@@ -107,7 +109,7 @@ footer {
 	margin: 0 auto;
 	display: none;
 	text-align: center;
-	padding: 64px;
+	padding: 30px;
 	box-shadow: 0px 0px 36px 1px black;
 	margin-top: -250px;
 	margin-left: -450px; 
