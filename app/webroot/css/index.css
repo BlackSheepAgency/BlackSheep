@@ -154,13 +154,13 @@ footer {
 /*--------LANDING PAGE-------*/
 
 .wrapper{
-	width:52%;
+	width:50%;
 	margin:auto;
 }
 
 h1{
 	font-family: Oswald;
-	font-size: 2.5em;
+	font-size: 2.45em;
 	text-transform: uppercase;
 	color:#fff;
 	font-weight: 400;
@@ -185,14 +185,17 @@ h2{
 }
 
 .frame{
-	width:475px;
+	width:;
 	height:auto;
 	position:relative;
 	background:#fff;
 	padding:20px;
-	margin:auto;
+	margin-top: 90px;
+	margin-bottom: 50px;
 	-webkit-box-shadow: 8px 8px 20px 1px #7ac5ca;
 	box-shadow: 8px 8px 20px 1px #7ac5ca;
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .frame p{
@@ -204,5 +207,5 @@ h2{
 .timer{
 	position:relative;
 	display:block;
-	height:150px;
+	height:100px;
 }
