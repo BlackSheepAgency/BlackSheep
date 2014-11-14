@@ -55,6 +55,9 @@
 }
 .countdown-period {
     display: block;
+    margin-top: 20px;
+    background:#fff;
+    padding-left: 20px;
 }
 .countdown-descr {
 	display: block;
