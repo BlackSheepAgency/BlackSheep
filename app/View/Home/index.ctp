@@ -1,5 +1,8 @@
 <div class="wrapper">
 	<h1>Nos seniors valent de l'<span class="jaune">or</span></h1>
+	<div class="timer">
+		<div id="defaultCountdown"></div>
+	</div>
 	<div class="frame">
 		<h2><span class="jaune">Lancement de</span> <span class="bleu">la campagne</span></h2>
 		<p>

@@ -12,7 +12,9 @@ $(document).ready(function() {
 	$('.form_add_pseudo form').off('submit');
 	$('.form_add_pseudo form').on('submit', function() { // Lorsqu'on valide un pseudo
 
-		pseudo = $('.get_pseudo').val();
+		var parent = $(this).parent();
+
+		pseudo = $(this).find('.get_pseudo').val();
 
 		if(pseudo === '') {
 			return false;
@@ -23,11 +25,11 @@ $(document).ready(function() {
 			url : "Cap/addPseudo/"+pseudo,
 			success: function(response){
 				console.log(response);
-				$('.form_add_pseudo .info_add').text('');
+				parent.find('.info_add').text('');
 				if(response.check === 'KO') {
-					$('.form_add_pseudo .info_add_error').text('Ce pseudo existe déjà, veuillez en entrer un autre !');
+					parent.find('.info_add_error').text('Ce pseudo existe déjà, veuillez en entrer un autre !');
 				} else {
-					$('.form_add_pseudo .info_add_success').text('Votre pseudo a bien été ajouté !');
+					parent.find('.info_add_success').text('Votre pseudo a bien été ajouté, vous pouvez désormais publier !');
 				}
 			},
 
@@ -55,7 +57,7 @@ $(document).ready(function() {
 			type : "POST",
 			url : "Cap/switchCap/"+cap,
 			success: function(response){
-				console.log(response);
+				//console.log(response);
 
 				if(response.check === 'KO') {
 					$('.txt-cap').hide(400);
@@ -104,7 +106,7 @@ $(document).ready(function() {
 			type : "POST",
 			url : "Cap/addPublication/"+publi_pseudo+'/'+publi_url+'/Comment',
 			success: function(response){
-				console.log(response);
+				//console.log(response);
 				$('.form_add_pseudo .info_add').text('');
 				if(response.check === 'KO') {
 					$('.form_add_pseudo .info_add_error').text('Erreur');
@@ -130,12 +132,12 @@ $(document).ready(function() {
 			type : "POST",
 			url : "Cap/getPublications/",
 			success: function(response){
-				console.log(response);
+				//console.log(response);
 
 				$('.publications').empty();
 
 				for (var p = 0; p < response.publications.length; p++) {
-					console.log(response.publications[p].Publication);
+					//console.log(response.publications[p].Publication);
 					var publi = response.publications[p].Publication;
 					var publication =
 						' <div class="publication">' +
@@ -189,6 +191,18 @@ $(document).ready(function() {
 
 
 		});
-	}
+	};
+
+		/*--------COUNTDOWN--------*/
+
+	$(function () {
+		var releaseDate = new Date();
+		releaseDate = new Date(releaseDate.getFullYear() +0, 11 - 1, 28);
+		$('#defaultCountdown').countdown({until: releaseDate});
+		$('#year').text(releaseDate.getFullYear());
+	});
+	
+	/*--------END COUNTDOWN--------*/
+
 
 });

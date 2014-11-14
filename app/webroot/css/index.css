@@ -8,6 +8,11 @@ body, html {
 	background-color: #b3e0ea;
 }
 
+body {
+	font-family: 'Lato';
+	font-weight: 300;
+}
+
 header {
 	height: 130px;
 	text-align: center;
@@ -25,6 +30,7 @@ footer {
 	height:130px;
 	margin:auto;
 	padding-top: 18px;
+	display: block;
 }
 
 #content {
@@ -77,20 +83,56 @@ footer {
 }
 
 .pop-up{
-	width: 200px;
+	width: 400px;
 	background-color: #eee;
 	position: fixed;
-	left: 45%;
-	top: 33%;
+	left: 50%;
+	top: 50%;
 	margin: 0 auto;
 	display: none;
 	text-align: center;
 	padding: 64px;
 	box-shadow: 0px 0px 36px 3px black;
+	margin-top: -200px;
+	margin-left: -200px; 
+}
+
+.pop-up form {
+	padding: 10px;
+	margin-top: 10px;
+}
+.pop-up-publish form {
+	border: 1px solid black;
 }
 .pop-up input{
 	margin-bottom: 10px;
-	text-transform: italic;
+	/*font-style: italic;*/
+	text-align: center;
+}
+
+.pop-up label {
+	width: 100px;
+}
+
+.style_input {
+	text-align: left;
+	margin-top: 10px;
+}
+
+.style_input label, .style_input input[type=text] {
+	width: 100px;
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+}
+
+.style_input input[type=text], .style_input textarea {
+	width: 200px;
+	padding: 8px 10px 8px 3px;
+	font-size: 15px;
+}
+
+.style_input_submit {
 	text-align: center;
 }
 
@@ -105,7 +147,7 @@ footer {
 	cursor: pointer;
 	font-size: 24px;
 	font-family: 'Verdana';
-	left:208px;
+	right:10px;
 	top:0;
 	cursor:pointer;
 }
@@ -113,13 +155,13 @@ footer {
 /*--------LANDING PAGE-------*/
 
 .wrapper{
-	width:52%;
+	width:50%;
 	margin:auto;
 }
 
 h1{
 	font-family: Oswald;
-	font-size: 2.5em;
+	font-size: 2.45em;
 	text-transform: uppercase;
 	color:#fff;
 	font-weight: 400;
@@ -144,14 +186,17 @@ h2{
 }
 
 .frame{
-	width:475px;
+	width:;
 	height:auto;
 	position:relative;
 	background:#fff;
 	padding:20px;
-	margin:auto;
+	margin-top: 90px;
+	margin-bottom: 50px;
 	-webkit-box-shadow: 8px 8px 20px 1px #7ac5ca;
 	box-shadow: 8px 8px 20px 1px #7ac5ca;
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .frame p{
@@ -162,7 +207,7 @@ h2{
 
 .reseaux{
 	margin: auto;
-	width: 475px;
+	width: 50%;
 }
 
 .reseaux ul{
@@ -201,5 +246,8 @@ h2{
 	display: block;
 }
 
-
-
+.timer{
+	position:relative;
+	display:block;
+	height:100px;
+}
