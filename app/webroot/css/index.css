@@ -153,33 +153,25 @@ footer {
   text-align: left;
   margin-top: 10px;
 }
-
-/* line 148, ../sass/index.scss */
+/* line 147, ../sass/index.scss */
+.style_input.style_input_submit {
+  text-align: center;
+}
+/* line 151, ../sass/index.scss */
 .style_input label, .style_input input[type=text] {
   width: 100px;
   display: inline-block;
   text-align: left;
   vertical-align: top;
 }
-
-/* line 155, ../sass/index.scss */
+/* line 157, ../sass/index.scss */
 .style_input input[type=text], .style_input textarea {
   width: 200px;
   padding: 8px 10px 8px 3px;
   font-size: 15px;
 }
 
-/* line 161, ../sass/index.scss */
-.style_input_submit {
-  text-align: center;
-}
-
-/* line 165, ../sass/index.scss */
-.show {
-  display: block;
-}
-
-/* line 169, ../sass/index.scss */
+/* line 164, ../sass/index.scss */
 .close {
   position: absolute;
   right: 9px;
@@ -193,15 +185,15 @@ footer {
 }
 
 /*--------LANDING PAGE-------*/
-/* line 183, ../sass/index.scss */
+/* line 178, ../sass/index.scss */
 .wrapper {
   width: 501px;
   margin: auto;
 }
 
-/* line 188, ../sass/index.scss */
+/* line 183, ../sass/index.scss */
 h1 {
-  font-family: Oswald;
+  font-family: 'Oswald';
   font-size: 2.42em;
   text-transform: uppercase;
   color: #fff;
@@ -210,9 +202,9 @@ h1 {
   text-align: center;
 }
 
-/* line 198, ../sass/index.scss */
+/* line 193, ../sass/index.scss */
 h2 {
-  font-family: Oswald;
+  font-family: 'Oswald';
   font-size: 1.5em;
   text-transform: uppercase;
   font-weight: 400;
@@ -220,7 +212,7 @@ h2 {
   margin: 0;
 }
 
-/* line 207, ../sass/index.scss */
+/* line 202, ../sass/index.scss */
 .msg_reseaux {
   width: 50%;
   margin: auto;
@@ -228,7 +220,7 @@ h2 {
   position: relative;
 }
 
-/* line 214, ../sass/index.scss */
+/* line 209, ../sass/index.scss */
 .msg_reseaux p {
   font-family: "Nothing You Could Do", cursive;
   font-size: 1.8em;
@@ -236,17 +228,17 @@ h2 {
   height: 50px;
 }
 
-/* line 222, ../sass/index.scss */
+/* line 217, ../sass/index.scss */
 .jaune {
   color: #f9e367;
 }
 
-/* line 226, ../sass/index.scss */
+/* line 221, ../sass/index.scss */
 .bleu {
   color: #a3d7dc;
 }
 
-/* line 230, ../sass/index.scss */
+/* line 225, ../sass/index.scss */
 .frame {
   height: auto;
   position: relative;
@@ -257,40 +249,40 @@ h2 {
   border: solid 1px #ddd;
 }
 
-/* line 240, ../sass/index.scss */
+/* line 235, ../sass/index.scss */
 .frame p {
   font-family: 'Lato';
   line-height: 1.4;
   font-weight: 300;
 }
 
-/* line 246, ../sass/index.scss */
+/* line 241, ../sass/index.scss */
 .reseaux {
   margin: auto;
   width: 50%;
   text-align: center;
 }
 
-/* line 252, ../sass/index.scss */
+/* line 247, ../sass/index.scss */
 .reseaux ul {
   margin-top: 4em;
   padding: 0;
 }
 
-/* line 258, ../sass/index.scss */
+/* line 253, ../sass/index.scss */
 .reseaux p {
   font-family: "Nothing You Could Do", cursive;
   font-size: 1.8em;
 }
 
-/* line 263, ../sass/index.scss */
+/* line 258, ../sass/index.scss */
 .reseaux ul li {
   display: inline-block;
   list-style: none;
   padding-right: 0.6em;
 }
 
-/* line 270, ../sass/index.scss */
+/* line 265, ../sass/index.scss */
 .reseaux ul li a#fb_icon {
   background-image: url("../img/fb_icon.png");
   width: 40px;
@@ -298,7 +290,7 @@ h2 {
   display: block;
 }
 
-/* line 276, ../sass/index.scss */
+/* line 271, ../sass/index.scss */
 .reseaux ul li a#twitter_icon {
   background-image: url("../img/twitter_icon.png");
   width: 40px;
@@ -306,7 +298,7 @@ h2 {
   display: block;
 }
 
-/* line 282, ../sass/index.scss */
+/* line 277, ../sass/index.scss */
 .reseaux ul li a#youtube_icon {
   background-image: url("../img/youtube_icon.png");
   width: 40px;
@@ -314,69 +306,69 @@ h2 {
   display: block;
 }
 
-/* line 289, ../sass/index.scss */
+/* line 284, ../sass/index.scss */
 .timer {
   position: relative;
   display: block;
   height: 100px;
 }
 
-/* line 295, ../sass/index.scss */
+/* line 290, ../sass/index.scss */
 #defaultCountdown span span:nth-child(1) span:first-child {
   border: solid 1px #2873b7;
 }
 
-/* line 298, ../sass/index.scss */
+/* line 293, ../sass/index.scss */
 #defaultCountdown span span:nth-child(2) span:first-child {
   border: solid 1px #8fc549;
 }
 
-/* line 301, ../sass/index.scss */
+/* line 296, ../sass/index.scss */
 #defaultCountdown span span:nth-child(3) span:first-child {
   border: solid 1px #ef9d33;
 }
 
-/* line 304, ../sass/index.scss */
+/* line 299, ../sass/index.scss */
 #defaultCountdown span span:nth-child(4) span:first-child {
   border: solid 1px #eb282e;
 }
 
-/* line 308, ../sass/index.scss */
+/* line 303, ../sass/index.scss */
 .countdown-period {
   color: white;
 }
 
-/* line 312, ../sass/index.scss */
+/* line 307, ../sass/index.scss */
 .lancement {
   color: #eb282e;
 }
 
-/* line 316, ../sass/index.scss */
+/* line 311, ../sass/index.scss */
 .nos {
   color: #ef9d33;
 }
 
-/* line 320, ../sass/index.scss */
+/* line 315, ../sass/index.scss */
 #defaultCountdown span span:nth-child(1) .countdown-period {
   background-color: #2873b7;
 }
 
-/* line 323, ../sass/index.scss */
+/* line 318, ../sass/index.scss */
 #defaultCountdown span span:nth-child(2) .countdown-period {
   background-color: #8fc549;
 }
 
-/* line 326, ../sass/index.scss */
+/* line 321, ../sass/index.scss */
 #defaultCountdown span span:nth-child(3) .countdown-period {
   background-color: #ef9d33;
 }
 
-/* line 329, ../sass/index.scss */
+/* line 324, ../sass/index.scss */
 #defaultCountdown span span:nth-child(4) .countdown-period {
   background-color: #eb282e;
 }
 
-/* line 333, ../sass/index.scss */
+/* line 328, ../sass/index.scss */
 .mentions {
   width: 50%;
   color: #fff;
@@ -389,7 +381,7 @@ h2 {
   position: relative;
 }
 
-/* line 345, ../sass/index.scss */
+/* line 340, ../sass/index.scss */
 .mentions a {
   text-decoration: none;
   color: #fff;

@@ -143,27 +143,22 @@ footer {
 .style_input {
 	text-align: left;
 	margin-top: 10px;
-}
 
-.style_input label, .style_input input[type=text] {
-	width: 100px;
-	display: inline-block;
-	text-align: left;
-	vertical-align: top;
-}
+	&.style_input_submit {
+		text-align: center;
+	}
 
-.style_input input[type=text], .style_input textarea {
-	width: 200px;
-	padding: 8px 10px 8px 3px;
-	font-size: 15px;
-}
-
-.style_input_submit {
-	text-align: center;
-}
-
-.show{
-	display: block;
+	label, input[type=text] {
+		width: 100px;
+		display: inline-block;
+		text-align: left;
+		vertical-align: top;
+	}
+	input[type=text], textarea {
+		width: 200px;
+		padding: 8px 10px 8px 3px;
+		font-size: 15px;
+	}
 }
 
 .close{
@@ -186,7 +181,7 @@ footer {
 }
 
 h1{
-	font-family: Oswald;
+	font-family: 'Oswald';
 	font-size: 2.42em;
 	text-transform: uppercase;
 	color:#fff;
@@ -196,7 +191,7 @@ h1{
 }
 
 h2{
-	font-family: Oswald;
+	font-family: 'Oswald';
 	font-size: 1.5em;
 	text-transform: uppercase;
 	font-weight: 400;
@@ -293,16 +288,16 @@ h2{
 }
 
 #defaultCountdown span span:nth-child(1) span:first-child {
-	border: solid 1px #2873b7;
+	border: solid 1px $bleu;
 }
 #defaultCountdown span span:nth-child(2) span:first-child {
-	border: solid 1px #8fc549;
+	border: solid 1px $vert;
 }
 #defaultCountdown span span:nth-child(3) span:first-child {
-	border: solid 1px #ef9d33;
+	border: solid 1px $orange;
 }
 #defaultCountdown span span:nth-child(4) span:first-child {
-	border: solid 1px #eb282e;
+	border: solid 1px $rouge;
 }
 
 .countdown-period {
@@ -318,16 +313,16 @@ h2{
 }
 
 #defaultCountdown span span:nth-child(1) .countdown-period {
-	background-color: #2873b7;
+	background-color: $bleu;
 }
 #defaultCountdown span span:nth-child(2) .countdown-period {
-	background-color: #8fc549;
+	background-color: $vert;
 }
 #defaultCountdown span span:nth-child(3) .countdown-period {
-	background-color: #ef9d33;
+	background-color: $orange;
 }
 #defaultCountdown span span:nth-child(4) .countdown-period {
-	background-color: #eb282e;
+	background-color: $rouge;
 }
 
 .mentions{
