@@ -4,11 +4,9 @@ $(document).ready(function() {
 	window.current_cap = 1; // On initie la variable pour récupérer le CAP à l'ID 1
 	var pseudo = '';
 
-	$('.form_add_pseudo').hide();
-
 	$('.valid-cap').off('click'); 
 	$('.valid-cap').on('click', function() { // Lorsqu'on clique sur CAP
-		$('.form_add_pseudo').show();
+		$('.pop-up-pseudo').fadeIn();
 	});
 
 	$('.form_add_pseudo form').off('submit');
@@ -27,7 +25,7 @@ $(document).ready(function() {
 				console.log(response);
 				$('.form_add_pseudo .info_add').text('');
 				if(response.check === 'KO') {
-					$('.form_add_pseudo .info_add_error').text('Erreur');
+					$('.form_add_pseudo .info_add_error').text('Ce pseudo existe déjà, veuillez en entrer un autre !');
 				} else {
 					$('.form_add_pseudo .info_add_success').text('Votre pseudo a bien été ajouté !');
 				}
@@ -60,13 +58,19 @@ $(document).ready(function() {
 				console.log(response);
 
 				if(response.check === 'KO') {
-					$('.txt-cap').text('');
-					$('.txt-cap').text('Vous êtes arrivé à la dernière question !');
+					$('.txt-cap').hide(400);
+					setTimeout(function(){
+						$('.txt-cap').css('color')
+						$('.txt-cap').text('Vous êtes arrivé à la dernière question !').fadeIn();
+					}, 400);
 					$('.pas-cap').hide();
 					$('.valid-cap').hide();
 				} else {
-					$('.txt-cap').text('');
-					$('.txt-cap').text(response.current_cap.Cap.text);
+					$('.txt-cap').hide(400);
+					setTimeout(function(){
+						$('.txt-cap').text(response.current_cap.Cap.text).fadeIn();
+					}, 400);
+					
 
 					window.current_cap = window.current_cap +1;
 				}
@@ -82,12 +86,12 @@ $(document).ready(function() {
 
 	$('.publish').off('click');
 	$('.publish').on('click', function() {
-		$('.pop-up').show();
+		$('.pop-up-publish').fadeIn();
 	});
 
 	$('.close').off('click');
 	$('.close').on('click', function() {
-		$('.pop-up').hide();
+		$('.pop-up').fadeOut();
 	});
 
 	$('.add_publication').off('submit');
