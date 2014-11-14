@@ -35,9 +35,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<div id="container">
 
 		<header id="header">
-			<a href="/BlackSheep/Home" id="logo">
+			<!--<a href="/BlackSheep/Home" id="logo">
 				<img src="img/logo.png"/>
-			</a>
+			</a>-->
 		</header>
 
 		<div id="content">

@@ -15,7 +15,8 @@ orange: #ef9d33
 body, html {
 	margin: 0;
 	padding: 0;
-	background: #f8f8f8;
+	background-color: #f0f0f0;
+
 }
 
 body {
@@ -175,11 +176,12 @@ footer {
 
 h1{
 	font-family: Oswald;
-	font-size: 2.45em;
+	font-size: 2.42em;
 	text-transform: uppercase;
 	color:#fff;
 	font-weight: 400;
 	letter-spacing: 2px;
+	text-align: center;
 }
 
 h2{
@@ -208,8 +210,7 @@ h2{
 	margin-bottom: 50px;
 	-webkit-box-shadow: 8px 0px 0px 1px #8fc549;
 	box-shadow: 8px 8px 0px 1px #8fc549;
-	-moz-box-sizing: border-box;
-    box-sizing: border-box;
+    border: solid 1px #ddd;
 }
 
 .frame p{
@@ -263,5 +264,43 @@ h2{
 	position:relative;
 	display:block;
 	height:100px;
+}
+
+#defaultCountdown span span:nth-child(1) span:first-child {
+	border: solid 1px #2873b7;
+}
+#defaultCountdown span span:nth-child(2) span:first-child {
+	border: solid 1px #8fc549;
+}
+#defaultCountdown span span:nth-child(3) span:first-child {
+	border: solid 1px #ef9d33;
+}
+#defaultCountdown span span:nth-child(4) span:first-child {
+	border: solid 1px #eb282e;
+}
+
+.countdown-period {
+	color: white;
+}
+
+.lancement {
+	color: #eb282e;
+}
+
+.nos {
+	color: #ef9d33;
+}
+
+#defaultCountdown span span:nth-child(1) .countdown-period {
+	background-color: #2873b7;
+}
+#defaultCountdown span span:nth-child(2) .countdown-period {
+	background-color: #8fc549;
+}
+#defaultCountdown span span:nth-child(3) .countdown-period {
+	background-color: #ef9d33;
+}
+#defaultCountdown span span:nth-child(4) .countdown-period {
+	background-color: #eb282e;
 }
 
