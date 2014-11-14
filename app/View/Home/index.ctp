@@ -6,7 +6,7 @@
 	<div class="frame">
 		<h2 class="lancement">Lancement de la campagne</h2>
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat aliquam dolores, consequuntur animi delectus, velit error illo numquam, magni corporis excepturi minima in omnis nesciunt illum nisi. Fuga, rem, quis.
+			Prochainement, lancement de notre site de sensibilisation sur l'isolement de personne âgée.
 		</p>
 	</div>
 	<div class="reseaux">
@@ -21,6 +21,8 @@
 				<a id="youtube_icon" href=""></a>
 			</li>
 		</ul>
-		<p>Allez, suis nous !</p>
+	</div>
+	<div class="msg_reseaux">
+		<p></p>
 	</div>
 </div>

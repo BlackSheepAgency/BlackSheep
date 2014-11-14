@@ -48,7 +48,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		</div>
 
 		<footer id="footer">
-			
+			<div class="mentions">
+				Copyright 2014 - Blacksheep Agency ⎢ Mentions légales ⎢ Conditions d'utilisations ⎢ Contact
+			</div>
 		</footer>
 
 	</div>

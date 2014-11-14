@@ -34,6 +34,7 @@ footer {
 	height: 70px;
 	text-align: center;
 	background-color: #2873b7;
+	margin-top:40px;
 }
 
 #logo{
@@ -193,6 +194,21 @@ h2{
 	margin:0;
 }
 
+.msg_reseaux{
+	width:50%;
+	margin:auto;
+	text-align: center;
+	position:relative;
+}
+
+.msg_reseaux p{
+	font-family: "Nothing You Could Do", cursive;
+	font-size: 1.8em;
+	margin:0;
+	height:50px;
+}
+
+
 .jaune{
 	color:#f9e367;
 }
@@ -208,8 +224,6 @@ h2{
 	padding:20px;
 	margin-top: 90px;
 	margin-bottom: 50px;
-	-webkit-box-shadow: 8px 0px 0px 1px #8fc549;
-	box-shadow: 8px 8px 0px 1px #8fc549;
     border: solid 1px #ddd;
 }
 
@@ -222,10 +236,12 @@ h2{
 .reseaux{
 	margin: auto;
 	width: 50%;
+	text-align: center;
 }
 
 .reseaux ul{
 	margin-top: 4em;
+	padding:0;
 
 }
 
@@ -304,3 +320,19 @@ h2{
 	background-color: #eb282e;
 }
 
+.mentions{
+	width:50%;
+	color:#fff;
+	font-family: 'Lato';
+	font-weight: 300;
+	text-align: center;
+	margin:auto;
+	font-size: 0.7em;
+	top:45px;
+	position:relative;
+}
+
+.mentions a {
+	text-decoration: none;
+	color:#fff;
+}
