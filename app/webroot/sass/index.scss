@@ -26,6 +26,15 @@ body, html {
 body {
 	font-family: "Lato";
 	font-weight: 300;
+	/*
+	margin:0;
+	padding:0;
+	background: url(../img/vieille.jpg) no-repeat center fixed; 
+	-webkit-background-size: cover; 
+	-moz-background-size: cover; 
+	-o-background-size: cover; 
+	background-size: cover; 
+	*/
 }
 
 header {
@@ -42,6 +51,27 @@ footer {
 	margin-top:40px;
 }
 
+h1{
+	font-family: "Oswald";
+	font-size: 2.8em;
+	text-transform: uppercase;
+	color: $rouge;
+	font-weight: 400;
+	letter-spacing: 2px;
+	text-align: center;
+	margin-top: 0;
+	line-height: 130px;
+}
+
+h2{
+	font-family: "Oswald";
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 2px;
+	margin:0;
+}
+
 #logo{
 	width:150px;
 	height:130px;
@@ -53,7 +83,7 @@ footer {
 #content {
 	width: 78.5%;
 	margin: 0 auto;
-	padding:20px 0 20px 0;
+	padding: 103px 0 20px 0;
 }
 
 .cap {
@@ -178,25 +208,6 @@ footer {
 	margin:auto;
 }
 
-h1{
-	font-family: "Oswald";
-	font-size: 2.42em;
-	text-transform: uppercase;
-	color:#fff;
-	font-weight: 400;
-	letter-spacing: 2px;
-	text-align: center;
-}
-
-h2{
-	font-family: "Oswald";
-	font-size: 1.5em;
-	text-transform: uppercase;
-	font-weight: 400;
-	letter-spacing: 2px;
-	margin:0;
-}
-
 .msg_reseaux{
 	width:50%;
 	margin:auto;
@@ -309,6 +320,9 @@ h2{
 
 .nos {
 	color: #ef9d33;
+	font-size: 2.3em;
+	text-align: center;
+	margin-bottom: 20px;
 }
 
 #defaultCountdown span span:nth-child(1) .countdown-period {
