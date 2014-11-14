@@ -1,10 +1,20 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
 
+/*
+
+vert: #8fc549
+bleu: #2873b7
+violet: #9a5599
+rouge : #eb282e
+orange: #ef9d33
+
+*/
+
 body, html {
 	margin: 0;
 	padding: 0;
-	background-color: #b3e0ea;
+	background: #f8f8f8;
 }
 
 body {
@@ -21,7 +31,7 @@ header {
 footer {
 	height: 70px;
 	text-align: center;
-	background: #a3d7dc;
+	background-color: #2873b7;
 }
 
 #logo{
@@ -33,7 +43,7 @@ footer {
 }
 
 #content {
-	width: 1000px;
+	width: 78.5%;
 	margin: 0 auto;
 	padding:20px 0 20px 0;
 }
@@ -47,6 +57,10 @@ footer {
 }
 .green {
 	color: green;
+}
+
+.orange{
+	color:#ef9d33;
 }
 
 .valid-cap {
@@ -91,7 +105,7 @@ footer {
 	display: none;
 	text-align: center;
 	padding: 64px;
-	box-shadow: 0px 0px 36px 3px black;
+	box-shadow: 0px 0px 36px 1px black;
 	margin-top: -200px;
 	margin-left: -200px; 
 }
@@ -185,21 +199,20 @@ h2{
 }
 
 .frame{
-	width:;
 	height:auto;
 	position:relative;
 	background:#fff;
 	padding:20px;
 	margin-top: 90px;
 	margin-bottom: 50px;
-	-webkit-box-shadow: 8px 8px 20px 1px #7ac5ca;
-	box-shadow: 8px 8px 20px 1px #7ac5ca;
+	-webkit-box-shadow: 8px 0px 0px 1px #8fc549;
+	box-shadow: 8px 8px 0px 1px #8fc549;
 	-moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 .frame p{
-	font-family: Lato;
+	font-family: 'Lato';
 	line-height: 1.4;
 	font-weight: 300;
 }
@@ -209,3 +222,21 @@ h2{
 	display:block;
 	height:100px;
 }
+
+
+@media screen and (max-width: 960px) {
+
+.content{
+	width:100%;
+}
+
+h1{
+	font-size: 1em;
+}
+
+h2{
+	font-size: 0.5em;
+}
+
+}
+

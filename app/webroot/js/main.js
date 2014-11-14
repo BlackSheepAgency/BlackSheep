@@ -197,7 +197,7 @@ $(document).ready(function() {
 
 	$(function () {
 		var releaseDate = new Date();
-		releaseDate = new Date(releaseDate.getFullYear() +0, 11 - 1, 28);
+		releaseDate = new Date(releaseDate.getFullYear() +0, 11 - 1, 22);
 		$('#defaultCountdown').countdown({until: releaseDate});
 		$('#year').text(releaseDate.getFullYear());
 	});

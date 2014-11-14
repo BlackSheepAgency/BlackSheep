@@ -20,6 +20,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <!DOCTYPE html>
 <html>
 <head>
+	
 	<?php echo $this->Html->charset(); ?>
 	<title>
 		<?php echo $cakeDescription ?>:
@@ -28,6 +29,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
 	<?= $this->Html->css('index') ?>
 	<?= $this->Html->css('countdown') ?>
+
 </head>
 <body>
 	<div id="container">
