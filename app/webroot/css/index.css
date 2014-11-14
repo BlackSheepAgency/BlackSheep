@@ -5,7 +5,7 @@
 body, html {
 	margin: 0;
 	padding: 0;
-	background-color: #b3e0ea;
+	background-color: #f0f0f0;
 }
 
 body {
@@ -166,6 +166,7 @@ h1{
 	color:#fff;
 	font-weight: 400;
 	letter-spacing: 2px;
+	text-align: center;
 }
 
 h2{
@@ -193,10 +194,9 @@ h2{
 	padding:20px;
 	margin-top: 90px;
 	margin-bottom: 50px;
-	-webkit-box-shadow: 8px 8px 20px 1px #7ac5ca;
-	box-shadow: 8px 8px 20px 1px #7ac5ca;
 	-moz-box-sizing: border-box;
     box-sizing: border-box;
+    border: solid 1px #ddd;
 }
 
 .frame p{

@@ -1,5 +1,5 @@
 <div class="wrapper">
-	<h1 class="nos">Nos seniors valent de l'or</h1>
+	<h1 class="nos">Ton papy c'est ton pote !</h1>
 	<div class="timer">
 		<div id="defaultCountdown"></div>
 	</div>
