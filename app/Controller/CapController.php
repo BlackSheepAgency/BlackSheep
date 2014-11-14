@@ -21,6 +21,16 @@
 
 			if(count($current_cap) === 0) {
 				$check = 'KO';
+			} else {
+				$c = 0;
+				while(intval($current_cap['Cap']['validated']) !== 1) {
+					$current_cap = $this->Cap->findById($cap+1);
+					$c++;
+				}
+
+				$cap = $cap + $c;
+
+				$current_cap['number'] = $cap + $c;
 			}
 
 			$this->set(array(
@@ -85,6 +95,27 @@
 					'pseudo' => $pseudo,
 					'picture' => $url,
 					'comment' => $comment
+				));
+			} else {
+				$check = 'KO';
+			}
+
+			$this->set(array(
+            	'check' => $check,
+	            '_serialize' => array('check')
+	        ));
+		}
+
+		public function addCap($proposition = '') {
+			$this->RequestHandler->renderAs($this, 'json');
+			$this->layout = null;
+
+			$check = 'OK';
+
+			if($proposition !== '' && $check === 'OK') {
+				$this->Cap->save(array(
+					'text' => $proposition,
+					'validated' => 0
 				));
 			} else {
 				$check = 'KO';

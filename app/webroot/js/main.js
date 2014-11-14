@@ -3,6 +3,7 @@ $(document).ready(function() {
 
 	window.current_cap = 1; // On initie la variable pour récupérer le CAP à l'ID 1
 	var pseudo = '';
+	var cap = '';
 
 	$('.valid-cap').off('click'); 
 	$('.valid-cap').on('click', function() { // Lorsqu'on clique sur CAP
@@ -30,6 +31,38 @@ $(document).ready(function() {
 					parent.find('.info_add_error').text('Ce pseudo existe déjà, veuillez en entrer un autre !');
 				} else {
 					parent.find('.info_add_success').text('Votre pseudo a bien été ajouté, vous pouvez désormais publier !');
+				}
+			},
+
+			error: function(){
+				console.log('error');
+            }
+		});
+		return false;
+	});
+
+	$('.form_add_cap form').off('submit');
+	$('.form_add_cap form').on('submit', function() { // Lorsqu'on valide un pseudo
+
+		var parent = $(this).parent();
+
+		cap = $(this).find('.get_cap').val();
+
+		if(cap === '') {
+			return false;
+		}
+
+		$.ajax({
+			type : "POST",
+			url : "Cap/addCap/"+cap,
+			success: function(response){
+				console.log(response);
+				parent.find('.info_add').text('');
+				parent.find('.get_cap').val('');
+				if(response.check === 'KO') {
+					parent.find('.info_add_error').text('Erreur lors de l\'ajout de votre proposition !');
+				} else {
+					parent.find('.info_add_success').text('Votre proposition a bien été ajoutée, elle sera étudiée par nos administrateurs, merci !');
 				}
 			},
 
@@ -74,7 +107,7 @@ $(document).ready(function() {
 					}, 400);
 					
 
-					window.current_cap = window.current_cap +1;
+					window.current_cap = response.current_cap.number +1;
 				}
 			},
 
@@ -89,6 +122,11 @@ $(document).ready(function() {
 	$('.publish').off('click');
 	$('.publish').on('click', function() {
 		$('.pop-up-publish').fadeIn();
+	});
+
+	$('.publish_cap').off('click');
+	$('.publish_cap').on('click', function() {
+		$('.pop-up-publish-cap').fadeIn();
 	});
 
 	$('.close').off('click');
