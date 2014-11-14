@@ -1,33 +1,33 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
-@import url(http://fonts.googleapis.com/css?family=Nothing+You+Could+Do);
-/* line 15, ../sass/index.scss */
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+@import url("http://fonts.googleapis.com/css?family=Oswald:400,300,700");
+@import url("http://fonts.googleapis.com/css?family=Nothing+You+Could+Do");
+/* line 14, ../sass/index.scss */
 *::selection {
   background: black;
   color: #8fc549;
 }
 
-/* line 20, ../sass/index.scss */
+/* line 19, ../sass/index.scss */
 body, html {
   margin: 0;
   padding: 0;
   background-color: #f0f0f0;
 }
 
-/* line 27, ../sass/index.scss */
+/* line 26, ../sass/index.scss */
 body {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-weight: 300;
 }
 
-/* line 32, ../sass/index.scss */
+/* line 31, ../sass/index.scss */
 header {
   height: 130px;
   text-align: center;
   background: #fff;
 }
 
-/* line 39, ../sass/index.scss */
+/* line 38, ../sass/index.scss */
 footer {
   height: 70px;
   text-align: center;
@@ -38,7 +38,7 @@ footer {
   border-radius: 20px;
 }
 
-/* line 47, ../sass/index.scss */
+/* line 46, ../sass/index.scss */
 #logo {
   width: 150px;
   height: 130px;
@@ -47,49 +47,49 @@ footer {
   display: block;
 }
 
-/* line 55, ../sass/index.scss */
+/* line 54, ../sass/index.scss */
 #content {
   width: 78.5%;
   margin: 0 auto;
   padding: 20px 0 20px 0;
 }
 
-/* line 61, ../sass/index.scss */
+/* line 60, ../sass/index.scss */
 .cap {
   text-align: center;
 }
 
-/* line 65, ../sass/index.scss */
+/* line 64, ../sass/index.scss */
 .red {
   color: red;
 }
 
-/* line 68, ../sass/index.scss */
+/* line 67, ../sass/index.scss */
 .green {
   color: green;
 }
 
-/* line 72, ../sass/index.scss */
+/* line 71, ../sass/index.scss */
 .orange {
   color: #ef9d33;
 }
 
-/* line 76, ../sass/index.scss */
+/* line 75, ../sass/index.scss */
 .valid-cap {
   margin-top: 25px;
 }
 
-/* line 80, ../sass/index.scss */
+/* line 79, ../sass/index.scss */
 .pas-cap {
   text-align: right;
 }
 
-/* line 84, ../sass/index.scss */
+/* line 83, ../sass/index.scss */
 .publish {
   text-align: left;
 }
 
-/* line 88, ../sass/index.scss */
+/* line 87, ../sass/index.scss */
 .publications {
   text-align: left;
   width: 800px;
@@ -97,23 +97,23 @@ footer {
   margin-top: 20px;
 }
 
-/* line 95, ../sass/index.scss */
+/* line 94, ../sass/index.scss */
 .publication_picture, .publication_txt {
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 100, ../sass/index.scss */
+/* line 99, ../sass/index.scss */
 .publication_txt {
   margin-left: 15px;
 }
 
-/* line 104, ../sass/index.scss */
+/* line 103, ../sass/index.scss */
 .publication_pseudo {
   font-weight: bold;
 }
 
-/* line 108, ../sass/index.scss */
+/* line 107, ../sass/index.scss */
 .pop-up {
   width: 400px;
   background-color: #eee;
@@ -128,50 +128,50 @@ footer {
   margin-top: -200px;
   margin-left: -200px;
 }
-/* line 123, ../sass/index.scss */
+/* line 122, ../sass/index.scss */
 .pop-up.pop-up-publish form {
   border: 1px solid black;
 }
-/* line 128, ../sass/index.scss */
+/* line 127, ../sass/index.scss */
 .pop-up form {
   padding: 10px;
   margin-top: 10px;
 }
-/* line 132, ../sass/index.scss */
+/* line 131, ../sass/index.scss */
 .pop-up input {
   margin-bottom: 10px;
   /*font-style: italic;*/
   text-align: center;
 }
-/* line 137, ../sass/index.scss */
+/* line 136, ../sass/index.scss */
 .pop-up label {
   width: 100px;
 }
 
-/* line 143, ../sass/index.scss */
+/* line 142, ../sass/index.scss */
 .style_input {
   text-align: left;
   margin-top: 10px;
 }
-/* line 147, ../sass/index.scss */
+/* line 146, ../sass/index.scss */
 .style_input.style_input_submit {
   text-align: center;
 }
-/* line 151, ../sass/index.scss */
+/* line 150, ../sass/index.scss */
 .style_input label, .style_input input[type=text] {
   width: 100px;
   display: inline-block;
   text-align: left;
   vertical-align: top;
 }
-/* line 157, ../sass/index.scss */
+/* line 156, ../sass/index.scss */
 .style_input input[type=text], .style_input textarea {
   width: 200px;
   padding: 8px 10px 8px 3px;
   font-size: 15px;
 }
 
-/* line 164, ../sass/index.scss */
+/* line 163, ../sass/index.scss */
 .close {
   position: absolute;
   right: 9px;
@@ -185,15 +185,15 @@ footer {
 }
 
 /*--------LANDING PAGE-------*/
-/* line 178, ../sass/index.scss */
+/* line 177, ../sass/index.scss */
 .wrapper {
   width: 501px;
   margin: auto;
 }
 
-/* line 183, ../sass/index.scss */
+/* line 182, ../sass/index.scss */
 h1 {
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-size: 2.42em;
   text-transform: uppercase;
   color: #fff;
@@ -202,9 +202,9 @@ h1 {
   text-align: center;
 }
 
-/* line 193, ../sass/index.scss */
+/* line 192, ../sass/index.scss */
 h2 {
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-size: 1.5em;
   text-transform: uppercase;
   font-weight: 400;
@@ -212,7 +212,7 @@ h2 {
   margin: 0;
 }
 
-/* line 202, ../sass/index.scss */
+/* line 201, ../sass/index.scss */
 .msg_reseaux {
   width: 50%;
   margin: auto;
@@ -220,7 +220,7 @@ h2 {
   position: relative;
 }
 
-/* line 209, ../sass/index.scss */
+/* line 208, ../sass/index.scss */
 .msg_reseaux p {
   font-family: "Nothing You Could Do", cursive;
   font-size: 1.8em;
@@ -228,17 +228,17 @@ h2 {
   height: 50px;
 }
 
-/* line 217, ../sass/index.scss */
+/* line 216, ../sass/index.scss */
 .jaune {
   color: #f9e367;
 }
 
-/* line 221, ../sass/index.scss */
+/* line 220, ../sass/index.scss */
 .bleu {
   color: #a3d7dc;
 }
 
-/* line 225, ../sass/index.scss */
+/* line 224, ../sass/index.scss */
 .frame {
   height: auto;
   position: relative;
@@ -249,40 +249,40 @@ h2 {
   border: solid 1px #ddd;
 }
 
-/* line 235, ../sass/index.scss */
+/* line 234, ../sass/index.scss */
 .frame p {
-  font-family: 'Lato';
+  font-family: "Lato";
   line-height: 1.4;
   font-weight: 300;
 }
 
-/* line 241, ../sass/index.scss */
+/* line 240, ../sass/index.scss */
 .reseaux {
   margin: auto;
   width: 50%;
   text-align: center;
 }
 
-/* line 247, ../sass/index.scss */
+/* line 246, ../sass/index.scss */
 .reseaux ul {
   margin-top: 4em;
   padding: 0;
 }
 
-/* line 253, ../sass/index.scss */
+/* line 252, ../sass/index.scss */
 .reseaux p {
   font-family: "Nothing You Could Do", cursive;
   font-size: 1.8em;
 }
 
-/* line 258, ../sass/index.scss */
+/* line 257, ../sass/index.scss */
 .reseaux ul li {
   display: inline-block;
   list-style: none;
   padding-right: 0.6em;
 }
 
-/* line 265, ../sass/index.scss */
+/* line 264, ../sass/index.scss */
 .reseaux ul li a#fb_icon {
   background-image: url("../img/fb_icon.png");
   width: 40px;
@@ -290,7 +290,7 @@ h2 {
   display: block;
 }
 
-/* line 271, ../sass/index.scss */
+/* line 270, ../sass/index.scss */
 .reseaux ul li a#twitter_icon {
   background-image: url("../img/twitter_icon.png");
   width: 40px;
@@ -298,7 +298,7 @@ h2 {
   display: block;
 }
 
-/* line 277, ../sass/index.scss */
+/* line 276, ../sass/index.scss */
 .reseaux ul li a#youtube_icon {
   background-image: url("../img/youtube_icon.png");
   width: 40px;
@@ -306,73 +306,73 @@ h2 {
   display: block;
 }
 
-/* line 284, ../sass/index.scss */
+/* line 283, ../sass/index.scss */
 .timer {
   position: relative;
   display: block;
   height: 100px;
 }
 
-/* line 290, ../sass/index.scss */
+/* line 289, ../sass/index.scss */
 #defaultCountdown span span:nth-child(1) span:first-child {
   border: solid 1px #2873b7;
 }
 
-/* line 293, ../sass/index.scss */
+/* line 292, ../sass/index.scss */
 #defaultCountdown span span:nth-child(2) span:first-child {
   border: solid 1px #8fc549;
 }
 
-/* line 296, ../sass/index.scss */
+/* line 295, ../sass/index.scss */
 #defaultCountdown span span:nth-child(3) span:first-child {
   border: solid 1px #ef9d33;
 }
 
-/* line 299, ../sass/index.scss */
+/* line 298, ../sass/index.scss */
 #defaultCountdown span span:nth-child(4) span:first-child {
   border: solid 1px #eb282e;
 }
 
-/* line 303, ../sass/index.scss */
+/* line 302, ../sass/index.scss */
 .countdown-period {
   color: white;
 }
 
-/* line 307, ../sass/index.scss */
+/* line 306, ../sass/index.scss */
 .lancement {
   color: #eb282e;
 }
 
-/* line 311, ../sass/index.scss */
+/* line 310, ../sass/index.scss */
 .nos {
   color: #ef9d33;
 }
 
-/* line 315, ../sass/index.scss */
+/* line 314, ../sass/index.scss */
 #defaultCountdown span span:nth-child(1) .countdown-period {
   background-color: #2873b7;
 }
 
-/* line 318, ../sass/index.scss */
+/* line 317, ../sass/index.scss */
 #defaultCountdown span span:nth-child(2) .countdown-period {
   background-color: #8fc549;
 }
 
-/* line 321, ../sass/index.scss */
+/* line 320, ../sass/index.scss */
 #defaultCountdown span span:nth-child(3) .countdown-period {
   background-color: #ef9d33;
 }
 
-/* line 324, ../sass/index.scss */
+/* line 323, ../sass/index.scss */
 #defaultCountdown span span:nth-child(4) .countdown-period {
   background-color: #eb282e;
 }
 
-/* line 328, ../sass/index.scss */
+/* line 327, ../sass/index.scss */
 .mentions {
   width: 50%;
   color: #fff;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-weight: 300;
   text-align: center;
   margin: auto;
@@ -381,7 +381,7 @@ h2 {
   position: relative;
 }
 
-/* line 340, ../sass/index.scss */
+/* line 339, ../sass/index.scss */
 .mentions a {
   text-decoration: none;
   color: #fff;
