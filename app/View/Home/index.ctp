@@ -9,4 +9,18 @@
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat aliquam dolores, consequuntur animi delectus, velit error illo numquam, magni corporis excepturi minima in omnis nesciunt illum nisi. Fuga, rem, quis.
 		</p>
 	</div>
+	<div class="reseaux">
+		<ul>
+			<li>
+				<a id="fb_icon" href=""></a>
+			</li>
+			<li>
+				<a id="twitter_icon" href=""></a>
+			</li>
+			<li>
+				<a id="youtube_icon" href=""></a>
+			</li>
+		</ul>
+		<p>Allez, suis nous !</p>
+	</div>
 </div>
