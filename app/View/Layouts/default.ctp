@@ -32,7 +32,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<div id="container">
 
 		<header id="header">
-			Commes des Gosses
+			<div id="logo"><img src="img/logo.png"/></div>
 		</header>
 
 		<div id="content">
@@ -43,7 +43,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		</div>
 
 		<footer id="footer">
-			Footer
+			
 		</footer>
 
 	</div>
