@@ -48,8 +48,19 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		</div>
 
 		<footer id="footer">
-			<div class="mentions">
-				Copyright 2014 - Blacksheep Agency ⎢ Mentions légales ⎢ Conditions d'utilisations ⎢ Contact
+			<div class="wrapper-footer">
+				<div class="bloc-footer-g">
+					<span class="name">Comme des gosses</span><br/>
+					6 rue Froment<br/>
+					75011 Paris<br/>
+					<a href="mailto:contact@commedesgosses.com">contact@commesdesgosses.com</a>
+				</div>
+				<div class="bloc-footer-m">
+					
+				</div>
+				<div class="bloc-footer-d">
+					
+				</div>
 			</div>
 		</footer>
 
