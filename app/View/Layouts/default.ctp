@@ -20,6 +20,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <!DOCTYPE html>
 <html>
 <head>
+	
 	<?php echo $this->Html->charset(); ?>
 	<title>
 		<?php echo $cakeDescription ?>:
@@ -47,11 +48,13 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		</div>
 
 		<footer id="footer">
-			
+			<div class="mentions">
+				Copyright 2014 - Blacksheep Agency ⎢ Mentions légales ⎢ Conditions d'utilisations ⎢ Contact
+			</div>
 		</footer>
 
 	</div>
-	<?php echo $this->element('sql_dump'); ?>
+	<!--<?php echo $this->element('sql_dump'); ?>-->
 	<?= $this->Html->script('jquery.plugin') ?>
 	<?= $this->Html->script('countdown.js') ?>
 	<?= $this->Html->script('main') ?>

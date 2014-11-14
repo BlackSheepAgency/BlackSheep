@@ -2,10 +2,21 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Nothing+You+Could+Do);
 
+/*
+
+vert: #8fc549
+bleu: #2873b7
+violet: #9a5599
+rouge : #eb282e
+orange: #ef9d33
+
+*/
+
 body, html {
 	margin: 0;
 	padding: 0;
 	background-color: #f0f0f0;
+
 }
 
 body {
@@ -22,7 +33,8 @@ header {
 footer {
 	height: 70px;
 	text-align: center;
-	background: #2873b7;
+	background-color: #2873b7;
+	margin-top:40px;
 }
 
 #logo{
@@ -34,7 +46,7 @@ footer {
 }
 
 #content {
-	width: 1000px;
+	width: 78.5%;
 	margin: 0 auto;
 	padding:20px 0 20px 0;
 }
@@ -48,6 +60,10 @@ footer {
 }
 .green {
 	color: green;
+}
+
+.orange{
+	color:#ef9d33;
 }
 
 .valid-cap {
@@ -92,7 +108,7 @@ footer {
 	display: none;
 	text-align: center;
 	padding: 64px;
-	box-shadow: 0px 0px 36px 3px black;
+	box-shadow: 0px 0px 36px 1px black;
 	margin-top: -200px;
 	margin-left: -200px; 
 }
@@ -178,6 +194,21 @@ h2{
 	margin:0;
 }
 
+.msg_reseaux{
+	width:50%;
+	margin:auto;
+	text-align: center;
+	position:relative;
+}
+
+.msg_reseaux p{
+	font-family: "Nothing You Could Do", cursive;
+	font-size: 1.8em;
+	margin:0;
+	height:50px;
+}
+
+
 .jaune{
 	color:#f9e367;
 }
@@ -187,20 +218,17 @@ h2{
 }
 
 .frame{
-	width:;
 	height:auto;
 	position:relative;
 	background:#fff;
 	padding:20px;
 	margin-top: 90px;
 	margin-bottom: 50px;
-	-moz-box-sizing: border-box;
-    box-sizing: border-box;
     border: solid 1px #ddd;
 }
 
 .frame p{
-	font-family: Lato;
+	font-family: 'Lato';
 	line-height: 1.4;
 	font-weight: 300;
 }
@@ -208,10 +236,12 @@ h2{
 .reseaux{
 	margin: auto;
 	width: 50%;
+	text-align: center;
 }
 
 .reseaux ul{
 	margin-top: 4em;
+	padding:0;
 
 }
 
@@ -288,4 +318,21 @@ h2{
 }
 #defaultCountdown span span:nth-child(4) .countdown-period {
 	background-color: #eb282e;
+}
+
+.mentions{
+	width:50%;
+	color:#fff;
+	font-family: 'Lato';
+	font-weight: 300;
+	text-align: center;
+	margin:auto;
+	font-size: 0.7em;
+	top:45px;
+	position:relative;
+}
+
+.mentions a {
+	text-decoration: none;
+	color:#fff;
 }

@@ -209,7 +209,7 @@ $(document).ready(function() {
 		});
 	};
 
-		/*--------COUNTDOWN--------*/
+	/*--------COUNTDOWN--------*/
 
 	$(function () {
 		var releaseDate = new Date();
@@ -219,6 +219,42 @@ $(document).ready(function() {
 	});
 	
 	/*--------END COUNTDOWN--------*/
+
+
+	/*--------HOVER RESEAUX--------*/
+		$('#fb_icon').hover(
+			function(){
+				$('.msg_reseaux p').text("Suivez-nous");
+			},
+
+			function(){
+				$('.msg_reseaux p').text("");
+			}
+
+		);
+
+		$('#twitter_icon').hover(
+			function(){
+				$('.msg_reseaux p').text("Follow");
+			},
+
+			function(){
+				$('.msg_reseaux p').text("");
+			}
+
+		);
+		
+		$('#youtube_icon').hover(
+			function(){
+				$('.msg_reseaux p').text("Abonnez-vous");
+			},
+
+			function(){
+				$('.msg_reseaux p').text("");
+			}
+
+		);
+	/*--------END HOVER RESEAUX--------*/
 
 
 });
