@@ -12,6 +12,8 @@ orange: #ef9d33
 
 */
 
+
+
 body, html {
 	margin: 0;
 	padding: 0;
@@ -171,7 +173,7 @@ footer {
 /*--------LANDING PAGE-------*/
 
 .wrapper{
-	width:50%;
+	width:501px;
 	margin:auto;
 }
 
