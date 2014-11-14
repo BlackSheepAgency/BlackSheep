@@ -12,7 +12,10 @@ orange: #ef9d33
 
 */
 
-
+*::selection {
+	background: black;
+	color: white;
+}
 
 body, html {
 	margin: 0;

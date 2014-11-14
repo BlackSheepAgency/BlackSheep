@@ -1,17 +1,24 @@
 <ul class="publications">
-	<?php for ($i=0; $i < count($cap_unvalid); $i++) { ?>
-		<li class="publication">
-			<div class="publication_txt">
+	<?php if(count($cap_unvalid) === 0) { ?>
+		<div>Aucun Cap proposé !</div>
+	<?php } else {
 
-				<div class="publication_comment">
-					<?= $cap_unvalid[$i]['Cap']['text'] ?>
+		for ($i=0; $i < count($cap_unvalid); $i++) { ?>
+			<li class="publication">
+				<div class="publication_txt">
+
+					<div class="publication_comment">
+						<?= $cap_unvalid[$i]['Cap']['text'] ?>
+					</div>
+
+					<button class="validate-cap" data-id="<?= $cap_unvalid[$i]['Cap']['id'] ?>">Valider</button>
+
 				</div>
-
-				<button class="validate-cap" data-id="<?= $cap_unvalid[$i]['Cap']['id'] ?>">Valider</button>
-
-			</div>
-		</li>
-	<?php } ?>
+			</li>
+	<?php 
+		} 
+	}
+	?>
 </ul>
 
 <div class="info">
