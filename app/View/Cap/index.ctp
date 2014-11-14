@@ -39,7 +39,8 @@
 	<div class="close">X</div>
 </div>
 
-<button class="publish">Publier un Cap</button>
+<button class="publish">Publier une Action</button>
+<button class="publish_cap">Proposer une idée de Cap</button>
 
 <div class="cap">
 	<div class="txt-cap">
@@ -57,13 +58,31 @@
 	<div class="form_add_pseudo"> 
 		<div class="info_add info_add_error red"></div>
 		<div class="info_add info_add_success green"></div>
-		<form action="" method="post">Pas de pseudo ? Insérez-en un !
+		<form action="" method="post">
 			<div class="style_input">
 				<label for="pseudo">Pseudo</label>
 				<input type="text" name="pseudo" class="get_pseudo" placeholder="Entrez votre pseudo" />
 			</div>
 			<div class="style_input style_input_submit">
 				<input type="submit" class="valid-pseudo" value="Valider" />
+			</div>
+		</form>
+	</div>
+
+	<div class="close">X</div>
+</div>
+
+<div class="pop-up-publish-cap pop-up">
+	<div class="form_add_cap"> 
+		<div class="info_add info_add_error red"></div>
+		<div class="info_add info_add_success green"></div>
+		<form action="" method="post">
+			<div class="style_input">
+				<label for="pseudo">Proposition de Cap</label>
+				<textarea name="cap" class="get_cap" placeholder="Entrez une phrase" /></textarea>
+			</div>
+			<div class="style_input style_input_submit">
+				<input type="submit" class="valid-cap" value="Valider" />
 			</div>
 		</form>
 	</div>
