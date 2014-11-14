@@ -1,343 +1,396 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Nothing+You+Could+Do);
-
-/*
-
-vert: #8fc549
-bleu: #2873b7
-violet: #9a5599
-rouge : #eb282e
-orange: #ef9d33
-
-*/
-
+/* line 15, ../sass/index.scss */
 *::selection {
-	background: black;
-	color: white;
+  background: black;
+  color: #8fc549;
 }
 
+/* line 20, ../sass/index.scss */
 body, html {
-	margin: 0;
-	padding: 0;
-	background-color: #f0f0f0;
-
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
 }
 
+/* line 27, ../sass/index.scss */
 body {
-	font-family: 'Lato';
-	font-weight: 300;
+  font-family: 'Lato';
+  font-weight: 300;
 }
 
+/* line 32, ../sass/index.scss */
 header {
-	height: 130px;
-	text-align: center;
-	background: #fff;
+  height: 130px;
+  text-align: center;
+  background: #fff;
 }
 
+/* line 39, ../sass/index.scss */
 footer {
-	height: 70px;
-	text-align: center;
-	background-color: #2873b7;
-	margin-top:40px;
+  height: 70px;
+  text-align: center;
+  background-color: #2873b7;
+  margin-top: 40px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
 }
 
-#logo{
-	width:150px;
-	height:130px;
-	margin:auto;
-	padding-top: 18px;
-	display: block;
+/* line 47, ../sass/index.scss */
+#logo {
+  width: 150px;
+  height: 130px;
+  margin: auto;
+  padding-top: 18px;
+  display: block;
 }
 
+/* line 55, ../sass/index.scss */
 #content {
-	width: 78.5%;
-	margin: 0 auto;
-	padding:20px 0 20px 0;
+  width: 78.5%;
+  margin: 0 auto;
+  padding: 20px 0 20px 0;
 }
 
+/* line 61, ../sass/index.scss */
 .cap {
-	text-align: center;
+  text-align: center;
 }
 
+/* line 65, ../sass/index.scss */
 .red {
-	color: red;
+  color: red;
 }
+
+/* line 68, ../sass/index.scss */
 .green {
-	color: green;
+  color: green;
 }
 
-.orange{
-	color:#ef9d33;
+/* line 72, ../sass/index.scss */
+.orange {
+  color: #ef9d33;
 }
 
+/* line 76, ../sass/index.scss */
 .valid-cap {
-	margin-top: 25px;
+  margin-top: 25px;
 }
 
+/* line 80, ../sass/index.scss */
 .pas-cap {
-	text-align: right;
+  text-align: right;
 }
 
+/* line 84, ../sass/index.scss */
 .publish {
-	text-align: left;
+  text-align: left;
 }
 
+/* line 88, ../sass/index.scss */
 .publications {
-	text-align: left;
-	width: 800px;
-	margin: 0 auto;
-	margin-top: 20px;
+  text-align: left;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
+/* line 95, ../sass/index.scss */
 .publication_picture, .publication_txt {
-	display: inline-block;
-	vertical-align: top;
+  display: inline-block;
+  vertical-align: top;
 }
 
+/* line 100, ../sass/index.scss */
 .publication_txt {
-	margin-left: 15px;
+  margin-left: 15px;
 }
 
+/* line 104, ../sass/index.scss */
 .publication_pseudo {
-	font-weight: bold;
+  font-weight: bold;
 }
 
-.pop-up{
-	width: 400px;
-	background-color: #eee;
-	position: fixed;
-	left: 50%;
-	top: 50%;
-	margin: 0 auto;
-	display: none;
-	text-align: center;
-	padding: 64px;
-	box-shadow: 0px 0px 36px 1px black;
-	margin-top: -200px;
-	margin-left: -200px; 
+/* line 108, ../sass/index.scss */
+.pop-up {
+  width: 400px;
+  background-color: #eee;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin: 0 auto;
+  display: none;
+  text-align: center;
+  padding: 64px;
+  box-shadow: 0px 0px 36px 1px black;
+  margin-top: -200px;
+  margin-left: -200px;
 }
-
+/* line 123, ../sass/index.scss */
+.pop-up.pop-up-publish form {
+  border: 1px solid black;
+}
+/* line 128, ../sass/index.scss */
 .pop-up form {
-	padding: 10px;
-	margin-top: 10px;
+  padding: 10px;
+  margin-top: 10px;
 }
-.pop-up-publish form {
-	border: 1px solid black;
+/* line 132, ../sass/index.scss */
+.pop-up input {
+  margin-bottom: 10px;
+  /*font-style: italic;*/
+  text-align: center;
 }
-.pop-up input{
-	margin-bottom: 10px;
-	/*font-style: italic;*/
-	text-align: center;
-}
-
+/* line 137, ../sass/index.scss */
 .pop-up label {
-	width: 100px;
+  width: 100px;
 }
 
+/* line 143, ../sass/index.scss */
 .style_input {
-	text-align: left;
-	margin-top: 10px;
+  text-align: left;
+  margin-top: 10px;
 }
 
+/* line 148, ../sass/index.scss */
 .style_input label, .style_input input[type=text] {
-	width: 100px;
-	display: inline-block;
-	text-align: left;
-	vertical-align: top;
+  width: 100px;
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
 }
 
+/* line 155, ../sass/index.scss */
 .style_input input[type=text], .style_input textarea {
-	width: 200px;
-	padding: 8px 10px 8px 3px;
-	font-size: 15px;
+  width: 200px;
+  padding: 8px 10px 8px 3px;
+  font-size: 15px;
 }
 
+/* line 161, ../sass/index.scss */
 .style_input_submit {
-	text-align: center;
+  text-align: center;
 }
 
-.show{
-	display: block;
+/* line 165, ../sass/index.scss */
+.show {
+  display: block;
 }
 
-.close{
-	position: absolute;
-	right: 9px;
-	top: 0;
-	cursor: pointer;
-	font-size: 24px;
-	font-family: 'Verdana';
-	right:10px;
-	top:0;
-	cursor:pointer;
+/* line 169, ../sass/index.scss */
+.close {
+  position: absolute;
+  right: 9px;
+  top: 0;
+  cursor: pointer;
+  font-size: 24px;
+  font-family: 'Verdana';
+  right: 10px;
+  top: 0;
+  cursor: pointer;
 }
 
 /*--------LANDING PAGE-------*/
-
-.wrapper{
-	width:501px;
-	margin:auto;
+/* line 183, ../sass/index.scss */
+.wrapper {
+  width: 501px;
+  margin: auto;
 }
 
-h1{
-	font-family: Oswald;
-	font-size: 2.42em;
-	text-transform: uppercase;
-	color:#fff;
-	font-weight: 400;
-	letter-spacing: 2px;
-	text-align: center;
+/* line 188, ../sass/index.scss */
+h1 {
+  font-family: Oswald;
+  font-size: 2.42em;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
 }
 
-h2{
-	font-family: Oswald;
-	font-size: 1.5em;
-	text-transform: uppercase;
-	font-weight: 400;
-	letter-spacing: 2px;
-	margin:0;
+/* line 198, ../sass/index.scss */
+h2 {
+  font-family: Oswald;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin: 0;
 }
 
-.msg_reseaux{
-	width:50%;
-	margin:auto;
-	text-align: center;
-	position:relative;
+/* line 207, ../sass/index.scss */
+.msg_reseaux {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  position: relative;
 }
 
-.msg_reseaux p{
-	font-family: "Nothing You Could Do", cursive;
-	font-size: 1.8em;
-	margin:0;
-	height:50px;
+/* line 214, ../sass/index.scss */
+.msg_reseaux p {
+  font-family: "Nothing You Could Do", cursive;
+  font-size: 1.8em;
+  margin: 0;
+  height: 50px;
 }
 
-
-.jaune{
-	color:#f9e367;
+/* line 222, ../sass/index.scss */
+.jaune {
+  color: #f9e367;
 }
 
-.bleu{
-	color:#a3d7dc;
+/* line 226, ../sass/index.scss */
+.bleu {
+  color: #a3d7dc;
 }
 
-.frame{
-	height:auto;
-	position:relative;
-	background:#fff;
-	padding:20px;
-	margin-top: 90px;
-	margin-bottom: 50px;
-    border: solid 1px #ddd;
+/* line 230, ../sass/index.scss */
+.frame {
+  height: auto;
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  margin-top: 90px;
+  margin-bottom: 50px;
+  border: solid 1px #ddd;
 }
 
-.frame p{
-	font-family: 'Lato';
-	line-height: 1.4;
-	font-weight: 300;
+/* line 240, ../sass/index.scss */
+.frame p {
+  font-family: 'Lato';
+  line-height: 1.4;
+  font-weight: 300;
 }
 
-.reseaux{
-	margin: auto;
-	width: 50%;
-	text-align: center;
+/* line 246, ../sass/index.scss */
+.reseaux {
+  margin: auto;
+  width: 50%;
+  text-align: center;
 }
 
-.reseaux ul{
-	margin-top: 4em;
-	padding:0;
-
+/* line 252, ../sass/index.scss */
+.reseaux ul {
+  margin-top: 4em;
+  padding: 0;
 }
 
-.reseaux p{
-	font-family: "Nothing You Could Do", cursive;
-	font-size: 1.8em;
+/* line 258, ../sass/index.scss */
+.reseaux p {
+  font-family: "Nothing You Could Do", cursive;
+  font-size: 1.8em;
 }
 
-.reseaux ul li{
-	display: inline-block;
-	list-style: none;
-	padding-right: 0.6em;
-	
+/* line 263, ../sass/index.scss */
+.reseaux ul li {
+  display: inline-block;
+  list-style: none;
+  padding-right: 0.6em;
 }
 
-.reseaux ul li a#fb_icon{
-	background-image: url("../img/fb_icon.png");
-	width: 40px;
-	height: 40px;
-	display: block;
-}
-.reseaux ul li a#twitter_icon{
-	background-image: url("../img/twitter_icon.png");
-	width: 40px;
-	height: 40px;
-	display: block;
-}
-.reseaux ul li a#youtube_icon{
-	background-image: url("../img/youtube_icon.png");
-	width: 40px;
-	height: 40px;
-	display: block;
+/* line 270, ../sass/index.scss */
+.reseaux ul li a#fb_icon {
+  background-image: url("../img/fb_icon.png");
+  width: 40px;
+  height: 40px;
+  display: block;
 }
 
-.timer{
-	position:relative;
-	display:block;
-	height:100px;
+/* line 276, ../sass/index.scss */
+.reseaux ul li a#twitter_icon {
+  background-image: url("../img/twitter_icon.png");
+  width: 40px;
+  height: 40px;
+  display: block;
 }
 
+/* line 282, ../sass/index.scss */
+.reseaux ul li a#youtube_icon {
+  background-image: url("../img/youtube_icon.png");
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+/* line 289, ../sass/index.scss */
+.timer {
+  position: relative;
+  display: block;
+  height: 100px;
+}
+
+/* line 295, ../sass/index.scss */
 #defaultCountdown span span:nth-child(1) span:first-child {
-	border: solid 1px #2873b7;
+  border: solid 1px #2873b7;
 }
+
+/* line 298, ../sass/index.scss */
 #defaultCountdown span span:nth-child(2) span:first-child {
-	border: solid 1px #8fc549;
+  border: solid 1px #8fc549;
 }
+
+/* line 301, ../sass/index.scss */
 #defaultCountdown span span:nth-child(3) span:first-child {
-	border: solid 1px #ef9d33;
+  border: solid 1px #ef9d33;
 }
+
+/* line 304, ../sass/index.scss */
 #defaultCountdown span span:nth-child(4) span:first-child {
-	border: solid 1px #eb282e;
+  border: solid 1px #eb282e;
 }
 
+/* line 308, ../sass/index.scss */
 .countdown-period {
-	color: white;
+  color: white;
 }
 
+/* line 312, ../sass/index.scss */
 .lancement {
-	color: #eb282e;
+  color: #eb282e;
 }
 
+/* line 316, ../sass/index.scss */
 .nos {
-	color: #ef9d33;
+  color: #ef9d33;
 }
 
+/* line 320, ../sass/index.scss */
 #defaultCountdown span span:nth-child(1) .countdown-period {
-	background-color: #2873b7;
+  background-color: #2873b7;
 }
+
+/* line 323, ../sass/index.scss */
 #defaultCountdown span span:nth-child(2) .countdown-period {
-	background-color: #8fc549;
+  background-color: #8fc549;
 }
+
+/* line 326, ../sass/index.scss */
 #defaultCountdown span span:nth-child(3) .countdown-period {
-	background-color: #ef9d33;
+  background-color: #ef9d33;
 }
+
+/* line 329, ../sass/index.scss */
 #defaultCountdown span span:nth-child(4) .countdown-period {
-	background-color: #eb282e;
+  background-color: #eb282e;
 }
 
-.mentions{
-	width:50%;
-	color:#fff;
-	font-family: 'Lato';
-	font-weight: 300;
-	text-align: center;
-	margin:auto;
-	font-size: 0.7em;
-	top:45px;
-	position:relative;
+/* line 333, ../sass/index.scss */
+.mentions {
+  width: 50%;
+  color: #fff;
+  font-family: 'Lato';
+  font-weight: 300;
+  text-align: center;
+  margin: auto;
+  font-size: 0.7em;
+  top: 45px;
+  position: relative;
 }
 
+/* line 345, ../sass/index.scss */
 .mentions a {
-	text-decoration: none;
-	color:#fff;
+  text-decoration: none;
+  color: #fff;
 }
