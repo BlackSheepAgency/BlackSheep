@@ -40,7 +40,6 @@ footer {
 	text-align: center;
 	background-color: #2873b7;
 	margin-top:40px;
-	@include border-radius(20px);
 }
 
 #logo{
@@ -203,15 +202,14 @@ h2{
 	margin:auto;
 	text-align: center;
 	position:relative;
-}
 
-.msg_reseaux p{
-	font-family: "Nothing You Could Do", cursive;
-	font-size: 1.8em;
-	margin:0;
-	height:50px;
-}
-
+	p{
+		font-family: "Nothing You Could Do", cursive;
+		font-size: 1.8em;
+		margin:0;
+		height:50px;
+	}
+}	
 
 .jaune{
 	color:#f9e367;
@@ -229,55 +227,57 @@ h2{
 	margin-top: 90px;
 	margin-bottom: 50px;
     border: solid 1px #ddd;
-}
 
-.frame p{
-	font-family: "Lato";
-	line-height: 1.4;
-	font-weight: 300;
+    p{
+		font-family: "Lato";
+		line-height: 1.4;
+		font-weight: 300;
+	}
 }
 
 .reseaux{
 	margin: auto;
 	width: 50%;
 	text-align: center;
-}
 
-.reseaux ul{
-	margin-top: 4em;
-	padding:0;
+	ul{
+		margin-top: 4em;
+		padding:0;
 
-}
+	}
 
-.reseaux p{
-	font-family: "Nothing You Could Do", cursive;
-	font-size: 1.8em;
-}
+	li{
+		display: inline-block;
+		list-style: none;
+		padding-right: 0.6em;
+		
+	}
 
-.reseaux ul li{
-	display: inline-block;
-	list-style: none;
-	padding-right: 0.6em;
-	
-}
+	p{
+		font-family: "Nothing You Could Do", cursive;
+		font-size: 1.8em;
+	}
 
-.reseaux ul li a#fb_icon{
-	background-image: url("../img/fb_icon.png");
-	width: 40px;
-	height: 40px;
-	display: block;
-}
-.reseaux ul li a#twitter_icon{
-	background-image: url("../img/twitter_icon.png");
-	width: 40px;
-	height: 40px;
-	display: block;
-}
-.reseaux ul li a#youtube_icon{
-	background-image: url("../img/youtube_icon.png");
-	width: 40px;
-	height: 40px;
-	display: block;
+	a#fb_icon{
+		background-image: url("../img/fb_icon.png");
+		width: 40px;
+		height: 40px;
+		display: block;
+	}
+
+	a#twitter_icon{
+		background-image: url("../img/twitter_icon.png");
+		width: 40px;
+		height: 40px;
+		display: block;
+	}
+
+	a#youtube_icon{
+		background-image: url("../img/youtube_icon.png");
+		width: 40px;
+		height: 40px;
+		display: block;
+	}
 }
 
 .timer{
@@ -334,9 +334,9 @@ h2{
 	font-size: 0.7em;
 	top:45px;
 	position:relative;
-}
 
-.mentions a {
-	text-decoration: none;
-	color:#fff;
+	a {
+		text-decoration: none;
+		color:#fff;
+	}
 }
