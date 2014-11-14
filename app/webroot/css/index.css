@@ -99,8 +99,8 @@ footer {
 }
 
 .pop-up{
-	width: 400px;
-	background-color: #eee;
+	width: 800px;
+	background-color: #fff;
 	position: fixed;
 	left: 50%;
 	top: 50%;
@@ -109,16 +109,19 @@ footer {
 	text-align: center;
 	padding: 64px;
 	box-shadow: 0px 0px 36px 1px black;
-	margin-top: -200px;
-	margin-left: -200px; 
+	margin-top: -250px;
+	margin-left: -450px; 
+	z-index: 1;
 }
 
 .pop-up form {
 	padding: 10px;
 	margin-top: 10px;
+	margin-right: 20px;
+	float:left;
 }
 .pop-up-publish form {
-	border: 1px solid black;
+	border: 3px solid #2873b7;
 }
 .pop-up input{
 	margin-bottom: 10px;
@@ -171,7 +174,7 @@ footer {
 /*--------LANDING PAGE-------*/
 
 .wrapper{
-	width:50%;
+	width:503px;
 	margin:auto;
 }
 
