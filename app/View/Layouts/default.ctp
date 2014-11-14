@@ -27,12 +27,13 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	</title>
 
 	<?= $this->Html->css('index') ?>
+	<?= $this->Html->css('countdown') ?>
 </head>
 <body>
 	<div id="container">
 
 		<header id="header">
-			Commes des Gosses
+			<div id="logo"><img src="img/logo.png"/></div>
 		</header>
 
 		<div id="content">
@@ -43,12 +44,14 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		</div>
 
 		<footer id="footer">
-			Footer
+			
 		</footer>
 
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
 	<?= $this->Html->script('jquery-1.11.1.min') ?>
+	<?= $this->Html->script('jquery.plugin') ?>
+	<?= $this->Html->script('jquery.countdown.js') ?>
 	<?= $this->Html->script('main') ?>
 </body>
 </html>

@@ -5,7 +5,7 @@
 		public $components = array('RequestHandler');
 
 		public function index() {
-			$koko = "";
+
 		}
 
 		public function landing() {
@@ -95,4 +95,7 @@
 	            '_serialize' => array('check')
 	        ));
 		}
+
 	}
+
+

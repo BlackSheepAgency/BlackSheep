@@ -1,19 +1,35 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+
 body, html {
 	margin: 0;
 	padding: 0;
+	background-color: #b3e0ea;
 }
 
-header, footer {
-	height: 50px;
+header {
+	height: 130px;
 	text-align: center;
-	background: grey;
+	background: #fff;
+}
+
+footer {
+	height: 70px;
+	text-align: center;
+	background: #a3d7dc;
+}
+
+#logo{
+	width:150px;
+	height:130px;
+	margin:auto;
+	padding-top: 18px;
 }
 
 #content {
 	width: 1000px;
 	margin: 0 auto;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	padding:20px 0 20px 0;
 }
 
 .cap {
@@ -88,4 +104,57 @@ header, footer {
 	cursor: pointer;
 	font-size: 24px;
 	font-family: 'Verdana';
+	left:208px;
+	top:0;
+	cursor:pointer;
+}
+
+/*--------LANDING PAGE-------*/
+
+.wrapper{
+	width:52%;
+	margin:auto;
+}
+
+h1{
+	font-family: Oswald;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	color:#fff;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+
+h2{
+	font-family: Oswald;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 2px;
+	margin:0;
+}
+
+.jaune{
+	color:#f9e367;
+}
+
+.bleu{
+	color:#a3d7dc;
+}
+
+.frame{
+	width:475px;
+	height:auto;
+	position:relative;
+	background:#fff;
+	padding:20px;
+	margin:auto;
+	-webkit-box-shadow: 8px 8px 20px 1px #7ac5ca;
+	box-shadow: 8px 8px 20px 1px #7ac5ca;
+}
+
+.frame p{
+	font-family: Lato;
+	line-height: 1.4;
+	font-weight: 300;
 }
