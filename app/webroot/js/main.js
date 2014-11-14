@@ -191,6 +191,18 @@ $(document).ready(function() {
 
 
 		});
-	}
+	};
+
+		/*--------COUNTDOWN--------*/
+
+	$(function () {
+		var releaseDate = new Date();
+		releaseDate = new Date(releaseDate.getFullYear() +0, 11 - 1, 28);
+		$('#defaultCountdown').countdown({until: releaseDate});
+		$('#year').text(releaseDate.getFullYear());
+	});
+	
+	/*--------END COUNTDOWN--------*/
+
 
 });
