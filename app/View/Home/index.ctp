@@ -6,7 +6,7 @@
 	<div class="frame">
 		<h2 class="lancement">Lancement de la campagne</h2>
 		<p>
-			Prochainement, lancement de notre site de sensibilisation sur l'isolement de personne âgée.
+			Prochainement, lancement de notre campagne de sensibilisation sur l'isolement des personnes âgées.
 		</p>
 	</div>
 	<div class="reseaux">
