@@ -57,10 +57,24 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 					<a href="mailto:contact@commedesgosses.com">contact@commesdesgosses.com</a>
 				</div>
 				<div class="bloc-footer-m">
-					
+					<a href="#">Mentions légales</a> ⎢ <a href="#">Plan du site</a><br/><br/>
+					©<span class="name">Comme des gosses</span> - 2014 - Tous droits reservés<br/>
+					Créé par l'agence <span class="name">Black Sheep</span>
 				</div>
 				<div class="bloc-footer-d">
-					
+					<div class="reseaux-footer">
+						<ul>
+							<li>
+								<a id="fb_icon" href=""></a>
+							</li>
+							<li>
+								<a id="twitter_icon" href=""></a>
+							</li>
+							<li>
+								<a id="youtube_icon" href=""></a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</footer>

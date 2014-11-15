@@ -45,7 +45,7 @@ header {
 }
 
 footer {
-	height: 130px;
+	height: 95px;
 	background-color: #2873b7;
 	margin-top:40px;
 	position:relative;
@@ -54,7 +54,7 @@ footer {
 	font-family: 'Lato';
 	font-weight: 300;
 	line-height: 1.5;
-	font-size: 0.3;
+	font-size: 0.7em;
 
 	a {
 		text-decoration: none;
@@ -64,16 +64,16 @@ footer {
 
 .wrapper-footer{
 	position:relative;
-	width:75%;
-	display:inline-block;
+	width:70%;
 	margin:auto;
+	padding:14px;
 }
 
 .bloc-footer-g{
 	width:33%;
-	padding:14px;
 	display:block;
 	position:relative;
+	float:left;
 }
 
 .bloc-footer-m{
@@ -81,18 +81,25 @@ footer {
 	text-align: center;
 	display:block;
 	position:relative;
+	float:left;
+
+	a:hover{
+		text-decoration: underline;
+	}
 }
 
 .bloc-footer-d{
 	width:33%;
-	text-align: right;
+	text-align: -webkit-right;
 	display:block;
 	position:relative;
+	float:left;
 }
 
 .name{
 	font-weight: 400;
 	font-style: italic;
+	font-size: 1.1em;
 }
 
 h1{
@@ -333,6 +340,64 @@ h2{
 		height: 40px;
 		display: block;
 	}
+}
+
+.reseaux-footer{
+	width: 100%;
+
+	ul{
+		padding:1px;
+
+	}
+
+	li{
+		display: inline-block;
+		list-style: none;
+		margin-right: 0.9em;
+		
+	}
+
+	p{
+		font-family: "Nothing You Could Do", cursive;
+		font-size: 1.8em;
+	}
+
+	a#fb_icon{
+		background-image: url("../img/fb-footer.png");
+		width: 40px;
+		height: 40px;
+		display: block;
+		@include transition( all 0.5s );
+	}
+
+	a#twitter_icon{
+		background-image: url("../img/tw-footer.png");
+		width: 40px;
+		height: 40px;
+		display: block;
+		@include transition( all 0.5s );
+	}
+
+	a#youtube_icon{
+		background-image: url("../img/you-footer.png");
+		width: 40px;
+		height: 40px;
+		display: block;
+		@include transition( all 0.5s );
+	}
+
+	a#fb_icon:hover{
+		background-image: url("../img/facebook.png");
+	}
+
+	a#twitter_icon:hover{
+		background-image: url("../img/twitter.png");
+	}
+
+	a#youtube_icon:hover{
+		background-image: url("../img/youtube.png");
+	}
+
 }
 
 .timer{
