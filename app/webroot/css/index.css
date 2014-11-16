@@ -506,49 +506,28 @@ h2 {
 }
 
 /* line 471, ../sass/index.scss */
-#defaultCountdown span span:nth-child(1) span:first-child {
+#defaultCountdown span span:nth-child(1) span:first-child,
+#defaultCountdown span span:nth-child(2) span:first-child,
+#defaultCountdown span span:nth-child(3) span:first-child,
+#defaultCountdown span span:nth-child(4) span:first-child {
   border: solid 1px #fcd541;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-}
-
-/* line 475, ../sass/index.scss */
-#defaultCountdown span span:nth-child(2) span:first-child {
-  border: solid 1px #fcd541;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
 }
 
 /* line 479, ../sass/index.scss */
-#defaultCountdown span span:nth-child(3) span:first-child {
-  border: solid 1px #fcd541;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-}
-
-/* line 483, ../sass/index.scss */
-#defaultCountdown span span:nth-child(4) span:first-child {
-  border: solid 1px #fcd541;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-}
-
-/* line 488, ../sass/index.scss */
 .countdown-period {
   color: white;
 }
 
-/* line 492, ../sass/index.scss */
+/* line 483, ../sass/index.scss */
 .lancement {
   color: #eb282e;
   font-family: "CabinSketch-Bold";
 }
 
-/* line 497, ../sass/index.scss */
+/* line 488, ../sass/index.scss */
 .nos {
   color: white;
   font-weight: bold;
@@ -559,31 +538,19 @@ h2 {
   text-transform: none;
 }
 
-/* line 507, ../sass/index.scss */
-#defaultCountdown span span:nth-child(1) .countdown-period {
-  background-color: #fcd541;
-  color: black;
-}
-
-/* line 512, ../sass/index.scss */
-#defaultCountdown span span:nth-child(2) .countdown-period {
-  background-color: #fcd541;
-  color: black;
-}
-
-/* line 516, ../sass/index.scss */
-#defaultCountdown span span:nth-child(3) .countdown-period {
-  background-color: #fcd541;
-  color: black;
-}
-
-/* line 520, ../sass/index.scss */
+/* line 498, ../sass/index.scss */
+#defaultCountdown span span:nth-child(1) .countdown-period,
+#defaultCountdown span span:nth-child(2) .countdown-period,
+#defaultCountdown span span:nth-child(3) .countdown-period,
 #defaultCountdown span span:nth-child(4) .countdown-period {
   background-color: #fcd541;
   color: black;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
 }
 
-/* line 525, ../sass/index.scss */
+/* line 506, ../sass/index.scss */
 .mentions {
   width: 50%;
   color: #fff;
@@ -595,7 +562,7 @@ h2 {
   top: 45px;
   position: relative;
 }
-/* line 536, ../sass/index.scss */
+/* line 517, ../sass/index.scss */
 .mentions a {
   text-decoration: none;
   color: #fff;
