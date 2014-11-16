@@ -48,21 +48,14 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		</div>
 
 		<footer id="footer">
-			<div class="wrapper-footer">
-				<div class="bloc-footer-g">&nbsp;
-					<!--<span class="name">Comme des gosses</span><br/>
-					6 rue Froment<br/>
-					75011 Paris<br/>
-					<a href="mailto:contact@commedesgosses.com">contact@commesdesgosses.com</a>-->
-				</div>
 				<div class="bloc-footer-m">
 					<a href="#">Mentions légales</a> ⎢ <a href="#">Plan du site</a><br/>
 					©<span class="name">Comme des gosses</span> - 2014 - Tous droits reservés<br/>
 					Créé par l'agence <span class="name">Black Sheep</span><br/>
 					<a href="mailto:contact@commedesgosses.com">contact@commesdesgosses.com</a>
 				</div>
-				<div class="bloc-footer-d">&nbsp;
-					<!--<div class="reseaux-footer">
+				<!--<div class="bloc-footer-d">&nbsp;
+					<div class="reseaux-footer">
 						<ul>
 							<li>
 								<a id="fb_icon" href=""></a>
@@ -74,9 +67,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 								<a id="youtube_icon" href=""></a>
 							</li>
 						</ul>
-					</div>-->
-				</div>
-			</div>
+					</div>
+				</div>-->
 		</footer>
 
 	</div>
