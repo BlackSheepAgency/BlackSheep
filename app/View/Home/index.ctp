@@ -1,5 +1,5 @@
 <div class="wrapper">
-	<h2 class="nos">Ton papy c'est ton pote !</h2>
+	<h2 class="nos">Sois aimant avec tes grands-parents !</h2>
 	<div class="timer">
 		<div id="defaultCountdown"></div>
 	</div>
