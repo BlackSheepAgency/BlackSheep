@@ -137,6 +137,8 @@ h2 {
 
 /* line 144, ../sass/index.scss */
 #logo {
+  width: 280px;
+  height: 130px;
   margin: auto;
   padding: 10px 0px;
   text-align: center;
