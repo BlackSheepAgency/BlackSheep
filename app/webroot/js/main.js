@@ -224,7 +224,7 @@ $(document).ready(function() {
 	/*--------HOVER RESEAUX--------*/
 		$('#fb_icon').hover(
 			function(){
-				$('.msg_reseaux p').text("Suivez-nous");
+				$('.msg_reseaux p').text("Suis-nous !");
 			},
 
 			function(){
@@ -246,7 +246,7 @@ $(document).ready(function() {
 		
 		$('#youtube_icon').hover(
 			function(){
-				$('.msg_reseaux p').text("Abonnez-vous");
+				$('.msg_reseaux p').text("Abonne-toi !");
 			},
 
 			function(){
