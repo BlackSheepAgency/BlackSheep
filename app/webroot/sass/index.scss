@@ -468,21 +468,12 @@ h2{
 	height:100px;
 }
 
-#defaultCountdown span span:nth-child(1) span:first-child {
-	border: solid 1px $jaune;
-	@include border-radius(10px);
-}
-#defaultCountdown span span:nth-child(2) span:first-child {
-	border: solid 1px $jaune;
-	@include border-radius(10px);
-}
-#defaultCountdown span span:nth-child(3) span:first-child {
-	border: solid 1px $jaune;
-	@include border-radius(10px);
-}
+#defaultCountdown span span:nth-child(1) span:first-child,
+#defaultCountdown span span:nth-child(2) span:first-child,
+#defaultCountdown span span:nth-child(3) span:first-child,
 #defaultCountdown span span:nth-child(4) span:first-child {
 	border: solid 1px $jaune;
-	@include border-radius(10px);
+	@include border-radius(20px);
 }
 
 .countdown-period {
@@ -504,24 +495,14 @@ h2{
 	text-transform: none;
 }
 
-#defaultCountdown span span:nth-child(1) .countdown-period {
-	background-color: $jaune;
-	color: black;
-}
-
-#defaultCountdown span span:nth-child(2) .countdown-period {
-	background-color: $jaune;
-	color: black;
-}
-#defaultCountdown span span:nth-child(3) .countdown-period {
-	background-color: $jaune;
-	color: black;
-}
+#defaultCountdown span span:nth-child(1) .countdown-period,
+#defaultCountdown span span:nth-child(2) .countdown-period,
+#defaultCountdown span span:nth-child(3) .countdown-period,
 #defaultCountdown span span:nth-child(4) .countdown-period {
 	background-color: $jaune;
 	color: black;
+	@include border-radius(10px);
 }
-
 .mentions{
 	width:50%;
 	color:#fff;

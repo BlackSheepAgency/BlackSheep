@@ -26,6 +26,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		<?php echo $cakeDescription ?>:
 		<?php echo $this->fetch('title'); ?>
 	</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
 	<?= $this->Html->css('index') ?>
 	<?= $this->Html->css('countdown') ?>
@@ -35,7 +36,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<div id="container">
 
 		<header id="header">
-			<a href="/BlackSheep/Home" id="logo">
+			<a href="/Home" id="logo">
 				<img src="img/logo.png" width="425" />
 			</a>
 		</header>
