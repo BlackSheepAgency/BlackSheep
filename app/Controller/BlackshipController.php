@@ -3,7 +3,7 @@ App::uses('AppController', 'Controller');
 
 class BlackshipController extends AppController {
 
-	public $uses = array('Cap', 'Pseudo', 'Publication', 'Message');
+	public $uses = array('Cap', 'Pseudo', 'Publication', 'Message', 'Affiche');
 	public $components = array('RequestHandler');
 
 	public function index() {
@@ -168,12 +168,24 @@ class BlackshipController extends AppController {
 		$this->layout = 'admin';
 
 		if(count($this->request->data) != 0) {
+			
 			$file = $this->request->data['Affiche']['upload'];
+			$description = $this->request->data['Affiche']['Description'];
 			debug($file);
-			$destination = 'img/upload/'.uniqid().$file['name'];
+			debug($description);
+			$filename = uniqid().$file['name'];       
+			$destination = 'img/upload/'.$filename;
 			move_uploaded_file($file['tmp_name'], $destination);
+
+
+			$this->Affiche->create();
+			$this->Affiche->save(array(
+				'url' => $destination,
+				'description' => $description
+			));
 		}
 	}
+
 
 	public function video() {
 		$this->layout = 'admin';
