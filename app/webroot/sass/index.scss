@@ -84,7 +84,7 @@ header {
 				color: $rouge;
 			}
 		}
-
+		
 		.capoupascap{
 			background-image: url("../img/fond_cap.png");
 			position: absolute;
@@ -257,16 +257,18 @@ h2{
 
 .valid-cap {
 	margin-top: 25px;
-	@include border-radius(10px);
 	color:white;
-	background-color: $orange;
-	font-size: 3em;
+	background-color: $vert;
+	font-size: 2em;
 	text-transform: uppercase;
-	padding: 20px;
-	width:250px;
+	padding: 15px 0 15px 0;
+	width:350px;
 	font-family: 'Lato';
 	border:none;
 	outline: none;
+	float:left;
+	margin-right:20px;
+	font-weight: 100;
 }
 
 .valid-cap:hover{
@@ -274,7 +276,23 @@ h2{
 }
 
 .pas-cap {
-	text-align: right;
+	margin-top: 25px;
+	color:white;
+	background-color: $rouge;
+	font-size: 2em;
+	text-transform: uppercase;
+	padding: 15px 0 15px 0;
+	width:350px;
+	font-family: 'Lato';
+	border:none;
+	outline: none;
+	float:left;
+	font-weight: 100;
+}
+
+.txt-cap{
+	background:white;
+	
 }
 
 .publish {

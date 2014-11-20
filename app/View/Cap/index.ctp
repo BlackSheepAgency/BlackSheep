@@ -48,10 +48,11 @@
 	</div>
 
 	<button class="valid-cap">CAP ?</button>
+
+	<button class="pas-cap">Pas cap</button>
 </div>
 
-<div class="pas-cap">
-	<a href="#">Pas cap</a>
+
 </div>
 
 <div class="pop-up-pseudo pop-up">
