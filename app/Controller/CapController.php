@@ -15,29 +15,47 @@
 			$this->RequestHandler->renderAs($this, 'json');
 			$this->layout = null;
 
-			$check = 'OK';
+			$check = 'KO';
 
-			$current_cap = $this->Cap->findById($cap);
+			$last_cap = $this->Cap->find('all', array(
+				'order' => 'Cap.id desc',
+				'limit' => '1'
+			));
 
-			if(count($current_cap) === 0) {
-				$check = 'KO';
-			} else {
-				$c = 0;
-				while($current_cap['Cap']['validated'] != 1) {
-					$current_cap = $this->Cap->findById($cap+1);
-					$c++;
+			if($cap <= $last_cap[0]['Cap']['id']) {
+				$current_cap = $this->Cap->findById($cap);
+
+				$c = 1;
+				if(empty($current_cap) || $current_cap['Cap']['validated'] === 0) {
+					// Si c'est vide ou pas valide
+					while($check === 'KO') {
+						$current_cap = $this->Cap->findById($cap+$c);
+						if(empty($current_cap) || $current_cap['Cap']['validated'] === 0) {
+							$c++;
+						} else {
+							$c++;
+							$check = 'OK';
+						}
+					}
+				} else {
+					$check = 'OK';
 				}
 
 				$cap = $cap + $c;
 
-				$current_cap['number'] = $cap + $c;
-			}
+				$current_cap['number'] = $cap;
 
-			$this->set(array(
-            	'current_cap' => $current_cap,
-            	'check' => $check,
-	            '_serialize' => array('current_cap', 'check')
-	        ));
+				$this->set(array(
+	            	'current_cap' => $current_cap,
+	            	'check' => $check,
+		            '_serialize' => array('current_cap', 'check')
+		        ));
+			} else {
+				$this->set(array(
+	            	'check' => $check,
+		            '_serialize' => array('check')
+		        ));
+			}
 		}
 
 		public function addPseudo($name = '') {
