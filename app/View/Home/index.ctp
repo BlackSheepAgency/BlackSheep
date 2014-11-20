@@ -1,12 +1,12 @@
 <div class="wrapper">
-	<h2 class="nos">Ton papy c'est ton pote !</h2>
+	<h2 class="nos">Sois aimant avec tes grands-parents !</h2>
 	<div class="timer">
 		<div id="defaultCountdown"></div>
 	</div>
 	<div class="frame">
 		<h2 class="lancement">Lancement de la campagne</h2>
 		<p>
-			Prochainement, lancement de notre site de sensibilisation sur l'isolement de personne âgée.
+			Prochainement, lancement de notre campagne de sensibilisation sur l'isolement des personnes âgées.
 		</p>
 	</div>
 	<div class="reseaux">

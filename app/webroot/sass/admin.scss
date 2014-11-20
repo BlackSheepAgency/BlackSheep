@@ -1,0 +1,308 @@
+@import 'compass';
+
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+@import url("http://fonts.googleapis.com/css?family=Oswald:400,300,700");
+@import url("http://fonts.googleapis.com/css?family=Nothing+You+Could+Do");
+@import url("http://fonts.googleapis.com/css?family=Nothing+You+Could+Do");
+
+@font-face{
+    font-family : "Angelina";
+    src : url('angelina.otf');
+}
+
+@font-face{
+    font-family : "CabinSketch-Bold";
+    src : url('CabinSketch-Bold.otf');
+}
+@font-face{
+    font-family : "CabinSketch-Regular";
+    src : url('CabinSketch-Regular.otf');
+}
+
+
+$vert: #8fc549;
+$bleu: #2873b7;
+$violet: #9a5599;
+$rouge : #eb282e;
+$orange: #ef9d33;
+$jaune: #fcd541;
+
+$rouge_new : #f76f71;
+
+
+*::selection {
+	background: black;
+	color: $vert;
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+	background-color: #f0f0f0;
+
+}
+
+body {
+	font-family: "Lato";
+	font-weight: 300;
+	
+}
+
+header {
+	height: 130px;
+	text-align: left;
+	background: black;
+	padding-left: 20px;
+}
+
+.admin_nav {
+	width: 400px;
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 20px;
+
+	ul {
+		li {
+			list-style: none;
+			display: inline-block;
+
+			a {
+				@include transition(0.6s);
+				background: white;
+				display: inline-block;
+				padding: 15px;
+
+				&:hover {
+					background: #0078a0;
+					color: white;
+				}
+			}
+		}
+	}
+}
+
+footer {
+	height: 95px;
+	background-color: black;
+	margin-top:40px;
+	position:relative;
+	width:100%;
+	color:#fff;
+	font-family: 'Lato';
+	font-weight: 300;
+	line-height: 1.5;
+	font-size: 0.7em;
+
+	a {
+		text-decoration: none;
+		color:#fff;
+	}
+}
+
+.wrapper-footer{
+	position:relative;
+	width:70%;
+	margin:auto;
+	padding:14px;
+}
+
+.bloc-footer-g{
+	width:33%;
+	display:block;
+	position:relative;
+	float:left;
+}
+
+.bloc-footer-m{
+	width: 252px;
+	text-align: center;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	padding-top: 10px;
+
+	a:hover{
+		text-decoration: underline;
+	}
+}
+
+.bloc-footer-d{
+	width:33%;
+	text-align: -webkit-right;
+	display:block;
+	position:relative;
+	float:left;
+}
+
+.green {
+	color: green;
+}
+.red {
+	color: red;
+}
+
+.name{
+	font-weight: 400;
+	font-style: italic;
+	font-size: 1.1em;
+}
+
+h1{
+	font-family: "Oswald";
+	font-size: 2.8em;
+	text-transform: uppercase;
+	color: $rouge;
+	font-weight: 400;
+	letter-spacing: 2px;
+	text-align: center;
+	margin-top: 0;
+	line-height: 130px;
+}
+
+h2{
+	font-family: "Oswald";
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 2px;
+	margin:0;
+}
+
+#logo{
+	margin:auto;
+	padding: 10px 0px;
+	text-align: center;
+	display: block;
+}
+
+#content {
+	width: 78.5%;
+	margin: 0 auto;
+	padding: 103px 0 20px 0;
+}
+h1, #logo {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.style_input {
+	text-align: left;
+	margin-top: 10px;
+
+	&.style_input_submit {
+		text-align: center;
+	}
+
+	label, input[type=text] {
+		width: 100px;
+		display: inline-block;
+		text-align: left;
+		vertical-align: top;
+		color: $bleu;
+		font-weight: 500;
+	}
+	input[type=text], textarea {
+		width: 100%;
+		padding: 8px 10px 8px 3px;
+		font-size: 15px;
+		margin-top: 10px;
+		@include box-sizing(border-box);
+	}
+
+	input[type=submit]{
+		border:solid 3px $bleu;
+		padding:10px;
+		text-transform: uppercase;
+		color:white;
+		background: $bleu;
+		@include transition( all 0.5s );
+		width:100%;
+	}
+
+	input[type=submit]:hover{
+		cursor:pointer;
+		background:transparent;
+		color:$bleu;
+	}
+}
+
+
+table {
+	tbody {
+
+		tr {
+	
+			th {
+				text-align: center;
+				
+			}
+
+			td {
+				color: white;
+			}
+		}
+	}
+}
+
+.publication_valid {
+	background: green;
+
+	.validate-cap {
+		background: grey;
+
+		&:hover {
+			background: grey;
+		}
+	}
+}
+.publication_unvalid {
+	background: red;
+}
+
+.add_affiche {
+	margin: 0 auto;
+	width: 650px;
+	border: solid 1px black;
+	padding: 10px;
+	border-sizing: border-box;
+
+	.add_picture, .add_content {
+		width: 300px;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.add_picture .apercu {
+		height: 250px;
+		width: 250px;
+		background: white;
+		border: solid 1px black;
+	}
+
+	.add_content {
+		textarea {
+			resize: none;
+			height: 230px;
+		}
+	}
+}
+
+.add_video {
+	margin: 0 auto;
+	width: 650px;
+	border: solid 1px black;
+	padding: 10px;
+	border-sizing: border-box;
+
+	.add_video, .add_content {
+		width: 300px;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.add_content {
+		textarea {
+			resize: none;
+			height: 230px;
+		}
+	}
+}

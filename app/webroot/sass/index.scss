@@ -2,6 +2,21 @@
 @import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 @import url("http://fonts.googleapis.com/css?family=Oswald:400,300,700");
 @import url("http://fonts.googleapis.com/css?family=Nothing+You+Could+Do");
+@import url("http://fonts.googleapis.com/css?family=Nothing+You+Could+Do");
+
+@font-face{
+    font-family : "Angelina";
+    src : url('angelina.otf');
+}
+
+@font-face{
+    font-family : "CabinSketch-Bold";
+    src : url('CabinSketch-Bold.otf');
+}
+@font-face{
+    font-family : "CabinSketch-Regular";
+    src : url('CabinSketch-Regular.otf');
+}
 
 
 $vert: #8fc549;
@@ -9,6 +24,9 @@ $bleu: #2873b7;
 $violet: #9a5599;
 $rouge : #eb282e;
 $orange: #ef9d33;
+$jaune: #fcd541;
+
+$rouge_new : #f76f71;
 
 
 *::selection {
@@ -26,15 +44,14 @@ body, html {
 body {
 	font-family: "Lato";
 	font-weight: 300;
-	/*
 	margin:0;
 	padding:0;
-	background: url(../img/vieille.jpg) no-repeat center fixed; 
+	background: url(../img/mamie.jpg) no-repeat center fixed; 
 	-webkit-background-size: cover; 
 	-moz-background-size: cover; 
 	-o-background-size: cover; 
 	background-size: cover; 
-	*/
+	
 }
 
 header {
@@ -44,8 +61,8 @@ header {
 }
 
 footer {
-	height: 130px;
-	background-color: #2873b7;
+	height: 95px;
+	background-color: $rouge_new;
 	margin-top:40px;
 	position:relative;
 	width:100%;
@@ -53,7 +70,7 @@ footer {
 	font-family: 'Lato';
 	font-weight: 300;
 	line-height: 1.5;
-	font-size: 0.3;
+	font-size: 0.7em;
 
 	a {
 		text-decoration: none;
@@ -63,35 +80,43 @@ footer {
 
 .wrapper-footer{
 	position:relative;
-	width:75%;
-	display:inline-block;
+	width:70%;
 	margin:auto;
+	padding:14px;
 }
 
 .bloc-footer-g{
 	width:33%;
-	padding:14px;
 	display:block;
 	position:relative;
+	float:left;
 }
 
 .bloc-footer-m{
-	width:33%;
+	width: 252px;
 	text-align: center;
-	display:block;
-	position:relative;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	padding-top: 10px;
+
+	a:hover{
+		text-decoration: underline;
+	}
 }
 
 .bloc-footer-d{
 	width:33%;
-	text-align: right;
+	text-align: -webkit-right;
 	display:block;
 	position:relative;
+	float:left;
 }
 
 .name{
 	font-weight: 400;
 	font-style: italic;
+	font-size: 1.1em;
 }
 
 h1{
@@ -116,10 +141,9 @@ h2{
 }
 
 #logo{
-	width:150px;
-	height:130px;
 	margin:auto;
-	padding-top: 18px;
+	padding: 10px 0px;
+	text-align: center;
 	display: block;
 }
 
@@ -146,6 +170,20 @@ h2{
 
 .valid-cap {
 	margin-top: 25px;
+	@include border-radius(10px);
+	color:white;
+	background-color: $orange;
+	font-size: 3em;
+	text-transform: uppercase;
+	padding: 20px;
+	width:250px;
+	font-family: 'Lato';
+	border:none;
+	outline: none;
+}
+
+.valid-cap:hover{
+		cursor:pointer;
 }
 
 .pas-cap {
@@ -178,27 +216,31 @@ h2{
 
 .pop-up {
 	width: 400px;
-	background-color: #eee;
+	background-color: #f0f0f0;
 	position: fixed;
 	left: 50%;
 	top: 50%;
 	margin: 0 auto;
 	display: none;
 	text-align: center;
-	padding: 64px;
-	box-shadow: 0px 0px 36px 1px black;
-	margin-top: -200px;
+	padding: 25px;
+	box-shadow: 0px 0px 25px 0px black;
+	margin-top: -300px;
 	margin-left: -200px; 
+	z-index: 1;
+	border: solid 1px #ddd;
+	@include border-radius(10px);
 
 	&.pop-up-publish {
 		form {
-			border: 1px solid black;
+			border: 3px solid $bleu;
 		}
 	}
 
 	form {
 		padding: 10px;
 		margin-top: 10px;
+		background-color: white;
 	}
 	input{
 		margin-bottom: 10px;
@@ -224,12 +266,37 @@ h2{
 		display: inline-block;
 		text-align: left;
 		vertical-align: top;
+		color: $bleu;
+		font-weight: 500;
 	}
 	input[type=text], textarea {
-		width: 200px;
+		width: 100%;
 		padding: 8px 10px 8px 3px;
 		font-size: 15px;
+		margin-top: 10px;
+		@include box-sizing(border-box);
 	}
+
+	input[type=submit]{
+		border:solid 3px $bleu;
+		padding:10px;
+		text-transform: uppercase;
+		color:white;
+		background: $bleu;
+		@include transition( all 0.5s );
+		width:100%;
+	}
+
+	input[type=submit]:hover{
+		cursor:pointer;
+		background:transparent;
+		color:$bleu;
+	}
+}
+
+.no-pseudo{
+	color: $bleu;
+	font-weight: 500;
 }
 
 .close{
@@ -237,11 +304,11 @@ h2{
 	right: 9px;
 	top: 0;
 	cursor: pointer;
-	font-size: 24px;
+	font-size: 18px;
 	font-family: 'Verdana';
 	right:10px;
 	top:0;
-	cursor:pointer;
+	color: $bleu;
 }
 
 /*--------LANDING PAGE-------*/
@@ -258,10 +325,11 @@ h2{
 	position:relative;
 
 	p{
-		font-family: "Nothing You Could Do", cursive;
+		font-family: "CabinSketch-Bold", cursive;
 		font-size: 1.8em;
 		margin:0;
 		height:50px;
+		color: $jaune;
 	}
 }	
 
@@ -280,7 +348,7 @@ h2{
 	padding:20px;
 	margin-top: 90px;
 	margin-bottom: 50px;
-    border: solid 1px #ddd;
+    @include border-radius(6px);
 
     p{
 		font-family: "Lato";
@@ -334,23 +402,76 @@ h2{
 	}
 }
 
+.reseaux-footer{
+	width: 100%;
+
+	ul{
+		padding:1px;
+
+	}
+
+	li{
+		display: inline-block;
+		list-style: none;
+		margin-right: 0.9em;
+		
+	}
+
+	p{
+		font-family: "Nothing You Could Do", cursive;
+		font-size: 1.8em;
+	}
+
+	a#fb_icon{
+		background-image: url("../img/fb-footer.png");
+		width: 40px;
+		height: 40px;
+		display: block;
+		@include transition( all 0.5s );
+	}
+
+	a#twitter_icon{
+		background-image: url("../img/tw-footer.png");
+		width: 40px;
+		height: 40px;
+		display: block;
+		@include transition( all 0.5s );
+	}
+
+	a#youtube_icon{
+		background-image: url("../img/you-footer.png");
+		width: 40px;
+		height: 40px;
+		display: block;
+		@include transition( all 0.5s );
+	}
+
+	a#fb_icon:hover{
+		background-image: url("../img/facebook.png");
+	}
+
+	a#twitter_icon:hover{
+		background-image: url("../img/twitter.png");
+	}
+
+	a#youtube_icon:hover{
+		background-image: url("../img/youtube.png");
+	}
+
+}
+
 .timer{
 	position:relative;
 	display:block;
 	height:100px;
 }
 
-#defaultCountdown span span:nth-child(1) span:first-child {
-	border: solid 1px $bleu;
-}
-#defaultCountdown span span:nth-child(2) span:first-child {
-	border: solid 1px $vert;
-}
-#defaultCountdown span span:nth-child(3) span:first-child {
-	border: solid 1px $orange;
-}
+#defaultCountdown span span:nth-child(1) span:first-child,
+#defaultCountdown span span:nth-child(2) span:first-child,
+#defaultCountdown span span:nth-child(3) span:first-child,
 #defaultCountdown span span:nth-child(4) span:first-child {
-	border: solid 1px $rouge;
+	border: solid 1px $jaune;
+	@include border-radius(20px);
 }
 
 .countdown-period {
@@ -359,28 +480,27 @@ h2{
 
 .lancement {
 	color: #eb282e;
+	font-family: "CabinSketch-Bold";
 }
 
 .nos {
-	color: #ef9d33;
-	font-size: 2.3em;
+	color: white;
+	font-weight: bold;
+	font-size: 2.10em;
 	text-align: center;
 	margin-bottom: 20px;
+	font-family: 'Angelina';
+	text-transform: none;
 }
 
-#defaultCountdown span span:nth-child(1) .countdown-period {
-	background-color: $bleu;
-}
-#defaultCountdown span span:nth-child(2) .countdown-period {
-	background-color: $vert;
-}
-#defaultCountdown span span:nth-child(3) .countdown-period {
-	background-color: $orange;
-}
+#defaultCountdown span span:nth-child(1) .countdown-period,
+#defaultCountdown span span:nth-child(2) .countdown-period,
+#defaultCountdown span span:nth-child(3) .countdown-period,
 #defaultCountdown span span:nth-child(4) .countdown-period {
-	background-color: $rouge;
+	background-color: $jaune;
+	color: black;
+	@include border-radius(10px);
 }
-
 .mentions{
 	width:50%;
 	color:#fff;

@@ -22,23 +22,38 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <head>
 	
 	<?php echo $this->Html->charset(); ?>
+	<meta name="robots" content="noindex, nofollow" />
 	<title>
 		<?php echo $cakeDescription ?>:
 		<?php echo $this->fetch('title'); ?>
 	</title>
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
-	<?= $this->Html->css('index') ?>
-	<?= $this->Html->css('countdown') ?>
+	<?= $this->Html->css('foundation') ?>
+	<?= $this->Html->css('admin') ?>
 	<?= $this->Html->script('jquery-1.11.1.min') ?>
 </head>
 <body>
 	<div id="container">
 
 		<header id="header">
+			<h1>Admin</h1>
 			<a href="/Home" id="logo">
-				<img src="img/logo_web.png" width="300" />
+				<img src="/Blacksheep/img/logo_web.png" width="300" />
 			</a>
+			<nav class="admin_nav">
+				<ul>
+					<li>
+						<a href="cap">Cap</a>
+					</li>
+					<li>
+						<a href="affiche">Affiches</a>
+					</li>
+					<li>
+						<a href="video">Video</a>
+					</li>
+				</ul>
+			</nav>
 		</header>
 
 		<div id="content">
@@ -55,52 +70,10 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 					Créé par l'agence <span class="name">Black Sheep</span><br/>
 					<a href="mailto:contact@commedesgosses.com">contact@commesdesgosses.com</a>
 				</div>
-				<!--<div class="bloc-footer-d">&nbsp;
-					<div class="reseaux-footer">
-						<ul>
-							<li>
-								<a id="fb_icon" href=""></a>
-							</li>
-							<li>
-								<a id="twitter_icon" href=""></a>
-							</li>
-							<li>
-								<a id="youtube_icon" href=""></a>
-							</li>
-						</ul>
-					</div>
-				</div>-->
-				<!--<div
-  class="fb-like"
-  data-share="true"
-  data-width="450"
-  data-show-faces="true">
-</div>-->
 		</footer>
 
 	</div>
 
-	<script>
-	  window.fbAsyncInit = function() {
-	    FB.init({
-	      appId      : '724933380933273',
-	      xfbml      : true,
-	      version    : 'v2.2'
-	    });
-	  };
-
-	  (function(d, s, id){
-	     var js, fjs = d.getElementsByTagName(s)[0];
-	     if (d.getElementById(id)) {return;}
-	     js = d.createElement(s); js.id = id;
-	     js.src = "//connect.facebook.net/en_US/sdk.js";
-	     fjs.parentNode.insertBefore(js, fjs);
-	   }(document, 'script', 'facebook-jssdk'));
-	</script>
-
-	<!--<?php echo $this->element('sql_dump'); ?>-->
-	<?= $this->Html->script('jquery.plugin') ?>
-	<?= $this->Html->script('countdown.js') ?>
-	<?= $this->Html->script('main') ?>
+	<?= $this->Html->script('admin') ?>
 </body>
 </html>
