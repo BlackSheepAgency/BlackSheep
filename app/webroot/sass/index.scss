@@ -1,8 +1,8 @@
 @import 'compass';
-@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+/*@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 @import url("http://fonts.googleapis.com/css?family=Oswald:400,300,700");
 @import url("http://fonts.googleapis.com/css?family=Nothing+You+Could+Do");
-@import url("http://fonts.googleapis.com/css?family=Nothing+You+Could+Do");
+@import url("http://fonts.googleapis.com/css?family=Nothing+You+Could+Do");*/
 
 @font-face{
     font-family : "Angelina";
@@ -28,6 +28,9 @@ $jaune: #fcd541;
 
 $rouge_new : #f76f71;
 
+.clearfix {
+  overflow: auto;
+}
 
 *::selection {
 	background: black;
@@ -57,14 +60,12 @@ body {
 header {
 	height: 130px;
 	text-align: center;
-	background: #fff;
-	
+	background: #fff;	
 }
 
 footer {
 	height: 95px;
 	background-color: $rouge_new;
-	margin-top:40px;
 	position:relative;
 	width:100%;
 	color:#fff;
@@ -133,12 +134,22 @@ h1{
 }
 
 h2{
-	font-family: "Oswald";
+	font-family: "CabinSketch-Bold";
 	font-size: 1.5em;
 	text-transform: uppercase;
 	font-weight: 400;
 	letter-spacing: 2px;
 	margin:0;
+}
+
+p{
+	font-family: 'Angelina';
+	font-size: 1.6em;
+}
+
+.link-forum{
+	text-decoration: none;
+	color: $rouge;
 }
 
 #logo{
@@ -149,13 +160,21 @@ h2{
 }
 
 #content {
-	width: 78.5%;
+	width: 100%;
 	margin: 0 auto;
-	padding: 103px 0 20px 0;
 }
 
 .cap {
 	text-align: center;
+}
+
+#bg-cap{
+	background:url(../img/retina_wood.png);
+	width:100%;
+	height:1000px;
+	position:relative;
+	left:0;
+	top:0;	
 }
 
 .red {
@@ -170,47 +189,107 @@ h2{
 }
 
 .valid-cap {
-	margin-top: 25px;
-	color:white;
-	background-color: $vert;
-	font-size: 2em;
-	text-transform: uppercase;
-	padding: 15px 0 15px 0;
-	width:350px;
-	font-family: 'Lato';
+	margin: auto;
+	background:url(../img/cap.png) no-repeat;
+	width:300px;
+	height:200px;
 	border:none;
 	outline: none;
 	float:left;
-	margin-right:20px;
-	font-weight: 100;
-}
 
-.valid-cap:hover{
+	&:hover{
 		cursor:pointer;
+	}
 }
 
 .pas-cap {
-	margin-top: 25px;
-	color:white;
-	background-color: $rouge;
-	font-size: 2em;
-	text-transform: uppercase;
-	padding: 15px 0 15px 0;
-	width:350px;
-	font-family: 'Lato';
+	margin: auto;
+	background:url(../img/pas-cap.png) no-repeat;
+	width:238px;
+	height:200px;
 	border:none;
 	outline: none;
-	float:left;
-	font-weight: 100;
+	float:right;
+
+	&:hover{
+		cursor:pointer;
+	}
 }
 
 .txt-cap{
+	font-family: 'CabinSketch-Regular';
+	font-size: 2.5em;
+	width:100%;
+	margin-bottom: 50px;
+	margin-top: 50px;
+
+}
+
+#cap-btns{
+	width:100%;
+	position:relative;
+	display:block;
+	margin:auto;
+}
+
+.btn-forum{
+	border: solid 1px #f0f0f0;
 	background:white;
-	
+	text-align: center;
+	padding:10px;
+	width:150px;
+	margin:auto;
+	position:relative;
+	margin-top: 45px;
 }
 
 .publish {
 	text-align: left;
+}
+
+.publish_cap{
+	background:white;
+	border:none;
+	font-family: 'CabinSketch-Regular';
+	color:black;
+	font-size: 2em;
+	text-transform: uppercase;
+	padding:10px;
+
+	&:hover{
+		cursor:pointer;
+	}
+}
+
+.defi{
+	font-family: 'CabinSketch-Regular';
+	color:black;
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+#visuel{
+	position:relative;
+	width:100%;
+	height:250px;
+	margin-top: 50px;
+
+	img{
+		width:100%;
+	}
+}
+
+#propose{
+	width:81%;
+	position:relative;
+	margin:auto;
+	padding-top: 50px;
+}
+
+.fleche{
+	top:10px;
+	margin:0 15px 0 15px;
+	position:relative;
 }
 
 .publications {
@@ -235,7 +314,7 @@ h2{
 
 .pop-up {
 	width: 400px;
-	background-color: #f0f0f0;
+	background-color: $vert;
 	position: fixed;
 	left: 50%;
 	top: 50%;
@@ -244,11 +323,9 @@ h2{
 	text-align: center;
 	padding: 25px;
 	box-shadow: 0px 0px 25px 0px black;
-	margin-top: -300px;
+	margin-top: -200px;
 	margin-left: -200px; 
 	z-index: 1;
-	border: solid 1px #ddd;
-	@include border-radius(10px);
 
 	&.pop-up-publish {
 		form {
@@ -259,12 +336,14 @@ h2{
 	form {
 		padding: 10px;
 		margin-top: 10px;
-		background-color: white;
 	}
 	input{
 		margin-bottom: 10px;
 		/*font-style: italic;*/
-		text-align: center;
+		padding:10px;
+		width:100%;
+		border:none;
+		@include box-sizing(border-box);
 	}
 	label {
 		width: 100px;
@@ -281,7 +360,7 @@ h2{
 	}
 
 	label, input[type=text] {
-		width: 100px;
+		width: 100%;
 		display: inline-block;
 		text-align: left;
 		vertical-align: top;
@@ -290,18 +369,20 @@ h2{
 	}
 	input[type=text], textarea {
 		width: 100%;
-		padding: 8px 10px 8px 3px;
+		padding:10px;
 		font-size: 15px;
 		margin-top: 10px;
+		margin-bottom: 10px;
+		border:none;
 		@include box-sizing(border-box);
 	}
 
 	input[type=submit]{
-		border:solid 3px $bleu;
 		padding:10px;
 		text-transform: uppercase;
-		color:white;
-		background: $bleu;
+		color:black;
+		background: white;
+		border: solid 2px white;
 		@include transition( all 0.5s );
 		width:100%;
 	}
@@ -309,7 +390,17 @@ h2{
 	input[type=submit]:hover{
 		cursor:pointer;
 		background:transparent;
-		color:$bleu;
+		border: solid 2px white;
+		color:white;
+	}
+
+	input[type=mail], textarea {
+		width: 100%;
+		padding:10px;
+		font-size: 15px;
+		margin-top: 10px;
+		border:none;
+		@include box-sizing(border-box);
 	}
 }
 
@@ -333,8 +424,10 @@ h2{
 /*--------LANDING PAGE-------*/
 
 .wrapper{
-	width:501px;
+	width:60%;
 	margin:auto;
+	position:relative;
+	text-align: center;
 }
 
 .msg_reseaux{
