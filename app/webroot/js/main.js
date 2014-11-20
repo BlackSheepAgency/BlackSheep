@@ -75,7 +75,6 @@ $(document).ready(function() {
 
 	$('.pas-cap a').off('click');
 	$('.pas-cap a').on('click', function(e) {
-		console.log(window.current_cap);
 		e.preventDefault();
 		displayCap(window.current_cap);
 	});
@@ -85,13 +84,14 @@ $(document).ready(function() {
 	getPublications();
 
 	function displayCap(cap, callback) {
-		console.log('called');
+		//console.log('called');
+		console.log(window.current_cap);
 
 		$.ajax({
 			type : "POST",
-			url : "Cap/switchCap/"+cap,
+			url : "Cap/switchCap/"+window.current_cap,
 			success: function(response){
-				console.log(response);
+				//console.log(response);
 
 				if(response.check === 'KO') {
 					$('.txt-cap').hide(400);
@@ -107,8 +107,7 @@ $(document).ready(function() {
 						$('.txt-cap').text(response.current_cap.Cap.text).fadeIn();
 					}, 400);
 					
-
-					window.current_cap = response.current_cap.number +1;
+					window.current_cap = response.current_cap.number;
 				}
 			},
 
