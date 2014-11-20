@@ -52,6 +52,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 					<li>
 						<a href="video">Video</a>
 					</li>
+					<li>
+						<a href="comments">Commentaires</a>
+					</li>
 				</ul>
 			</nav>
 		</header>
