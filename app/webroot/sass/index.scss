@@ -1,8 +1,8 @@
 @import 'compass';
-@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
-@import url("http://fonts.googleapis.com/css?family=Oswald:400,300,700");
-@import url("http://fonts.googleapis.com/css?family=Nothing+You+Could+Do");
-@import url("http://fonts.googleapis.com/css?family=Nothing+You+Could+Do");
+//@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+//@import url("http://fonts.googleapis.com/css?family=Oswald:400,300,700");
+//@import url("http://fonts.googleapis.com/css?family=Nothing+You+Could+Do");
+//@import url("http://fonts.googleapis.com/css?family=Nothing+You+Could+Do");
 
 @font-face{
     font-family : "Angelina";
@@ -65,7 +65,6 @@ header {
 footer {
 	height: 95px;
 	background-color: $rouge_new;
-	margin-top:40px;
 	position:relative;
 	width:100%;
 	color:#fff;
@@ -564,6 +563,7 @@ h2{
 	background-size: cover;
 	-webkit-background-size: cover;
 	width: 100%;
+	position: relative;
 }
 
 .list_bottom {
@@ -571,7 +571,7 @@ h2{
 
 
 	.list_bottom_item {
-		width: 33.2%;
+		width: 33.33%;
 		display: inline-block;
 		vertical-align: top;
 		height: 600px;
@@ -602,8 +602,36 @@ h2{
 			}
 
 			&.list_bottom_content_cap {
-				border: solid 10px $jaune;
 				box-sizing: border-box;
+
+				.cap_title {
+					font-size: 2em;
+					border: solid 14px $jaune;
+					padding: 10px;
+				}
+
+				.cap_comment {
+					border: solid 15px $jaune;
+					border-top: 0;
+
+					.picture_comment, .text_comment {
+						display: inline-block;
+						vertical-align: top;
+						margin-top: 30px;
+					}
+
+					.text_comment {
+						.name_comment {
+							color: $rouge;
+						}
+						.name_comment, .username_comment {
+							font-size: 1.3em;
+						}
+						.content_comment {
+							margin-top: 20px;
+						}
+					}
+				}				
 			}
 
 			.list_bottom_link {
@@ -627,6 +655,41 @@ h2{
 					background-color: rgba(0, 0, 0, 0.4);
 				}
 			}
+		}
+	}
+}
+
+.buttons_home {
+	li {
+		list-style: none;
+		position: absolute;
+		bottom: 0;
+		right:30%;
+		a {
+			background-color: black;
+			background-color: rgba(0, 0, 0, 0.8);
+			color: white;
+			padding: 8px;
+			font-size: 1.2em;
+			text-align: center;
+			display: block;
+			width: 300px;
+			color: white;
+			text-decoration: none;
+
+			&:hover {
+				background-color: rgba(0, 0, 0, 0.4);
+			}
+		}
+
+		&.button_home1 {
+			bottom: 350px;
+		}
+		&.button_home2 {
+			bottom: 200px;
+		}
+		&.button_home3 {
+			bottom: 130px;
 		}
 	}
 }

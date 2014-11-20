@@ -35,7 +35,6 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 </head>
 <body>
 	<div id="container">
-
 		<header id="header">
 			<h1>Admin</h1>
 			<a href="/Home" id="logo">
@@ -71,7 +70,6 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 					<a href="mailto:contact@commedesgosses.com">contact@commesdesgosses.com</a>
 				</div>
 		</footer>
-
 	</div>
 
 	<?= $this->Html->script('admin') ?>

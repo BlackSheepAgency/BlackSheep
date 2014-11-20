@@ -32,21 +32,15 @@
 			</a>
 		</header>
 
-		<div id="content"><?= $this->fetch('content') ?></div>
+		<div id="content"><!----><?= $this->fetch('content') ?><!----></div><!--
 
-		<footer id="footer">
-				<div class="bloc-footer-m">
-					<a href="#">Mentions légales</a> ⎢ <a href="#">Plan du site</a><br/>
-					©<span class="name">Comme des gosses</span> - 2014 - Tous droits reservés<br/>
-					Créé par l'agence <span class="name">Black Sheep</span><br/>
-					<a href="mailto:contact@commedesgosses.com">contact@commesdesgosses.com</a>
-				</div>
-				<!--<div
-  class="fb-like"
-  data-share="true"
-  data-width="450"
-  data-show-faces="true">
-</div>-->
+		--><footer id="footer">
+			<div class="bloc-footer-m">
+				<a href="#">Mentions légales</a> ⎢ <a href="#">Plan du site</a><br/>
+				©<span class="name">Comme des gosses</span> - 2014 - Tous droits reservés<br/>
+				Créé par l'agence <span class="name">Black Sheep</span><br/>
+				<a href="mailto:contact@commedesgosses.com">contact@commesdesgosses.com</a>
+			</div>
 		</footer>
 
 	</div>
