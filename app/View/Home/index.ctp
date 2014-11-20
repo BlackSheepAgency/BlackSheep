@@ -1,4 +1,4 @@
-<div class="wrapper">
+﻿<div class="wrapper">
 	<h2 class="nos">Sois aimant avec tes grands-parents !</h2>
 	<div class="timer">
 		<div id="defaultCountdown"></div>
@@ -10,15 +10,17 @@
 		</p>
 	</div>
 	<div class="reseaux">
+		<div style="color:white;font-weight:bold;font-style:italic;width: 289px;
+margin-bottom: -25px;">Retrouve-nous sur les réseaux sociaux !</div>
 		<ul>
 			<li>
-				<a id="fb_icon" href=""></a>
+				<a id="fb_icon" target="_blank" href="https://www.facebook.com/pages/Comme-des-Gosses/602780313159165?fref=ts"></a>
 			</li>
 			<li>
-				<a id="twitter_icon" href=""></a>
+				<a id="twitter_icon" target="_blank" href="https://twitter.com/CommeDesGosses"></a>
 			</li>
 			<li>
-				<a id="youtube_icon" href=""></a>
+				<a id="youtube_icon" target="_blank" href=""></a>
 			</li>
 		</ul>
 	</div>

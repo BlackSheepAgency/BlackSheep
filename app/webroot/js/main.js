@@ -224,7 +224,7 @@ $(document).ready(function() {
 	/*--------HOVER RESEAUX--------*/
 		$('#fb_icon').hover(
 			function(){
-				$('.msg_reseaux p').text("Rejoint-nous !");
+				$('.msg_reseaux p').text("Rejoins-nous !");
 			},
 
 			function(){
