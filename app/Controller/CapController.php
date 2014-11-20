@@ -56,9 +56,6 @@
 		            '_serialize' => array('check')
 		        ));
 			}
-			/*
-	CAAKTUrSoBpkBAKpurmoZBkxfgD9KSZAw8XDDM3NQyfFy6RrHDjeH4YPXVObDwi47XNY65sfuJgcbACYSIACZBWZAU3TGZCjZBepZCLVJ9yOlyiwpuiYyJ7mf4v4pNufvZBexjc87mPbQliEM75zZCwbZBw9kGRnq731V3n5BgjtPETRZBN2eFBlnCN73o3btGZCObJ8gMyfoDFeqDgr7gYZCUHqppz6cZCVm29ONkZD&expires_in=4471
-			*/
 		}
 
 		public function addPseudo($name = '') {

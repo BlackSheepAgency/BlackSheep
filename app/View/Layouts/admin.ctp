@@ -60,9 +60,6 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		</header>
 
 		<div id="content">
-
-			<!--<?php echo $this->Session->flash(); ?>-->
-
 			<?php echo $this->fetch('content'); ?>
 		</div>
 

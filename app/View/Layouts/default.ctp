@@ -32,9 +32,7 @@
 			</a>
 		</header>
 
-		<div id="content">
-			<?php echo $this->fetch('content'); ?>
-		</div>
+		<div id="content"><?= $this->fetch('content') ?></div>
 
 		<footer id="footer">
 				<div class="bloc-footer-m">
@@ -43,21 +41,6 @@
 					Créé par l'agence <span class="name">Black Sheep</span><br/>
 					<a href="mailto:contact@commedesgosses.com">contact@commesdesgosses.com</a>
 				</div>
-				<!--<div class="bloc-footer-d">&nbsp;
-					<div class="reseaux-footer">
-						<ul>
-							<li>
-								<a id="fb_icon" href=""></a>
-							</li>
-							<li>
-								<a id="twitter_icon" href=""></a>
-							</li>
-							<li>
-								<a id="youtube_icon" href=""></a>
-							</li>
-						</ul>
-					</div>
-				</div>-->
 				<!--<div
   class="fb-like"
   data-share="true"
