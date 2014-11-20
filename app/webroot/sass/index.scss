@@ -26,7 +26,7 @@ $rouge : #eb282e;
 $orange: #ef9d33;
 $jaune: #fcd541;
 
-$rouge_new : #f76f71;
+$rouge_new : #fd5454;
 
 
 *::selection {
@@ -58,6 +58,48 @@ header {
 	height: 130px;
 	text-align: center;
 	background: #fff;
+	position: relative;
+
+		ul{
+			display: block;
+			margin: 0 auto;
+			width: 710px;
+			padding: 0;
+
+		}
+
+		li{
+			display: inline-block;
+			vertical-align: middle;
+			list-style: none;
+			padding-right: 1em;
+		}
+		a{
+			font-family : "CabinSketch-Regular";
+			text-decoration: none;
+			color: black;
+			font-size: 1.2em;
+
+			&:hover{
+				color: $rouge;
+			}
+		}
+
+		.capoupascap{
+			background-image: url("../img/fond_cap.png");
+			position: absolute;
+			top: 0;
+			right: 170px;
+			width: 86px;
+			height: 160px;
+			padding-top: 20px;
+
+			&:hover{
+				color: white;
+			}
+
+		}
+
 	
 }
 
@@ -98,8 +140,9 @@ footer {
 	display: block;
 	position: relative;
 	margin: 0 auto;
-	width: 250px;
-	padding-top: 7px;
+	width: 600px;
+	padding-top: 15px;
+	vertical-align: middle;
 
 	a:hover{
 		text-decoration: underline;
@@ -111,7 +154,49 @@ footer {
 	text-align: -webkit-right;
 	display:block;
 	position:relative;
-	float:left;
+	top: -70px;
+	float:right;
+	vertical-align: middle;
+
+	#fb_icon2{
+		background-image: url("../img/fb_icon2.png");
+		width: 42px;
+		height: 42px;
+		display: block;
+
+		&:hover{
+			background-image: url("../img/fb_icon3.png");
+			width: 42px;
+			height: 42px;
+			display: block;
+		}
+	}
+	#twitter_icon2{
+		background-image: url("../img/twitter_icon2.png");
+		width: 42px;
+		height: 42px;
+		display: block;
+
+		&:hover{
+			background-image: url("../img/twitter_icon3.png");
+			width: 42px;
+			height: 42px;
+			display: block;
+		}
+	}
+	#youtube_icon2{
+		background-image: url("../img/youtube_icon2.png");
+		width: 42px;
+		height: 42px;
+		display: block;
+
+		&:hover{
+			background-image: url("../img/youtube_icon3.png");
+			width: 42px;
+			height: 42px;
+			display: block;
+		}
+	}
 }
 
 .name{
@@ -144,8 +229,9 @@ h2{
 #logo{
 	margin:auto;
 	padding: 10px 0px;
-	text-align: center;
-	display: block;
+	vertical-align: center;
+	width: 114px;
+	height: 114px;
 }
 
 #content {
@@ -408,7 +494,7 @@ h2{
 	width: 100%;
 
 	ul{
-		padding:1px;
+		padding-right: 20px;
 
 	}
 
@@ -538,3 +624,4 @@ h2{
 		color:#fff;
 	}
 }
+
