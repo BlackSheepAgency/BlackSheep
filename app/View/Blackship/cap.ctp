@@ -30,7 +30,7 @@
 					<?php if($cap_unvalid[$i]['Cap']['validated'] == 0) { ?>
 						<button class="validate-cap" data-id="<?= $cap_unvalid[$i]['Cap']['id'] ?>">Valider</button>
 					<?php } else { ?>
-						<button disabled class="validate-cap" data-id="<?= $cap_unvalid[$i]['Cap']['id'] ?>">Valider</button>
+						<button class="unvalidate-cap" data-id="<?= $cap_unvalid[$i]['Cap']['id'] ?>">Dé-valider</button>
 					<?php } ?>
 				</td>
 				<td><button class="delete-cap" data-id="<?= $cap_unvalid[$i]['Cap']['id'] ?>">Supprimer</button></td>

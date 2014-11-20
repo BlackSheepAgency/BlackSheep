@@ -26,6 +26,33 @@ $(document).ready(function() {
 		});
 	});
 
+	$(document).off('click', '.unvalidate-cap');
+	$(document).on('click', '.unvalidate-cap', function() {
+
+		var this_bloc = $(this).parent().parent();
+
+		var data_id = $(this).attr('data-id');
+
+		$.ajax({
+			type : "POST",
+			url : "/BlackSheep/Blackship/unvalidCap/"+data_id,
+			success: function(response){
+				//console.log(response);
+				$('.form_add_pseudo .info_add').text('');
+				if(response.check === 'KO') {
+					$('.info').text('Erreur');
+				} else {
+					$('.info').text('Vous avez dé-ajouté ce Cap à la liste !');
+				}
+				this_bloc.css("background", 'red');
+			},
+
+			error: function(){
+				console.log('error');
+            }
+		});
+	});
+
 	$(document).off('click', '.delete-cap');
 	$(document).on('click', '.delete-cap', function() {
 

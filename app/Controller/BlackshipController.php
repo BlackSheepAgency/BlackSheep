@@ -46,7 +46,10 @@ class BlackshipController extends AppController {
 
 		$fb_id="602780313159165";
 		//be sure to update this access token
-		$myFBToken="CAAKTUrSoBpkBANpydmgLiqDMwymaUOZCyoaYYOElFKwQmUGIN89jGEhCiEoCl7FNiUfgZA46G7rtbB1pjX7SkWEF8HRZBBjaQfwg8ViTtetLegJSZAxsJwU65vJ1Dx2TysBEMJRjbcoM5o64P5jSynkkueW977PipNZATJIq37nVTdDnWit2GH7l21LmeuI11jxcHRSis4wZA0pYaTYLjVn1yo4PMAqb0ZD";
+		$myFBToken="CAAKTUrSoBpkBAKAByZCvzHeHcwikwU3QWKXcyJ0jAOtHz5RVreeRZBr7rjwze2SpoJFIk73ZAxJF0Gz7vOH8GmBvoNKDZCtPwouMNFZCE2lD4X8VXMmbMwyoAgQCZC3F0Tkkbn72NXd84Dg9014I8mCI77TnDT4ZBYykaCisj8QMA4Hs8fXaExEUNkGZCEb9swYsfZBb166AXEtPbkQU9t7D97Pn2fln2gCYZD";
+
+		// link for FB
+		// https://graph.facebook.com/oauth/authorize?type=user_agent&client_id=724933380933273&redirect_uri=http://www.commedesgosses.com/&scope=read_stream,offline_access
 		
 		//must be https when using an access token
 		$url="https://graph.facebook.com/".$fb_id."/feed?access_token=".$myFBToken."&limit=20";
@@ -146,6 +149,11 @@ class BlackshipController extends AppController {
 			}
 		}
 
+
+
+		//debug($messages);
+		//die;
+
 		$messages_twitter = $this->Message->find('all', array(
 			'conditions' => array(
 				'type' => 'tweet'
@@ -203,6 +211,30 @@ class BlackshipController extends AppController {
 			$this->Cap->id = $id;
 			$this->Cap->set(array(
 				'validated' => 1,
+			));
+			$this->Cap->save();
+		} else {
+			$check = 'KO';
+		}
+
+		$this->set(array(
+        	'check' => $check,
+            '_serialize' => array('check')
+        ));
+	}
+
+	public function unvalidCap($id = 0) {
+		$this->RequestHandler->renderAs($this, 'json');
+		$this->layout = null;
+
+		$check = 'OK';
+
+		$id = intval($id);
+
+		if($id !== 0) {
+			$this->Cap->id = $id;
+			$this->Cap->set(array(
+				'validated' => 0,
 			));
 			$this->Cap->save();
 		} else {
