@@ -27,43 +27,43 @@
 	<div id="container">
 
 		<header id="header">
-			<a href="/Home" id="logo">
-				<img src="img/logo.png" width="425" />
-			</a>
+			<ul>
+				<li><a href="/Home" id="logo">
+					<img src="img/logo2.png" width="114" />
+				</a></li>
+				<li><a href="isolement">L'isolement c'est quoi ?</a></li>
+				<li><a href="solutions">Les solutions</a></li>
+				<li><a href="webseries">Web série</a></li>
+				<li><a href="affiches">Nos affiches</a></li>
+			<ul>
+			<a class="capoupascap" href="cap">Cap <br/>ou<br/> pas cap ?</a>
+
 		</header>
 
-		<div id="content">
-			<?php echo $this->fetch('content'); ?>
-		</div>
-
-		<footer id="footer">
+		<div id="content"><!----><?= $this->fetch('content') ?><!----></div><!--
+		--><footer id="footer">
 				<div class="bloc-footer-m">
 					<a href="#">Mentions légales</a> ⎢ <a href="#">Plan du site</a><br/>
-					©<span class="name">Comme des gosses</span> - 2014 - Tous droits reservés<br/>
+					©<span class="name">Comme des gosses</span> ⎢ 2014 ⎢ Tous droits reservés ⎢ <a href="mailto:contact@commedesgosses.com">contact@commesdesgosses.com</a>
+					<br/>
 					Créé par l'agence <span class="name">Black Sheep</span><br/>
-					<a href="mailto:contact@commedesgosses.com">contact@commesdesgosses.com</a>
+					
 				</div>
-				<!--<div class="bloc-footer-d">&nbsp;
+				<div class="bloc-footer-d">&nbsp;
 					<div class="reseaux-footer">
 						<ul>
 							<li>
-								<a id="fb_icon" href=""></a>
+								<a id="fb_icon2" href=""></a>
 							</li>
 							<li>
-								<a id="twitter_icon" href=""></a>
+								<a id="twitter_icon2" href=""></a>
 							</li>
 							<li>
-								<a id="youtube_icon" href=""></a>
+								<a id="youtube_icon2" href=""></a>
 							</li>
 						</ul>
 					</div>
-				</div>-->
-				<!--<div
-  class="fb-like"
-  data-share="true"
-  data-width="450"
-  data-show-faces="true">
-</div>-->
+				</div>
 		</footer>
 
 	</div>

@@ -255,5 +255,11 @@ $(document).ready(function() {
 		);
 	/*--------END HOVER RESEAUX--------*/
 
+	$('.picture_home').height(($(window).height()-130));
+
+	$(window).resize(function() {
+		$('.picture_home').height(($(window).height()-130));
+	});
+
 
 });

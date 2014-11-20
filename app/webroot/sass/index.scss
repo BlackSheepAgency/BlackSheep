@@ -26,7 +26,7 @@ $rouge : #eb282e;
 $orange: #ef9d33;
 $jaune: #fcd541;
 
-$rouge_new : #f76f71;
+$rouge_new : #fd5454;
 
 .clearfix {
   overflow: auto;
@@ -49,18 +49,63 @@ body {
 	font-weight: 300;
 	margin:0;
 	padding:0;
-	background: url(../img/mamie.jpg) no-repeat center fixed; 
+	//background: url(../img/mamie.jpg) no-repeat center fixed; 
 	-webkit-background-size: cover; 
 	-moz-background-size: cover; 
 	-o-background-size: cover; 
-	background-size: cover; 
+	background-size: cover;
+	overflow-x: hidden;
 	
 }
 
 header {
 	height: 130px;
 	text-align: center;
-	background: #fff;	
+	background: #fff;
+	position: relative;
+
+		ul{
+			display: block;
+			margin: 0 auto;
+			width: 710px;
+			padding: 0;
+
+		}
+
+		li{
+			display: inline-block;
+			vertical-align: middle;
+			list-style: none;
+			padding-right: 1em;
+		}
+		a{
+			font-family : "CabinSketch-Regular";
+			text-decoration: none;
+			color: black;
+			font-size: 1.2em;
+
+			&:hover{
+				color: $rouge;
+			}
+		}
+		
+		.capoupascap{
+			background-image: url("../img/fond_cap.png");
+			position: absolute;
+			top: 0;
+			right: 170px;
+			width: 86px;
+			height: 160px;
+			padding-top: 20px;
+
+			&:hover{
+				color: white;
+			}
+
+		}
+
+	
+>>>>>>> 9abf4c52e6de159fd612ec787fbe02666f3a9624
 }
 
 footer {
@@ -99,8 +144,9 @@ footer {
 	display: block;
 	position: relative;
 	margin: 0 auto;
-	width: 250px;
-	padding-top: 7px;
+	width: 600px;
+	padding-top: 15px;
+	vertical-align: middle;
 
 	a:hover{
 		text-decoration: underline;
@@ -112,7 +158,49 @@ footer {
 	text-align: -webkit-right;
 	display:block;
 	position:relative;
-	float:left;
+	top: -70px;
+	float:right;
+	vertical-align: middle;
+
+	#fb_icon2{
+		background-image: url("../img/fb_icon2.png");
+		width: 42px;
+		height: 42px;
+		display: block;
+
+		&:hover{
+			background-image: url("../img/fb_icon3.png");
+			width: 42px;
+			height: 42px;
+			display: block;
+		}
+	}
+	#twitter_icon2{
+		background-image: url("../img/twitter_icon2.png");
+		width: 42px;
+		height: 42px;
+		display: block;
+
+		&:hover{
+			background-image: url("../img/twitter_icon3.png");
+			width: 42px;
+			height: 42px;
+			display: block;
+		}
+	}
+	#youtube_icon2{
+		background-image: url("../img/youtube_icon2.png");
+		width: 42px;
+		height: 42px;
+		display: block;
+
+		&:hover{
+			background-image: url("../img/youtube_icon3.png");
+			width: 42px;
+			height: 42px;
+			display: block;
+		}
+	}
 }
 
 .name{
@@ -155,8 +243,9 @@ p{
 #logo{
 	margin:auto;
 	padding: 10px 0px;
-	text-align: center;
-	display: block;
+	vertical-align: center;
+	width: 114px;
+	height: 114px;
 }
 
 #content {
@@ -519,7 +608,7 @@ p{
 	width: 100%;
 
 	ul{
-		padding:1px;
+		padding-right: 20px;
 
 	}
 
@@ -648,4 +737,149 @@ p{
 		text-decoration: none;
 		color:#fff;
 	}
+}
+
+.picture_home {
+	background-image: url('../img/picture_home.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	width: 100%;
+	position: relative;
+}
+
+.list_bottom {
+	padding: 0;
+
+
+	.list_bottom_item {
+		width: 33.33%;
+		display: inline-block;
+		vertical-align: top;
+		height: 600px;
+		border-sizing: border-box;
+
+		.list_bottom_title  {
+			font-family: 'CabinSketch-Regular';
+			color: $rouge;
+			font-size: 2em;
+			text-align: center;
+			text-transform: uppercase;
+			margin-bottom: 15px;
+		}
+
+		.list_bottom_content {
+			position: relative;
+			height: 90%;
+
+			&.list_bottom_content_cdg, &.list_bottom_content_isolement {
+				background-image : url('../img/image_home_cdg.jpg');
+				background-repeat: no-repeat;
+				background-size: cover;
+				-webkit-background-size: cover;
+				width: 100%;
+			}
+			&.list_bottom_content_isolement {
+				background-image : url('../img/picture_isolement.jpg');
+			}
+
+			&.list_bottom_content_cap {
+				box-sizing: border-box;
+
+				.cap_title {
+					font-size: 2em;
+					border: solid 14px $jaune;
+					padding: 10px;
+				}
+
+				.cap_comment {
+					border: solid 15px $jaune;
+					border-top: 0;
+
+					.picture_comment, .text_comment {
+						display: inline-block;
+						vertical-align: top;
+						margin-top: 30px;
+					}
+
+					.text_comment {
+						.name_comment {
+							color: $rouge;
+						}
+						.name_comment, .username_comment {
+							font-size: 1.3em;
+						}
+						.content_comment {
+							margin-top: 20px;
+						}
+					}
+				}				
+			}
+
+			.list_bottom_link {
+				@include transition(0.4s);
+				background-color: black;
+				background-color: rgba(0, 0, 0, 0.8);
+				color: white;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				font-size: 1.2em;
+				text-transform: uppercase;
+				text-align: center;
+				display: block;
+				width: 50%;
+				padding: 10px 0% 10px 0px;
+				color: white;
+				text-decoration: none;
+
+				&:hover {
+					background-color: rgba(0, 0, 0, 0.4);
+				}
+			}
+		}
+	}
+}
+
+.buttons_home {
+	li {
+		list-style: none;
+		position: absolute;
+		bottom: 0;
+		right:30%;
+		a {
+			background-color: black;
+			background-color: rgba(0, 0, 0, 0.8);
+			color: white;
+			padding: 8px;
+			font-size: 1.2em;
+			text-align: center;
+			display: block;
+			width: 300px;
+			color: white;
+			text-decoration: none;
+
+			&:hover {
+				background-color: rgba(0, 0, 0, 0.4);
+			}
+		}
+
+		&.button_home1 {
+			bottom: 350px;
+		}
+		&.button_home2 {
+			bottom: 200px;
+		}
+		&.button_home3 {
+			bottom: 130px;
+		}
+	}
+}
+
+.div_red {
+	background: #f76f71;
+	padding: 20px;
+	text-align: center;
+	margin: 10px 0;
+	color: white;
 }
