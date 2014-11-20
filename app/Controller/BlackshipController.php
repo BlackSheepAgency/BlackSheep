@@ -146,12 +146,21 @@ class BlackshipController extends AppController {
 			}
 		}
 
-		//debug($messages);
-		//die;
+		$messages_twitter = $this->Message->find('all', array(
+			'conditions' => array(
+				'type' => 'tweet'
+			)
+		));
+		$messages_facebook = $this->Message->find('all', array(
+			'conditions' => array(
+				'type' => 'facebook'
+			)
+		));
 
 		$this->set(array(
-        	'messages' => $messages,
-            '_serialize' => array('messages')
+        	'messages_facebook' => $messages_facebook,
+        	'messages_twitter' => $messages_twitter,
+            '_serialize' => array('messages_facebook, messages_twitter')
         ));
 	}
 
@@ -204,6 +213,54 @@ class BlackshipController extends AppController {
 
 		if($id !== 0) {
 			$this->Cap->delete($id);
+		} else {
+			$check = 'KO';
+		}
+
+		$this->set(array(
+        	'check' => $check,
+            '_serialize' => array('check')
+        ));
+	}
+
+	public function validMessage($id = 0) {
+		$this->RequestHandler->renderAs($this, 'json');
+		$this->layout = null;
+
+		$check = 'OK';
+
+		$id = intval($id);
+
+		if($id !== 0) {
+			$this->Message->id = $id;
+			$this->Message->set(array(
+				'validated' => 1,
+			));
+			$this->Message->save();
+		} else {
+			$check = 'KO';
+		}
+
+		$this->set(array(
+        	'check' => $check,
+            '_serialize' => array('check')
+        ));
+	}
+
+	public function unvalidMessage($id = 0) {
+		$this->RequestHandler->renderAs($this, 'json');
+		$this->layout = null;
+
+		$check = 'OK';
+
+		$id = intval($id);
+
+		if($id !== 0) {
+			$this->Message->id = $id;
+			$this->Message->set(array(
+				'validated' => 0,
+			));
+			$this->Message->save();
 		} else {
 			$check = 'KO';
 		}
