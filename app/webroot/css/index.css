@@ -752,3 +752,12 @@ h2 {
 .buttons_home li.button_home3 {
   bottom: 130px;
 }
+
+/* line 697, ../sass/index.scss */
+.div_red {
+  background: #f76f71;
+  padding: 20px;
+  text-align: center;
+  margin: 10px 0;
+  color: white;
+}
