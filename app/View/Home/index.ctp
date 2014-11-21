@@ -10,6 +10,7 @@
 		</p>
 	</div>
 	<div class="reseaux">
+		<div style="color:#f76f71;">Suivez-vous sur les réseaux sociaux !</div>
 		<ul>
 			<li>
 				<a id="fb_icon" href=""></a>

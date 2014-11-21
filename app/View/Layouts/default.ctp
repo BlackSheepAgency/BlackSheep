@@ -1,31 +1,22 @@
 <?php
-/**
- * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- *
- * Licensed under The MIT License
- * For full copyright and license information, please see the LICENSE.txt
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       app.View.Layouts
- * @since         CakePHP(tm) v 0.10.0.1076
- * @license       http://www.opensource.org/licenses/mit-license.php MIT License
- */
-
-$cakeDescription = __d('cake_dev', 'Comme des Gosses');
-$cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	
 	<?php echo $this->Html->charset(); ?>
-	<title>
-		<?php echo $cakeDescription ?>:
-		<?php echo $this->fetch('title'); ?>
-	</title>
+
+	<title>Comme des Gosses</title>
+
+	<meta name="title" content="Comme des gosses" />
+	<meta name="description" content="Comme des gosses" />
+	<?php echo $this->Html->meta(array('name' => 'og:title', 'content' => 'Comme des gosses'), NULL, array('inline' => false)); ?>
+	<meta itemprop="name" content="Comme des gosses" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://www.commedesgosses.com" />
+	<meta property="og:description" content="Sois aimant avec tes grands-parents !" />
+	<meta property="og:site_name" content="Comme des Gosses" />
+	<meta property="og:image" content="http://commedesgosses.com/img/logo2.png" />
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
 	<?= $this->Html->css('index') ?>
@@ -37,14 +28,11 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
 		<header id="header">
 			<a href="/Home" id="logo">
-				<img src="img/logo_web.png" width="300" />
+				<img src="img/logo.png" width="425" />
 			</a>
 		</header>
 
 		<div id="content">
-
-			<!--<?php echo $this->Session->flash(); ?>-->
-
 			<?php echo $this->fetch('content'); ?>
 		</div>
 

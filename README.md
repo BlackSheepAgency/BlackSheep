@@ -12,7 +12,7 @@ Our primary goal is to provide a structured framework that enables PHP users at 
 
 ## Some Handy Links
 
-[CakePHP](http://www.cakephp.org) - The rapid development PHP framework
+[Comme des Gosses](http://www.cakephp.org) - Comme des Gosses
 
 [CookBook](http://book.cakephp.org) - THE CakePHP user documentation; start learning here!
 
