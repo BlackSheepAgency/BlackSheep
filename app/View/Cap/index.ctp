@@ -57,11 +57,9 @@
 			<img src="app/webroot/img/visuel.png"/>
 		</div>
 		
-		<p>Tu veux partager ton expérience ou consulter celle des autres ? Rends-toi sur le <a href="forum" class="link-forum">forum</a> !</p>
+		<p>Tu veux partager ton expérience ou consulter celle des autres ? Rends-toi sur le forum !</p>
 
-		<div class="btn-forum">
-			Accéder au Forum
-		</div>
+		<a href="forum"><div class="btn-forum">Accéder au Forum</div></a>
 
 	</div>
 

@@ -21,25 +21,35 @@
 		<?= $this->Html->css('countdown') ?>
 		<?= $this->Html->css('idangerous.swiper') ?>
 		<?= $this->Html->script('jquery-1.11.1.min') ?>
-
 	</head>
 	<body>
 		<header id="header">
 			<ul>
-				<li><a href="Home" id="logo">
-					<img src="img/logo2.png" width="114" />
-				</a></li>
-				<li><a href="isolement">L'isolement c'est quoi ?</a></li>
-				<li><a href="solutions">Les solutions</a></li>
-				<li><a href="webseries">Web série</a></li>
-				<li><a href="affiches">Nos affiches</a></li>
-			<ul>
+				<li>
+					<a href="Home" id="logo">
+						<img src="img/logo2.png" width="114" />
+					</a>
+				</li>
+				<li>
+					<a href="isolement">L'isolement c'est quoi ?</a>
+				</li>
+				<li>
+					<a href="solutions">Les solutions</a>
+				</li>
+				<li>
+					<a href="webseries">Web série</a>
+				</li>
+				<li>
+					<a href="affiches">Nos affiches</a>
+				</li>
+			</ul>
 			<a class="capoupascap" href="cap">Cap <br/>ou<br/> pas cap ?</a>
-
 		</header>
+
 		<div id="container">
 			<div id="content"><!----><?= $this->fetch('content') ?><!----></div>
 		</div>
+
 		<footer id="footer">
 			<div class="bloc-footer-m">
 				<a href="#">Mentions légales</a> ⎢ <a href="#">Plan du site</a><br/>
@@ -64,6 +74,7 @@
 				</div>
 			</div>
 		</footer>
+
 		<div id="fb-root"></div>
 		<script>
 		  window.fbAsyncInit = function() {

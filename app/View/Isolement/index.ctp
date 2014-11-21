@@ -81,6 +81,12 @@
 			<span class="uppercase_isolement">1/2</span> de personnes âgées de plus de 75 ans n‘ont pas de relations sociales.
 		</div>
 	</div>
-</div>
 
+
+	<div class="cap">
+		<div id="propose">
+			<span class="defi">ou alors</span><img src="app/webroot/img/red-arrow.png" class="fleche"/><div class="btn-capoupascap"><a href="cap">cap ou pas cap ?</a></div>
+		</div>
+	</div>
+</div>
 <?= $this->Html->script('animation') ?>

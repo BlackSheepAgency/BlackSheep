@@ -219,6 +219,10 @@ footer {
 
 /*----FIN FOOTER------*/
 
+a{
+	text-decoration: none;
+}
+
 .name{
 	font-weight: 400;
 	font-style: italic;
@@ -280,7 +284,6 @@ h2{
 #bg-solutions{
 	background:$prouge;
 	width:100%;
-	height:1050px;
 	position:relative;
 	left:0;
 	top:0;	
@@ -342,14 +345,23 @@ h2{
 }
 
 .btn-forum{
-	border: solid 1px #f0f0f0;
-	background:white;
-	text-align: center;
 	padding:10px;
-	width:150px;
+	text-transform: uppercase;
+	color:white;
+	background: $vert;
+	border: solid 2px $vert;
+	@include transition( all 0.5s );
+	width:30%;
+	font-family: 'Lato';
+	font-weight: 100;
+	font-size: 1.1em;
 	margin:auto;
-	position:relative;
-	margin-top: 45px;
+	margin-top: 40px;
+
+	&:hover{
+		cursor:pointer;
+	}
+
 }
 
 .publish {
@@ -576,6 +588,10 @@ h2{
 	p{
 		font-family: 'Lato';
 		font-size: 1em;
+	}
+
+	a{
+		text-decoration: none;
 	}
 }
 
@@ -1061,7 +1077,6 @@ h2{
 		font-size: 1.3em;
 		color:$prouge;
 		text-transform: uppercase;
-		font-weight: 100;
 		text-align: left;
 	}
 
@@ -1071,17 +1086,44 @@ h2{
 
 	.pseudo-com{
 		text-align: right;
-		font-weight: 300;
 		color:$prouge;
 	}
 
-	img{
-		width:40%;
-		position:relative;
-		float:left;
-		margin-right: 30px;
+}
+
+.grand-bloc-social{
+	width:100%;
+	position:relative;
+	font-family: 'Lato';
+	padding:30px;
+	margin-bottom: 20px;
+	background:white;
+	background-position: -100px;
+	text-align: left;
+	@include box-sizing(border-box);
+
+	h1{
+		font-size: 1.3em;
+		color:$prouge;
+		text-transform: uppercase;
+		text-align: left;
 	}
 
+	p{
+		font-size: 1.1em;
+	}
+
+	.pseudo-com{
+		text-align: right;
+		color:$prouge;
+	}
+
+}
+
+.grand-bloc-bg{
+	position:absolute;
+	left:33%;
+	opacity:0.3;
 }
 
 .petit-bloc{
@@ -1101,7 +1143,6 @@ h2{
 		font-size: 1.3em;
 		color:$prouge;
 		text-transform: uppercase;
-		font-weight: 100;
 		text-align: left;
 	}
 
@@ -1146,7 +1187,6 @@ h2{
 	@include transition( all 0.5s );
 	width:30%;
 	font-family: 'Lato';
-	font-weight: 100;
 	font-size: 1.1em;
 	float:right;
 
@@ -1165,7 +1205,6 @@ h2{
 	@include transition( all 0.5s );
 	width:100%;
 	font-family: 'Lato';
-	font-weight: 100;
 	font-size: 1.1em;
 	margin-top: 50px;
 	margin-bottom: 20px;
@@ -1174,6 +1213,35 @@ h2{
 		cursor:pointer;
 	}
 
+}
+
+.avatar{
+
+	img{
+		width:20%;
+		position:relative;
+		float:left;
+		margin-right: 30px;
+	}
+}
+
+.image-publication{
+
+	img{
+		width:40%;
+		position:relative;
+		float:left;
+		margin-right: 30px;
+	}
+}
+
+.publication-reseaux-sociaux{
+	position:relative;
+	display:block;
+
+	h2{
+		font-family: 'Lato';
+	}
 }
 
 .scroll_down {
@@ -1519,4 +1587,59 @@ h2{
 
 .swiper-slide-active {
 	cursor: pointer;
+}
+.forum-fixed{
+	position:fixed;
+	left:-70px;
+	top:200px;
+	background:$prouge;
+	width:100px;
+	font-family: 'CabinSketch-Regular';
+	z-index: 2;
+	text-align: center;
+	@include transition(all ease 0.5s);
+
+	a{
+		text-decoration: none;
+		color:white;
+		text-transform: uppercase;
+		padding:10px;
+		display:block;
+		float:left;
+	}
+
+	img{
+		position:absolute;
+		top:12px;
+		left:75px;
+
+		&:hover{
+			cursor:pointer;
+		}
+	}
+}
+
+.active{
+	left:0 !important;
+}
+
+.btn-capoupascap{ 
+	padding:10px;
+	text-transform: uppercase;
+
+	background: $vert;
+	border: solid 2px $vert;
+	@include transition( all 0.5s );
+	width:30%;
+	font-family: 'CabinSketch-Regular';
+	font-size: 2em;
+
+	&:hover{
+		cursor:pointer;
+	}
+
+	a{
+		text-decoration: none;
+		color:white;
+	}
 }

@@ -3,18 +3,27 @@
 		<button class="btn-forum-publish">moi aussi je publie !</button>
 		<div class="grand-bloc">
 			<h1>Titre publication</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quidem quo esse, nesciunt ad nobis aspernatur natus fugiat, repellendus beatae facilis voluptatem in nemo rerum dolores harum iste nam exercitationem.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quidem quo esse, nesciunt ad nobis aspernatur natus fugiat, repellendus beatae facilis voluptatem in nemo rerum dolores harum iste nam exercitationem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eveniet maiores eligendi consequatur impedit, aliquam, fugit repudiandae iste ipsam id cum tenetur quos qui nihil aspernatur, quibusdam fuga earum ea.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum nesciunt, aliquam fugit, nisi nobis consectetur obcaecati! Voluptatum saepe doloremque perspiciatis porro laborum eveniet recusandae et beatae officia. Esse, laborum, magni.</p>
 			<p class="pseudo-com">Lucie</p>
 		</div>
 		<div class="grand-bloc clearfix">
 			<h1>Titre publication</h1>
-			<img src="img/vieux.jpg"/>
+			<div class="image-publication">
+				<img src="img/vieux.jpg"/>
+			</div>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime at dignissimos animi velit delectus, odio veritatis.</p>
 			<p class="pseudo-com">Barnabé</p>
 		</div>
-		<div class="grand-bloc">
-			<h1>Titre publication</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quidem quo esse, nesciunt ad nobis aspernatur natus fugiat, repellendus beatae facilis voluptatem in nemo rerum dolores harum iste nam exercitationem.</p>
+		<div class="grand-bloc-social clearfix">
+			<img src="img/twitter-bg.png" class="grand-bloc-bg"/>
+			<div class="publication-reseaux-sociaux">
+				<div class="avatar">
+					<img src="img/avatar.jpg"/>
+				</div>
+				<h1>ChauveMaisSwaggé_du_93</h1>
+				<h2>@ChauveSwagg</h2>
+				<p>Les vieux c'est #CommeDesGosses, ça se fatigue vite !</p>
+			</div>
 		</div>
 	</div>
 
