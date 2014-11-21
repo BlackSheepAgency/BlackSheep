@@ -1,8 +1,8 @@
 @import 'compass';
-/*@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 @import url("http://fonts.googleapis.com/css?family=Oswald:400,300,700");
 @import url("http://fonts.googleapis.com/css?family=Nothing+You+Could+Do");
-@import url("http://fonts.googleapis.com/css?family=Nothing+You+Could+Do");*/
+@import url("http://fonts.googleapis.com/css?family=Nothing+You+Could+Do");
 
 @font-face{
     font-family : "Angelina";
@@ -97,6 +97,7 @@ header {
 			width: 86px;
 			height: 160px;
 			padding-top: 20px;
+			z-index: 2;
 
 			&:hover{
 				color: white;
@@ -228,11 +229,6 @@ h2{
 	margin:0;
 }
 
-p{
-	font-family: 'Angelina';
-	font-size: 1.6em;
-}
-
 .link-forum{
 	text-decoration: none;
 	color: $rouge;
@@ -258,7 +254,7 @@ p{
 #bg-cap{
 	background:url(../img/retina_wood.png);
 	width:100%;
-	height:1000px;
+	height:1050px;
 	position:relative;
 	left:0;
 	top:0;	
@@ -408,10 +404,10 @@ p{
 	margin: 0 auto;
 	display: none;
 	text-align: center;
-	padding: 25px;
+	padding: 30px 90px 30px 90px;
 	box-shadow: 0px 0px 25px 0px black;
-	margin-top: -200px;
-	margin-left: -200px; 
+	margin-top: -290px;
+	margin-left: -300px; 
 	z-index: 1;
 
 	&.pop-up-publish {
@@ -435,6 +431,19 @@ p{
 	label {
 		width: 100px;
 	}
+
+	p{
+		font-family: 'Lato';
+		font-size: 1em;
+		font-weight: 100;
+		text-align: left;
+
+		img{
+			height:18px;
+			margin-left: 11px;
+			vertical-align: sub;
+		}
+	}
 }
 
 
@@ -451,7 +460,6 @@ p{
 		display: inline-block;
 		text-align: left;
 		vertical-align: top;
-		color: $bleu;
 		font-weight: 500;
 	}
 	input[type=text], textarea {
@@ -472,6 +480,9 @@ p{
 		border: solid 2px white;
 		@include transition( all 0.5s );
 		width:100%;
+		font-family: 'Lato';
+		font-weight: 100;
+		font-size: 1.1em;
 	}
 
 	input[type=submit]:hover{
@@ -491,30 +502,44 @@ p{
 	}
 }
 
-.no-pseudo{
-	color: $bleu;
-	font-weight: 500;
+.form_add_cap, .form_add_pseudo{
+
+
+	h2{
+		font-family: 'Lato';
+		font-size:1.5em;
+		color:white;
+		margin:auto;
+		text-transform: uppercase;
+		font-weight: 100;
+	}
 }
 
 .close{
 	position: absolute;
 	right: 9px;
-	top: 0;
+	top: 10px;
 	cursor: pointer;
-	font-size: 18px;
-	font-family: 'Verdana';
 	right:10px;
-	top:0;
-	color: $bleu;
-}
+	width:27px;
+	height:27px;
 
-/*--------LANDING PAGE-------*/
+	img{
+		width:27px;
+		height:27px;
+	}
+}
 
 .wrapper{
 	width:60%;
 	margin:auto;
 	position:relative;
 	text-align: center;
+
+	p{
+	font-family: 'Lato';
+	font-size: 1.3em;
+	}
 }
 
 .msg_reseaux{
