@@ -24,49 +24,46 @@
 	<?= $this->Html->script('jquery-1.11.1.min') ?>
 </head>
 <body>
+	<header id="header">
+		<ul>
+			<li><a href="Home" id="logo">
+				<img src="img/logo2.png" width="114" />
+			</a></li>
+			<li><a href="isolement">L'isolement c'est quoi ?</a></li>
+			<li><a href="solutions">Les solutions</a></li>
+			<li><a href="webseries">Web série</a></li>
+			<li><a href="affiches">Nos affiches</a></li>
+		<ul>
+		<a class="capoupascap" href="cap">Cap <br/>ou<br/> pas cap ?</a>
+
+	</header>
 	<div id="container">
-
-		<header id="header">
-			<ul>
-				<li><a href="Home" id="logo">
-					<img src="img/logo2.png" width="114" />
-				</a></li>
-				<li><a href="isolement">L'isolement c'est quoi ?</a></li>
-				<li><a href="solutions">Les solutions</a></li>
-				<li><a href="webseries">Web série</a></li>
-				<li><a href="affiches">Nos affiches</a></li>
-			<ul>
-			<a class="capoupascap" href="cap">Cap <br/>ou<br/> pas cap ?</a>
-
-		</header>
-
-		<div id="content"><!----><?= $this->fetch('content') ?><!----></div><!--
-		--><footer id="footer">
-				<div class="bloc-footer-m">
-					<a href="#">Mentions légales</a> ⎢ <a href="#">Plan du site</a><br/>
-					©<span class="name">Comme des gosses</span> ⎢ 2014 ⎢ Tous droits reservés ⎢ <a href="mailto:contact@commedesgosses.com">contact@commesdesgosses.com</a>
-					<br/>
-					Créé par l'agence <span class="name">Black Sheep</span><br/>
-					
-				</div>
-				<div class="bloc-footer-d">&nbsp;
-					<div class="reseaux-footer">
-						<ul>
-							<li>
-								<a id="fb_icon2" href=""></a>
-							</li>
-							<li>
-								<a id="twitter_icon2" href=""></a>
-							</li>
-							<li>
-								<a id="youtube_icon2" href=""></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-		</footer>
-
+		<div id="content"><!----><?= $this->fetch('content') ?><!----></div>
 	</div>
+	<footer id="footer">
+		<div class="bloc-footer-m">
+			<a href="#">Mentions légales</a> ⎢ <a href="#">Plan du site</a><br/>
+			©<span class="name">Comme des gosses</span> ⎢ 2014 ⎢ Tous droits reservés ⎢ <a href="mailto:contact@commedesgosses.com">contact@commesdesgosses.com</a>
+			<br/>
+			Créé par l'agence <span class="name">Black Sheep</span><br/>
+			
+		</div>
+		<div class="bloc-footer-d">&nbsp;
+			<div class="reseaux-footer">
+				<ul>
+					<li>
+						<a id="fb_icon2" href=""></a>
+					</li>
+					<li>
+						<a id="twitter_icon2" href=""></a>
+					</li>
+					<li>
+						<a id="youtube_icon2" href=""></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
 
 	<script>
 	  window.fbAsyncInit = function() {

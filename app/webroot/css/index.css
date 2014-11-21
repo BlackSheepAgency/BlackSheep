@@ -1207,9 +1207,6 @@ h2 {
 /* line 1126, ../sass/index.scss */
 .picture_affiche {
   text-align: center;
-}
-/* line 1129, ../sass/index.scss */
-.picture_affiche h3 {
   display: block;
   font-family: "CabinSketch-Bold", cursive;
   color: #fd5454;
@@ -1217,40 +1214,40 @@ h2 {
   background-image: url("../img/picture_affiche.png");
   width: 710px;
   height: 188px;
-  padding-top: 2em;
-  text-align: center;
+  padding-top: 65px;
+  margin: 0 auto;
 }
 
-/* line 1145, ../sass/index.scss */
+/* line 1140, ../sass/index.scss */
 #sliders {
   text-align: center;
 }
-/* line 1148, ../sass/index.scss */
+/* line 1143, ../sass/index.scss */
 #sliders .affiche_gd {
   display: inline-block;
   text-decoration: none;
 }
-/* line 1152, ../sass/index.scss */
+/* line 1147, ../sass/index.scss */
 #sliders .affiche_pt {
   display: inline-block;
   text-decoration: none;
 }
 
 @media screen and (min-width: 641px) and (max-width: 1100px) {
-  /* line 1164, ../sass/index.scss */
+  /* line 1159, ../sass/index.scss */
   header {
     height: 130px;
     text-align: center;
     background: #fff;
     position: relative;
   }
-  /* line 1170, ../sass/index.scss */
+  /* line 1165, ../sass/index.scss */
   header ul {
     margin: 0 auto;
     width: 63%;
     padding-top: 3em;
   }
-  /* line 1177, ../sass/index.scss */
+  /* line 1172, ../sass/index.scss */
   header li {
     text-align: center;
     display: inline-block;
@@ -1258,18 +1255,18 @@ h2 {
     list-style: none;
     padding-right: 0.8em;
   }
-  /* line 1185, ../sass/index.scss */
+  /* line 1180, ../sass/index.scss */
   header a {
     font-family: "CabinSketch-Regular";
     text-decoration: none;
     color: black;
     font-size: 0.8em;
   }
-  /* line 1191, ../sass/index.scss */
+  /* line 1186, ../sass/index.scss */
   header a:hover {
     color: #fd5454;
   }
-  /* line 1196, ../sass/index.scss */
+  /* line 1191, ../sass/index.scss */
   header .capoupascap {
     background-image: url("../img/fond_cap.png");
     position: absolute;
@@ -1280,12 +1277,12 @@ h2 {
     padding-top: 20px;
     z-index: 2;
   }
-  /* line 1206, ../sass/index.scss */
+  /* line 1201, ../sass/index.scss */
   header .capoupascap:hover {
     color: white;
   }
 
-  /* line 1213, ../sass/index.scss */
+  /* line 1208, ../sass/index.scss */
   #logo {
     position: absolute;
     top: 0;
@@ -1295,20 +1292,20 @@ h2 {
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 1225, ../sass/index.scss */
+  /* line 1220, ../sass/index.scss */
   header {
     height: 200px;
     text-align: center;
     background: #fff;
     position: relative;
   }
-  /* line 1231, ../sass/index.scss */
+  /* line 1226, ../sass/index.scss */
   header ul {
     margin: 0 auto;
     width: 55%;
     padding-top: 3%;
   }
-  /* line 1238, ../sass/index.scss */
+  /* line 1233, ../sass/index.scss */
   header li {
     display: inherit;
     vertical-align: middle;
@@ -1316,18 +1313,18 @@ h2 {
     padding-right: 1em;
     padding-bottom: 1em;
   }
-  /* line 1245, ../sass/index.scss */
+  /* line 1240, ../sass/index.scss */
   header a {
     font-family: "CabinSketch-Regular";
     text-decoration: none;
     color: black;
     font-size: 1.2em;
   }
-  /* line 1251, ../sass/index.scss */
+  /* line 1246, ../sass/index.scss */
   header a:hover {
     color: #fd5454;
   }
-  /* line 1256, ../sass/index.scss */
+  /* line 1251, ../sass/index.scss */
   header .capoupascap {
     background-image: url("../img/fond_cap.png");
     position: absolute;
@@ -1338,12 +1335,12 @@ h2 {
     padding-top: 20px;
     z-index: 2;
   }
-  /* line 1266, ../sass/index.scss */
+  /* line 1261, ../sass/index.scss */
   header .capoupascap:hover {
     color: white;
   }
 
-  /* line 1273, ../sass/index.scss */
+  /* line 1268, ../sass/index.scss */
   #logo {
     position: absolute;
     top: 0;
