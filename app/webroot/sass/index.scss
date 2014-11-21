@@ -22,11 +22,9 @@
 $vert: #8fc549;
 $bleu: #2873b7;
 $violet: #9a5599;
-$rouge : #eb282e;
+$rouge : #fd5454;
 $orange: #ef9d33;
 $jaune: #fcd541;
-
-$rouge_new : #fd5454;
 
 .clearfix {
   overflow: auto;
@@ -109,7 +107,7 @@ header {
 
 footer {
 	height: 95px;
-	background-color: $rouge_new;
+	background-color: $rouge;
 	position:relative;
 	width:100%;
 	color:#fff;
@@ -900,9 +898,92 @@ h2{
 }
 
 .div_red {
-	background: #f76f71;
+	background: $rouge;
 	padding: 20px;
 	text-align: center;
 	margin: 10px 0;
 	color: white;
+}
+
+.uppercase_isolement {
+	font-size: 3em;
+}
+
+.bulle_jaune, .bulle_rouge {
+	background-image: url('../img/bulle_jaune.png');
+	background-repeat: no-repeat;
+	width: 0px;
+	height: 0px;
+	position: relative;
+
+	.bulle_title, .bulle_description {
+		width: 200px;
+		text-align: center;
+		margin: 0 auto;
+		position: relative;
+		top: 115px;
+		color: white;
+	}
+	.bulle_title {
+		font-size: 1.1em;
+		text-transform: uppercase;
+	}
+	.bulle_description {
+		width: 150px;
+		top: 130px;
+	}
+	&:nth-child(even) {
+		margin-left: 69%;
+	}
+}
+.bulle_rouge {
+	background-image: url('../img/bulle_rouge.png');
+}
+
+.wrapper_isolement {
+	width: 60%;
+	margin: 0 auto;
+	padding: 300px 0;
+	position: relative;
+
+	&.wrapper_isolement_yellow {
+	}
+	&.wrapper_isolement_red {
+	}
+}
+
+.page_isolement {
+	h2 {
+		text-align: center;
+	}
+}
+
+.points {
+	position: absolute;
+	left: 49%;
+	top: 20px;
+
+	.point {
+		width: 0px;
+		height: 0px;
+		background-color: $jaune;
+		@include border-radius(40px);
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.big_point {
+		width: 0px;
+		height: 0px;
+		background-color: $jaune;
+		@include border-radius(40px);
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	&.points_rouge {
+		.point, .big_point {
+			background-color: $rouge;
+		}
+	}
 }
