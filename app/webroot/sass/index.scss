@@ -259,7 +259,7 @@ h2{
 }
 
 .red {
-	color: red;
+	color: $rouge;
 }
 .green {
 	color: green;
@@ -867,7 +867,7 @@ h2{
 		list-style: none;
 		position: absolute;
 		bottom: 0;
-		right:30%;
+		right:10%;
 		a {
 			background-color: black;
 			background-color: rgba(0, 0, 0, 0.8);
@@ -886,13 +886,13 @@ h2{
 		}
 
 		&.button_home1 {
-			bottom: 350px;
+			bottom: 260px;
 		}
 		&.button_home2 {
-			bottom: 200px;
+			bottom: 140px;
 		}
 		&.button_home3 {
-			bottom: 130px;
+			bottom: 50px;
 		}
 	}
 }
@@ -901,20 +901,29 @@ h2{
 	background: $rouge;
 	padding: 20px;
 	text-align: center;
-	margin: 10px 0;
+	padding: 30px 0;
 	color: white;
+	margin-bottom: 40px;
+
+	div {
+		width: 30%;;
+		text-align: center;
+		margin: 0 auto;
+	}
 }
 
 .uppercase_isolement {
-	font-size: 3em;
+	font-size: 4em;
+	font-family: "CabinSketch-Regular";
 }
 
 .bulle_jaune, .bulle_rouge {
 	background-image: url('../img/bulle_jaune.png');
 	background-repeat: no-repeat;
-	width: 0px;
-	height: 0px;
+	width: 350px;
+	height: 308px;
 	position: relative;
+	opacity: 0;
 
 	.bulle_title, .bulle_description {
 		width: 200px;
@@ -922,7 +931,8 @@ h2{
 		margin: 0 auto;
 		position: relative;
 		top: 115px;
-		color: white;
+		color: black;
+		color: #f0f0f0;
 	}
 	.bulle_title {
 		font-size: 1.1em;
@@ -936,8 +946,12 @@ h2{
 		margin-left: 69%;
 	}
 }
-.bulle_rouge {
+
+.bulle_jaune {
 	background-image: url('../img/bulle_rouge.png');
+	.bulle_title, .bulle_description { 
+		color: #f0f0f0;
+	}
 }
 
 .wrapper_isolement {
@@ -955,6 +969,7 @@ h2{
 .page_isolement {
 	h2 {
 		text-align: center;
+		font-size: 2.5em;
 	}
 }
 
@@ -986,4 +1001,95 @@ h2{
 			background-color: $rouge;
 		}
 	}
+}
+
+.scroll_down {
+	text-align: center;
+
+	div {
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+
+	.picture_scroll {
+		background-image: url('../img/scroll.png');
+		background-repeat: no-repeat;
+		width: 86px;
+		height: 62px;
+		margin-bottom: 100px;
+	}
+}
+
+.page_webseries {
+	max-width: 930px;
+	margin: 0 auto;
+}
+
+.top_video {
+	div {
+		display: inline-block;
+		vertical-align: top;
+	}
+	.video_description {
+		width: 34.5%;
+
+		h3 {
+			margin-top: 0;
+		}
+	}
+	.video_comment {
+		width: 65%;
+		text-align: right;
+	}
+}
+
+.buttons {
+	font-family: "CabinSketch-Regular";
+	font-size: 1.2em;
+	width: 200px;
+	margin-top: 40px;
+	cursor: pointer;
+
+	&.previous, &.next {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+
+		.button_txt {
+			position: relative;
+			top: 22px;
+		}
+	}
+
+	&.previous {
+		text-align: left;
+	}
+	&.next {
+		text-align: right;
+		left: 56%;
+	}
+
+	.button_previous, .button_next {
+		background-image: url('../img/sprite_buttons_video.png');
+		background-repeat: no-repeat;
+		width: 35px;
+		height: 67px;
+		display: block;
+		float: right;
+	}
+
+	.button_previous {
+		float: left;
+	}
+	.button_next {
+		float: right;
+		background-position: -40px 0px;
+	}
+	
+
+}
+
+.abonne {
+	text-transform: uppercase;
+	text-align: center;
 }
