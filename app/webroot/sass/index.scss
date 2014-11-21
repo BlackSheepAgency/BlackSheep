@@ -104,7 +104,7 @@ header {
 		}
 
 }
-@media screen and (min-width: 641px) and (max-width: 1100px) {
+@media screen and (min-width: 641px) and (max-width: 930px) {
   
   header {
 	height: 130px;
@@ -324,6 +324,19 @@ footer {
 }
 
 @media screen and (max-width: 1106px) {
+
+	footer {
+	height: 95px;
+	background-color: $rouge;
+	position:relative;
+	width:100%;
+	color:#fff;
+	font-family: 'Lato';
+	font-weight: 300;
+	line-height: 1.5;
+	font-size: 0.7em;
+
+	}
   
   .bloc-footer-d{
 	width:33%;
@@ -336,6 +349,19 @@ footer {
 	}
 }
 @media screen and (max-width: 640px) {
+
+	footer {
+	height: 95px;
+	background-color: $rouge;
+	position:relative;
+	width:100%;
+	color:#fff;
+	font-family: 'Lato';
+	font-weight: 300;
+	line-height: 1.5;
+	font-size: 0.7em;
+
+	}	
   
   .bloc-footer-d{
 	width:33%;
@@ -1136,3 +1162,35 @@ h2{
 		}
 	}
 }
+
+.picture_affiche{
+	text-align: center;
+
+	h3{
+		font-family: "CabinSketch-Bold", cursive;
+		color: $rouge;
+		font-size: 2.8em;
+		background-image: url("../img/picture_affiche.png");
+		width: 710px;
+		height: 188px;
+		padding-top: 2em;
+		text-align: center;
+		
+	}
+
+}
+
+
+#sliders{
+	text-align: center;
+
+	.affiche_gd{
+		display: inline-block;
+		text-decoration: none;
+	}
+	.affiche_pt{
+		display: inline-block;
+		text-decoration: none;
+	}
+}
+
