@@ -40,12 +40,8 @@
 
 		</header>
 
-
-		<div id="content">
-			<?php echo $this->fetch('content'); ?>
-		</div>
-
-		<footer id="footer">
+		<div id="content"><!----><?= $this->fetch('content') ?><!----></div><!--
+		--><footer id="footer">
 				<div class="bloc-footer-m">
 					<a href="#">Mentions légales</a> ⎢ <a href="#">Plan du site</a><br/>
 					©<span class="name">Comme des gosses</span> ⎢ 2014 ⎢ Tous droits reservés ⎢ <a href="mailto:contact@commedesgosses.com">contact@commesdesgosses.com</a>
@@ -68,12 +64,6 @@
 						</ul>
 					</div>
 				</div>
-				<!--<div
-				  class="fb-like"
-				  data-share="true"
-				  data-width="450"
-				  data-show-faces="true">
-				</div>-->
 		</footer>
 
 	</div>

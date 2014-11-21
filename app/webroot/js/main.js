@@ -73,9 +73,8 @@ $(document).ready(function() {
 		return false;
 	});
 
-	$('.pas-cap a').off('click');
-	$('.pas-cap a').on('click', function(e) {
-		e.preventDefault();
+	$('button.pas-cap').off('click');
+	$('button.pas-cap').on('click', function() {
 		displayCap(window.current_cap);
 	});
 
@@ -255,5 +254,149 @@ $(document).ready(function() {
 		);
 	/*--------END HOVER RESEAUX--------*/
 
+	$('.picture_home').height(($(window).height()-130));
+
+	$(window).resize(function() {
+		$('.picture_home').height(($(window).height()-130));
+	});
+
+	for (var p = 0; p < 32; p++) {
+		
+		if(p === 9 || p === 16 || p === 24) {
+			$('.points').append('<div class="point'+p+' point big_point "></div>');
+		} else {
+			$('.points').append('<div class="point'+p+' point"></div>');
+		}
+	}
+
+	var place = 0;
+	for (var r = 0; r < 32; r++) {
+		if(r >= 0 && r < 4) {
+			$('.point'+r).css('left', (-place*26)+'px');
+			place++;
+		}
+		if(r === 4) {
+			$('.point'+r).css('left', (-place*22)+'px');
+			place--;
+		}
+		if(r === 5) {
+			$('.point'+r).css('left', (-place*24)+'px');
+		}
+		if(r >= 6 && r < 10) {
+			$('.point'+r).css('left', ((-place*14)+r)+'px');
+			place = place - 2;
+		}
+		if(r >= 10 && r < 13) {
+			$('.point'+r).css('left', ((-place*14)+r)+'px');
+			place--;
+		}
+		if(r >= 13 && r < 15) {
+			$('.point'+r).css('left', ((-place*10)+r)+'px');
+			place++;
+		}
+		if(r >= 13 && r < 15) {
+			$('.point'+r).css('left', ((-place*12)+r)+'px');
+			place++;
+		}
+		if(r >= 15 && r < 17) {
+			$('.point'+r).css('left', ((-place*10)+r)+'px');
+			place++;
+		}
+		if(r === 17) {
+			$('.point'+r).css('left', ((-place*16)+r)+'px');
+		}
+		if(r >= 18 && r < 21) {
+			$('.point'+r).css('left', ((-place*16)+r)+'px');
+			place--;
+		}
+		if(r === 21) {
+			$('.point'+r).css('left', ((-place*13)+r)+'px');
+		}
+		if(r === 22) {
+			$('.point'+r).css('left', ((-place*10)+r)+'px');
+			place++;
+		}
+		if(r === 23) {
+			$('.point'+r).css('left', ((-place*5)+r)+'px');
+			place++;
+		}
+		if(r === 24) {
+			$('.point'+r).css('left', ((-place*-5)+r)+'px');
+			place++;
+		}
+		if(r === 25) {
+			$('.point'+r).css('left', ((-place*-10)+r)+'px');
+			place++;
+		}
+		if(r === 26) {
+			$('.point'+r).css('left', ((-place*-6)+r)+'px');
+			place++;
+		}
+		if(r >= 27 && r < 29) {
+			place--;
+			$('.point'+r).css('left', ((-place*20)+r)+'px');
+			place--;
+		}
+		if(r === 29) {
+			$('.point'+r).css('left', ((-place*20)+r)+'px');
+			place++;
+		}
+		if(r === 30) {
+			place--;
+			$('.point'+r).css('left', ((-place*23)+r)+'px');
+			place++;
+		}
+		if(r === 31) {
+			$('.point'+r).css('left', ((-place*24)+r)+'px');
+			place++;
+		}
+
+
+		$('.point'+r).css('top', (r*45)+'px');
+	}
+
+	displayPoint('jaune', 0);
+
+	var display_red = 0;
+	var nb_bulle = 1;
+	var this_color;
+
+	function displayPoint(color, yo) {
+		if(yo === 9 || yo === 16 || yo === 24) {
+			$('.points_'+color+' .point'+yo).animate({
+			    width: "16px",
+			    height: "16px"
+			  }, 200, function() {
+			  	if(color === 'jaune') {
+			  		this_color = 'rouge';
+			  	} else {
+			  		this_color = 'jaune';
+			  	}
+			  	$('.bulle_'+this_color+nb_bulle).animate({
+				    width: "350px",
+				    height: "308px"
+				  }, 0, function() {
+				  	nb_bulle++;
+				});
+			  	yo++;
+			    displayPoint(color, yo);
+			});
+		} else {
+			$('.points_'+color+' .point'+yo).animate({
+			    width: "8px",
+			    height: "8px"
+			  }, 200, function() {
+			  	yo++;
+			    displayPoint(color, yo);
+			});
+		}
+		if(yo === 31) {
+			if(display_red === 0) {
+				nb_bulle = 1;
+				displayPoint('rouge', 0);
+				display_red = 1;
+			}
+		}
+	}
 
 });
