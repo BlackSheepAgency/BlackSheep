@@ -219,6 +219,16 @@ $(document).ready(function() {
 	/*--------END COUNTDOWN--------*/
 
 
+	$(".forum-fixed").hover(
+		function(){
+			$(this).addClass('active');
+		},
+		function(){
+			$(this).removeClass('active');
+		}
+	);
+
+
 	/*--------HOVER RESEAUX--------*/
 		$('#fb_icon').hover(
 			function(){
@@ -377,7 +387,6 @@ $(document).ready(function() {
 			}
 		}
 	});
-
 	
 	function theDisplay(color, yo) {
 		//if(callback) callback();

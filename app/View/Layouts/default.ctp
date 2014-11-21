@@ -40,7 +40,12 @@
 
 		</header>
 
-		<div id="content"><!----><?= $this->fetch('content') ?><!----></div><!--
+		<div id="content">
+			<div class="forum-fixed">
+				<a href="forum">forum</a>
+				 <img src="img/white-arrow.png" alt="">
+			</div>
+		<!----><?= $this->fetch('content') ?><!----></div><!--
 		--><footer id="footer">
 				<div class="bloc-footer-m">
 					<a href="#">Mentions légales</a> ⎢ <a href="#">Plan du site</a><br/>
