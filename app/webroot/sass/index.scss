@@ -22,8 +22,9 @@
 $vert: #8fc549;
 $bleu: #2873b7;
 $violet: #9a5599;
-$rouge : #fd5454;
-$orange: #ef9d33;
+$rouge : #64c4db;
+// $rouge : #fd5454;
+$orange: #efab59;
 $jaune: #fcd541;
 $prouge: #fd5454;
 
@@ -46,7 +47,8 @@ body {
 	margin:0;
 	padding:0;
 	overflow-x: hidden;
-	background-color: #f0f0f0;
+	background-image: url('../img/texture.jpg');
+	background-repeat: repeat;
 }
 
 header {
@@ -89,9 +91,10 @@ header {
 		height: 160px;
 		padding-top: 20px;
 		z-index: 2;
+		color: #f0f0f0;
 
 		&:hover{
-			color: white;
+			color: #333;
 		}
 	}
 }
@@ -273,7 +276,7 @@ h2{
 }
 
 #bg-cap{
-	background:url(../img/retina_wood.png);
+	//background:url(../img/retina_wood.png);
 	width:100%;
 	height:1050px;
 	position:relative;
@@ -282,7 +285,6 @@ h2{
 }
 
 #bg-solutions{
-	background:$prouge;
 	width:100%;
 	position:relative;
 	left:0;
@@ -329,7 +331,7 @@ h2{
 }
 
 .txt-cap{
-	font-family: 'CabinSketch-Regular';
+	font-family: "CabinSketch-Regular";
 	font-size: 2.5em;
 	width:100%;
 	margin-bottom: 50px;
@@ -352,14 +354,15 @@ h2{
 	border: solid 2px $vert;
 	@include transition( all 0.5s );
 	width:30%;
-	font-family: 'Lato';
-	font-weight: 100;
+	font-family: "Lato";
 	font-size: 1.1em;
 	margin:auto;
 	margin-top: 40px;
 
 	&:hover{
 		cursor:pointer;
+		background: lighten($vert, 15%);
+		border-color: lighten($vert, 15%);
 	}
 
 }
@@ -372,13 +375,15 @@ h2{
 	border: solid 2px $vert;
 	@include transition( all 0.5s );
 	width:30%;
-	font-family: 'Lato';
+	font-family: "Lato";
 	//font-weight: 100;
 	font-size: 1.1em;
 	margin-top:50px;
 
 	&:hover{
 		cursor:pointer;
+		background: lighten($vert, 15%);
+		border-color: lighten($vert, 15%);
 	}
 
 }
@@ -859,17 +864,25 @@ h2{
 			}
 
 			&.list_bottom_content_cap {
-				box-sizing: border-box;
 
 				.cap_title {
 					font-size: 2em;
-					border: solid 14px $jaune;
 					padding: 10px;
+					text-align: center;
+					background: #f0f0f0;
 				}
 
 				.cap_comment {
-					border: solid 15px $jaune;
 					border-top: 0;
+					background: #f0f0f0;
+
+					.picture_comment {
+						max-width: 180px;
+					}
+					.text_comment {
+						width: 62%;
+						text-align: left;
+					}
 
 					.picture_comment, .text_comment {
 						display: inline-block;
@@ -922,9 +935,8 @@ h2{
 		position: absolute;
 		bottom: 0;
 		right:10%;
+		
 		a {
-			background-color: black;
-			background-color: rgba(0, 0, 0, 0.8);
 			color: white;
 			padding: 8px;
 			font-size: 1.2em;
@@ -933,10 +945,22 @@ h2{
 			width: 300px;
 			color: white;
 			text-decoration: none;
-
+			@include transition(0.4s);
 			&:hover {
 				background-color: rgba(0, 0, 0, 0.4);
 			}
+		}
+		&.button_home1, &.button_home2 {
+			background-color: $rouge;
+			color: white;
+			padding: 8px;
+			font-size: 1.2em;
+			text-align: center;
+			display: block;
+			width: 300px;
+			color: white;
+			text-decoration: none;
+			@include transition(0.4s);
 		}
 
 		&.button_home1 {
@@ -947,6 +971,16 @@ h2{
 		}
 		&.button_home3 {
 			bottom: 50px;
+			background: none;
+			padding-left: 0;
+
+			a {
+				background-color: $orange;
+
+				&:hover {
+					background-color: darken($orange, 20%);
+				}
+			}
 		}
 	}
 }
@@ -1003,6 +1037,10 @@ h2{
 
 .bulle_jaune {
 	background-image: url('../img/bulle_jaune.png');
+
+	.bulle_title, .bulle_description {
+		color: #f0f0f0;
+	}
 }
 
 .wrapper_isolement {
@@ -1072,6 +1110,8 @@ h2{
 	background:white;
 	text-align: left;
 	@include box-sizing(border-box);
+	background-color: $orange;
+	text-align: center;
 
 	h1{
 		font-size: 1.3em;
@@ -1082,6 +1122,7 @@ h2{
 
 	p{
 		font-size: 1.1em;
+		color: #f0f0f0;
 	}
 
 	.pseudo-com{
@@ -1127,7 +1168,7 @@ h2{
 }
 
 .petit-bloc{
-	width:48.6999%;
+	width: 49.1%;
 	position:relative;
 	font-family: "Lato";
 	font-weight: 300;
@@ -1138,6 +1179,7 @@ h2{
 	background:white;
 	text-align: left;
 	@include box-sizing(border-box); 
+	background-color: $orange;
 
 	h1{
 		font-size: 1.3em;
@@ -1147,7 +1189,7 @@ h2{
 	}
 
 	a{
-		color:$prouge;
+		color: #333;
 		text-align: right !important;
 		text-decoration: none;
 
@@ -1158,6 +1200,7 @@ h2{
 
 	p{
 		font-size: 1.1em;
+		color: #f0f0f0;
 	}
 }
 
@@ -1188,10 +1231,11 @@ h2{
 	width:30%;
 	font-family: 'Lato';
 	font-size: 1.1em;
-	float:right;
 
 	&:hover{
 		cursor:pointer;
+		background: lighten(#8fc549,15%);
+		border-color: lighten(#8fc549,15%);
 	}
 
 }
@@ -1342,7 +1386,7 @@ h2{
 	font-family: "CabinSketch-Bold", cursive;
 	color: $rouge;
 	font-size: 2.8em;
-	background-image: url("../img/picture_affiche.png");
+	//background-image: url("../img/picture_affiche.png");
 	width: 710px;
 	height: 188px;
 	padding-top: 100px;
@@ -1417,9 +1461,10 @@ h2{
 			height: 160px;
 			padding-top: 20px;
 			z-index: 2;
+			color: #f0f0f0;
 
 			&:hover{
-				color: white;
+				color: #333;
 			}
 		}
 
@@ -1558,6 +1603,12 @@ h2{
   background: #fff;
 }
 
+.center {
+	text-align: center;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
 .arrow-left,
 .arrow-right {
 	top: -245px;
@@ -1567,21 +1618,17 @@ h2{
 	width: 862px;
 	margin: 0 auto;
 
-	.picture, .description_picture {
-		display: inline-block;
-		vertical-align: top;
-	}
 	.picture {
 		width: 436px;
+		display: block;
+		margin: 0 auto;
 	}
 	.description_picture {
-		width: 357px;
-		height: 436px;
-		margin-left: 60px;
-		padding: 15px;
-		background-color: $jaune;
-		box-sizing: border-box;
-		text-align: justify;
+		text-align: center;
+
+		p {
+			font-size: 1.2em;
+		}
 	}
 }
 

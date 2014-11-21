@@ -47,7 +47,13 @@
 		</header>
 
 		<div id="container">
-			<div id="content"><!----><?= $this->fetch('content') ?><!----></div>
+			<div id="content">
+				<div class="forum-fixed">
+					<a href="forum">forum</a>
+					 <img src="img/white-arrow.png" alt="">
+				</div>
+				
+				<!----><?= $this->fetch('content') ?><!----></div>
 		</div>
 
 		<footer id="footer">

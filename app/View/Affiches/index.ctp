@@ -7,11 +7,9 @@
 					<img width="436" src="<?= $affiche['Affiche']['url'] ?>" alt="" />
 				</div>
 				<div class="description_picture">
-					<h3>Explications</h3>
 					<p>
 						<?= $affiche['Affiche']['description'] ?>
 					</p>
-						
 				</div>
 			</div>
       	<?php } ?>
