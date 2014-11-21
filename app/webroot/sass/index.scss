@@ -65,8 +65,8 @@ header {
 		ul{
 			display: block;
 			margin: 0 auto;
-			width: 710px;
-			padding: 0;
+			width: 64%;
+			padding-top: 4%;
 
 		}
 
@@ -86,12 +86,12 @@ header {
 				color: $rouge;
 			}
 		}
-		
+
 		.capoupascap{
 			background-image: url("../img/fond_cap.png");
 			position: absolute;
 			top: 0;
-			right: 170px;
+			right: 5%;
 			width: 86px;
 			height: 160px;
 			padding-top: 20px;
@@ -104,6 +104,9 @@ header {
 		}
 
 }
+
+/*----FIN HEADER-----*/
+/*----FOOTER------*/
 
 footer {
 	height: 95px;
@@ -141,7 +144,7 @@ footer {
 	display: block;
 	position: relative;
 	margin: 0 auto;
-	width: 600px;
+	width: 36%;
 	padding-top: 15px;
 	vertical-align: middle;
 
@@ -152,12 +155,11 @@ footer {
 
 .bloc-footer-d{
 	width:33%;
-	text-align: -webkit-right;
+	text-align: center;
 	display:block;
 	position:relative;
-	top: -70px;
+	top: -6em;
 	float:right;
-	vertical-align: middle;
 
 	#fb_icon2{
 		background-image: url("../img/fb_icon2.png");
@@ -200,6 +202,32 @@ footer {
 	}
 }
 
+@media screen and (max-width: 1106px) {
+  
+  .bloc-footer-d{
+	width:33%;
+	text-align: center;
+	display:block;
+	position:relative;
+	top: -7em;
+	float:right;
+	vertical-align: middle;
+	}
+}
+@media screen and (max-width: 640px) {
+  
+  .bloc-footer-d{
+	width:33%;
+	text-align: center;
+	display:block;
+	position:relative;
+	vertical-align: middle;
+
+	}
+}
+
+/*----FIN FOOTER------*/
+
 .name{
 	font-weight: 400;
 	font-style: italic;
@@ -233,8 +261,9 @@ h2{
 }
 
 #logo{
-	margin:auto;
-	padding: 10px 0px;
+	position: absolute;
+	top: 0;
+	left: 5%;
 	vertical-align: center;
 	width: 114px;
 	height: 114px;
@@ -629,7 +658,6 @@ h2{
 	width: 100%;
 
 	ul{
-		padding-right: 20px;
 
 	}
 
@@ -1093,3 +1121,125 @@ h2{
 	text-transform: uppercase;
 	text-align: center;
 }
+
+@media screen and (min-width: 641px) and (max-width: 1100px) {
+  
+  header {
+	height: 130px;
+	text-align: center;
+	background: #fff;
+	position: relative;
+
+		ul{
+			margin: 0 auto;
+			width: 63%;
+			padding-top: 3em;
+
+		}
+
+		li{
+			text-align: center;
+			display: inline-block;
+			vertical-align: middle;
+			list-style: none;
+			padding-right: 0.8em;
+		}
+
+		a{
+			font-family : "CabinSketch-Regular";
+			text-decoration: none;
+			color: black;
+			font-size: 0.8em;
+
+			&:hover{
+				color: $rouge;
+			}
+		}
+
+		.capoupascap{
+			background-image: url("../img/fond_cap.png");
+			position: absolute;
+			top: 0;
+			right: 5%;
+			width: 86px;
+			height: 160px;
+			padding-top: 20px;
+			z-index: 2;
+
+			&:hover{
+				color: white;
+			}
+		}
+
+	}
+
+	#logo{
+		position: absolute;
+		top: 0;
+		left: 5%;
+		width: 114px;
+		height: 114px;
+	}
+  
+}
+
+@media screen and (max-width: 640px) {
+  
+  header {
+	height: 200px;
+	text-align: center;
+	background: #fff;
+	position: relative;
+
+		ul{
+			margin: 0 auto;
+			width: 55%;
+			padding-top: 3%;
+
+		}
+
+		li{
+			display: inherit;
+			vertical-align: middle;
+			list-style: none;
+			padding-right: 1em;
+			padding-bottom: 1em;
+		}
+		a{
+			font-family : "CabinSketch-Regular";
+			text-decoration: none;
+			color: black;
+			font-size: 1.2em;
+
+			&:hover{
+				color: $rouge;
+			}
+		}
+
+		.capoupascap{
+			background-image: url("../img/fond_cap.png");
+			position: absolute;
+			top: 0;
+			right: 7%;
+			width: 86px;
+			height: 160px;
+			padding-top: 20px;
+			z-index: 2;
+
+			&:hover{
+				color: white;
+			}
+		}
+
+	}
+
+	#logo{
+		position: absolute;
+		top: 0;
+		left: 5%;
+		width: 90px;
+		height: 90px;
+	}
+  
+}
+
