@@ -6,28 +6,31 @@
 
 @font-face{
     font-family : "Angelina";
-    src : url('angelina.otf');
+    src : url('Angelina.TTF');
 }
 
 @font-face{
     font-family : "CabinSketch-Bold";
     src : url('CabinSketch-Bold.otf');
 }
+
 @font-face{
     font-family : "CabinSketch-Regular";
     src : url('CabinSketch-Regular.otf');
 }
 
-
 $vert: #8fc549;
 $bleu: #2873b7;
 $violet: #9a5599;
-$rouge : #eb282e;
-$orange: #ef9d33;
+$rouge : #64c4db;
+// $rouge : #fd5454;
+$orange: #efab59;
 $jaune: #fcd541;
+$prouge: #fd5454;
 
-$rouge_new : #f76f71;
-
+.clearfix {
+  overflow: auto;
+}
 
 *::selection {
 	background: black;
@@ -37,39 +40,76 @@ $rouge_new : #f76f71;
 body, html {
 	margin: 0;
 	padding: 0;
-	background-color: #f0f0f0;
-
 }
 
 body {
 	font-family: "Lato";
-	font-weight: 300;
 	margin:0;
 	padding:0;
-	background: url(../img/mamie.jpg) no-repeat center fixed; 
-	-webkit-background-size: cover; 
-	-moz-background-size: cover; 
-	-o-background-size: cover; 
-	background-size: cover; 
-	
+	overflow-x: hidden;
+	background-image: url('../img/texture.jpg');
+	background-repeat: repeat;
 }
 
 header {
 	height: 130px;
 	text-align: center;
 	background: #fff;
-	
+	position: relative;
+
+	ul{
+		display: block;
+		margin: 0 auto;
+		width: 64%;
+		padding-top: 4%;
+
+	}
+
+	li{
+		display: inline-block;
+		vertical-align: middle;
+		list-style: none;
+		padding-right: 1em;
+	}
+	a{
+		font-family : "CabinSketch-Regular";
+		text-decoration: none;
+		color: black;
+		font-size: 1.2em;
+
+		&:hover{
+			color: $rouge;
+		}
+	}
+
+	.capoupascap{
+		background-image: url("../img/fond_cap.png");
+		position: absolute;
+		top: 0;
+		right: 5%;
+		width: 86px;
+		height: 160px;
+		padding-top: 20px;
+		z-index: 2;
+		color: #f0f0f0;
+
+		&:hover{
+			color: #333;
+		}
+	}
 }
+
+/*----FIN HEADER-----*/
+/*----FOOTER------*/
 
 footer {
 	height: 95px;
-	background-color: $rouge_new;
-	margin-top:40px;
+	background-color: $rouge;
 	position:relative;
 	width:100%;
 	color:#fff;
 	font-family: 'Lato';
-	font-weight: 300;
+	//font-weight: 300;
 	line-height: 1.5;
 	font-size: 0.7em;
 
@@ -94,12 +134,13 @@ footer {
 }
 
 .bloc-footer-m{
-	width: 252px;
 	text-align: center;
 	display: block;
 	position: relative;
 	margin: 0 auto;
-	padding-top: 10px;
+	width: 36%;
+	padding-top: 15px;
+	vertical-align: middle;
 
 	a:hover{
 		text-decoration: underline;
@@ -108,10 +149,81 @@ footer {
 
 .bloc-footer-d{
 	width:33%;
-	text-align: -webkit-right;
+	text-align: center;
 	display:block;
 	position:relative;
-	float:left;
+	top: -6em;
+	float:right;
+
+	#fb_icon2{
+		background-image: url("../img/fb_icon2.png");
+		width: 42px;
+		height: 42px;
+		display: block;
+
+		&:hover{
+			background-image: url("../img/fb_icon3.png");
+			width: 42px;
+			height: 42px;
+			display: block;
+		}
+	}
+	#twitter_icon2{
+		background-image: url("../img/twitter_icon2.png");
+		width: 42px;
+		height: 42px;
+		display: block;
+
+		&:hover{
+			background-image: url("../img/twitter_icon3.png");
+			width: 42px;
+			height: 42px;
+			display: block;
+		}
+	}
+	#youtube_icon2{
+		background-image: url("../img/youtube_icon2.png");
+		width: 42px;
+		height: 42px;
+		display: block;
+
+		&:hover{
+			background-image: url("../img/youtube_icon3.png");
+			width: 42px;
+			height: 42px;
+			display: block;
+		}
+	}
+}
+
+@media screen and (max-width: 1106px) {
+  
+  .bloc-footer-d{
+	width:33%;
+	text-align: center;
+	display:block;
+	position:relative;
+	top: -7em;
+	float:right;
+	vertical-align: middle;
+	}
+}
+@media screen and (max-width: 640px) {
+  
+  .bloc-footer-d{
+	width:33%;
+	text-align: center;
+	display:block;
+	position:relative;
+	vertical-align: middle;
+
+	}
+}
+
+/*----FIN FOOTER------*/
+
+a{
+	text-decoration: none;
 }
 
 .name{
@@ -125,41 +237,62 @@ h1{
 	font-size: 2.8em;
 	text-transform: uppercase;
 	color: $rouge;
-	font-weight: 400;
+	//font-weight: 400;
 	letter-spacing: 2px;
 	text-align: center;
 	margin-top: 0;
-	line-height: 130px;
 }
 
 h2{
-	font-family: "Oswald";
+	font-family: "CabinSketch-Bold";
 	font-size: 1.5em;
 	text-transform: uppercase;
-	font-weight: 400;
+	//font-weight: 400;
 	letter-spacing: 2px;
 	margin:0;
 }
 
+.link-forum{
+	text-decoration: none;
+	color: $rouge;
+}
+
 #logo{
-	margin:auto;
-	padding: 10px 0px;
-	text-align: center;
-	display: block;
+	position: absolute;
+	top: 0;
+	left: 5%;
+	vertical-align: center;
+	width: 114px;
+	height: 114px;
 }
 
 #content {
-	width: 78.5%;
+	width: 100%;
 	margin: 0 auto;
-	padding: 103px 0 20px 0;
 }
 
 .cap {
 	text-align: center;
 }
 
+#bg-cap{
+	//background:url(../img/retina_wood.png);
+	width:100%;
+	height:1050px;
+	position:relative;
+	left:0;
+	top:0;	
+}
+
+#bg-solutions{
+	width:100%;
+	position:relative;
+	left:0;
+	top:0;	
+}
+
 .red {
-	color: red;
+	color: $rouge;
 }
 .green {
 	color: green;
@@ -170,29 +303,134 @@ h2{
 }
 
 .valid-cap {
-	margin-top: 25px;
-	@include border-radius(10px);
-	color:white;
-	background-color: $orange;
-	font-size: 3em;
-	text-transform: uppercase;
-	padding: 20px;
-	width:250px;
-	font-family: 'Lato';
+	margin: auto;
+	background:url(../img/cap.png) no-repeat;
+	width:300px;
+	height:200px;
 	border:none;
 	outline: none;
-}
+	float:left;
 
-.valid-cap:hover{
+	&:hover{
 		cursor:pointer;
+	}
 }
 
 .pas-cap {
-	text-align: right;
+	margin: auto;
+	background:url(../img/pas-cap.png) no-repeat;
+	width:238px;
+	height:200px;
+	border:none;
+	outline: none;
+	float:right;
+
+	&:hover{
+		cursor:pointer;
+	}
+}
+
+.txt-cap{
+	font-family: "CabinSketch-Regular";
+	font-size: 2.5em;
+	width:100%;
+	margin-bottom: 50px;
+	margin-top: 50px;
+
+}
+
+#cap-btns{
+	width:100%;
+	position:relative;
+	display:block;
+	margin:auto;
+}
+
+.btn-forum{
+	padding:10px;
+	text-transform: uppercase;
+	color:white;
+	background: $vert;
+	border: solid 2px $vert;
+	@include transition( all 0.5s );
+	width:30%;
+	font-family: "Lato";
+	font-size: 1.1em;
+	margin:auto;
+	margin-top: 40px;
+
+	&:hover{
+		cursor:pointer;
+		background: lighten($vert, 15%);
+		border-color: lighten($vert, 15%);
+	}
+
 }
 
 .publish {
-	text-align: left;
+	padding:10px;
+	text-transform: uppercase;
+	color:white;
+	background: $vert;
+	border: solid 2px $vert;
+	@include transition( all 0.5s );
+	width:30%;
+	font-family: "Lato";
+	//font-weight: 100;
+	font-size: 1.1em;
+	margin-top:50px;
+
+	&:hover{
+		cursor:pointer;
+		background: lighten($vert, 15%);
+		border-color: lighten($vert, 15%);
+	}
+
+}
+
+.publish_cap{
+	background:white;
+	border:none;
+	font-family: 'CabinSketch-Regular';
+	color:black;
+	font-size: 2em;
+	text-transform: uppercase;
+	padding:10px;
+
+	&:hover{
+		cursor:pointer;
+	}
+}
+
+.defi{
+	font-family: 'CabinSketch-Regular';
+	color:black;
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+#visuel{
+	position:relative;
+	width:100%;
+	height:250px;
+	margin-top: 50px;
+
+	img{
+		width:100%;
+	}
+}
+
+#propose{
+	width:81%;
+	position:relative;
+	margin:auto;
+	padding-top: 50px;
+}
+
+.fleche{
+	top:10px;
+	margin:0 15px 0 15px;
+	position:relative;
 }
 
 .publications {
@@ -217,39 +455,48 @@ h2{
 
 .pop-up {
 	width: 400px;
-	background-color: #f0f0f0;
+	background-color: $vert;
 	position: fixed;
 	left: 50%;
 	top: 50%;
 	margin: 0 auto;
 	display: none;
 	text-align: center;
-	padding: 25px;
+	padding: 30px 90px 30px 90px;
 	box-shadow: 0px 0px 25px 0px black;
-	margin-top: -300px;
-	margin-left: -200px; 
+	margin-top: -290px;
+	margin-left: -300px; 
 	z-index: 1;
-	border: solid 1px #ddd;
-	@include border-radius(10px);
 
-	&.pop-up-publish {
-		form {
-			border: 3px solid $bleu;
-		}
-	}
+
 
 	form {
 		padding: 10px;
 		margin-top: 10px;
-		background-color: white;
 	}
 	input{
 		margin-bottom: 10px;
 		/*font-style: italic;*/
-		text-align: center;
+		padding:10px;
+		width:100%;
+		border:none;
+		@include box-sizing(border-box);
 	}
 	label {
 		width: 100px;
+	}
+
+	p{
+		font-family: 'Lato';
+		font-size: 1em;
+		//font-weight: 100;
+		text-align: left;
+
+		img{
+			height:18px;
+			margin-left: 11px;
+			vertical-align: sub;
+		}
 	}
 }
 
@@ -263,60 +510,94 @@ h2{
 	}
 
 	label, input[type=text] {
-		width: 100px;
+		width: 100%;
 		display: inline-block;
 		text-align: left;
 		vertical-align: top;
-		color: $bleu;
 		font-weight: 500;
 	}
 	input[type=text], textarea {
 		width: 100%;
-		padding: 8px 10px 8px 3px;
+		padding:10px;
 		font-size: 15px;
 		margin-top: 10px;
+		margin-bottom: 10px;
+		border:none;
 		@include box-sizing(border-box);
 	}
 
 	input[type=submit]{
-		border:solid 3px $bleu;
 		padding:10px;
 		text-transform: uppercase;
-		color:white;
-		background: $bleu;
+		color:black;
+		background: white;
+		border: solid 2px white;
 		@include transition( all 0.5s );
 		width:100%;
+		font-family: 'Lato';
+		//font-weight: 100;
+		font-size: 1.1em;
+
+		&:hover{
+			cursor:pointer;
+			background:transparent;
+			border: solid 2px white;
+			color:white;
+		}
 	}
 
-	input[type=submit]:hover{
-		cursor:pointer;
-		background:transparent;
-		color:$bleu;
+	input[type=mail], textarea {
+		width: 100%;
+		padding:10px;
+		font-size: 15px;
+		margin-top: 10px;
+		border:none;
+		@include box-sizing(border-box);
 	}
 }
 
-.no-pseudo{
-	color: $bleu;
-	font-weight: 500;
+.form_add_cap, .form_add_pseudo, .add_publication{
+
+
+	h2{
+		font-family: "Lato";
+		font-size:1.5em;
+		color:white;
+		margin:auto;
+		text-transform: uppercase;
+		//font-weight: 100;
+	}
 }
 
 .close{
 	position: absolute;
 	right: 9px;
-	top: 0;
+	top: 10px;
 	cursor: pointer;
-	font-size: 18px;
-	font-family: 'Verdana';
 	right:10px;
-	top:0;
-	color: $bleu;
+	width:27px;
+	height:27px;
+
+	img{
+		width:27px;
+		height:27px;
+	}
 }
 
-/*--------LANDING PAGE-------*/
-
 .wrapper{
-	width:501px;
+	width:60%;
 	margin:auto;
+	position:relative;
+	text-align: center;
+
+	p{
+		font-family: 'Lato';
+		font-size: 1em;
+	}
+
+	a{
+		text-decoration: none;
+	}
 }
 
 .msg_reseaux{
@@ -349,6 +630,7 @@ h2{
 	padding:20px;
 	margin-top: 90px;
 	margin-bottom: 50px;
+    border: solid 1px #ddd;
     @include border-radius(6px);
 
     p{
@@ -407,7 +689,6 @@ h2{
 	width: 100%;
 
 	ul{
-		padding:1px;
 
 	}
 
@@ -467,12 +748,21 @@ h2{
 	height:100px;
 }
 
-#defaultCountdown span span:nth-child(1) span:first-child,
-#defaultCountdown span span:nth-child(2) span:first-child,
-#defaultCountdown span span:nth-child(3) span:first-child,
-#defaultCountdown span span:nth-child(4) span:first-child {
+#alwaysShow span span:nth-child(1) span:first-child {
 	border: solid 1px $jaune;
-	@include border-radius(20px);
+	@include border-radius(10px);
+}
+#alwaysShow span span:nth-child(2) span:first-child {
+	border: solid 1px $jaune;
+	@include border-radius(10px);
+}
+#alwaysShow span span:nth-child(3) span:first-child {
+	border: solid 1px $jaune;
+	@include border-radius(10px);
+}
+#alwaysShow span span:nth-child(4) span:first-child {
+	border: solid 1px $jaune;
+	@include border-radius(10px);
 }
 
 .countdown-period {
@@ -487,21 +777,31 @@ h2{
 .nos {
 	color: white;
 	font-weight: bold;
-	font-size: 2.10em;
+	font-size: 2.3em;
 	text-align: center;
 	margin-bottom: 20px;
 	font-family: 'Angelina';
 	text-transform: none;
 }
 
-#defaultCountdown span span:nth-child(1) .countdown-period,
-#defaultCountdown span span:nth-child(2) .countdown-period,
-#defaultCountdown span span:nth-child(3) .countdown-period,
-#defaultCountdown span span:nth-child(4) .countdown-period {
+#alwaysShow span span:nth-child(1) .countdown-period {
 	background-color: $jaune;
 	color: black;
-	@include border-radius(10px);
 }
+
+#alwaysShow span span:nth-child(2) .countdown-period {
+	background-color: $jaune;
+	color: black;
+}
+#alwaysShow span span:nth-child(3) .countdown-period {
+	background-color: $jaune;
+	color: black;
+}
+#alwaysShow span span:nth-child(4) .countdown-period {
+	background-color: $jaune;
+	color: black;
+}
+
 .mentions{
 	width:50%;
 	color:#fff;
@@ -516,5 +816,877 @@ h2{
 	a {
 		text-decoration: none;
 		color:#fff;
+	}
+}
+
+.picture_home {
+	background-image: url('../img/picture_home.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	width: 100%;
+	position: relative;
+}
+
+.list_bottom {
+	padding: 0;
+
+
+	.list_bottom_item {
+		width: 33.33%;
+		display: inline-block;
+		vertical-align: top;
+		height: 600px;
+		border-sizing: border-box;
+
+		.list_bottom_title  {
+			font-family: 'CabinSketch-Regular';
+			color: $rouge;
+			font-size: 2em;
+			text-align: center;
+			text-transform: uppercase;
+			margin-bottom: 15px;
+		}
+
+		.list_bottom_content {
+			position: relative;
+			height: 90%;
+
+			&.list_bottom_content_cdg, &.list_bottom_content_isolement {
+				background-image : url('../img/image_home_cdg.jpg');
+				background-repeat: no-repeat;
+				background-size: cover;
+				-webkit-background-size: cover;
+				width: 100%;
+			}
+			&.list_bottom_content_isolement {
+				background-image : url('../img/picture_isolement.jpg');
+			}
+
+			&.list_bottom_content_cap {
+
+				.cap_title {
+					font-size: 2em;
+					padding: 10px;
+					text-align: center;
+					background: #f0f0f0;
+				}
+
+				.cap_comment {
+					border-top: 0;
+					background: #f0f0f0;
+
+					.picture_comment {
+						max-width: 180px;
+					}
+					.text_comment {
+						width: 62%;
+						text-align: left;
+					}
+
+					.picture_comment, .text_comment {
+						display: inline-block;
+						vertical-align: top;
+						margin-top: 30px;
+					}
+
+					.text_comment {
+						.name_comment {
+							color: $rouge;
+						}
+						.name_comment, .username_comment {
+							font-size: 1.3em;
+						}
+						.content_comment {
+							margin-top: 20px;
+						}
+					}
+				}				
+			}
+
+			.list_bottom_link {
+				@include transition(0.4s);
+				background-color: black;
+				background-color: rgba(0, 0, 0, 0.8);
+				color: white;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				font-size: 1.2em;
+				text-transform: uppercase;
+				text-align: center;
+				display: block;
+				width: 50%;
+				padding: 10px 0% 10px 0px;
+				color: white;
+				text-decoration: none;
+
+				&:hover {
+					background-color: rgba(0, 0, 0, 0.4);
+				}
+			}
+		}
+	}
+}
+
+.buttons_home {
+	li {
+		list-style: none;
+		position: absolute;
+		bottom: 0;
+		right:10%;
+		
+		a {
+			color: white;
+			padding: 8px;
+			font-size: 1.2em;
+			text-align: center;
+			display: block;
+			width: 300px;
+			color: white;
+			text-decoration: none;
+			@include transition(0.4s);
+			&:hover {
+				background-color: rgba(0, 0, 0, 0.4);
+			}
+		}
+		&.button_home1, &.button_home2 {
+			background-color: $rouge;
+			color: white;
+			padding: 8px;
+			font-size: 1.2em;
+			text-align: center;
+			display: block;
+			width: 300px;
+			color: white;
+			text-decoration: none;
+			@include transition(0.4s);
+		}
+
+		&.button_home1 {
+			bottom: 260px;
+		}
+		&.button_home2 {
+			bottom: 140px;
+		}
+		&.button_home3 {
+			bottom: 50px;
+			background: none;
+			padding-left: 0;
+
+			a {
+				background-color: $orange;
+
+				&:hover {
+					background-color: darken($orange, 20%);
+				}
+			}
+		}
+	}
+}
+
+.div_red {
+	background: $rouge;
+	padding: 20px;
+	text-align: center;
+	padding: 30px 0;
+	color: white;
+	margin-bottom: 40px;
+
+	div {
+		width: 30%;;
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+
+.uppercase_isolement {
+	font-size: 4em;
+	font-family: "CabinSketch-Regular";
+}
+
+.bulle_jaune, .bulle_rouge {
+	background-image: url('../img/bulle_rouge.png');
+	background-repeat: no-repeat;
+	width: 380px;
+	height: 334px;
+	position: relative;
+	opacity: 0;
+
+	.bulle_title, .bulle_description {
+		width: 122px;
+		text-align: center;
+		margin: 0 auto;
+		position: relative;
+		top: 106px;
+		color: #333;
+	}
+	.bulle_title {
+		font-size: 1.1em;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	.bulle_description {
+		width: 150px;
+		top: 108px;
+	}
+	&:nth-child(even) {
+		margin-left: 69%;
+	}
+}
+
+.bulle_jaune {
+	background-image: url('../img/bulle_jaune.png');
+
+	.bulle_title, .bulle_description {
+		color: #f0f0f0;
+	}
+}
+
+.wrapper_isolement {
+	width: 60%;
+	margin: 0 auto;
+	padding: 300px 0;
+	position: relative;
+
+	&.wrapper_isolement_yellow {
+	}
+	&.wrapper_isolement_red {
+	}
+}
+
+.page_isolement {
+	h2 {
+		text-align: center;
+		font-size: 2.5em;
+	}
+}
+
+.points {
+	position: absolute;
+	left: 49%;
+	top: 20px;
+
+	.point {
+		width: 0px;
+		height: 0px;
+		background-color: $jaune;
+		@include border-radius(40px);
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.big_point {
+		width: 0px;
+		height: 0px;
+		background-color: $jaune;
+		@include border-radius(40px);
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	&.points_rouge {
+		.point, .big_point {
+			background-color: $rouge;
+		}
+	}
+}
+
+.points.points_rouges 
+.points {
+	.point {
+
+	}
+}
+/*Solutions*/
+
+.grand-bloc{
+	width:100%;
+	position:relative;
+	font-family: "Lato";
+	font-weight: 300;
+	padding:30px;
+	margin-bottom: 20px;
+	background:white;
+	text-align: left;
+	@include box-sizing(border-box);
+	background-color: $orange;
+	text-align: center;
+
+	h1{
+		font-size: 1.3em;
+		color:$prouge;
+		text-transform: uppercase;
+		text-align: left;
+	}
+
+	p{
+		font-size: 1.1em;
+		color: #f0f0f0;
+	}
+
+	.pseudo-com{
+		text-align: right;
+		color:$prouge;
+	}
+
+}
+
+.grand-bloc-social{
+	width:100%;
+	position:relative;
+	font-family: 'Lato';
+	padding:30px;
+	margin-bottom: 20px;
+	background:white;
+	background-position: -100px;
+	text-align: left;
+	@include box-sizing(border-box);
+
+	h1{
+		font-size: 1.3em;
+		color:$prouge;
+		text-transform: uppercase;
+		text-align: left;
+	}
+
+	p{
+		font-size: 1.1em;
+	}
+
+	.pseudo-com{
+		text-align: right;
+		color:$prouge;
+	}
+
+}
+
+.grand-bloc-bg{
+	position:absolute;
+	left:33%;
+	opacity:0.3;
+}
+
+.petit-bloc{
+	width: 49.1%;
+	position:relative;
+	font-family: "Lato";
+	font-weight: 300;
+	padding:30px;
+	float:left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background:white;
+	text-align: left;
+	@include box-sizing(border-box); 
+	background-color: $orange;
+
+	h1{
+		font-size: 1.3em;
+		color:$prouge;
+		text-transform: uppercase;
+		text-align: left;
+	}
+
+	a{
+		color: #333;
+		text-align: right !important;
+		text-decoration: none;
+
+		&:hover{
+			text-decoration:underline;
+		}
+	}
+
+	p{
+		font-size: 1.1em;
+		color: #f0f0f0;
+	}
+}
+
+.petit-bloc-wrapper{
+	position:relative;
+	display:block;
+}
+
+.no-margin-right{
+	margin-right: 0;
+}
+
+.no-margin-top{
+	margin-top: 0;
+}
+
+.margin-top{
+	margin-top:50px;
+}
+
+.btn-cap {
+	padding:10px;
+	text-transform: uppercase;
+	color:white;
+	background: $vert;
+	border: solid 2px $vert;
+	@include transition( all 0.5s );
+	width:30%;
+	font-family: 'Lato';
+	font-size: 1.1em;
+
+	&:hover{
+		cursor:pointer;
+		background: lighten(#8fc549,15%);
+		border-color: lighten(#8fc549,15%);
+	}
+
+}
+
+.btn-forum-publish {
+	padding:10px;
+	text-transform: uppercase;
+	color:white;
+	background: $vert;
+	border: solid 2px $vert;
+	@include transition( all 0.5s );
+	width:100%;
+	font-family: 'Lato';
+	font-size: 1.1em;
+	margin-top: 50px;
+	margin-bottom: 20px;
+
+	&:hover{
+		cursor:pointer;
+	}
+
+}
+
+.avatar{
+
+	img{
+		width:20%;
+		position:relative;
+		float:left;
+		margin-right: 30px;
+	}
+}
+
+.image-publication{
+
+	img{
+		width:40%;
+		position:relative;
+		float:left;
+		margin-right: 30px;
+	}
+}
+
+.publication-reseaux-sociaux{
+	position:relative;
+	display:block;
+
+	h2{
+		font-family: 'Lato';
+	}
+}
+
+.scroll_down {
+	text-align: center;
+
+	div {
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+
+	.picture_scroll {
+		background-image: url('../img/scroll.png');
+		background-repeat: no-repeat;
+		width: 86px;
+		height: 62px;
+		margin-bottom: 100px;
+	}
+}
+
+.page_webseries {
+	max-width: 930px;
+	margin: 0 auto;
+}
+
+.top_video {
+	div {
+		display: inline-block;
+		vertical-align: top;
+	}
+	.video_description {
+		width: 34.5%;
+
+		h3 {
+			margin-top: 0;
+		}
+	}
+	.video_comment {
+		width: 65%;
+		text-align: right;
+	}
+}
+
+.buttons {
+	font-family: "CabinSketch-Regular";
+	font-size: 1.2em;
+	width: 200px;
+	margin-top: 40px;
+	cursor: pointer;
+
+	&.previous, &.next {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+
+		.button_txt {
+			position: relative;
+			top: 22px;
+		}
+	}
+
+	&.previous {
+		text-align: left;
+	}
+	&.next {
+		text-align: right;
+		left: 56%;
+	}
+
+	.button_previous, .button_next {
+		background-image: url('../img/sprite_buttons_video.png');
+		background-repeat: no-repeat;
+		width: 35px;
+		height: 67px;
+		display: block;
+		float: right;
+	}
+
+	.button_previous {
+		float: left;
+	}
+	.button_next {
+		float: right;
+		background-position: -40px 0px;
+	}
+	
+
+}
+
+.abonne {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+
+.picture_affiche{
+	text-align: center;
+	display: block;
+	font-family: "CabinSketch-Bold", cursive;
+	color: $rouge;
+	font-size: 2.8em;
+	//background-image: url("../img/picture_affiche.png");
+	width: 710px;
+	height: 188px;
+	padding-top: 100px;
+	margin: 0 auto;
+	text-transform: uppercase;
+}
+
+
+#sliders{
+	text-align: center;
+
+	.affiche_gd{
+		display: inline-block;
+		text-decoration: none;
+	}
+	.affiche_pt{
+		display: inline-block;
+		text-decoration: none;
+	}
+}
+.page_affiche {
+
+	max-width: 930px;
+	margin: 0 auto;
+
+	.picture_affiche {
+		padding-top: 74px;
+	}
+}
+
+
+@media screen and (min-width: 641px) and (max-width: 1100px) {
+  
+  header {
+	height: 130px;
+	text-align: center;
+	background: #fff;
+	position: relative;
+
+		ul{
+			margin: 0 auto;
+			width: 63%;
+			padding-top: 3em;
+
+		}
+
+		li{
+			text-align: center;
+			display: inline-block;
+			vertical-align: middle;
+			list-style: none;
+			padding-right: 0.8em;
+		}
+
+		a{
+			font-family : "CabinSketch-Regular";
+			text-decoration: none;
+			color: black;
+			font-size: 0.8em;
+
+			&:hover{
+				color: $rouge;
+			}
+		}
+
+		.capoupascap{
+			background-image: url("../img/fond_cap.png");
+			position: absolute;
+			top: 0;
+			right: 5%;
+			width: 86px;
+			height: 160px;
+			padding-top: 20px;
+			z-index: 2;
+			color: #f0f0f0;
+
+			&:hover{
+				color: #333;
+			}
+		}
+
+	}
+
+	#logo{
+		position: absolute;
+		top: 0;
+		left: 5%;
+		width: 114px;
+		height: 114px;
+	}
+  
+}
+
+@media screen and (max-width: 640px) {
+  
+  header {
+	height: 200px;
+	text-align: center;
+	background: #fff;
+	position: relative;
+
+		ul{
+			margin: 0 auto;
+			width: 55%;
+			padding-top: 3%;
+
+		}
+
+		li{
+			display: inherit;
+			vertical-align: middle;
+			list-style: none;
+			padding-right: 1em;
+			padding-bottom: 1em;
+		}
+		a{
+			font-family : "CabinSketch-Regular";
+			text-decoration: none;
+			color: black;
+			font-size: 1.2em;
+
+			&:hover{
+				color: $rouge;
+			}
+		}
+
+		.capoupascap{
+			background-image: url("../img/fond_cap.png");
+			position: absolute;
+			top: 0;
+			right: 7%;
+			width: 86px;
+			height: 160px;
+			padding-top: 20px;
+			z-index: 2;
+
+			&:hover{
+				color: white;
+			}
+		}
+
+	}
+
+	#logo{
+		position: absolute;
+		top: 0;
+		left: 5%;
+		width: 90px;
+		height: 90px;
+	}
+  
+}
+
+.device {
+	margin-bottom: 50px;
+	margin-top: 100px;
+}
+
+.swiper-container {
+  width: 800px;
+  height: 250px;
+  text-align: center;
+}
+.swiper-slide {
+  height: 100%;
+  opacity: 0.4;
+  @include transition(0.3s);
+  @include transform(scale(0));
+}
+.swiper-slide-visible {
+  opacity: 0.5;
+  @include transform(scale(0.8));
+}
+.swiper-slide-active {
+  top: 0;
+  opacity: 1;
+  @include transform(scale(1));
+}
+
+.swiper-slide .title {
+  font-style: italic;
+  font-size: 42px;
+  margin-top: 80px;
+  margin-bottom: 0;
+  line-height: 45px;
+}
+.pagination {
+  position: absolute;
+  z-index: 20;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  bottom: 5px;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 8px;
+  background: #aaa;
+  margin-right: 8px;
+  cursor: pointer;
+  @include transition(0.3s);
+  opacity: 0;
+  position: relative;
+  top: -50px;
+}
+.swiper-visible-switch {
+  opacity: 1;
+  top: 0;
+  background: #aaa;
+}
+.swiper-active-switch {
+  background: #fff;
+}
+
+.center {
+	text-align: center;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+.arrow-left,
+.arrow-right {
+	top: -245px;
+}
+
+.affiche {
+	width: 862px;
+	margin: 0 auto;
+
+	.picture {
+		width: 436px;
+		display: block;
+		margin: 0 auto;
+	}
+	.description_picture {
+		text-align: center;
+
+		p {
+			font-size: 1.2em;
+		}
+	}
+}
+
+.swiper-slide-active {
+	cursor: pointer;
+}
+.forum-fixed{
+	position:fixed;
+	left:-70px;
+	top:200px;
+	background:$prouge;
+	width:100px;
+	font-family: 'CabinSketch-Regular';
+	z-index: 2;
+	text-align: center;
+	@include transition(all ease 0.5s);
+
+	a{
+		text-decoration: none;
+		color:white;
+		text-transform: uppercase;
+		padding:10px;
+		display:block;
+		float:left;
+	}
+
+	img{
+		position:absolute;
+		top:12px;
+		left:75px;
+
+		&:hover{
+			cursor:pointer;
+		}
+	}
+}
+
+.active{
+	left:0 !important;
+}
+
+.btn-capoupascap{ 
+	padding:10px;
+	text-transform: uppercase;
+
+	background: $vert;
+	border: solid 2px $vert;
+	@include transition( all 0.5s );
+	width:30%;
+	font-family: 'CabinSketch-Regular';
+	font-size: 2em;
+
+	&:hover{
+		cursor:pointer;
+	}
+
+	a{
+		text-decoration: none;
+		color:white;
 	}
 }

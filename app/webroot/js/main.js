@@ -73,10 +73,8 @@ $(document).ready(function() {
 		return false;
 	});
 
-	$('.pas-cap a').off('click');
-	$('.pas-cap a').on('click', function(e) {
-		console.log(window.current_cap);
-		e.preventDefault();
+	$('button.pas-cap').off('click');
+	$('button.pas-cap').on('click', function() {
 		displayCap(window.current_cap);
 	});
 
@@ -85,13 +83,14 @@ $(document).ready(function() {
 	getPublications();
 
 	function displayCap(cap, callback) {
-		console.log('called');
+		//console.log('called');
+		console.log(window.current_cap);
 
 		$.ajax({
 			type : "POST",
-			url : "Cap/switchCap/"+cap,
+			url : "Cap/switchCap/"+window.current_cap,
 			success: function(response){
-				console.log(response);
+				//console.log(response);
 
 				if(response.check === 'KO') {
 					$('.txt-cap').hide(400);
@@ -107,8 +106,7 @@ $(document).ready(function() {
 						$('.txt-cap').text(response.current_cap.Cap.text).fadeIn();
 					}, 400);
 					
-
-					window.current_cap = response.current_cap.number +1;
+					window.current_cap = response.current_cap.number;
 				}
 			},
 
@@ -120,8 +118,8 @@ $(document).ready(function() {
 		if(callback) callback();
 	}
 
-	$('.publish').off('click');
-	$('.publish').on('click', function() {
+	$('.publish, .btn-forum-publish').off('click');
+	$('.publish, .btn-forum-publish').on('click', function() {
 		$('.pop-up-publish').fadeIn();
 	});
 
@@ -214,17 +212,27 @@ $(document).ready(function() {
 	$(function () {
 		var releaseDate = new Date();
 		releaseDate = new Date(releaseDate.getFullYear() +0, 11 - 1, 22);
-		$('#defaultCountdown').countdown({until: releaseDate});
+		$('#alwaysShow').countdown({until: releaseDate, format: 'DHMS'});
 		$('#year').text(releaseDate.getFullYear());
 	});
 	
 	/*--------END COUNTDOWN--------*/
 
 
+	$(".forum-fixed").hover(
+		function(){
+			$(this).addClass('active');
+		},
+		function(){
+			$(this).removeClass('active');
+		}
+	);
+
+
 	/*--------HOVER RESEAUX--------*/
 		$('#fb_icon').hover(
 			function(){
-				$('.msg_reseaux p').text("Rejoint-nous !");
+				$('.msg_reseaux p').text("Rejoins-nous !");
 			},
 
 			function(){
@@ -256,5 +264,20 @@ $(document).ready(function() {
 		);
 	/*--------END HOVER RESEAUX--------*/
 
+	$('.picture_home').height(($(window).height()-130));
+
+	$(window).resize(function() {
+		$('.picture_home').height(($(window).height()-130));
+	});
+
+	$('.affiche').hide();
+	$('.affiche2').show();
+
+	$(document).off('click', '.slide_affiche.swiper-slide-visible');
+	$(document).on('click', '.slide_affiche.swiper-slide-visible', function() {
+		var data_id = $(this).attr('data-id');
+		$('.affiche').hide();
+		$('.affiche'+data_id).show();
+	});
 
 });
