@@ -355,46 +355,99 @@ $(document).ready(function() {
 		$('.point'+r).css('top', (r*45)+'px');
 	}
 
-	displayPoint('jaune', 0);
+	$(window).off('scroll');
 
+	var scroll_down = 0;
+	window.number_point = 0;
+
+	var offset_points_rouge = $('.points_rouge').offset().top;
 	var display_red = 0;
 	var nb_bulle = 1;
 	var this_color;
+	var display_jaune = 0;
 
-	function displayPoint(color, yo) {
-		if(yo === 9 || yo === 16 || yo === 24) {
-			$('.points_'+color+' .point'+yo).animate({
-			    width: "16px",
-			    height: "16px"
-			  }, 200, function() {
-			  	if(color === 'jaune') {
-			  		this_color = 'rouge';
-			  	} else {
-			  		this_color = 'jaune';
-			  	}
-			  	$('.bulle_'+this_color+nb_bulle).animate({
-				    width: "350px",
-				    height: "308px"
-				  }, 0, function() {
-				  	nb_bulle++;
-				});
-			  	yo++;
-			    displayPoint(color, yo);
-			});
-		} else {
-			$('.points_'+color+' .point'+yo).animate({
-			    width: "8px",
-			    height: "8px"
-			  }, 200, function() {
-			  	yo++;
-			    displayPoint(color, yo);
-			});
+	$(window).on('scroll', function() {
+		if(display_jaune === 0) {
+			theDisplay('jaune', window.number_point);
 		}
-		if(yo === 31) {
-			if(display_red === 0) {
-				nb_bulle = 1;
-				displayPoint('rouge', 0);
-				display_red = 1;
+
+		if(display_red === 0) {
+			if(offset_points_rouge < ($(window).height() + $(window).scrollTop())) {
+				theDisplay('rouge', window.number_point);
+			}
+		}
+	});
+
+	
+	function theDisplay(color, yo) {
+		//if(callback) callback();
+		var the_point = $('.points_'+color+' .point'+window.number_point);
+		console.log(the_point);
+		var point_top = the_point.offset().top;
+		var window_top = ($(window).height() + $(window).scrollTop()) - 100;
+
+		if(point_top < window_top) {
+			console.log('ok point'+window.number_point);
+
+			if(window.number_point === 9 || window.number_point === 16 || window.number_point === 24) {
+				the_point.animate({
+				    width: "16px",
+				    height: "16px"
+				  }, 200, function() {
+				  	if(color === 'jaune') {
+				  		this_color = 'rouge';
+				  	} else {
+				  		this_color = 'jaune';
+				  	}
+				  	$('.bulle_'+this_color+nb_bulle).animate({
+					    opacity: 1
+					}, {
+					    duration: 500,
+					    specialEasing: {
+					    width: "easeOutQuint",
+					    height: "easeOutQuint"
+						},
+						 complete: function() {
+					      nb_bulle++;
+					    }
+					});
+				  	window.number_point = window.number_point + 1;
+				  	if(window.number_point !== 32) {
+				  		the_point = $('.points_'+color+' .point'+window.number_point);
+						point_top = the_point.offset().top;
+						window_top = ($(window).height() + $(window).scrollTop()) - 100;
+
+						if(point_top < window_top) {
+							theDisplay(color, window.number_point);
+						}
+				  	}
+				});
+
+			} else {
+				the_point.animate({
+				    width: "8px",
+				    height: "8px"
+				  }, 200, function() {
+				  	window.number_point = window.number_point + 1;
+				  	if(window.number_point !== 32) {
+				  		the_point = $('.points_'+color+' .point'+window.number_point);
+						point_top = the_point.offset().top;
+						window_top = ($(window).height() + $(window).scrollTop()) - 100;
+
+						if(point_top < window_top) {
+							theDisplay(color, window.number_point);
+						}
+				  	} else {
+				  		if(display_jaune === 1 && display_red === 0) {
+				  			display_red = 1;
+				  		}
+				  		if(display_jaune === 0) {
+				  			display_jaune = 1;
+				  		}
+				  		window.number_point = 0;
+				  		nb_bulle = 1;
+				  	}
+				});
 			}
 		}
 	}

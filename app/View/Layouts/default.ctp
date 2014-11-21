@@ -28,7 +28,7 @@
 
 		<header id="header">
 			<ul>
-				<li><a href="/Home" id="logo">
+				<li><a href="Home" id="logo">
 					<img src="img/logo2.png" width="114" />
 				</a></li>
 				<li><a href="isolement">L'isolement c'est quoi ?</a></li>
@@ -88,6 +88,8 @@
 
 	<!--<?php echo $this->element('sql_dump'); ?>-->
 	<?= $this->Html->script('jquery.plugin') ?>
+	<?= $this->Html->script('jquery-ui.min') ?>
+	
 	<?= $this->Html->script('countdown.js') ?>
 	<?= $this->Html->script('main') ?>
 </body>
