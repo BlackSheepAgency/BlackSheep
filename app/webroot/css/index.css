@@ -1241,6 +1241,7 @@ h2 {
 }
 /* line 1169, ../sass/index.scss */
 .picture_affiche h3 {
+  display: block;
   font-family: "CabinSketch-Bold", cursive;
   color: #fd5454;
   font-size: 2.8em;
@@ -1251,16 +1252,16 @@ h2 {
   text-align: center;
 }
 
-/* line 1184, ../sass/index.scss */
+/* line 1185, ../sass/index.scss */
 #sliders {
   text-align: center;
 }
-/* line 1187, ../sass/index.scss */
+/* line 1188, ../sass/index.scss */
 #sliders .affiche_gd {
   display: inline-block;
   text-decoration: none;
 }
-/* line 1191, ../sass/index.scss */
+/* line 1192, ../sass/index.scss */
 #sliders .affiche_pt {
   display: inline-block;
   text-decoration: none;
