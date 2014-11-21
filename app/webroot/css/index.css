@@ -1444,9 +1444,6 @@ h2 {
 /* line 1344, ../sass/index.scss */
 .picture_affiche {
   text-align: center;
-}
-/* line 1347, ../sass/index.scss */
-.picture_affiche h3 {
   display: block;
   font-family: "CabinSketch-Bold", cursive;
   color: #fd5454;
@@ -1454,40 +1451,40 @@ h2 {
   background-image: url("../img/picture_affiche.png");
   width: 710px;
   height: 188px;
-  padding-top: 2em;
-  text-align: center;
+  padding-top: 65px;
+  margin: 0 auto;
 }
 
-/* line 1363, ../sass/index.scss */
+/* line 1358, ../sass/index.scss */
 #sliders {
   text-align: center;
 }
-/* line 1366, ../sass/index.scss */
+/* line 1361, ../sass/index.scss */
 #sliders .affiche_gd {
   display: inline-block;
   text-decoration: none;
 }
-/* line 1370, ../sass/index.scss */
+/* line 1365, ../sass/index.scss */
 #sliders .affiche_pt {
   display: inline-block;
   text-decoration: none;
 }
 
 @media screen and (min-width: 641px) and (max-width: 1100px) {
-  /* line 1382, ../sass/index.scss */
+  /* line 1377, ../sass/index.scss */
   header {
     height: 130px;
     text-align: center;
     background: #fff;
     position: relative;
   }
-  /* line 1388, ../sass/index.scss */
+  /* line 1383, ../sass/index.scss */
   header ul {
     margin: 0 auto;
     width: 63%;
     padding-top: 3em;
   }
-  /* line 1395, ../sass/index.scss */
+  /* line 1390, ../sass/index.scss */
   header li {
     text-align: center;
     display: inline-block;
@@ -1495,18 +1492,18 @@ h2 {
     list-style: none;
     padding-right: 0.8em;
   }
-  /* line 1403, ../sass/index.scss */
+  /* line 1398, ../sass/index.scss */
   header a {
     font-family: "CabinSketch-Regular";
     text-decoration: none;
     color: black;
     font-size: 0.8em;
   }
-  /* line 1409, ../sass/index.scss */
+  /* line 1404, ../sass/index.scss */
   header a:hover {
     color: #fd5454;
   }
-  /* line 1414, ../sass/index.scss */
+  /* line 1409, ../sass/index.scss */
   header .capoupascap {
     background-image: url("../img/fond_cap.png");
     position: absolute;
@@ -1517,12 +1514,12 @@ h2 {
     padding-top: 20px;
     z-index: 2;
   }
-  /* line 1424, ../sass/index.scss */
+  /* line 1419, ../sass/index.scss */
   header .capoupascap:hover {
     color: white;
   }
 
-  /* line 1431, ../sass/index.scss */
+  /* line 1426, ../sass/index.scss */
   #logo {
     position: absolute;
     top: 0;
@@ -1532,20 +1529,20 @@ h2 {
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 1443, ../sass/index.scss */
+  /* line 1438, ../sass/index.scss */
   header {
     height: 200px;
     text-align: center;
     background: #fff;
     position: relative;
   }
-  /* line 1449, ../sass/index.scss */
+  /* line 1444, ../sass/index.scss */
   header ul {
     margin: 0 auto;
     width: 55%;
     padding-top: 3%;
   }
-  /* line 1456, ../sass/index.scss */
+  /* line 1451, ../sass/index.scss */
   header li {
     display: inherit;
     vertical-align: middle;
@@ -1553,18 +1550,18 @@ h2 {
     padding-right: 1em;
     padding-bottom: 1em;
   }
-  /* line 1463, ../sass/index.scss */
+  /* line 1458, ../sass/index.scss */
   header a {
     font-family: "CabinSketch-Regular";
     text-decoration: none;
     color: black;
     font-size: 1.2em;
   }
-  /* line 1469, ../sass/index.scss */
+  /* line 1464, ../sass/index.scss */
   header a:hover {
     color: #fd5454;
   }
-  /* line 1474, ../sass/index.scss */
+  /* line 1469, ../sass/index.scss */
   header .capoupascap {
     background-image: url("../img/fond_cap.png");
     position: absolute;
@@ -1575,12 +1572,12 @@ h2 {
     padding-top: 20px;
     z-index: 2;
   }
-  /* line 1484, ../sass/index.scss */
+  /* line 1479, ../sass/index.scss */
   header .capoupascap:hover {
     color: white;
   }
 
-  /* line 1491, ../sass/index.scss */
+  /* line 1486, ../sass/index.scss */
   #logo {
     position: absolute;
     top: 0;
@@ -1589,7 +1586,7 @@ h2 {
     height: 90px;
   }
 }
-/* line 1501, ../sass/index.scss */
+/* line 1496, ../sass/index.scss */
 .forum-fixed {
   position: fixed;
   left: -70px;
@@ -1604,7 +1601,7 @@ h2 {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 1512, ../sass/index.scss */
+/* line 1507, ../sass/index.scss */
 .forum-fixed a {
   text-decoration: none;
   color: white;
@@ -1613,23 +1610,23 @@ h2 {
   display: block;
   float: left;
 }
-/* line 1521, ../sass/index.scss */
+/* line 1516, ../sass/index.scss */
 .forum-fixed img {
   position: absolute;
   top: 12px;
   left: 75px;
 }
-/* line 1526, ../sass/index.scss */
+/* line 1521, ../sass/index.scss */
 .forum-fixed img:hover {
   cursor: pointer;
 }
 
-/* line 1532, ../sass/index.scss */
+/* line 1527, ../sass/index.scss */
 .active {
   left: 0 !important;
 }
 
-/* line 1536, ../sass/index.scss */
+/* line 1531, ../sass/index.scss */
 .btn-capoupascap {
   padding: 10px;
   text-transform: uppercase;
@@ -1643,11 +1640,11 @@ h2 {
   font-family: 'CabinSketch-Regular';
   font-size: 2em;
 }
-/* line 1547, ../sass/index.scss */
+/* line 1542, ../sass/index.scss */
 .btn-capoupascap:hover {
   cursor: pointer;
 }
-/* line 1551, ../sass/index.scss */
+/* line 1546, ../sass/index.scss */
 .btn-capoupascap a {
   text-decoration: none;
   color: white;

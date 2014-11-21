@@ -1343,20 +1343,15 @@ h2{
 
 .picture_affiche{
 	text-align: center;
-
-	h3{
-		display: block;
-		font-family: "CabinSketch-Bold", cursive;
-		color: $rouge;
-		font-size: 2.8em;
-		background-image: url("../img/picture_affiche.png");
-		width: 710px;
-		height: 188px;
-		padding-top: 2em;
-		text-align: center;
-		
-	}
-
+	display: block;
+	font-family: "CabinSketch-Bold", cursive;
+	color: $rouge;
+	font-size: 2.8em;
+	background-image: url("../img/picture_affiche.png");
+	width: 710px;
+	height: 188px;
+	padding-top: 65px;
+	margin: 0 auto;
 }
 
 
@@ -1533,7 +1528,7 @@ h2{
 	left:0 !important;
 }
 
-.btn-capoupascap{
+.btn-capoupascap{ 
 	padding:10px;
 	text-transform: uppercase;
 

@@ -1,6 +1,8 @@
 <div class="page_webseries">
 	<div class="top_video">
-		<h1>Papy déconne</h1>
+		
+		<h1 class="picture_affiche">Papy déconne</h1>
+		
 		<div class="video_description">
 			<h3>Papy déconne sur ses années lycée</h3>
 			<p>
