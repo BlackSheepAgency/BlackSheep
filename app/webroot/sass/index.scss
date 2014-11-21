@@ -946,7 +946,7 @@ h2{
 }
 
 .bulle_jaune, .bulle_rouge {
-	background-image: url('../img/bulle_jaune.png');
+	background-image: url('../img/bulle_rouge.png');
 	background-repeat: no-repeat;
 	width: 350px;
 	height: 308px;
@@ -976,7 +976,7 @@ h2{
 }
 
 .bulle_jaune {
-	background-image: url('../img/bulle_rouge.png');
+	background-image: url('../img/bulle_jaune.png');
 	.bulle_title, .bulle_description { 
 		color: #f0f0f0;
 	}
@@ -1122,6 +1122,43 @@ h2{
 	text-align: center;
 }
 
+
+.picture_affiche{
+	text-align: center;
+
+	h3{
+		display: block;
+		font-family: "CabinSketch-Bold", cursive;
+		color: $rouge;
+		font-size: 2.8em;
+		background-image: url("../img/picture_affiche.png");
+		width: 710px;
+		height: 188px;
+		padding-top: 2em;
+		text-align: center;
+		
+	}
+
+}
+
+
+#sliders{
+	text-align: center;
+
+	.affiche_gd{
+		display: inline-block;
+		text-decoration: none;
+	}
+	.affiche_pt{
+		display: inline-block;
+		text-decoration: none;
+	}
+}
+
+
+
+
+
 @media screen and (min-width: 641px) and (max-width: 1100px) {
   
   header {
@@ -1242,4 +1279,5 @@ h2{
 	}
   
 }
+
 
