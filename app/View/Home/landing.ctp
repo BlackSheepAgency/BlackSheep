@@ -1,7 +1,7 @@
 <div class="wrapper">
 	<h2 class="nos">Sois aimant avec tes grands-parents !</h2>
 	<div class="timer">
-		<div id="defaultCountdown"></div>
+		<div id="alwaysShow"></div>
 	</div>
 	<div class="frame">
 		<h2 class="lancement">Lancement de la campagne</h2>

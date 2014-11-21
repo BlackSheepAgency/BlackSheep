@@ -25,6 +25,7 @@ $violet: #9a5599;
 $rouge : #fd5454;
 $orange: #ef9d33;
 $jaune: #fcd541;
+$prouge: #fd5454;
 
 .clearfix {
   overflow: auto;
@@ -215,7 +216,6 @@ h1{
 	letter-spacing: 2px;
 	text-align: center;
 	margin-top: 0;
-	line-height: 130px;
 }
 
 h2{
@@ -251,6 +251,15 @@ h2{
 
 #bg-cap{
 	background:url(../img/retina_wood.png);
+	width:100%;
+	height:1050px;
+	position:relative;
+	left:0;
+	top:0;	
+}
+
+#bg-solutions{
+	background:$prouge;
 	width:100%;
 	height:1050px;
 	position:relative;
@@ -325,7 +334,22 @@ h2{
 }
 
 .publish {
-	text-align: left;
+	padding:10px;
+	text-transform: uppercase;
+	color:white;
+	background: $vert;
+	border: solid 2px $vert;
+	@include transition( all 0.5s );
+	width:30%;
+	font-family: 'Lato';
+	font-weight: 100;
+	font-size: 1.1em;
+	margin-top:50px;
+
+	&:hover{
+		cursor:pointer;
+	}
+
 }
 
 .publish_cap{
@@ -408,11 +432,7 @@ h2{
 	margin-left: -300px; 
 	z-index: 1;
 
-	&.pop-up-publish {
-		form {
-			border: 3px solid $bleu;
-		}
-	}
+
 
 	form {
 		padding: 10px;
@@ -481,13 +501,13 @@ h2{
 		font-family: 'Lato';
 		font-weight: 100;
 		font-size: 1.1em;
-	}
 
-	input[type=submit]:hover{
-		cursor:pointer;
-		background:transparent;
-		border: solid 2px white;
-		color:white;
+		&:hover{
+			cursor:pointer;
+			background:transparent;
+			border: solid 2px white;
+			color:white;
+		}
 	}
 
 	input[type=mail], textarea {
@@ -500,7 +520,7 @@ h2{
 	}
 }
 
-.form_add_cap, .form_add_pseudo{
+.form_add_cap, .form_add_pseudo, .add_publication{
 
 
 	h2{
@@ -535,8 +555,8 @@ h2{
 	text-align: center;
 
 	p{
-	font-family: 'Lato';
-	font-size: 1.3em;
+		font-family: 'Lato';
+		font-size: 1em;
 	}
 }
 
@@ -689,19 +709,19 @@ h2{
 	height:100px;
 }
 
-#defaultCountdown span span:nth-child(1) span:first-child {
+#alwaysShow span span:nth-child(1) span:first-child {
 	border: solid 1px $jaune;
 	@include border-radius(10px);
 }
-#defaultCountdown span span:nth-child(2) span:first-child {
+#alwaysShow span span:nth-child(2) span:first-child {
 	border: solid 1px $jaune;
 	@include border-radius(10px);
 }
-#defaultCountdown span span:nth-child(3) span:first-child {
+#alwaysShow span span:nth-child(3) span:first-child {
 	border: solid 1px $jaune;
 	@include border-radius(10px);
 }
-#defaultCountdown span span:nth-child(4) span:first-child {
+#alwaysShow span span:nth-child(4) span:first-child {
 	border: solid 1px $jaune;
 	@include border-radius(10px);
 }
@@ -725,20 +745,20 @@ h2{
 	text-transform: none;
 }
 
-#defaultCountdown span span:nth-child(1) .countdown-period {
+#alwaysShow span span:nth-child(1) .countdown-period {
 	background-color: $jaune;
 	color: black;
 }
 
-#defaultCountdown span span:nth-child(2) .countdown-period {
+#alwaysShow span span:nth-child(2) .countdown-period {
 	background-color: $jaune;
 	color: black;
 }
-#defaultCountdown span span:nth-child(3) .countdown-period {
+#alwaysShow span span:nth-child(3) .countdown-period {
 	background-color: $jaune;
 	color: black;
 }
-#defaultCountdown span span:nth-child(4) .countdown-period {
+#alwaysShow span span:nth-child(4) .countdown-period {
 	background-color: $jaune;
 	color: black;
 }
@@ -986,4 +1006,136 @@ h2{
 			background-color: $rouge;
 		}
 	}
+}
+
+/*Solutions*/
+
+.grand-bloc{
+	width:100%;
+	position:relative;
+	font-family: 'Lato';
+	font-weight: 100;
+	padding:30px;
+	margin-bottom: 20px;
+	background:white;
+	text-align: left;
+	@include box-sizing(border-box);
+
+	h1{
+		font-size: 1.3em;
+		color:$prouge;
+		text-transform: uppercase;
+		font-weight: 100;
+		text-align: left;
+	}
+
+	p{
+		font-size: 1.1em;
+	}
+
+	.pseudo-com{
+		text-align: right;
+		font-weight: 300;
+		color:$prouge;
+	}
+
+	img{
+		width:40%;
+		position:relative;
+		float:left;
+		margin-right: 30px;
+	}
+
+}
+
+.petit-bloc{
+	width:48.6999%;
+	position:relative;
+	font-family: 'Lato';
+	font-weight: 100;
+	padding:30px;
+	float:left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background:white;
+	text-align: left;
+	@include box-sizing(border-box);
+
+	h1{
+		font-size: 1.3em;
+		color:$prouge;
+		text-transform: uppercase;
+		font-weight: 100;
+		text-align: left;
+	}
+
+	a{
+		color:$prouge;
+		text-align: right !important;
+		text-decoration: none;
+
+		&:hover{
+			text-decoration:underline;
+		}
+	}
+
+	p{
+		font-size: 1.1em;
+	}
+}
+
+.petit-bloc-wrapper{
+	position:relative;
+	display:block;
+}
+
+.no-margin-right{
+	margin-right: 0;
+}
+
+.no-margin-top{
+	margin-top: 0;
+}
+
+.margin-top{
+	margin-top:50px;
+}
+
+.btn-cap {
+	padding:10px;
+	text-transform: uppercase;
+	color:white;
+	background: $vert;
+	border: solid 2px $vert;
+	@include transition( all 0.5s );
+	width:30%;
+	font-family: 'Lato';
+	font-weight: 100;
+	font-size: 1.1em;
+	float:right;
+
+	&:hover{
+		cursor:pointer;
+	}
+
+}
+
+.btn-forum-publish {
+	padding:10px;
+	text-transform: uppercase;
+	color:white;
+	background: $vert;
+	border: solid 2px $vert;
+	@include transition( all 0.5s );
+	width:100%;
+	font-family: 'Lato';
+	font-weight: 100;
+	font-size: 1.1em;
+	margin-top: 50px;
+	margin-bottom: 20px;
+
+	&:hover{
+		cursor:pointer;
+	}
+
 }

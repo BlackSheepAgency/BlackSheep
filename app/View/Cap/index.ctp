@@ -3,17 +3,12 @@
 		<div class="pop-up-publish pop-up">
 			<div>
 				<form class="add_publication">
+					<h2>publie ton cap !</h2>
 					<div class="style_input">
-						<label for="publi_pseudo">Pseudo</label><br/>
 						<input type="text" name="publi_pseudo" class="publi_pseudo" placeholder="Entrez votre pseudo" />
 					</div>
 					<div class="style_input">
-						<label for="publi_url">URL</label><br/>
-						<input type="text" name="publi_url" class="publi_url"  />
-					</div>
-					<div class="style_input">
-						<label for="publi_comment">Commentaire</label><br/>
-						<textarea class="comment" name="publi_comment" class="publi_comment"></textarea>
+						<textarea class="comment" name="publi_comment" placeholder ="Cap de..." class="publi_comment"></textarea>
 					</div>
 
 					<div class="style_input">
@@ -26,9 +21,9 @@
 			<div class="form_add_pseudo"> 
 				<div class="info_add info_add_error red"></div>
 				<div class="info_add info_add_success green"></div>
-				<form class="no-pseudo" action="" method="post">Pas de pseudo ? Insérez-en un !
+				<form class="no-pseudo" action="" method="post">
 					<div class="style_input">
-						<label for="pseudo">Pseudo</label><br/>
+						<p>Pas de pseudo ? Insérez-en un !</p>
 						<input type="text" name="pseudo" class="get_pseudo" placeholder="Entrez votre pseudo" />
 					</div>
 					<div class="style_input">
@@ -38,10 +33,8 @@
 			</div>
 
 
-			<div class="close">X</div>
+			<div class="close"><img src="app/webroot/img/close.png"></div>
 		</div>
-
-		<button class="publish">Publier une Action</button>
 
 		<div class="cap">
 			<div class="txt-cap">
@@ -58,11 +51,13 @@
 			</div>
 		</div>
 
+		<button class="publish">Publier un Cap !</button>
+
 		<div id="visuel">
 			<img src="app/webroot/img/visuel.png"/>
 		</div>
 		
-		<p>Tu veux partager ton expérience ou consulter celle des autres ? Rends-toi sur le <a href="#" class="link-forum">forum</a> !</p>
+		<p>Tu veux partager ton expérience ou consulter celle des autres ? Rends-toi sur le <a href="forum" class="link-forum">forum</a> !</p>
 
 		<div class="btn-forum">
 			Accéder au Forum

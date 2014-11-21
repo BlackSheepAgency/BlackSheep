@@ -118,8 +118,8 @@ $(document).ready(function() {
 		if(callback) callback();
 	}
 
-	$('.publish').off('click');
-	$('.publish').on('click', function() {
+	$('.publish, .btn-forum-publish').off('click');
+	$('.publish, .btn-forum-publish').on('click', function() {
 		$('.pop-up-publish').fadeIn();
 	});
 
@@ -212,7 +212,7 @@ $(document).ready(function() {
 	$(function () {
 		var releaseDate = new Date();
 		releaseDate = new Date(releaseDate.getFullYear() +0, 11 - 1, 22);
-		$('#defaultCountdown').countdown({until: releaseDate});
+		$('#alwaysShow').countdown({until: releaseDate, format: 'DHMS'});
 		$('#year').text(releaseDate.getFullYear());
 	});
 	
