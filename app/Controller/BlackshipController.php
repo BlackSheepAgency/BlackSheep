@@ -46,7 +46,7 @@ class BlackshipController extends AppController {
 
 		$fb_id="602780313159165";
 		//be sure to update this access token
-		$myFBToken="CAAKTUrSoBpkBAKAByZCvzHeHcwikwU3QWKXcyJ0jAOtHz5RVreeRZBr7rjwze2SpoJFIk73ZAxJF0Gz7vOH8GmBvoNKDZCtPwouMNFZCE2lD4X8VXMmbMwyoAgQCZC3F0Tkkbn72NXd84Dg9014I8mCI77TnDT4ZBYykaCisj8QMA4Hs8fXaExEUNkGZCEb9swYsfZBb166AXEtPbkQU9t7D97Pn2fln2gCYZD";
+		$myFBToken="CAAKTUrSoBpkBAPLTLkVtZB0YycDUrPE3ju1xFQEyqUZBRpGj1Gl6PdhqapW6rgAyFFPUBAhPWiEeSKYFV3Cxqpev0SshXBcJH7JI9cCjRoG7lSMwTjX1gH2MSKxsMk61IaZBzz3usAysPijThq3qoFgvPOx4eZBQ2GMHsiJyIbu7JregfdWoLwh1d6AZAZCDreaXNHoInPpn5qZC4sbwPFrkO85FYAIsiUZD";
 
 		// link for FB
 		// https://graph.facebook.com/oauth/authorize?type=user_agent&client_id=724933380933273&redirect_uri=http://www.commedesgosses.com/&scope=read_stream,offline_access
@@ -96,10 +96,13 @@ class BlackshipController extends AppController {
 		}
 		
 		$connection = getConnectionWithAccessToken($consumerkey, $consumersecret, $accesstoken, $accesstokensecret);
-		 
-		$tweets = $connection->get("https://api.twitter.com/1.1/search/tweets.json?q=%23commedesgosses?");
+		
+		$tweets = $connection->get("https://api.twitter.com/1.1/search/tweets.json?q=%23commedesgosses");
 
 		$the_tweets = json_decode(json_encode($tweets), true);
+
+		//debug($the_tweets);
+		//die;
 		
 		$f = 0;
 		foreach ($the_tweets as $key => $the_tweet) {
@@ -127,6 +130,7 @@ class BlackshipController extends AppController {
 		foreach ($messages['facebook'] as $key => $message) {
 
 			if(!in_array($message['message'], $check_messages)) {
+
 				$this->Message->create();
 				$this->Message->save(array(
 					'author' => $message['name'],
@@ -139,6 +143,9 @@ class BlackshipController extends AppController {
 
 		foreach ($messages['tweet'] as $key => $message) {
 			if(!in_array($message['message'], $check_messages)) {
+				if($message['link'] == null) {
+					$message['link'] = 'no_url';
+				}
 				$this->Message->create();
 				$this->Message->save(array(
 					'author' => $message['name'],

@@ -20,17 +20,23 @@
 
 		<div class="bulle_rouge bulle_rouge1">
 			<div class="bulle_title">Décès du conjoint</div>
-			<div class="bulle_description">bla bla blablablablabla blablablablablablabla  bla</div>
+			<div class="bulle_description">
+				Cela fait prendre conscience de sa propre mortalité créant un sentiment dépressif.
+			</div>
 		</div>
 
 		<div class="bulle_rouge bulle_rouge2">
 			<div class="bulle_title">Eloignement des proches</div>
-			<div class="bulle_description">bla bla blablablablabla blablablablablablabla  bla</div>
+			<div class="bulle_description">
+				La libération des moeurs d’après 68 facilite la rupture des liens familiaux.
+			</div>
 		</div>
 
 		<div class="bulle_rouge bulle_rouge3">
-			<div class="bulle_title">super info n°3</div>
-			<div class="bulle_description">bla bla blablablablabla blablablablablablabla  bla</div>
+			<div class="bulle_title">La perte d’autonomie </div>
+			<div class="bulle_description">
+				La peur de demander de l'aide, exprimée par 25% de seniors, participe à l’isolement.
+			</div>
 		</div>
 
 	</div>
@@ -48,18 +54,24 @@
 		</div>
 
 		<div class="bulle_jaune bulle_jaune1">
-			<div class="bulle_title">Décès du conjoint</div>
-			<div class="bulle_description">bla bla blablablablabla blablablablablablabla  bla</div>
+			<div class="bulle_title">La dépression</div>
+			<div class="bulle_description">
+				Touchant 10 à 15 % des seniors, elle entraîne la fatigue et le découragement. 
+			</div>
 		</div>
 
 		<div class="bulle_jaune bulle_jaune2">
-			<div class="bulle_title">Eloignement des proches</div>
-			<div class="bulle_description">bla bla blablablablabla blablablablablablabla  bla</div>
+			<div class="bulle_title">Augmentation du risque de maladies</div>
+			<div class="bulle_description">
+				Les personnes âgées sont de moins en moins sensibles à leur état de santé.
+			</div>
 		</div>
 
 		<div class="bulle_jaune bulle_jaune3">
-			<div class="bulle_title">super info n°3</div>
-			<div class="bulle_description">bla bla blablablablabla blablablablablablabla  bla</div>
+			<div class="bulle_title">Pensées suicidaires</div>
+			<div class="bulle_description">
+				En 2013, on dénombre 3000 cas de suicide chez les plus de 65 ans.
+			</div>
 		</div>
 		
 	</div>
@@ -70,3 +82,5 @@
 		</div>
 	</div>
 </div>
+
+<?= $this->Html->script('animation') ?>
