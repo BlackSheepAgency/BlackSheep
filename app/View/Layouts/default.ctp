@@ -52,8 +52,19 @@
 					<a href="forum">forum</a>
 					 <img src="img/white-arrow.png" alt="">
 				</div>
+
+				<script>
+				  window.fbAsyncInit = function() {
+				    FB.init({
+				      appId      : '724933380933273',
+				      xfbml      : true,
+				      version    : 'v2.2'
+				    });
+				  };
+				</script>
 				
-				<!----><?= $this->fetch('content') ?><!----></div>
+				<!----><?= $this->fetch('content') ?><!---->
+			</div>
 		</div>
 
 		<footer id="footer">

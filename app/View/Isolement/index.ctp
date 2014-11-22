@@ -83,9 +83,9 @@
 	</div>
 
 
-	<div class="cap">
-		<div id="propose">
-			<span class="defi">ou alors</span><img src="app/webroot/img/red-arrow.png" class="fleche"/><div class="btn-capoupascap"><a href="cap">cap ou pas cap ?</a></div>
+	<div class="cap clearfix">
+		<div id="propose" class="clearfix no-padding-top">
+			<p>Ne nous laisse pas tomber</p><span class="defi">AGIS<img src="app/webroot/img/red-arrow.png" class="fleche"/></span><div class="btn-capoupascap"><a href="cap">cap ou pas cap ?</a></div>
 		</div>
 	</div>
 </div>

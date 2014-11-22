@@ -273,6 +273,7 @@ h2{
 
 .cap {
 	text-align: center;
+	margin-bottom: 50px;
 }
 
 #bg-cap{
@@ -385,7 +386,6 @@ h2{
 		background: lighten($vert, 15%);
 		border-color: lighten($vert, 15%);
 	}
-
 }
 
 .publish_cap{
@@ -407,8 +407,14 @@ h2{
 .defi{
 	font-family: 'CabinSketch-Regular';
 	color:black;
-	font-size: 2em;
+	font-size: 3em;
 	text-transform: uppercase;
+	float:left;
+
+	img{
+		width:65px;
+		vertical-align: super;
+	}
 }
 
 #visuel{
@@ -419,15 +425,27 @@ h2{
 }
 
 #propose{
-	width:81%;
+	width:37.3%;
 	position:relative;
 	margin:auto;
 	padding-top: 50px;
+	text-align: center;
+
+	p{
+		font-family: 'Lato';
+		margin-top:25px;
+		margin-right:10px;
+		font-weight: 300;
+	}
+}
+
+.no-padding-top{
+	padding-top: 0 !important;
 }
 
 .fleche{
 	top:10px;
-	margin:0 15px 0 15px;
+	margin:0 20px 0 20px;
 	position:relative;
 }
 
@@ -1669,15 +1687,16 @@ h2{
 }
 
 .btn-capoupascap{ 
-	padding:10px;
+	padding:5px;
 	text-transform: uppercase;
-
 	background: $vert;
 	border: solid 2px $vert;
 	@include transition( all 0.5s );
-	width:30%;
+	width:260px;
 	font-family: 'CabinSketch-Regular';
-	font-size: 2em;
+	font-size: 1.5em;
+	float:left;
+	margin-top: 5px;
 
 	&:hover{
 		cursor:pointer;
