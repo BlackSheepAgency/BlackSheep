@@ -71,34 +71,6 @@
 				</div>
 		</footer>
 
-	<div id="container">
-		<div id="content"><!----><?= $this->fetch('content') ?><!----></div>
-	</div>
-	<footer id="footer">
-		<div class="bloc-footer-m">
-			<a href="#">Mentions légales</a> ⎢ <a href="#">Plan du site</a><br/>
-			©<span class="name">Comme des gosses</span> ⎢ 2014 ⎢ Tous droits reservés ⎢ <a href="mailto:contact@commedesgosses.com">contact@commesdesgosses.com</a>
-			<br/>
-			Créé par l'agence <span class="name">Black Sheep</span><br/>
-			
-		</div>
-		<div class="bloc-footer-d">&nbsp;
-			<div class="reseaux-footer">
-				<ul>
-					<li>
-						<a id="fb_icon2" href=""></a>
-					</li>
-					<li>
-						<a id="twitter_icon2" href=""></a>
-					</li>
-					<li>
-						<a id="youtube_icon2" href=""></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</footer>
-
 	<script>
 	  window.fbAsyncInit = function() {
 	    FB.init({
