@@ -285,4 +285,52 @@ $(document).ready(function() {
 		$('.affiche'+data_id).show();
 	});
 
+	$('.button_twitter').off('click');
+    $('.button_twitter').on('click', function(e) {
+    	e.preventDefault();
+        var width  = 575,
+        height = 400,
+        left   = ($(window).width()  - width)  / 2,
+        top    = ($(window).height() - height) / 2,
+        txt    = "#CommeDesGosses http://bit.ly/11Oa2d9",
+        url    = "http://twitter.com/share?text="+urlencode(txt)+"&url="+'http//www.google.fr',
+        opts   = 'status=1' +
+        ',width='  + width  +
+        ',height=' + height +
+        ',top='    + top    +
+        ',left='   + left;
+
+        window.open(url, 'twitter', opts);
+    });
+
+    $('.button_facebook').off('click');
+    $('.button_facebook').on('click', function(e) {
+    	e.preventDefault();
+        var params = {
+            name: "J'ai été cap de ... !",
+            description: "Venez vous aussi sur Comme des gosses et prouvez que vous êtes cap de faire quelque chose !",
+            link:'http://commedesgosses.com/',
+            picture: 'http://commedesgosses.com/img/logo.png'
+        };
+        publish(params, function() {
+        });
+    });
+
+    function urlencode(str) {
+	    str = (str + '').toString();
+	    return encodeURIComponent(str).replace(/!/g, '%21').replace(/'/g, '%27').replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A').replace(/%20/g, '+');
+	}
+
+	function publish(_param, callback) { 
+		var param = _param || {};
+		var def = {
+			display     : 'dialog',
+			method      : 'feed'
+		};
+		FB.ui(def, function(response)
+		{
+		if(callback)callback(response);
+		}); 
+	}
+
 });
