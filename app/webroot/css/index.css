@@ -539,7 +539,7 @@ h2 {
 }
 /* line 511, ../sass/index.scss */
 .pop-up p img {
-  height: 18px;
+  /*height:18px;*/
   margin-left: 11px;
   vertical-align: sub;
 }

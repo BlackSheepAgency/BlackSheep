@@ -72,8 +72,11 @@
 						<input type="submit" class="valid-pseudo" value="Envoyer" />
 					</div>
 					<p>Publier sur les Réseaux Sociaux   
-						<a href="#" class="button_facebook"><img src="app/webroot/img/share-fb.png"> </a>
-						<a href="#" class="button_twitter"><img src="app/webroot/img/share-tw.png"></a>
+						<div>
+							<a href="#" class="button_facebook"><img src="app/webroot/img/share-fb.png"> </a>
+							<a href="#" class="button_twitter"><img src="app/webroot/img/share-tw.png"></a>
+						</div>
+						
 					</p>
 				</form>
 			</div>
