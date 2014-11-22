@@ -68,13 +68,13 @@
 				<div class="reseaux-footer">
 					<ul>
 						<li>
-							<a id="fb_icon2" href=""></a>
+							<a id="fb_icon2" target="_blank" href="https://www.facebook.com/pages/Comme-des-Gosses/602780313159165?fref=ts"></a>
 						</li>
 						<li>
-							<a id="twitter_icon2" href=""></a>
+							<a id="twitter_icon2" target="_blank" href="https://twitter.com/CommeDesGosses"></a>
 						</li>
 						<li>
-							<a id="youtube_icon2" href=""></a>
+							<a id="youtube_icon2" target="_blank" href="https://www.youtube.com/CommedesGosses"></a>
 						</li>
 					</ul>
 				</div>

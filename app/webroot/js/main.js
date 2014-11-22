@@ -96,14 +96,19 @@ $(document).ready(function() {
 					$('.txt-cap').hide(400);
 					setTimeout(function(){
 						$('.txt-cap').css('color')
-						$('.txt-cap').text('Vous êtes arrivé à la dernière question !').fadeIn();
+						$('.txt-cap').text('Vous êtes arrivé au dernier défi !').fadeIn();
+						$('#visuel').html('');
 					}, 400);
 					$('.pas-cap').hide();
 					$('.valid-cap').hide();
 				} else {
-					$('.txt-cap').hide(400);
+					$('.txt-cap').fadeOut(400);
 					setTimeout(function(){
 						$('.txt-cap').text(response.current_cap.Cap.text).fadeIn();
+						if(response.current_cap.Cap.picture != null && response.current_cap.Cap.picture != undefined) {
+							$('#visuel').html('<img height="250" src="'+response.current_cap.Cap.picture+'" />');
+						}
+						
 					}, 400);
 					
 					window.current_cap = response.current_cap.number;

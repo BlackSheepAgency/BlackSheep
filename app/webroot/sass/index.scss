@@ -389,16 +389,18 @@ h2{
 }
 
 .publish_cap{
-	background:white;
+	background:$vert;
 	border:none;
 	font-family: 'CabinSketch-Regular';
-	color:black;
-	font-size: 2em;
+	color:#f0f0f0;
+	font-size: 1.8em;
 	text-transform: uppercase;
 	padding:10px;
+	@include transition(0.4s);
 
 	&:hover{
 		cursor:pointer;
+		background:lighten($vert, 15%);
 	}
 }
 
@@ -414,10 +416,6 @@ h2{
 	width:100%;
 	height:250px;
 	margin-top: 50px;
-
-	img{
-		width:100%;
-	}
 }
 
 #propose{
@@ -1168,7 +1166,7 @@ h2{
 }
 
 .petit-bloc{
-	width: 49.1%;
+	width: 48.7%;
 	position:relative;
 	font-family: "Lato";
 	font-weight: 300;

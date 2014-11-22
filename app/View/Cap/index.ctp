@@ -16,7 +16,6 @@
 					</div>
 				</form>
 			</div>
-			
 
 			<div class="form_add_pseudo"> 
 				<div class="info_add info_add_error red"></div>
@@ -32,7 +31,6 @@
 				</form>
 			</div>
 
-
 			<div class="close"><img src="app/webroot/img/close.png"></div>
 		</div>
 
@@ -40,6 +38,8 @@
 			<div class="txt-cap">
 				
 			</div>
+			<div id="visuel">
+		</div>
 			<div id="cap-btns" class="clearfix">
 				<button class="valid-cap"> </button>
 
@@ -49,12 +49,6 @@
 			<div id="propose">
 				<span class="defi">ou alors</span><img src="app/webroot/img/red-arrow.png" class="fleche"/><button class="publish_cap">je propose un défi</button>
 			</div>
-		</div>
-
-		<button class="publish">Publier un Cap !</button>
-
-		<div id="visuel">
-			<img src="app/webroot/img/visuel.png"/>
 		</div>
 		
 		<p>Tu veux partager ton expérience ou consulter celle des autres ? Rends-toi sur le forum !</p>
