@@ -96,14 +96,19 @@ $(document).ready(function() {
 					$('.txt-cap').hide(400);
 					setTimeout(function(){
 						$('.txt-cap').css('color')
-						$('.txt-cap').text('Vous êtes arrivé à la dernière question !').fadeIn();
+						$('.txt-cap').text('Vous êtes arrivé au dernier défi !').fadeIn();
+						$('#visuel').html('');
 					}, 400);
 					$('.pas-cap').hide();
 					$('.valid-cap').hide();
 				} else {
-					$('.txt-cap').hide(400);
+					$('.txt-cap').fadeOut(400);
 					setTimeout(function(){
 						$('.txt-cap').text(response.current_cap.Cap.text).fadeIn();
+						if(response.current_cap.Cap.picture != null && response.current_cap.Cap.picture != undefined) {
+							$('#visuel').html('<img height="250" src="'+response.current_cap.Cap.picture+'" />');
+						}
+						
 					}, 400);
 					
 					window.current_cap = response.current_cap.number;
@@ -279,5 +284,53 @@ $(document).ready(function() {
 		$('.affiche').hide();
 		$('.affiche'+data_id).show();
 	});
+
+	$('.button_twitter').off('click');
+    $('.button_twitter').on('click', function(e) {
+    	e.preventDefault();
+        var width  = 575,
+        height = 400,
+        left   = ($(window).width()  - width)  / 2,
+        top    = ($(window).height() - height) / 2,
+        txt    = "#CommeDesGosses http://bit.ly/11Oa2d9",
+        url    = "http://twitter.com/share?text="+urlencode(txt)+"&url="+'http//www.google.fr',
+        opts   = 'status=1' +
+        ',width='  + width  +
+        ',height=' + height +
+        ',top='    + top    +
+        ',left='   + left;
+
+        window.open(url, 'twitter', opts);
+    });
+
+    $('.button_facebook').off('click');
+    $('.button_facebook').on('click', function(e) {
+    	e.preventDefault();
+        var params = {
+            name: "J'ai été cap de ... !",
+            description: "Venez vous aussi sur Comme des gosses et prouvez que vous êtes cap de faire quelque chose !",
+            link:'http://commedesgosses.com/',
+            picture: 'http://commedesgosses.com/img/logo.png'
+        };
+        publish(params, function() {
+        });
+    });
+
+    function urlencode(str) {
+	    str = (str + '').toString();
+	    return encodeURIComponent(str).replace(/!/g, '%21').replace(/'/g, '%27').replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A').replace(/%20/g, '+');
+	}
+
+	function publish(_param, callback) { 
+		var param = _param || {};
+		var def = {
+			display     : 'dialog',
+			method      : 'feed'
+		};
+		FB.ui(def, function(response)
+		{
+		if(callback)callback(response);
+		}); 
+	}
 
 });

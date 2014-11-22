@@ -1,4 +1,4 @@
-﻿<!----><div class="page_home">
+<!----><div class="page_home">
 	<div class="picture_home">
 		<ul class="buttons_home">
 			<li class="button_home1">

@@ -1,11 +1,13 @@
 for (var p = 0; p < 32; p++) {
-		
-		if(p === 9 || p === 16 || p === 24) {
-			$('.points').append('<div class="point'+p+' point big_point "></div>');
-		} else {
-			$('.points').append('<div class="point'+p+' point"></div>');
-		}
+	if(p === 9 || p === 16 || p === 24) {
+		$('.points').append('<div class="point'+p+' point big_point "></div>');
+	} else {
+		$('.points').append('<div class="point'+p+' point"></div>');
 	}
+}
+for (var p = 0; p < 32; p++) {
+	$('.point'+p).attr('data-checked', '0');
+}
 
 	var place = 0;
 	for (var r = 0; r < 32; r++) {
@@ -107,6 +109,9 @@ for (var p = 0; p < 32; p++) {
 	$(window).on('scroll', function() {
 		if(display_jaune === 0) {
 			theDisplay('jaune', window.number_point);
+			/*setTimeout(function(){
+				display_jaune = 0;
+			}, 300);*/
 		}
 
 		if(display_red === 0) {
@@ -120,12 +125,21 @@ for (var p = 0; p < 32; p++) {
 	function theDisplay(color, yo) {
 		//if(callback) callback();
 		var the_point = $('.points_'+color+' .point'+window.number_point);
-		//console.log(the_point);
+		var previous_point = $('.points_'+color+' .point'+((window.number_point)-1));
+		//console.log('point', the_point);
+		//console.log('previous', previous_point);
 		var point_top = the_point.offset().top;
 		var window_top = ($(window).height() + $(window).scrollTop()) - 100;
 
-		if(point_top < window_top) {
-			//console.log('ok point'+window.number_point);
+		if(point_top < window_top && (the_point.attr('data-checked') == '0') && (previous_point.attr('data-checked') == '1') || window.number_point == 0) {
+			if(display_jaune === 0) {
+				display_jaune = 1;
+			} else if(display_jaune === 2) {
+				display_red = 1;
+			}
+
+			console.log(display_jaune);
+			console.log('rouge', display_red);
 
 			if(window.number_point === 9 || window.number_point === 16 || window.number_point === 24) {
 				the_point.animate({
@@ -149,7 +163,14 @@ for (var p = 0; p < 32; p++) {
 					      nb_bulle++;
 					    }
 					});
+					the_point.attr('data-checked', '1');
 				  	window.number_point = window.number_point + 1;
+				  	if(display_jaune === 1) {
+				  		display_jaune = 0;
+				  	} 
+				  	if(display_jaune === 2) {
+				  		display_red = 0;
+				  	}
 				  	if(window.number_point !== 32) {
 				  		the_point = $('.points_'+color+' .point'+window.number_point);
 						point_top = the_point.offset().top;
@@ -166,7 +187,14 @@ for (var p = 0; p < 32; p++) {
 				    width: "8px",
 				    height: "8px"
 				  }, 200, function() {
+				  	the_point.attr('data-checked', '1');
 				  	window.number_point = window.number_point + 1;
+				  	if(display_jaune === 1) {
+				  		display_jaune = 0;
+				  	} 
+				  	if(display_jaune === 2) {
+				  		display_red = 0;
+				  	}
 				  	if(window.number_point !== 32) {
 				  		the_point = $('.points_'+color+' .point'+window.number_point);
 						point_top = the_point.offset().top;
@@ -176,11 +204,12 @@ for (var p = 0; p < 32; p++) {
 							theDisplay(color, window.number_point);
 						}
 				  	} else {
-				  		if(display_jaune === 1 && display_red === 0) {
+				  		console.log('end');
+				  		if(display_jaune === 2 && display_red === 0) {
 				  			display_red = 1;
 				  		}
 				  		if(display_jaune === 0) {
-				  			display_jaune = 1;
+				  			display_jaune = 2;
 				  		}
 				  		window.number_point = 0;
 				  		nb_bulle = 1;

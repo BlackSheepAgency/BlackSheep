@@ -392,20 +392,21 @@ h2{
 		background: lighten($vert, 15%);
 		border-color: lighten($vert, 15%);
 	}
-
 }
 
 .publish_cap{
-	background:white;
+	background:$vert;
 	border:none;
 	font-family: 'CabinSketch-Regular';
-	color:black;
-	font-size: 2em;
+	color:#f0f0f0;
+	font-size: 1.8em;
 	text-transform: uppercase;
 	padding:10px;
+	@include transition(0.4s);
 
 	&:hover{
 		cursor:pointer;
+		background:lighten($vert, 15%);
 	}
 }
 
@@ -427,10 +428,6 @@ h2{
 	width:100%;
 	height:250px;
 	margin-top: 50px;
-
-	img{
-		width:100%;
-	}
 }
 
 #propose{
@@ -518,7 +515,7 @@ h2{
 		text-align: left;
 
 		img{
-			height:18px;
+			/*height:18px;*/
 			margin-left: 11px;
 			vertical-align: sub;
 		}
@@ -1202,7 +1199,7 @@ h2{
 }
 
 .petit-bloc{
-	width: 49.1%;
+	width: 48.7%;
 	position:relative;
 	font-family: "Lato";
 	font-weight: 300;
@@ -1754,7 +1751,7 @@ h2{
 	float:left;
 	border:solid 1px #64c4db;
 	@include box-sizing(border-box);
-	padding:20px;
+	padding:20px; 
 	height:430px;
 
 	h1{
