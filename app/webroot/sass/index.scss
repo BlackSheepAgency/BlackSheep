@@ -138,9 +138,10 @@ footer {
 	display: block;
 	position: relative;
 	margin: 0 auto;
-	width: 36%;
+	width: 100%;
 	padding-top: 15px;
 	vertical-align: middle;
+	margin: 0;
 
 	a:hover{
 		text-decoration: underline;
@@ -148,12 +149,12 @@ footer {
 }
 
 .bloc-footer-d{
-	width:33%;
+	width: 33%;
 	text-align: center;
-	display:block;
-	position:relative;
-	top: -6em;
-	float:right;
+	display: block;
+	position: absolute;
+	right: -13px;
+	top: -2px;
 
 	#fb_icon2{
 		background-image: url("../img/fb_icon2.png");
@@ -424,12 +425,14 @@ h2{
 	margin-top: 50px;
 }
 
+
 #propose{
-	width:37.3%;
+	width:36%;
 	position:relative;
 	margin:auto;
 	padding-top: 50px;
 	text-align: center;
+	margin-bottom: 50px;
 
 	p{
 		font-family: 'Lato';
@@ -438,6 +441,13 @@ h2{
 		font-weight: 300;
 	}
 }
+.cap {
+	#propose {
+		width: 87%;
+		margin-bottom: 0;
+	}
+}
+
 
 .no-padding-top{
 	padding-top: 0 !important;
@@ -946,6 +956,7 @@ h2{
 }
 
 .buttons_home {
+	margin: 0;
 	li {
 		list-style: none;
 		position: absolute;
@@ -1653,7 +1664,6 @@ h2{
 }
 .forum-fixed{
 	position:fixed;
-	left:-70px;
 	top:200px;
 	background:$prouge;
 	width:100px;

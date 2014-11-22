@@ -2,10 +2,10 @@
 	<div class="picture_home">
 		<ul class="buttons_home">
 			<li class="button_home1">
-				Papy se confie
+				Mamie découvre
 			</li>
 			<li class="button_home2">
-				Web Série faisant intervenir Roger, un retraité plein de joie de vivre qui nous raconte de manière amusante l‘ensemble de ses mésaventures.
+				Une Web série mettant en scène Genneviève, une mamie pleine de joie de vivre qui découvre l'univers des jeunes d'aujourd'hui
 			</li>
 			<li class="button_home3">
 				<a href="#">Accéder à la Web Série</a>

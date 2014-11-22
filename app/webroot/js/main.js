@@ -327,6 +327,7 @@ $(document).ready(function() {
 			display     : 'dialog',
 			method      : 'feed'
 		};
+		def = _.defaults(param, def);
 		FB.ui(def, function(response)
 		{
 		if(callback)callback(response);
