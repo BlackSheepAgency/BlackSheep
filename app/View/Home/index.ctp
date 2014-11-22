@@ -2,10 +2,10 @@
 	<div class="picture_home">
 		<ul class="buttons_home">
 			<li class="button_home1">
-				<a href="#">Papy se confie</a>
+				Papy se confie
 			</li>
 			<li class="button_home2">
-				<a href="#">Web Série faisant intervenir Roger, un retraité plein de joie de vivre qui nous raconte de manière amusante l‘ensemble de ses mésaventures.</a>
+				Web Série faisant intervenir Roger, un retraité plein de joie de vivre qui nous raconte de manière amusante l‘ensemble de ses mésaventures.
 			</li>
 			<li class="button_home3">
 				<a href="#">Accéder à la Web Série</a>
@@ -25,7 +25,7 @@
 			<div class="list_bottom_title">Cap ou pas Cap</div>
 			<div class="list_bottom_content list_bottom_content_cap">
 				<div class="cap_title">
-					Cap ou pas cap d'emmener ta grand-mère au cinoooooooch voir Transformers ?
+					Ils en parlent !
 				</div>
 				<div class="cap_comment">
 					<div class="picture_comment">
