@@ -49,8 +49,8 @@
 		<div id="container">
 			<div id="content">
 				<div class="forum-fixed">
+					<img src="img/white-arrow.png" alt="">
 					<a href="forum">forum</a>
-					 <img src="img/white-arrow.png" alt="">
 				</div>
 
 				<script>
