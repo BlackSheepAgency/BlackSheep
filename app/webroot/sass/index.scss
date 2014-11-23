@@ -240,7 +240,7 @@ a{
 }
 
 h1{
-	font-family: "Oswald";
+	font-family: "CabinSketch-Regular";
 	font-size: 2.8em;
 	text-transform: uppercase;
 	color: $rouge;
@@ -313,14 +313,16 @@ h2{
 .valid-cap {
 	margin: auto;
 	background:url(../img/cap.png) no-repeat;
-	width:300px;
+	width:210px;
 	height:200px;
 	border:none;
 	outline: none;
 	float:left;
+	@include transition(all ease 0.5s);
 
 	&:hover{
 		cursor:pointer;
+		@include transform(scale (1.1));
 	}
 }
 
@@ -432,7 +434,7 @@ h2{
 }
 
 #propose{
-	width:36%;
+	width:37.2%;
 	position:relative;
 	margin:auto;
 	padding-top: 50px;
@@ -1180,6 +1182,7 @@ h2{
 	padding:30px;
 	margin-bottom: 20px;
 	background:white;
+	border: solid 1px $bleu-clair;
 	background-position: -100px;
 	text-align: left;
 	@include box-sizing(border-box);
@@ -1209,7 +1212,7 @@ h2{
 }
 
 .petit-bloc{
-	width: 48.7%;
+	width: 48.6999%;
 	position:relative;
 	font-family: "Lato";
 	font-weight: 300;
@@ -1697,8 +1700,9 @@ h2{
 
 	img{
 		position:absolute;
-		top:12px;
-		left:75px;
+		top:3px;
+		left:67px;
+		width:30px;
 
 		&:hover{
 			cursor:pointer;
@@ -1743,25 +1747,28 @@ h2{
 #container-blocs-home{
 	width:100%;
 	position:relative;
+	@include box-sizing(border-box);
+
 }
 
 #wrapper-blocs-home{
-	width:90%;
+	width:80%;
 	margin:auto;
 	margin-top: 50px;
 	margin-bottom: 50px;
+	@include box-sizing(border-box);
 }
 
 .bloc-home{
 	background:white;
-	width:30.4%;
-	margin-right:50px;
+	width:49%;
+	margin-right:20px;
 	text-align: center;
 	float:left;
 	border:solid 1px #64c4db;
 	@include box-sizing(border-box);
 	padding:20px; 
-	height:430px;
+	height:400px;
 
 	h1{
 		font-family: 'CabinSketch-Regular';
@@ -1780,32 +1787,43 @@ h2{
 	}
 
 	img{
-		max-width: 80%;
+		max-width: 50%;
 	}
 }
 
 .btn-bloc-home{
-	background:$orange;
-	width: 60%;
+	width: 46.2%;
 	margin:auto;
-	padding:10px;
-	margin-top: 20px;
+	margin-top: 22px;
 	margin-bottom: 20px;
+	@include box-sizing(border-box);
 
 	a{
 		text-decoration: none;
 		color:white;
-		padding:40px;
+		padding:10px 40px 2px;
+		background:$orange;
+		float:left;
+		@include transition(all ease 0.5s);
+
+		&:hover{
+			background-color: darken($orange, 20%);		
+		}
 	}
+
+	img{
+		position:relative;
+		float:left;
+		top: -3px;
+	}
+
 }
 
 .comment-home{
 	position:relative;
-	border-bottom:solid 1px $gris-des-aimants;
 	font-family: 'Lato';
 	font-weight: 300;
 	margin-top: 20px;
-	margin-bottom: 20px;
 
 	.pseudo-comment{
 		color:$bleu-clair;
@@ -1822,7 +1840,7 @@ h2{
 		width:200px;
 		text-align: left;
 		margin-bottom: 10px;
-		font-size: 0.9em;
+		line-height: 1.4;
 
 	}
 }
@@ -1839,4 +1857,36 @@ h2{
 		max-width: 60px;
 	}
 
+}
+
+.separation{
+	position:relative;
+	margin:auto;
+	width:10%;
+	border-bottom: solid 1px $bleu-clair;
+	margin-bottom: 20px;
+}
+
+.block-presentation-home{
+	width:100%;
+	position:relative;
+	font-family: "Lato";
+	font-weight: 300;
+	padding:30px;
+	margin-bottom: 20px;
+	background:white;
+	text-align: left;
+	@include box-sizing(border-box);
+	text-align: center;
+	border:solid 1px $bleu-clair;
+
+	h1{
+		font-size: 1.3em;
+		color:$bleu-clair;
+		text-transform: uppercase;
+	}
+}
+
+strong{
+	color:$orange-clair;
 }

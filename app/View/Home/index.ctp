@@ -15,50 +15,35 @@
 	
 	<div id="containe-blocs-home">
 		<div id="wrapper-blocs-home" class="clearfix">
+			<div class="block-presentation-home">
+				<h1>Comme des gosses, c'est quoi?</h1>
+				<div class="separation">
+						&nbsp;
+				</div> 
+				<p>“Comme des gosses” est une campagne visant à t’informer, ainsi que tes amis et ta famille sur <strong>l’isolement des personnes âgées</strong>.<br/><br/> Le but c’est de te montrer que les plus vieux ne sont pas <strong>les plus ennuyants, bien au contraire</strong> ! Mais détends-toi, nous avons compris que tu ne sais pas forcément comment t’amuser avec les grands-parents et c’est pourquoi nous t’avons concocter un tas de solutions. <br/><br/>Tout ce que tu as à faire, c’est <strong>naviguer à travers le site</strong> ...</p>
+			</div>
 			<div class="bloc-home">
 				<h1>comme des gosses</h1>
 				<img src="img/image_home_cdg.jpg">
 				<p>Lancée le jeudi 6 Novembre, La campagne "Comme des gosses" informe et sensibilise sur l'isolement des personnes âgées.
 				</p>
-				<div class="btn-bloc-home">
-					<a href="">En savoir plus</a>
-				</div>
-			</div>
-			<div class="bloc-home">
-				<h1>cap ou pas cap</h1>
-				<div class="comment-home clearfix">
-					<div class="avatar-home">
-						<img src="img/picture_man.jpg">
-					</div>
-					<div class="pseudo-comment">
-						@Julien75
-					</div>
-					<div class="contenu-comment">
-						Près de 2,5 millions de personnes âgées de plus 75 ans sont isolées
-Près de 2,5 millions de personnes âgées de plus 75 ans sont isoléesblabl
-					</div>
-				</div>
-				<div class="comment-home clearfix">
-					<div class="avatar-home">
-						<img src="img/picture_man.jpg">
-					</div>
-					<div class="pseudo-comment">
-						@Julien75
-					</div>
-					<div class="contenu-comment">
-						Les vieux c'est #commedesgosses, la fatigue ça va vite !
-					</div>
-				</div>
-				<div class="btn-bloc-home">
-					<a href="">En savoir plus</a>
+				<div class="btn-bloc-home clearfix">
+					<a href=""><img src="img/white-arrow2.png"/>En savoir plus</a>
 				</div>
 			</div>
 			<div class="bloc-home">
 				<h1>l'isolement en quelques chiffres</h1>
-				<p>Près de 1,2 millions de personnes âgées de plus 75 ans sont isolées.<br/> Une personne sur quatre de plus de 75 ans, n'a pas plus de 3 discussions par an".<br/>
-				Les plus de 75 ans sont 50% à ne pas voir leurs amis et 52 à ne pas avoir de relations avec leurs voisins.</p>
-				<div class="btn-bloc-home">
-					<a href="">En savoir plus</a>
+				<p>Près de 1,2 millions de personnes âgées de plus 75 ans sont isolées.
+					<div class="separation">
+						&nbsp;
+					</div> 
+					<p>Une personne sur quatre de plus de 75 ans, n'a pas plus de 3 discussions par an".
+					<div class="separation">
+						&nbsp;
+					</div>
+				<p>Les plus de 75 ans sont 50% à ne pas voir leurs amis et 52 à ne pas avoir de relations avec leurs voisins.</p>
+				<div class="btn-bloc-home clearfix">
+					<a href=""><img src="img/white-arrow2.png"/>En savoir plus</a>
 				</div>
 			</div>
 		</div>
