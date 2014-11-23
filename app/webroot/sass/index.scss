@@ -1066,10 +1066,19 @@ h2{
 		font-size: 1.1em;
 		text-transform: uppercase;
 		font-weight: bold;
+
+		&.title_maladies {
+			width: 176px;
+			top: 114px;
+		}
 	}
 	.bulle_description {
 		width: 150px;
 		top: 108px;
+
+		&.description_maladies {
+			top: 114px;
+		}
 	}
 	&:nth-child(even) {
 		margin-left: 69%;
