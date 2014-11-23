@@ -88,3 +88,4 @@
 	</div>
 </div>
 <?= $this->Html->script('animation') ?>
+<div class="back_top">Haut de page</div>

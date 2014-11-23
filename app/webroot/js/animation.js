@@ -106,18 +106,28 @@ for (var p = 0; p < 32; p++) {
 	var this_color;
 	var display_jaune = 0;
 
+	$(document).off('click', '.back_top');
+	$(document).on('click', '.back_top', function() {
+		$('html, body')
+	       .stop()
+	       .animate({scrollTop: $('body').offset().top}, 500 );
+	});
+
 	$(window).on('scroll', function() {
 		if(display_jaune === 0) {
 			theDisplay('jaune', window.number_point);
-			/*setTimeout(function(){
-				display_jaune = 0;
-			}, 300);*/
 		}
 
 		if(display_red === 0) {
 			if(offset_points_rouge < ($(window).height() + $(window).scrollTop())) {
 				theDisplay('rouge', window.number_point);
 			}
+		}
+
+		if($('body').scrollTop() > ($(window).height())) {
+			$('.back_top').fadeIn(500);
+		} else {
+			$('.back_top').fadeOut(500);
 		}
 	});
 
@@ -138,8 +148,8 @@ for (var p = 0; p < 32; p++) {
 				display_red = 1;
 			}
 
-			console.log(display_jaune);
-			console.log('rouge', display_red);
+			//console.log(display_jaune);
+			//console.log('rouge', display_red);
 
 			if(window.number_point === 9 || window.number_point === 16 || window.number_point === 24) {
 				the_point.animate({
@@ -204,7 +214,7 @@ for (var p = 0; p < 32; p++) {
 							theDisplay(color, window.number_point);
 						}
 				  	} else {
-				  		console.log('end');
+				  		//console.log('end');
 				  		if(display_jaune === 2 && display_red === 0) {
 				  			display_red = 1;
 				  		}

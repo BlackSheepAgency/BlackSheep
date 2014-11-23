@@ -10,6 +10,16 @@ $(document).ready(function() {
 		$('.pop-up-pseudo').fadeIn();
 	});
 
+	if($('.page_isolement').length != 0) {
+		$('li a[href=isolement]').addClass('link_active');
+	} else if($('#bg-solutions').length != 0) {
+		$('li a[href=solutions]').addClass('link_active');
+	} else if($('.page_webseries').length != 0) {
+		$('li a[href=webseries]').addClass('link_active');
+	} else if($('.page_affiche').length != 0) {
+		$('li a[href=affiches]').addClass('link_active');
+	}
+
 	$('.form_add_pseudo form').off('submit');
 	$('.form_add_pseudo form').on('submit', function() { // Lorsqu'on valide un pseudo
 
