@@ -16,7 +16,7 @@ class BlackshipController extends AppController {
 		$infos = $this->request->data;
 
 		if($infos['username'] == 'test' && $infos['password'] == 'test') {
-			$this->response->location('/BlackSheep/Blackship/cap');
+			$this->response->location('/Blackship/cap');
 		}
 
 	}
@@ -42,6 +42,10 @@ class BlackshipController extends AppController {
 		$messages = array();
 		$messages['facebook'] = array();
 		$messages['tweet'] = array();
+
+
+		/*
+
 
 
 		$fb_id="602780313159165";
@@ -82,7 +86,7 @@ class BlackshipController extends AppController {
 		}
 		
 		require_once("twitteroauth-master/twitteroauth/twitteroauth.php"); //Path to twitteroauth library
-		 
+		
 		$twitteruser = "Webarranco";
 		$notweets = 30;
 		$consumerkey = "XeHBGlRIxgQVFdcgP5Gzz4VTe";
@@ -156,10 +160,10 @@ class BlackshipController extends AppController {
 			}
 		}
 
-
-
 		//debug($messages);
 		//die;
+
+		*/
 
 		$messages_twitter = $this->Message->find('all', array(
 			'conditions' => array(

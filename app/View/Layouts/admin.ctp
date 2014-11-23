@@ -38,7 +38,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		<header id="header">
 			<h1>Admin</h1>
 			<a href="/Home" id="logo">
-				<img src="/Blacksheep/img/logo_web.png" width="300" />
+				<img src="../img/logo_web.png" width="300" />
 			</a>
 			<nav class="admin_nav">
 				<ul>

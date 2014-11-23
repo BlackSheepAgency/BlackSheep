@@ -1,4 +1,4 @@
-<form action="/BlackSheep/Blackship/login" method="post">
+<form action="/Blackship/login" method="post">
 	<div class="style_input">
 		<label for="username">Username</label>
 		<input type="text" name="username" />

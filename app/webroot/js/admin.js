@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 		$.ajax({
 			type : "POST",
-			url : "/BlackSheep/Blackship/validCap/"+data_id,
+			url : "/Blackship/validCap/"+data_id,
 			success: function(response){
 				//console.log(response);
 				$('.form_add_pseudo .info_add').text('');
@@ -35,7 +35,7 @@ $(document).ready(function() {
 
 		$.ajax({
 			type : "POST",
-			url : "/BlackSheep/Blackship/unvalidCap/"+data_id,
+			url : "/Blackship/unvalidCap/"+data_id,
 			success: function(response){
 				//console.log(response);
 				$('.form_add_pseudo .info_add').text('');
@@ -62,7 +62,7 @@ $(document).ready(function() {
 
 		$.ajax({
 			type : "POST",
-			url : "/BlackSheep/Blackship/deleteCap/"+data_id,
+			url : "/Blackship/deleteCap/"+data_id,
 			success: function(response){
 				//console.log(response);
 				$('.form_add_pseudo .info_add').text('');
@@ -90,7 +90,7 @@ $(document).ready(function() {
 
 		$.ajax({
 			type : "POST",
-			url : "/BlackSheep/Blackship/validMessage/"+data_id,
+			url : "/Blackship/validMessage/"+data_id,
 			success: function(response){
 				//console.log(response);
 				$('.form_add_pseudo .info_add').text('');
@@ -118,7 +118,7 @@ $(document).ready(function() {
 
 		$.ajax({
 			type : "POST",
-			url : "/BlackSheep/Blackship/unvalidMessage/"+data_id,
+			url : "/Blackship/unvalidMessage/"+data_id,
 			success: function(response){
 				//console.log(response);
 				$('.form_add_pseudo .info_add').text('');
