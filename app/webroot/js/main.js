@@ -25,23 +25,40 @@ $(document).ready(function() {
 
 		var parent = $(this).parent();
 
-		pseudo = $(this).find('.get_pseudo').val();
+		var publi_pseudo = $(this).find('.get_pseudo').val();
+		var publi_comment = $(this).find('.get_comment').val();
+		var publi_file = $(this).find('.get_file').val();
+		var formData = new FormData(this);
 
-		if(pseudo === '') {
-			return false;
+		console.log(publi_file);
+		//return false;
+
+		if(publi_pseudo == '' || publi_pseudo == undefined || publi_pseudo == null) {
+			publi_pseudo = 'Anonyme';
 		}
 
 		$.ajax({
 			type : "POST",
-			url : "Cap/addPseudo/"+pseudo,
+			url : "Cap/addPublication/",
+			data : {
+				pseudo : publi_pseudo,
+				comment : publi_comment
+			},
+			cache:false,
+            contentType: false,
+            processData: false,
 			success: function(response){
-				console.log(response);
-				parent.find('.info_add').text('');
+				console.log('done');
+				$('.form_add_pseudo .info_add').text('');
 				if(response.check === 'KO') {
-					parent.find('.info_add_error').text('Ce pseudo existe déjà, veuillez en entrer un autre !');
+					$('.form_add_pseudo .info_add_error').text('Erreur');
 				} else {
-					parent.find('.info_add_success').text('Votre pseudo a bien été ajouté, vous pouvez désormais publier !');
+					$('.form_add_pseudo .info_add_success').text('Votre publication a bien été ajouté !');
 				}
+
+				//$('.pop-up').hide();
+
+				getPublications();
 			},
 
 			error: function(){
@@ -56,15 +73,25 @@ $(document).ready(function() {
 
 		var parent = $(this).parent();
 
-		cap = $(this).find('.get_cap').val();
+		var cap = $(this).find('.get_cap').val();
+		var pseudo = $(this).find('.get_pseudo').val();
+		var email = $(this).find('.get_email').val();
 
-		if(cap === '') {
-			return false;
+		if(pseudo == '' || pseudo == undefined || pseudo == null) {
+			pseudo = "Anonyme";
+		}
+		if(pseudo == '' || pseudo == undefined || pseudo == null) {
+			pseudo = "Anonyme";
 		}
 
 		$.ajax({
 			type : "POST",
-			url : "Cap/addCap/"+cap,
+			url : "Cap/addCap/",
+			data : {
+				cap : cap,
+				pseudo : pseudo,
+				email : email
+			},
 			success: function(response){
 				console.log(response);
 				parent.find('.info_add').text('');
@@ -135,7 +162,7 @@ $(document).ready(function() {
 
 	$('.publish, .btn-forum-publish').off('click');
 	$('.publish, .btn-forum-publish').on('click', function() {
-		$('.pop-up-publish').fadeIn();
+		$('.pop-up-pseudo').fadeIn();
 	});
 
 	$('.publish_cap').off('click');

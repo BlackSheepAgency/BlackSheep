@@ -73,3 +73,22 @@
 	
 <?php } ?>
 </table>
+
+<h2>Publications site</h2>
+<table> 
+	<tr>
+		<th>Auteur</th>
+		<th>Message</th>
+	</tr>
+<?php foreach ($publications as $key => $publication) { ?>
+	<tr data-id="<?= $message['Message']['id'] ?>">
+		<td class="name">
+			<?= $publication['Publication']['pseudo'] ?>
+		</td>
+		<td class="message">
+			<?= $publication['Publication']['comment'] ?>
+		</td>
+	</tr>
+	
+<?php } ?>
+</table>

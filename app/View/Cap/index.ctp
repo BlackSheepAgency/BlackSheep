@@ -59,14 +59,17 @@
 
 		<div class="pop-up-pseudo pop-up">
 			<div class="form_add_pseudo"> 
-				<h2>prouve le !</h2>
+				<h2>Prouve le !</h2>
 				<div class="info_add info_add_error red"></div>
 				<div class="info_add info_add_success green"></div>
-				<form action="" method="post">
+				<form action="#" method="post">
 					<p>Partage ton expérience sur notre site ou via les Réseaux Sociaux !</p>
 					<div class="style_input">
 						<input type="text" name="pseudo" class="get_pseudo" placeholder="Pseudo (facultatif)" />
-						<textarea name="" id="" placeholder="Tapez votre message ici" cols="30" rows="10"></textarea>
+						<textarea name="" id="" required class="get_comment" placeholder="Tapez votre message ici" cols="30" rows="10"></textarea>
+					</div>
+					<div class="style_input">
+						<input type="file" class="get_file" />
 					</div>
 					<div class="style_input style_input_submit">
 						<input type="submit" class="valid-pseudo" value="Envoyer" />
@@ -89,11 +92,11 @@
 				<h2>Propose un défi !</h2>
 				<div class="info_add info_add_error red"></div>
 				<div class="info_add info_add_success green"></div>
-				<form action="" method="post">
+				<form action="#" method="post">
 					<div class="style_input">
 						<input type="text" name="pseudo" class="get_pseudo" placeholder="Pseudo (facultatif)" />
-						<textarea name="" id="" placeholder="Cap de..." cols="30" rows="10"></textarea>
-						<input name="cap" type="mail" class="get_cap" placeholder="E-mail" /></input>
+						<textarea name="" id="" placeholder="Cap de..." class="get_cap" cols="30" rows="10" required></textarea>
+						<input name="cap" type="mail" class="get_email" placeholder="E-mail" /></input>
 						<p>Ne t'en fais pas, nous ne t'enverrons pas de newsletters et nous ne conserverons pas ton adresse.</p>
 					</div>
 					<div class="style_input style_input_submit">

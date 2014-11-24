@@ -27,7 +27,7 @@
 		</div>
 	</div>
 
-	<div class="pop-up-publish pop-up">
+	<!--<div class="pop-up-publish pop-up">
 			<div>
 				<form class="add_publication">
 					<h2>publie ton cap !</h2>
@@ -59,6 +59,33 @@
 				</form>
 			</div>
 
+
+			<div class="close"><img src="app/webroot/img/close.png"></div>
+		</div>-->
+
+		<div class="pop-up-pseudo pop-up">
+			<div class="form_add_pseudo"> 
+				<h2>Prouve le !</h2>
+				<div class="info_add info_add_error red"></div>
+				<div class="info_add info_add_success green"></div>
+				<form action="#" method="post">
+					<p>Partage ton expérience sur notre site ou via les Réseaux Sociaux !</p>
+					<div class="style_input">
+						<input type="text" name="pseudo" class="get_pseudo" placeholder="Pseudo (facultatif)" />
+						<textarea name="" id="" required class="get_comment" placeholder="Tapez votre message ici" cols="30" rows="10"></textarea>
+					</div>
+					<div class="style_input style_input_submit">
+						<input type="submit" class="valid-pseudo" value="Envoyer" />
+					</div>
+					<p>Publier sur les Réseaux Sociaux   
+						<div>
+							<a href="#" class="button_facebook"><img src="app/webroot/img/share-fb.png"> </a>
+							<a href="#" class="button_twitter"><img src="app/webroot/img/share-tw.png"></a>
+						</div>
+						
+					</p>
+				</form>
+			</div>
 
 			<div class="close"><img src="app/webroot/img/close.png"></div>
 		</div>

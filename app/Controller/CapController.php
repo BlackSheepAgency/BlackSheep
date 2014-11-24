@@ -1,7 +1,7 @@
 <?php
 	class CapController extends AppController {
 
-		public $uses = array('Cap', 'Pseudo', 'Publication');
+		public $uses = array('Cap', 'Pseudo', 'Publication', 'Message');
 		public $components = array('RequestHandler');
 
 		public function index() {
@@ -87,7 +87,6 @@
 	        ));
 		}
 
-
 		public function getPublications() {
 			$this->RequestHandler->renderAs($this, 'json');
 			$this->layout = null;
@@ -100,22 +99,32 @@
 	        ));
 		}
 
-		public function addPublication($pseudo = '', $url = '', $comment = '') {
+		public function addPublication() {
 			$this->RequestHandler->renderAs($this, 'json');
 			$this->layout = null;
 
-			$url = 'img/'.$url;
-
 			$check = 'OK';
 
-			if($name !== '' && $url !== '') {
-				$this->Publication->save(array(
-					'pseudo' => $pseudo,
-					'picture' => $url,
-					'comment' => $comment
-				));
-			} else {
-				$check = 'KO';
+			if(!empty($this->request->data)) {
+				$data = $this->request->data;
+
+				$data['url'] = 'img/'.$data['url'];
+				if(empty($data['pseudo'])) {
+					$data['pseudo'] = 'Anonyme';
+				}
+				if(empty($data['url'])) {
+					$data['url'] = '';
+				}
+
+				if($data['comment'] !== '') {
+					$this->Publication->save(array(
+						'pseudo' => $data['pseudo'],
+						'picture' => $data['url'],
+						'comment' => $data['comment']
+					));
+				} else {
+					$check = 'KO';
+				}
 			}
 
 			$this->set(array(
@@ -124,19 +133,21 @@
 	        ));
 		}
 
-		public function addCap($proposition = '') {
+		public function addCap() {
 			$this->RequestHandler->renderAs($this, 'json');
 			$this->layout = null;
 
 			$check = 'OK';
 
-			if($proposition !== '' && $check === 'OK') {
+			if(!empty($this->request->data)) {
+				$data = $this->request->data;
+
 				$this->Cap->save(array(
-					'text' => $proposition,
+					'text' => $data['cap'],
+					'author' => $data['pseudo'],
+					'email' => $data['email'],
 					'validated' => 0
 				));
-			} else {
-				$check = 'KO';
 			}
 
 			$this->set(array(
