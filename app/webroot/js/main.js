@@ -28,7 +28,6 @@ $(document).ready(function() {
 		var publi_pseudo = $(this).find('.get_pseudo').val();
 		var publi_comment = $(this).find('.get_comment').val();
 		var publi_file = $(this).find('.get_file').val();
-		var formData = new FormData(this);
 
 		console.log(publi_file);
 		//return false;
@@ -42,11 +41,8 @@ $(document).ready(function() {
 			url : "Cap/addPublication/",
 			data : {
 				pseudo : publi_pseudo,
-				comment : publi_comment
+				comment : publi_comment,
 			},
-			cache:false,
-            contentType: false,
-            processData: false,
 			success: function(response){
 				console.log('done');
 				$('.form_add_pseudo .info_add').text('');

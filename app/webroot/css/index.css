@@ -2181,4 +2181,11 @@ h2 {
   #propose {
     width: 74.2%;
   }
+
+  /* line 2015, ../sass/index.scss */
+  .btn-bloc-home a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 6px 2px;
+  }
 }
