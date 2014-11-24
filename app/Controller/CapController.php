@@ -26,11 +26,11 @@
 				$current_cap = $this->Cap->findById($cap);
 
 				$c = 1;
-				if(empty($current_cap) || $current_cap['Cap']['validated'] === 0) {
+				if(empty($current_cap) || $current_cap['Cap']['validated'] == 0) {
 					// Si c'est vide ou pas valide
 					while($check === 'KO') {
 						$current_cap = $this->Cap->findById($cap+$c);
-						if(empty($current_cap) || $current_cap['Cap']['validated'] === 0) {
+						if(empty($current_cap) || $current_cap['Cap']['validated'] == 0) {
 							$c++;
 						} else {
 							$c++;

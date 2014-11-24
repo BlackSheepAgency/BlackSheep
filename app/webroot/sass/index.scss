@@ -82,9 +82,26 @@ header {
 		text-decoration: none;
 		color: black;
 		font-size: 1.2em;
+		position: relative;
 
 		&:hover{
 			color: $rouge;
+		}
+
+		&.link_active {
+			color: $rouge;
+
+			&:after {
+				content: '';
+				position: absolute;
+				top: 23px;
+				left: 49px;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 7px 14px 7px;
+				border-color: transparent transparent #64c4db transparent;
+			}
 		}
 	}
 
@@ -1068,10 +1085,19 @@ h2{
 		font-size: 1.1em;
 		text-transform: uppercase;
 		font-weight: bold;
+
+		&.title_maladies {
+			width: 176px;
+			top: 114px;
+		}
 	}
 	.bulle_description {
 		width: 150px;
 		top: 108px;
+
+		&.description_maladies {
+			top: 114px;
+		}
 	}
 	&:nth-child(even) {
 		margin-left: 69%;
@@ -1889,4 +1915,15 @@ h2{
 
 strong{
 	color:$orange-clair;
+}
+
+.back_top {
+	padding: 15px;
+	color: white;
+	background: $orange;
+	cursor: pointer;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	display: none;
 }

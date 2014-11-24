@@ -61,9 +61,9 @@
 		</div>
 
 		<div class="bulle_jaune bulle_jaune2">
-			<div class="bulle_title">Augmentation du risque de maladies</div>
-			<div class="bulle_description">
-				Les personnes âgées sont de moins en moins sensibles à leur état de santé.
+			<div class="bulle_title title_maladies">Hausse du risque de maladies</div>
+			<div class="bulle_description description_maladies">
+				Les personnes âgées deviennent moins sensibles à leur état de santé.
 			</div>
 		</div>
 
@@ -73,7 +73,6 @@
 				En 2013, on dénombre 3000 cas de suicide chez les plus de 65 ans.
 			</div>
 		</div>
-		
 	</div>
 
 	<div class="div_red">
@@ -82,11 +81,11 @@
 		</div>
 	</div>
 
-
 	<div class="clearfix">
 		<div id="propose" class="clearfix no-padding-top">
-			<p>Ne nous laisse pas tomber</p><span class="defi">AGIS<img src="app/webroot/img/red-arrow.png" class="fleche"/></span><div class="btn-capoupascap"><a href="cap">cap ou pas cap ?</a></div>
+			<p>Ne les laisse pas tomber</p><span class="defi">AGIS<img src="app/webroot/img/red-arrow.png" class="fleche"/></span><div class="btn-capoupascap"><a href="cap">cap ou pas cap ?</a></div>
 		</div>
 	</div>
 </div>
 <?= $this->Html->script('animation') ?>
+<div class="back_top">Haut de page</div>

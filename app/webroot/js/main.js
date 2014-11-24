@@ -10,6 +10,16 @@ $(document).ready(function() {
 		$('.pop-up-pseudo').fadeIn();
 	});
 
+	if($('.page_isolement').length != 0) {
+		$('li a[href=isolement]').addClass('link_active');
+	} else if($('#bg-solutions').length != 0) {
+		$('li a[href=solutions]').addClass('link_active');
+	} else if($('.page_webseries').length != 0) {
+		$('li a[href=webseries]').addClass('link_active');
+	} else if($('.page_affiche').length != 0) {
+		$('li a[href=affiches]').addClass('link_active');
+	}
+
 	$('.form_add_pseudo form').off('submit');
 	$('.form_add_pseudo form').on('submit', function() { // Lorsqu'on valide un pseudo
 
@@ -307,10 +317,12 @@ $(document).ready(function() {
     $('.button_facebook').on('click', function(e) {
     	e.preventDefault();
         var params = {
-            name: "J'ai été cap de ... !",
+            name: "J'ai été cap !",
             description: "Venez vous aussi sur Comme des gosses et prouvez que vous êtes cap de faire quelque chose !",
             link:'http://commedesgosses.com/',
-            picture: 'http://commedesgosses.com/img/logo.png'
+            picture: 'http://commedesgosses.com/img/logo.png',
+            display     : 'dialog',
+			method      : 'feed'
         };
         publish(params, function() {
         });
@@ -321,13 +333,7 @@ $(document).ready(function() {
 	    return encodeURIComponent(str).replace(/!/g, '%21').replace(/'/g, '%27').replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A').replace(/%20/g, '+');
 	}
 
-	function publish(_param, callback) { 
-		var param = _param || {};
-		var def = {
-			display     : 'dialog',
-			method      : 'feed'
-		};
-		def = _.defaults(param, def);
+	function publish(def, callback) { 
 		FB.ui(def, function(response)
 		{
 		if(callback)callback(response);
