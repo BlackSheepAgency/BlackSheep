@@ -8,7 +8,7 @@
 				Une Web série mettant en scène Genneviève, une mamie pleine de joie de vivre qui découvre l'univers des jeunes d'aujourd'hui
 			</li>
 			<li class="button_home3">
-				<a href="#">Accéder à la Web Série</a>
+				<a href="webseries">Accéder à la Web Série</a>
 			</li>
 		</ul>
 	</div>
@@ -43,7 +43,7 @@
 					</div>
 				<p>Les plus de 75 ans sont 50% à ne pas voir leurs amis et 52 à ne pas avoir de relations avec leurs voisins.</p>
 				<div class="btn-bloc-home clearfix">
-					<a href=""><img src="img/white-arrow2.png"/>En savoir plus</a>
+					<a href="isolement"><img src="img/white-arrow2.png"/>En savoir plus</a>
 				</div>
 			</div>
 		</div>
