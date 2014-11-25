@@ -443,7 +443,7 @@ footer {
 		@include transition(all ease 0.5s);
 		position: absolute;
 		bottom: 24px;
-		left: 162px;
+		left: 30%;
 
 		&:hover{
 			background-color: darken($orange, 20%);		

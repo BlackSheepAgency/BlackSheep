@@ -495,7 +495,7 @@ footer a {
   transition: all 0.5s ease;
   position: absolute;
   bottom: 24px;
-  left: 162px;
+  left: 30%;
 }
 /* line 448, ../sass/index.scss */
 .btn-bloc-home a:hover {
