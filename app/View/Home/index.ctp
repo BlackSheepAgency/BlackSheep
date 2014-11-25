@@ -27,9 +27,7 @@
 				<img src="img/image_home_cdg.jpg">
 				<p>Lancée le jeudi 6 Novembre, La campagne "Comme des gosses" informe et sensibilise sur l'isolement des personnes âgées.
 				</p>
-				<div class="btn-bloc-home clearfix">
-					<a href=""><img src="img/white-arrow2.png"/>En savoir plus</a>
-				</div>
+				<a href="affiches"><div class="btn-bloc">En savoir plus</div></a>
 			</div>
 			<div class="bloc-home">
 				<h1>l'isolement en quelques chiffres</h1>
@@ -42,9 +40,7 @@
 						&nbsp;
 					</div>
 				<p>Les plus de 75 ans sont 50% à ne pas voir leurs amis et 52 à ne pas avoir de relations avec leurs voisins.</p>
-				<div class="btn-bloc-home clearfix">
-					<a href="isolement"><img src="img/white-arrow2.png"/>En savoir plus</a>
-				</div>
+				<a href="isolement"><div class="btn-bloc">En savoir plus</div></a>
 			</div>
 		</div>
 	</div>
