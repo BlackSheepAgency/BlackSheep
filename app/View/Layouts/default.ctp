@@ -112,6 +112,7 @@
 		</script>
 		<?= $this->Html->script('jquery.plugin') ?>
 		<?= $this->Html->script('jquery-ui.min') ?>
+		<?= $this->Html->script('jquery.uploadify.min') ?>
 		<?= $this->Html->script('https://apis.google.com/js/platform.js') ?>
 		<?= $this->Html->script('idangerous.swiper') ?>
 		<?= $this->Html->script('countdown') ?>

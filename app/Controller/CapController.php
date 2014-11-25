@@ -108,7 +108,6 @@
 			if(!empty($this->request->data)) {
 				$data = $this->request->data;
 
-				$data['url'] = 'img/'.$data['url'];
 				if(empty($data['pseudo'])) {
 					$data['pseudo'] = 'Anonyme';
 				}

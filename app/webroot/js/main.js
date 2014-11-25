@@ -27,13 +27,16 @@ $(document).ready(function() {
 
 		var publi_pseudo = $(this).find('.get_pseudo').val();
 		var publi_comment = $(this).find('.get_comment').val();
-		var publi_file = $(this).find('.get_file').val();
+		var publi_file = window.picture_uploaded;
 
-		console.log(publi_file);
+		//console.log(publi_file);
 		//return false;
 
 		if(publi_pseudo == '' || publi_pseudo == undefined || publi_pseudo == null) {
 			publi_pseudo = 'Anonyme';
+		}
+		if(publi_file == '' || publi_file == undefined || publi_file == null) {
+			publi_file = '';
 		}
 
 		$.ajax({
@@ -42,6 +45,7 @@ $(document).ready(function() {
 			data : {
 				pseudo : publi_pseudo,
 				comment : publi_comment,
+				url : publi_file
 			},
 			success: function(response){
 				console.log('done');
@@ -51,8 +55,6 @@ $(document).ready(function() {
 				} else {
 					$('.form_add_pseudo .info_add_success').text('Votre publication a bien été ajouté !');
 				}
-
-				//$('.pop-up').hide();
 
 				getPublications();
 			},
@@ -349,6 +351,23 @@ $(document).ready(function() {
         };
         publish(params, function() {
         });
+    });
+
+    $('#cap_img_up').uploadify({
+        'fileSizeLimit' : '2MB',
+        'fileTypeExts'  : '*.gif; *.jpg; *.jpeg; *.png',
+        'swf'           : 'uploadify/uploadify.swf',
+        'uploader'      : 'uploadify/uploadify.php?folder_images=img&folder=upload',
+        'method'        : 'post',
+        'onSelectError' : function(file, errorCode, errorMsg) {
+            if(errorCode == 'QUEUE_LIMIT_EXCEEDED ')    alert('Le fichier est trop volumineux.');
+            else if(errorCode == 'INVALID_FILETYPE  ')  alert('Le fichier n\'est pas au bon format.');
+            else    alert('Erreur inconnue.');
+        },
+        'onUploadSuccess' : function(file, data, response) {
+        	window.picture_uploaded = data;
+            console.log('The file was saved to: ' + data);
+        }
     });
 
     function urlencode(str) {

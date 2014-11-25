@@ -69,7 +69,7 @@
 						<textarea name="" id="" required class="get_comment" placeholder="Tapez votre message ici" cols="30" rows="10"></textarea>
 					</div>
 					<div class="style_input">
-						<input type="file" class="get_file" />
+						<input id="cap_img_up" type="file" class="get_file" />
 					</div>
 					<div class="style_input style_input_submit">
 						<input type="submit" class="valid-pseudo" value="Envoyer" />

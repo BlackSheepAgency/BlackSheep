@@ -1,7 +1,41 @@
 <div id="bg-solutions">
 	<div class="wrapper clearfix">
 		<button class="btn-forum-publish">moi aussi je publie !</button>
-		<div class="grand-bloc">
+
+		<?php foreach ($publications as $key => $publication) { ?>
+			<div class="grand-bloc clearfix">
+				<!--<h1>Titre publication</h1>-->
+				<?php if($publication['Publication']['picture'] != null || $publication['Publication']['picture'] != '') { ?>
+					<div class="image-publication">
+						<img src="<?= $publication['Publication']['picture'] ?>"/>
+					</div>
+					<?php } ?>
+				
+				<p>
+					<?= $publication['Publication']['comment'] ?>
+				</p>
+				<p class="pseudo-com"><?= $publication['Publication']['pseudo'] ?></p>
+			</div>
+		<?php } ?>
+
+		<?php foreach ($tweet as $key => $the_tweet) { ?>
+
+			<div class="grand-bloc-social clearfix">
+				<img src="img/twitter-bg.png" class="grand-bloc-bg"/>
+				<div class="publication-reseaux-sociaux">
+					<!--<div class="avatar">
+						<img src="img/avatar.jpg"/>
+					</div>-->
+					<h1><?= $the_tweet['Message']['author'] ?></h1>
+					<h2>@<?= $the_tweet['Message']['author'] ?></h2>
+					<p><?= $the_tweet['Message']['message'] ?></p>
+				</div>
+			</div>
+
+		<?php } ?>
+
+
+		<!--<div class="grand-bloc">
 			<h1>Titre publication</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quidem quo esse, nesciunt ad nobis aspernatur natus fugiat, repellendus beatae facilis voluptatem in nemo rerum dolores harum iste nam exercitationem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eveniet maiores eligendi consequatur impedit, aliquam, fugit repudiandae iste ipsam id cum tenetur quos qui nihil aspernatur, quibusdam fuga earum ea.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum nesciunt, aliquam fugit, nisi nobis consectetur obcaecati! Voluptatum saepe doloremque perspiciatis porro laborum eveniet recusandae et beatae officia. Esse, laborum, magni.</p>
 			<p class="pseudo-com">Lucie</p>
@@ -25,7 +59,7 @@
 				<p>Les vieux c'est #CommeDesGosses, ça se fatigue vite !</p>
 			</div>
 		</div>
-	</div>
+	</div>-->
 
 	<!--<div class="pop-up-publish pop-up">
 			<div>

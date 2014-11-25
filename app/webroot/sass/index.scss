@@ -1507,6 +1507,7 @@ h2{
 	background:white;
 	border: solid 1px $bleu-clair;
 	background-position: -100px;
+	overflow: hidden;
 	text-align: left;
 	@include box-sizing(border-box);
 
