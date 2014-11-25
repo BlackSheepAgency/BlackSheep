@@ -2,16 +2,10 @@
 	<div class="top_video">
 		
 		<h1 class="picture_affiche">Mamie Découvre</h1>
-		<h2 class="center">La Web série arrive très prochainement !</h2>
-
-		<!--<div class="video_description">
-			<h3>Mamie découvre la</h3>
+		<div class="video_description">
+			<h3>Mamie découvre !</h3>
 			<p>
-				Papy déconne sur ses années lycée
-				Lorem ipsum dolor blablablalbablablalba abl ablbl abl bla blabl albbla
-				Bla blab labl bal blablalba blalb abl blalb alb lbablalbbla 
-				Blabla
-				NBLabla blabla !!
+				Mamie découvre le scrabble et quelle découverte !
 			</p>
 		</div>
 		<div class="video_comment">
@@ -19,10 +13,10 @@
 		</div>
 	</div>
 	<div class="video">
-		<video src="http://vjs.zencdn.net/v/oceans.mp4" width="930" height="500" poster="img/cover_video.jpg" preload muted controls></video>
+		<iframe width="800" height="450" src="//www.youtube.com/embed/BUjKYjFOSdc" frameborder="0" allowfullscreen></iframe>
 	</div>
 
-	<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count"></div>
+	<div class="fb-share-button" data-href="https://www.facebook.com/pages/Comme-des-Gosses/602780313159165?fref=ts" data-layout="button_count"></div>
 
 
 	<div class="abonne"><span class="red">Abonne toi à la chaine youtube</span> “comme des gosses„ 
@@ -49,7 +43,7 @@
 	    </div>
 	    <div class="buttons previous arrow-left"><span class="button_previous"></span></div>
 		<div class="buttons next arrow-right"><span class="button_next"></span></div>
-	    <div class="pagination"></div>-->
+	    <div class="pagination"></div>
 
   	</div>
 	
