@@ -46,14 +46,14 @@
 				<button class="pas-cap"> </button>
 			</div>
 			
-			<div id="propose">
+			<div id="propose-cap">
 				<span class="defi">ou alors</span><img src="app/webroot/img/red-arrow.png" class="fleche"/><button class="publish_cap">je propose un défi</button>
 			</div>
 		</div>
 		
 		<p>Tu veux partager ton expérience ou consulter celle des autres ? Rends-toi sur le forum !</p>
 
-		<a href="forum"><div class="btn-forum">Accéder au Forum</div></a>
+		<a href="forum"><div class="btn-bloc">Accéder au Forum</div></a>
 
 	</div>
 

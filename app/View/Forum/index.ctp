@@ -1,6 +1,6 @@
 <div id="bg-solutions">
 	<div class="wrapper clearfix">
-		<button class="btn-forum-publish">moi aussi je publie !</button>
+		<div class="btn-forum-publish">moi aussi je publie !</div>
 		<div class="grand-bloc">
 			<h1>Titre publication</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quidem quo esse, nesciunt ad nobis aspernatur natus fugiat, repellendus beatae facilis voluptatem in nemo rerum dolores harum iste nam exercitationem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eveniet maiores eligendi consequatur impedit, aliquam, fugit repudiandae iste ipsam id cum tenetur quos qui nihil aspernatur, quibusdam fuga earum ea.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum nesciunt, aliquam fugit, nisi nobis consectetur obcaecati! Voluptatum saepe doloremque perspiciatis porro laborum eveniet recusandae et beatae officia. Esse, laborum, magni.</p>

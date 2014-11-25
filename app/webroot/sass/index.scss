@@ -43,6 +43,10 @@ $gris-des-aimants: #d2d4d3;
 	color: $vert;
 }
 
+a{
+	text-decoration: none;
+}
+
 body, html {
 	margin: 0;
 	padding: 0;
@@ -352,8 +356,7 @@ footer {
 .btn-capoupascap{ 
 	padding:5px;
 	text-transform: uppercase;
-	background: $vert;
-	border: solid 2px $vert;
+	background: $orange;
 	@include transition( all 0.5s );
 	width:260px;
 	font-family: 'CabinSketch-Regular';
@@ -363,6 +366,7 @@ footer {
 
 	&:hover{
 		cursor:pointer;
+		background-color: darken($orange, 20%);
 	}
 
 	a{
@@ -426,30 +430,25 @@ footer {
 	}
 }
 
-.btn-bloc-home{
-	width: 46.2%;
+.btn-bloc{
+	max-width: 200px;
 	margin:auto;
 	margin-top: 22px;
 	margin-bottom: 20px;
+	background:$orange;
+	color:white;
+	padding:10px;
+	text-transform: uppercase;
 	@include box-sizing(border-box);
+	@include transition(all ease 0.5s);
 
-	a{
-		text-decoration: none;
-		color:white;
-		padding:10px 40px 2px;
-		background:$orange;
-		float:left;
-		@include transition(all ease 0.5s);
-
-		&:hover{
+	&:hover{
 			background-color: darken($orange, 20%);		
 		}
-	}
-
-	img{
-		position:relative;
-		float:left;
-		top: -3px;
+	a{
+		color:white;
+		padding:15px;
+		text-transform: uppercase;
 	}
 
 }
@@ -745,7 +744,7 @@ h2{
 }
 
 #propose{
-	width:37.2%;
+	width:38%;
 	position:relative;
 	margin:auto;
 	padding-top: 50px;
@@ -759,6 +758,22 @@ h2{
 		font-weight: 300;
 	}
 }
+#propose-cap{
+	width:90%;
+	position:relative;
+	margin:auto;
+	padding-top: 50px;
+	text-align: center;
+	margin-bottom: 50px;
+
+	p{
+		font-family: 'Lato';
+		margin-top:25px;
+		margin-right:10px;
+		font-weight: 300;
+	}
+}
+
 .cap {
 	#propose {
 		width: 87%;
@@ -1476,19 +1491,14 @@ h2{
 	background:white;
 	text-align: left;
 	@include box-sizing(border-box);
-	background-color: $orange;
 	text-align: center;
+	border:solid 1px $bleu-clair;
 
 	h1{
 		font-size: 1.3em;
-		color:$prouge;
+		color:$bleu-clair;
 		text-transform: uppercase;
 		text-align: left;
-	}
-
-	p{
-		font-size: 1.1em;
-		color: #f0f0f0;
 	}
 
 	.pseudo-com{
@@ -1512,14 +1522,11 @@ h2{
 
 	h1{
 		font-size: 1.3em;
-		color:$prouge;
+		color:$bleu-clair;
 		text-transform: uppercase;
 		text-align: left;
 	}
 
-	p{
-		font-size: 1.1em;
-	}
 
 	.pseudo-com{
 		text-align: right;
@@ -1546,17 +1553,17 @@ h2{
 	background:white;
 	text-align: left;
 	@include box-sizing(border-box); 
-	background-color: $orange;
+	border:solid 1px $bleu-clair;
 
 	h1{
 		font-size: 1.3em;
-		color:$prouge;
+		color:$bleu-clair;
 		text-transform: uppercase;
 		text-align: left;
 	}
 
 	a{
-		color: #333;
+		color: $orange-clair;
 		text-align: right !important;
 		text-decoration: none;
 
@@ -1565,10 +1572,6 @@ h2{
 		}
 	}
 
-	p{
-		font-size: 1.1em;
-		color: #f0f0f0;
-	}
 }
 
 .petit-bloc-wrapper{
@@ -1601,8 +1604,7 @@ h2{
 
 	&:hover{
 		cursor:pointer;
-		background: lighten(#8fc549,15%);
-		border-color: lighten(#8fc549,15%);
+		background-color: darken($orange, 20%);
 	}
 
 }
@@ -1611,8 +1613,7 @@ h2{
 	padding:10px;
 	text-transform: uppercase;
 	color:white;
-	background: $vert;
-	border: solid 2px $vert;
+	background: $orange;
 	@include transition( all 0.5s );
 	width:100%;
 	font-family: 'Lato';
@@ -1622,6 +1623,7 @@ h2{
 
 	&:hover{
 		cursor:pointer;
+		background-color: darken($orange, 20%);
 	}
 
 }
