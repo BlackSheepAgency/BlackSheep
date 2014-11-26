@@ -1796,7 +1796,7 @@ h2{
     	line-height: 1.5;
 
 		&:before{
-			content:"• ";
+			content:"&bull; ";
 			color:$orange;
 			margin-right: 10px;
 		}
