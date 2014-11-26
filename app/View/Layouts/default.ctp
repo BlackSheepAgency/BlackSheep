@@ -48,6 +48,7 @@
 				</li>
 			</ul>
 			<a class="capoupascap" href="cap">Cap <br />ou<br /> pas cap ?</a>
+			<div id="camo"></div>
 		</header>
 
 		<div id="container">

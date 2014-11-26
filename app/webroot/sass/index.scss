@@ -106,11 +106,22 @@ header {
 		padding-top: 20px;
 		z-index: 2;
 		color: #f0f0f0;
+		@include transition(all 0.5s);
 
 		&:hover{
 			color: #333;
+			top: 20px;
 		}
 	}
+}
+
+#camo{
+	background:$bleu-clair;
+	width:86px;
+	height:25px;
+	position: absolute;
+	right:5%;
+	top:0;
 }
 
 /*----FIN HEADER-----*/
@@ -539,19 +550,20 @@ strong{
 }
 
 .back_top {
-	padding: 15px;
+	padding: 27px;
 	color: white;
-	background-color: $orange;
+	background: url(../img/backtop.png) no-repeat center;
 	cursor: pointer;
 	position: fixed;
-	bottom: 50px;
+	bottom: 110px;
 	right: 50px;
 	display: none;
 	z-index: 2;
 	@include transition(0.5s);
 
 	&:hover  {
-		background-color: lighten($orange, 10%);
+		background: url(../img/backtop2.png) no-repeat center;
+		bottom: 120px;
 	}
 }
 
@@ -1161,10 +1173,20 @@ h2{
 }
 
 #cap_img_up {
-	background-color: black;
-	color: white;
+	color: black;
 	text-align: center;
+	width:155px !important;
+
+	.uploadify-button{
+		width:155px !important;
+	}
+
+	object{
+		left:100px;
+		width:155px;
+	}
 }
+
 
 .list_bottom {
 	padding: 0;
@@ -1371,7 +1393,7 @@ h2{
 		font-size: 1.1em;
 		text-transform: uppercase;
 		font-weight: bold;
-
+		
 		&.title_maladies {
 			width: 176px;
 			top: 114px;
@@ -1575,6 +1597,7 @@ h2{
 	color:white;
 	background-color: $orange;
 	@include transition( all 0.5s );
+	@include box-sizing(border-box);
 	width:100%;
 	font-family: "Lato";
 	font-size: 1.1em;
@@ -1845,10 +1868,12 @@ h2{
   
 }
 
+
 @media screen and (max-width: 1250px) {
 	.bloc-home {
 		display: block;
 		width: 100%;
+		margin-bottom:20px;
 
 		img {
 			max-width: 30%;
@@ -1913,6 +1938,10 @@ h2{
 				color: white;
 			}
 		}
+
+		#camo{
+			display:none;
+		}
 	}
 
 	#logo{
@@ -1934,9 +1963,7 @@ h2{
 			height: 90px;
 		}
 	}
-  
 }
-
 
 @media screen and (max-width: 1106px) {
   
@@ -1962,8 +1989,8 @@ h2{
 		height: 100%;
 	}
 
-	.bloc-home {
-		height: 480px;
+	.bloc-home{
+		height:375px;
 	}
 
 	.petit-bloc{

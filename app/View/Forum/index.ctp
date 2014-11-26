@@ -1,5 +1,5 @@
 <div id="bg-solutions">
-	<div class="wrapper clearfix">
+	<div class="wrapper">
 		<div class="btn-forum-publish activator">moi aussi je publie !</div>
 		<div class="overlay" id="overlay" style="display: none;"></div>
 
