@@ -1,6 +1,6 @@
 <div id="bg-solutions">
 	<div class="wrapper clearfix">
-		<button class="btn-forum-publish">moi aussi je publie !</button>
+		<div class="btn-forum-publish">moi aussi je publie !</div>
 
 		<?php foreach ($publications as $key => $publication) { ?>
 			<div class="grand-bloc clearfix">

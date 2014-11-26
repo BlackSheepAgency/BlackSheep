@@ -70,7 +70,7 @@
 
 		<footer id="footer">
 			<div class="bloc-footer-m">
-				<a href="#">Mentions légales</a> ⎢ <a href="#">Plan du site</a><br/>
+				<a href="mentions">Mentions légales</a> ⎢ <a href="plan">Plan du site</a><br/>
 				©<span class="name">Comme des gosses</span> ⎢ 2014 ⎢ Tous droits reservés ⎢ <a href="mailto:contact@commedesgosses.com">contact@commesdesgosses.com</a>
 				<br/>
 				Créé par l'agence <span class="name">Black Sheep</span><br/>
