@@ -19,7 +19,6 @@
 	    <div class="swiper-container">
 	      <div class="swiper-wrapper">
 
-
 	      	<?php foreach ($affiches as $key => $affiche) { ?>
 	      		<div class="swiper-slide slide_affiche" data-id="<?= $affiche['Affiche']['id'] ?>">
 		        	<img src="<?= $affiche['Affiche']['url'] ?>" width="220" alt="" />

@@ -232,18 +232,6 @@ $(document).ready(function() {
 		});
 	};
 
-	/*--------COUNTDOWN--------*/
-
-	$(function () {
-		var releaseDate = new Date();
-		releaseDate = new Date(releaseDate.getFullYear() +0, 11 - 1, 22);
-		$('#alwaysShow').countdown({until: releaseDate, format: 'DHMS'});
-		$('#year').text(releaseDate.getFullYear());
-	});
-	
-	/*--------END COUNTDOWN--------*/
-
-
 	$(".forum-fixed").hover(
 		function(){
 			$(this).addClass('active');

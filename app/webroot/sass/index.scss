@@ -1412,7 +1412,8 @@ h2{
 		font-size: 2.5em;
 	}
 	strong {
-		color: #343434;
+		color: #fff;
+		font-size: 20px;
 	}
 	h1 {
 		margin-top: 60px;
@@ -1621,12 +1622,22 @@ h2{
 		margin: 0 auto;
 		margin-top: 20px;
 	}
-	.picture_scroll {
-		background: url('../img/scroll.png');
+	.picture_scroll_big {
+		background: url('../img/arrow_big.png');
 		background-repeat: no-repeat;
 		width: 86px;
-		height: 62px;
+		height: 34px;
+		margin-bottom: 5px;
+		position: relative;
+	}
+	.picture_scroll_small {
+		background: url('../img/arrow_small.png');
+		background-repeat: no-repeat;
+		width: 48px;
+		height: 20px;
 		margin-bottom: 100px;
+		margin-top: 0;
+		position: relative;
 	}
 }
 
@@ -1930,19 +1941,12 @@ h2{
 @media screen and (max-width: 1106px) {
   
 	.bloc-footer-d{
-		width:33%;
-		text-align: center;
-		display:block;
-		position:relative;
-		top: -7em;
-		float:right;
-		vertical-align: middle;
-
 		ul {
 			padding: 0;
 		}
 	}
 }
+
 @media screen and (max-width: 800px) {
   
   .bloc-footer-d{

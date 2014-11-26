@@ -8,9 +8,9 @@
 				Mamie découvre le scrabble et quelle découverte !
 			</p>
 		</div>
-		<!--<div class="video_comment">
-			Il m'a fait mourir de rire, il mérite sa place à Golden moustache !
-		</div>-->
+		<div class="video_comment">
+			Découvre le tout premier épisode de notre Web Série!
+		</div>
 	</div>
 	<div class="video">
 		<iframe width="800" height="450" src="//www.youtube.com/embed/BUjKYjFOSdc" frameborder="0" allowfullscreen></iframe>

@@ -131,6 +131,39 @@ for (var p = 0; p < 32; p++) {
 		}
 	});
 
+	function runBig() {
+	  $('.picture_scroll_big')
+       .animate({"top":"10px"},600)
+       .animate({"top":"0px"},400)
+	}
+
+	setInterval(function() {
+		runBig();
+	}, 200);
+
+	function runSmall() {
+	  $('.picture_scroll_small')
+       .animate({"top":"10px"},600)
+       .animate({"top":"0px"},400)
+	}
+
+	setInterval(function() {
+		runSmall();
+	}, 200);
+
+	function runBigPoint() {
+	  $('.big_point.big_point_active')
+       .animate({"opacity":"0.5"},600)
+       .animate({"opacity":"1"},400);
+
+	}
+	setInterval(function() {
+		runBigPoint();
+	}, 200);
+	
+
+	
+
 	
 	function theDisplay(color, yo) {
 		//if(callback) callback();
@@ -161,6 +194,7 @@ for (var p = 0; p < 32; p++) {
 				  	} else {
 				  		this_color = 'jaune';
 				  	}
+				  	the_point.addClass('big_point_active');
 				  	$('.bulle_'+this_color+nb_bulle).animate({
 					    opacity: 1
 					}, {

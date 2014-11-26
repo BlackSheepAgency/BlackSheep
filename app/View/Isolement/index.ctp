@@ -9,7 +9,8 @@
 
 	<div class="scroll_down">
 		<div>Scroll</div>
-		<div class="picture_scroll"></div>
+		<div class="picture_scroll_big"></div>
+		<div class="picture_scroll_small"></div>
 	</div>
 
 	
