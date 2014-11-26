@@ -2025,7 +2025,7 @@ h2 {
 /* line 1802, ../sass/index.scss */
 .plan-du-site {
   margin-top: 130px;
-  margin-bottom: 100px;
+  margin-bottom: 226px;
 }
 /* line 1807, ../sass/index.scss */
 .plan-du-site ul {
@@ -2041,7 +2041,7 @@ h2 {
 }
 /* line 1818, ../sass/index.scss */
 .plan-du-site li:before {
-  content: "&bull; ";
+  content: "\2022 ";
   color: #efab59;
   margin-right: 10px;
 }
@@ -2251,13 +2251,13 @@ h2 {
     left: 1000px;
   }
 
-  /* line 2033, ../sass/index.scss */
+  /* line 2032, ../sass/index.scss */
   #propose {
     width: 57%;
   }
 }
 @media screen and (max-width: 800px) {
-  /* line 2040, ../sass/index.scss */
+  /* line 2039, ../sass/index.scss */
   .bloc-footer-d {
     width: 100%;
     text-align: center;
@@ -2267,123 +2267,123 @@ h2 {
     float: none;
   }
 
-  /* line 2049, ../sass/index.scss */
+  /* line 2048, ../sass/index.scss */
   footer {
     height: 100%;
   }
 
-  /* line 2053, ../sass/index.scss */
+  /* line 2052, ../sass/index.scss */
   .bloc-home {
     height: 375px;
   }
 
-  /* line 2057, ../sass/index.scss */
+  /* line 2056, ../sass/index.scss */
   .petit-bloc {
     width: 100%;
   }
 
-  /* line 2062, ../sass/index.scss */
+  /* line 2061, ../sass/index.scss */
   .page_affiche .affiche {
     width: 100%;
   }
-  /* line 2065, ../sass/index.scss */
+  /* line 2064, ../sass/index.scss */
   .page_affiche .picture {
     width: 200px;
   }
-  /* line 2067, ../sass/index.scss */
+  /* line 2066, ../sass/index.scss */
   .page_affiche .picture img {
     max-width: 200px;
   }
-  /* line 2072, ../sass/index.scss */
+  /* line 2071, ../sass/index.scss */
   .page_affiche .swiper-container {
     width: 80%;
   }
-  /* line 2075, ../sass/index.scss */
+  /* line 2074, ../sass/index.scss */
   .page_affiche .swiper-container .swiper-wrapper {
     padding: 0;
   }
-  /* line 2078, ../sass/index.scss */
+  /* line 2077, ../sass/index.scss */
   .page_affiche .swiper-container .swiper-wrapper img {
     max-width: 110px;
   }
-  /* line 2084, ../sass/index.scss */
+  /* line 2083, ../sass/index.scss */
   .page_affiche .buttons.next {
     left: 10%;
   }
 
-  /* line 2089, ../sass/index.scss */
+  /* line 2088, ../sass/index.scss */
   .wrapper {
     width: 100%;
   }
 
-  /* line 2093, ../sass/index.scss */
+  /* line 2092, ../sass/index.scss */
   .bulle_jaune:nth-child(even), .bulle_rouge:nth-child(even) {
     margin-left: 0;
   }
 
-  /* line 2097, ../sass/index.scss */
+  /* line 2096, ../sass/index.scss */
   #propose {
     width: 74.2%;
   }
 
-  /* line 2101, ../sass/index.scss */
+  /* line 2100, ../sass/index.scss */
   .btn-bloc-home a {
     padding: 10px 6px 2px;
   }
 
-  /* line 2106, ../sass/index.scss */
+  /* line 2105, ../sass/index.scss */
   .defi {
     display: none;
   }
 
-  /* line 2110, ../sass/index.scss */
+  /* line 2109, ../sass/index.scss */
   .fleche {
     display: none;
   }
 
-  /* line 2114, ../sass/index.scss */
+  /* line 2113, ../sass/index.scss */
   .btn-capoupascap {
     width: 100%;
   }
 
-  /* line 2118, ../sass/index.scss */
+  /* line 2117, ../sass/index.scss */
   #propose {
     width: 100%;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 2124, ../sass/index.scss */
+  /* line 2123, ../sass/index.scss */
   .bloc-home {
     height: 500px;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 2129, ../sass/index.scss */
+  /* line 2128, ../sass/index.scss */
   .wrapper_isolement {
     width: 95%;
   }
-  /* line 2132, ../sass/index.scss */
+  /* line 2131, ../sass/index.scss */
   .wrapper_isolement .bulle_rouge, .wrapper_isolement .bulle_jaune {
     margin-left: -40px;
   }
 
-  /* line 2136, ../sass/index.scss */
+  /* line 2135, ../sass/index.scss */
   .pop-up {
     width: 280px;
     left: 1%;
   }
 
-  /* line 2141, ../sass/index.scss */
+  /* line 2140, ../sass/index.scss */
   #propose {
     width: 90%;
   }
 }
 @media screen and (min-width: 642px) {
-  /* line 2149, ../sass/index.scss */
+  /* line 2148, ../sass/index.scss */
   header li.li_cap {
     display: none;
   }
-  /* line 2154, ../sass/index.scss */
+  /* line 2153, ../sass/index.scss */
   header li a.link_active:after {
     content: '';
     position: absolute;
@@ -2395,21 +2395,21 @@ h2 {
     border-width: 0 7px 14px 7px;
     border-color: transparent transparent #64c4db transparent;
   }
-  /* line 2166, ../sass/index.scss */
+  /* line 2165, ../sass/index.scss */
   header li a.link_active[href=isolement]:after {
     left: 90px;
   }
-  /* line 2171, ../sass/index.scss */
+  /* line 2170, ../sass/index.scss */
   header li a.link_active[href=solutions]:after {
     left: 49px;
   }
-  /* line 2176, ../sass/index.scss */
+  /* line 2175, ../sass/index.scss */
   header li a.link_active[href=webseries]:after {
     left: 34px;
   }
 }
 @media screen and (min-width: 642px) and (max-width: 800px) {
-  /* line 2188, ../sass/index.scss */
+  /* line 2187, ../sass/index.scss */
   header a {
     font-size: 0.8em;
   }

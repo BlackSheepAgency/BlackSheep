@@ -50,7 +50,7 @@ class BlackshipController extends AppController {
 
 		$fb_id="602780313159165";
 		//be sure to update this access token
-		$myFBToken="CAAKTUrSoBpkBAEeChu7LTAhWlbo7YUWXvQPJQ2Bq3JaPjU8PC9D2GNlJPjZA0f8SgzVacCbVR0bPMAPsk0uYLtpNT5PRGeI6dC0z7aKT1n2kJvAPPIX9AsOOAGYnuXUS054x5z8pMyHPa6IUPGZCNoRhSmkM8THDjrSZABtgrZADa7n8iZCgnr752lcZAaaHFr3G9TDznFtyo9ZBxMw4ZAZCeuG4BQPsUiPwZD";
+		$myFBToken="CAAKTUrSoBpkBAPoCBX917WxcmLyFJwyHgDjAi1MyZBTvDi5pQCpZBZCTMNr78AiXhram61vDAyW1p7I1tJBVlBVDB70sSZAv2B4H0qQRTSJZBETVxqaZBxz4OS9liAX18EXZCRQgcLXJAMeWbOvA4dOHEZC2sZC5D0HQbstyZAjkpXaZBmCQeLQM5A0luUUbw4SAd3O0cPNw2KtDT3300k6JpICrD3RGNxCgVUZD";
 
 		// link for FB
 		// https://graph.facebook.com/oauth/authorize?type=user_agent&client_id=724933380933273&redirect_uri=http://www.commedesgosses.com/&scope=read_stream,offline_access

@@ -1795,14 +1795,14 @@ h2{
 	margin: 0 auto;
 
 	.picture_affiche {
-		padding-top: 74px;
+		padding-top: 74px; 
 	}
 }
 
 .plan-du-site{
 
 	margin-top: 130px;
-	margin-bottom: 100px;
+	margin-bottom: 226px;
 
 	ul{
 		list-style: none;
@@ -1816,7 +1816,7 @@ h2{
     	line-height: 1.5;
 
 		&:before{
-			content:"&bull; ";
+			content:"\2022 ";
 			color:$orange;
 			margin-right: 10px;
 		}
@@ -2024,13 +2024,12 @@ h2{
 	}
 	.buttons_home {
 		right: 82%;
-
+	
 		li {
 			left: 1000px;
 		}
 	}
-
-	#propose {
+	#propose{
 		width:57%;
 	}
 }
