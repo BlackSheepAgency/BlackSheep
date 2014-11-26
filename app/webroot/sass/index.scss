@@ -1872,6 +1872,10 @@ h2{
 		left: 5%;
 		height: 114px;
 	}
+
+	#propose{
+		width:100%;
+	}
   
 }
 
@@ -1981,6 +1985,14 @@ h2{
 		width:100%;
 	}
 
+	#propose{
+		width:100%;
+	}
+
+	.btn-capoupascap{
+		width:100%;
+	}
+
 }
 
 @media screen and (max-width: 1106px) {
@@ -1989,6 +2001,10 @@ h2{
 		ul {
 			padding: 0;
 		}
+	}
+
+	#propose{
+		width:57%;
 	}
 }
 
@@ -2066,6 +2082,14 @@ h2{
 
 	.fleche{
 		display:none;
+	}
+
+	.btn-capoupascap{
+		width:100%;
+	}
+
+	#propose{
+		width:100%;
 	}
 }
 

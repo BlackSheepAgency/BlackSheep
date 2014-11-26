@@ -2083,34 +2083,39 @@ h2 {
     left: 5%;
     height: 114px;
   }
+
+  /* line 1876, ../sass/index.scss */
+  #propose {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 1250px) {
-  /* line 1880, ../sass/index.scss */
+  /* line 1884, ../sass/index.scss */
   .bloc-home {
     display: block;
     width: 100%;
     margin-bottom: 20px;
   }
-  /* line 1885, ../sass/index.scss */
+  /* line 1889, ../sass/index.scss */
   .bloc-home img {
     max-width: 30%;
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 1894, ../sass/index.scss */
+  /* line 1898, ../sass/index.scss */
   header {
     height: 350px;
     text-align: center;
     background-color: #fff;
     position: relative;
   }
-  /* line 1900, ../sass/index.scss */
+  /* line 1904, ../sass/index.scss */
   header ul {
     margin: 0 auto;
     width: 55%;
     padding-top: 3%;
   }
-  /* line 1906, ../sass/index.scss */
+  /* line 1910, ../sass/index.scss */
   header li {
     display: inherit;
     vertical-align: middle;
@@ -2118,56 +2123,56 @@ h2 {
     padding-right: 1em;
     padding-bottom: 1em;
   }
-  /* line 1913, ../sass/index.scss */
+  /* line 1917, ../sass/index.scss */
   header li:first-child {
     margin-bottom: 90px;
   }
-  /* line 1916, ../sass/index.scss */
+  /* line 1920, ../sass/index.scss */
   header li.li_cap {
     display: block;
     background-color: #64c4db;
     padding: 10px;
   }
-  /* line 1921, ../sass/index.scss */
+  /* line 1925, ../sass/index.scss */
   header li.li_cap a {
     color: #fff;
   }
-  /* line 1924, ../sass/index.scss */
+  /* line 1928, ../sass/index.scss */
   header li.li_cap a:hover {
     color: #333;
   }
-  /* line 1930, ../sass/index.scss */
+  /* line 1934, ../sass/index.scss */
   header a {
     font-family: "CabinSketch-Regular";
     text-decoration: none;
     color: #000;
     font-size: 1.2em;
   }
-  /* line 1936, ../sass/index.scss */
+  /* line 1940, ../sass/index.scss */
   header a:hover {
     color: #64c4db;
   }
-  /* line 1941, ../sass/index.scss */
+  /* line 1945, ../sass/index.scss */
   header .capoupascap {
     display: none;
   }
-  /* line 1944, ../sass/index.scss */
+  /* line 1948, ../sass/index.scss */
   header .capoupascap:hover {
     color: white;
   }
-  /* line 1949, ../sass/index.scss */
+  /* line 1953, ../sass/index.scss */
   header #camo {
     display: none;
   }
 
-  /* line 1954, ../sass/index.scss */
+  /* line 1958, ../sass/index.scss */
   #logo {
     position: absolute;
     top: 0;
     left: 5%;
   }
 
-  /* line 1960, ../sass/index.scss */
+  /* line 1964, ../sass/index.scss */
   .pop-up {
     top: 2%;
     left: 12%;
@@ -2177,31 +2182,46 @@ h2 {
     padding: 20px;
     width: 300px;
   }
-  /* line 1969, ../sass/index.scss */
+  /* line 1973, ../sass/index.scss */
   .pop-up textarea {
     height: 90px;
   }
 
-  /* line 1974, ../sass/index.scss */
+  /* line 1978, ../sass/index.scss */
   .publish_cap {
     width: 100%;
     text-align: center;
     position: relative;
   }
 
-  /* line 1980, ../sass/index.scss */
+  /* line 1984, ../sass/index.scss */
   #propose-cap {
+    width: 100%;
+  }
+
+  /* line 1988, ../sass/index.scss */
+  #propose {
+    width: 100%;
+  }
+
+  /* line 1992, ../sass/index.scss */
+  .btn-capoupascap {
     width: 100%;
   }
 }
 @media screen and (max-width: 1106px) {
-  /* line 1989, ../sass/index.scss */
+  /* line 2001, ../sass/index.scss */
   .bloc-footer-d ul {
     padding: 0;
   }
+
+  /* line 2006, ../sass/index.scss */
+  #propose {
+    width: 57%;
+  }
 }
 @media screen and (max-width: 800px) {
-  /* line 1997, ../sass/index.scss */
+  /* line 2013, ../sass/index.scss */
   .bloc-footer-d {
     width: 100%;
     text-align: center;
@@ -2211,113 +2231,123 @@ h2 {
     float: none;
   }
 
-  /* line 2006, ../sass/index.scss */
+  /* line 2022, ../sass/index.scss */
   footer {
     height: 100%;
   }
 
-  /* line 2010, ../sass/index.scss */
+  /* line 2026, ../sass/index.scss */
   .bloc-home {
     height: 375px;
   }
 
-  /* line 2014, ../sass/index.scss */
+  /* line 2030, ../sass/index.scss */
   .petit-bloc {
     width: 100%;
   }
 
-  /* line 2019, ../sass/index.scss */
+  /* line 2035, ../sass/index.scss */
   .page_affiche .affiche {
     width: 100%;
   }
-  /* line 2022, ../sass/index.scss */
+  /* line 2038, ../sass/index.scss */
   .page_affiche .picture {
     width: 200px;
   }
-  /* line 2024, ../sass/index.scss */
+  /* line 2040, ../sass/index.scss */
   .page_affiche .picture img {
     max-width: 200px;
   }
-  /* line 2029, ../sass/index.scss */
+  /* line 2045, ../sass/index.scss */
   .page_affiche .swiper-container {
     width: 80%;
   }
-  /* line 2032, ../sass/index.scss */
+  /* line 2048, ../sass/index.scss */
   .page_affiche .swiper-container .swiper-wrapper {
     padding: 0;
   }
-  /* line 2035, ../sass/index.scss */
+  /* line 2051, ../sass/index.scss */
   .page_affiche .swiper-container .swiper-wrapper img {
     max-width: 110px;
   }
-  /* line 2041, ../sass/index.scss */
+  /* line 2057, ../sass/index.scss */
   .page_affiche .buttons.next {
     left: 10%;
   }
 
-  /* line 2046, ../sass/index.scss */
+  /* line 2062, ../sass/index.scss */
   .wrapper {
     width: 100%;
   }
 
-  /* line 2050, ../sass/index.scss */
+  /* line 2066, ../sass/index.scss */
   .bulle_jaune:nth-child(even), .bulle_rouge:nth-child(even) {
     margin-left: 0;
   }
 
-  /* line 2054, ../sass/index.scss */
+  /* line 2070, ../sass/index.scss */
   #propose {
     width: 74.2%;
   }
 
-  /* line 2058, ../sass/index.scss */
+  /* line 2074, ../sass/index.scss */
   .btn-bloc-home a {
     padding: 10px 6px 2px;
   }
 
-  /* line 2063, ../sass/index.scss */
+  /* line 2079, ../sass/index.scss */
   .defi {
     display: none;
   }
 
-  /* line 2067, ../sass/index.scss */
+  /* line 2083, ../sass/index.scss */
   .fleche {
     display: none;
   }
+
+  /* line 2087, ../sass/index.scss */
+  .btn-capoupascap {
+    width: 100%;
+  }
+
+  /* line 2091, ../sass/index.scss */
+  #propose {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1400px) {
-  /* line 2073, ../sass/index.scss */
+  /* line 2097, ../sass/index.scss */
   .bloc-home {
     height: 500px;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 2078, ../sass/index.scss */
+  /* line 2102, ../sass/index.scss */
   .wrapper_isolement {
     width: 95%;
   }
-  /* line 2081, ../sass/index.scss */
+  /* line 2105, ../sass/index.scss */
   .wrapper_isolement .bulle_rouge, .wrapper_isolement .bulle_jaune {
     margin-left: -40px;
   }
 
-  /* line 2085, ../sass/index.scss */
+  /* line 2109, ../sass/index.scss */
   .pop-up {
     width: 280px;
     left: 1%;
   }
 
-  /* line 2090, ../sass/index.scss */
+  /* line 2114, ../sass/index.scss */
   #propose {
     width: 90%;
   }
 }
 @media screen and (min-width: 640px) {
-  /* line 2098, ../sass/index.scss */
+  /* line 2122, ../sass/index.scss */
   header li.li_cap {
     display: none;
   }
-  /* line 2103, ../sass/index.scss */
+  /* line 2127, ../sass/index.scss */
   header li a.link_active:after {
     content: '';
     position: absolute;
@@ -2331,7 +2361,7 @@ h2 {
   }
 }
 @media screen and (min-width: 640px) and (max-width: 800px) {
-  /* line 2122, ../sass/index.scss */
+  /* line 2146, ../sass/index.scss */
   header a {
     font-size: 0.8em;
   }
