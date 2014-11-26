@@ -35,6 +35,21 @@
 
 		<?php } ?>
 
+		<?php foreach ($facebook as $key => $the_facebook) { ?>
+
+			<div class="grand-bloc-social clearfix">
+				<img src="img/twitter-bg.png" class="grand-bloc-bg"/>
+				<div class="publication-reseaux-sociaux">
+					<!--<div class="avatar">
+						<img src="img/avatar.jpg"/>
+					</div>-->
+					<h1><?= $the_facebook['Message']['author'] ?></h1>
+					<p><?= $the_facebook['Message']['message'] ?></p>
+				</div>
+			</div>
+
+		<?php } ?>
+
 		<div class="pop-up-pseudo pop-up">
 			<div class="form_add_pseudo"> 
 				<h2>Prouve le !</h2>

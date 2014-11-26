@@ -5,7 +5,7 @@
 		<div class="video_description">
 			<h3>Mamie découvre !</h3>
 			<p>
-				Mamie découvre le scrabble et quelle découverte !
+				Dans ce premier épisode, Célia propose à sa grand-mère de jouer à son jeu préféré. Geneviève, enthousiasmée par cette proposition, va vite être confrontée à de nouvelles règles de jeu.
 			</p>
 		</div>
 		<div class="video_comment">
