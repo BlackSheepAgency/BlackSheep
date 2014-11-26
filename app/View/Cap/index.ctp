@@ -68,7 +68,7 @@
 						<textarea name="" id="" required class="get_comment" placeholder="Tapez votre message ici" cols="30" rows="10"></textarea>
 					</div>
 					<div class="style_input">
-						<input id="cap_img_up" type="file" class="get_file" />
+						<img src="app/webroot/img/addfile.png" alt="ajouter un fichier" style="float:left"/><input id="cap_img_up" type="file" class="get_file" />
 					</div>
 					<div class="style_input style_input_submit">
 						<input type="submit" class="valid-pseudo" value="Envoyer" />

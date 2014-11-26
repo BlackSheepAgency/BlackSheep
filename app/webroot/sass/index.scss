@@ -1161,10 +1161,20 @@ h2{
 }
 
 #cap_img_up {
-	background-color: black;
-	color: white;
+	color: black;
 	text-align: center;
+	width:155px !important;
+
+	.uploadify-button{
+		width:155px !important;
+	}
+
+	object{
+		left:100px;
+		width:155px;
+	}
 }
+
 
 .list_bottom {
 	padding: 0;
@@ -1574,6 +1584,7 @@ h2{
 	color:white;
 	background-color: $orange;
 	@include transition( all 0.5s );
+	@include box-sizing(border-box);
 	width:100%;
 	font-family: "Lato";
 	font-size: 1.1em;
