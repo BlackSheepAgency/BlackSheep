@@ -118,6 +118,7 @@ class BlackshipController extends AppController {
 					$messages['tweet'][$f]['message'] = $message_tweet['text'];
 					$messages['tweet'][$f]['name'] = $message_tweet['user']['name'];
 					$messages['tweet'][$f]['link'] = $message_tweet['user']['url'];
+					$messages['tweet'][$f]['screen_name'] = $message_tweet['user']['screen_name'];
 					$f++;
 				}
 			}
@@ -155,6 +156,7 @@ class BlackshipController extends AppController {
 					'author' => $message['name'],
 					'message' => $message['message'],
 					'url' => $message['link'],
+					'screen_name' => $message['screen_name'],
 					'type' => 'tweet'
 				));
 			}

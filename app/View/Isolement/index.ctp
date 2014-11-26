@@ -1,16 +1,18 @@
 <div class="page_isolement">
 	<h1>L'isolement c'est quoi ?</h1>
 
+	<div class="div_red div_red_first">
+		<div>
+			L‘isolement des personnes âgés est très souvent lié à un sentiment <strong>d‘incompréhension</strong> et de <strong>manque d‘écoute</strong> à leur égard.
+		</div>
+	</div>
+
 	<div class="scroll_down">
 		<div>Scroll</div>
 		<div class="picture_scroll"></div>
 	</div>
 
-	<div class="div_red">
-		<div>
-			L‘isolement des personnes âgés est très souvent lié à un sentiment <strong>d‘incompréhension</strong> et de <strong>manque d‘écoute</strong> à leur égard.
-		</div>
-	</div>
+	
 	<h2>Causes principales</h2>
 
 	<div class="wrapper_isolement wrapper_isolement_yellow">

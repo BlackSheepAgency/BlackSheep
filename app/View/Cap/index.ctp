@@ -51,9 +51,8 @@
 			</div>
 		</div>
 		
+		<a href="forum" class="btn-bloc">Accéder au Forum</a>
 		<p>Tu veux partager ton expérience ou consulter celle des autres ? Rends-toi sur le forum !</p>
-
-		<a href="forum"><div class="btn-bloc">Accéder au Forum</div></a>
 
 	</div>
 

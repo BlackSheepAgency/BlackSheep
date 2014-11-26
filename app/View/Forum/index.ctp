@@ -27,7 +27,7 @@
 						<img src="img/avatar.jpg"/>
 					</div>-->
 					<h1><?= $the_tweet['Message']['author'] ?></h1>
-					<h2>@<?= $the_tweet['Message']['author'] ?></h2>
+					<h2>@<?= $the_tweet['Message']['screen_name'] ?></h2>
 					<p><?= $the_tweet['Message']['message'] ?></p>
 				</div>
 			</div>

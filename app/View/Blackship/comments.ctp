@@ -46,6 +46,7 @@
 <table> 
 	<tr>
 		<th>Auteur</th>
+		<th>Screen_name</th>
 		<th>Message</th>
 		<th>URL</th>
 		<th>Action</th>
@@ -54,6 +55,9 @@
 	<tr data-id="<?= $message['Message']['id'] ?>">
 		<td class="name">
 			<?= $message['Message']['author'] ?>
+		</td>
+		<td class="name">
+			<?= $message['Message']['screen_name'] ?>
 		</td>
 		<td class="message">
 			<?= $message['Message']['message'] ?>

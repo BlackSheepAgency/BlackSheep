@@ -1,7 +1,7 @@
 <?php
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 	<head>
 		<title>Comme des Gosses</title>
 
@@ -14,11 +14,11 @@
 		<meta property="og:url" content="http://www.commedesgosses.com" />
 		<meta property="og:description" content="Sois aimant avec tes grands-parents !" />
 		<meta property="og:site_name" content="Comme des Gosses" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta property="og:image" content="http://commedesgosses.com/img/logo2.png" />
 		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
 		<?= $this->Html->css('index') ?>
-		<?= $this->Html->css('countdown') ?>
 		<?= $this->Html->css('idangerous.swiper') ?>
 		<?= $this->Html->script('jquery-1.11.1.min') ?>
 	</head>
@@ -28,6 +28,7 @@
 				<li>
 					<a href="Home" id="logo">
 						<img src="img/logo2.png" width="114" />
+						<span class="logo_name"><span class="blue">Comme</span> <span class="the_orange">Des Gosses</span></span>
 					</a>
 				</li>
 				<li>
@@ -43,7 +44,7 @@
 					<a href="affiches">Nos affiches</a>
 				</li>
 			</ul>
-			<a class="capoupascap" href="cap">Cap <br/>ou<br/> pas cap ?</a>
+			<a class="capoupascap" href="cap">Cap <br />ou<br /> pas cap ?</a>
 		</header>
 
 		<div id="container">
@@ -115,7 +116,6 @@
 		<?= $this->Html->script('jquery.uploadify.min') ?>
 		<?= $this->Html->script('https://apis.google.com/js/platform.js') ?>
 		<?= $this->Html->script('idangerous.swiper') ?>
-		<?= $this->Html->script('countdown') ?>
 		<?= $this->Html->script('main') ?>
 
 		<script>

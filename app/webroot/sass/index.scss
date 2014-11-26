@@ -40,7 +40,7 @@ $gris-des-aimants: #d2d4d3;
 
 *::selection {
 	background: black;
-	color: $vert;
+	color: $prouge;
 }
 
 a{
@@ -67,21 +67,20 @@ header {
 	background: #fff;
 	position: relative;
 
-	ul{
+	ul {
 		display: block;
 		margin: 0 auto;
 		width: 64%;
 		padding-top: 4%;
-
 	}
 
-	li{
+	li {
 		display: inline-block;
 		vertical-align: middle;
 		list-style: none;
 		padding-right: 1em;
 	}
-	a{
+	 a{
 		font-family : "CabinSketch-Regular";
 		text-decoration: none;
 		color: black;
@@ -269,7 +268,7 @@ footer {
   width: 10px;
   height: 10px;
   border-radius: 8px;
-  background: #aaa;
+  background-color: #aaa;
   margin-right: 8px;
   cursor: pointer;
   @include transition(0.3s);
@@ -280,10 +279,10 @@ footer {
 .swiper-visible-switch {
   opacity: 1;
   top: 0;
-  background: #aaa;
+  background-color: #aaa;
 }
 .swiper-active-switch {
-  background: #fff;
+  background-color: #fff;
 }
 
 .center {
@@ -321,14 +320,18 @@ footer {
 .forum-fixed{
 	position:fixed;
 	top:200px;
-	background:$prouge;
+	background-color:$prouge;
 	width:100px;
-	font-family: 'CabinSketch-Regular';
+	font-family: "CabinSketch-Regular";
 	z-index: 2;
 	text-align: center;
 	@include transition(all ease 0.5s);
 
-	a{
+	&:hover  {
+		background-color: lighten($prouge, 10%);
+	}
+
+	a {
 		text-decoration: none;
 		color:white;
 		text-transform: uppercase;
@@ -337,7 +340,7 @@ footer {
 		float:left;
 	}
 
-	img{
+	img {
 		position:absolute;
 		top:3px;
 		left:67px;
@@ -356,20 +359,20 @@ footer {
 .btn-capoupascap{ 
 	padding:5px;
 	text-transform: uppercase;
-	background: $orange;
+	background-color: $orange;
 	@include transition( all 0.5s );
 	width:260px;
-	font-family: 'CabinSketch-Regular';
+	font-family: "CabinSketch-Regular";
 	font-size: 1.5em;
 	float:left;
 	margin-top: 5px;
 
-	&:hover{
+	&:hover {
 		cursor:pointer;
 		background-color: darken($orange, 20%);
 	}
 
-	a{
+	a {
 		text-decoration: none;
 		color:white;
 	}
@@ -378,7 +381,6 @@ footer {
 .comment-home{
 	display:block;
 	position:relative;
-
 }
 
 /*Test Home*/
@@ -387,7 +389,6 @@ footer {
 	width:100%;
 	position:relative;
 	@include box-sizing(border-box);
-
 }
 
 #wrapper-blocs-home{
@@ -399,7 +400,7 @@ footer {
 }
 
 .bloc-home{
-	background:white;
+	background-color:white;
 	width:49%;
 	margin-right:20px;
 	text-align: center;
@@ -411,14 +412,14 @@ footer {
 	position: relative;
 
 	h1{
-		font-family: 'CabinSketch-Regular';
+		font-family: "CabinSketch-Regular";
 		font-size: 1em;
 		margin-bottom: 15px;
 		margin-top: 10px;
 	}
 
 	p{
-		font-family: 'Lato';
+		font-family: "Lato";
 		font-weight: 300;
 	}
 
@@ -437,33 +438,22 @@ footer {
 	color: white;
 	padding: 10px;
 	text-transform: uppercase;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	-webkit-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-	position: absolute;
-	bottom: 25px;
-	left: 40%;
+	@include box-sizing(border-box);
+	@include transition(all ease 0.5s);
+	
 
-	&.btn-bloc-cap  {
+	&.btn-bloc-cap {
 		position: relative;
 		top: 0;
 		left: 0;
 		margin: 0 auto;
-
-		&:hover{
-			background-color: darken($orange, 20%);		
-		}
 	}
 
-	a{
+	a {
 		text-decoration: none;
 		color:white;
 		padding:10px 40px 2px;
-		background:$orange;
+		background-color:$orange;
 		float:left;
 		@include transition(all ease 0.5s);
 		position: absolute;
@@ -476,11 +466,21 @@ footer {
 		}
 	}
 
-}
+	&:hover{
+		background-color: darken($orange, 20%);		
+	}
 
+}
+.page_home {
+	.btn-bloc  {
+		position: absolute;
+		bottom: 25px;
+		left: 40%;
+	}
+}
 .comment-home{
 	position:relative;
-	font-family: 'Lato';
+	font-family: "Lato";
 	font-weight: 300;
 	margin-top: 20px;
 
@@ -533,7 +533,7 @@ footer {
 	font-weight: 300;
 	padding:30px;
 	margin-bottom: 20px;
-	background:white;
+	background-color:white;
 	text-align: left;
 	@include box-sizing(border-box);
 	text-align: center;
@@ -553,13 +553,18 @@ strong{
 .back_top {
 	padding: 15px;
 	color: white;
-	background: $orange;
+	background-color: $orange;
 	cursor: pointer;
 	position: fixed;
 	bottom: 50px;
 	right: 50px;
 	display: none;
 	z-index: 2;
+	@include transition(0.5s);
+
+	&:hover  {
+		background-color: lighten($orange, 10%);
+	}
 }
 
 
@@ -580,7 +585,6 @@ h1{
 	font-size: 2.8em;
 	text-transform: uppercase;
 	color: $rouge;
-	//font-weight: 400;
 	letter-spacing: 2px;
 	text-align: center;
 	margin-top: 0;
@@ -590,7 +594,6 @@ h2{
 	font-family: "CabinSketch-Bold";
 	font-size: 1.5em;
 	text-transform: uppercase;
-	//font-weight: 400;
 	letter-spacing: 2px;
 	margin:0;
 }
@@ -605,8 +608,14 @@ h2{
 	top: 0;
 	left: 5%;
 	vertical-align: center;
-	width: 114px;
+	width: 290px;
 	height: 114px;
+
+	.logo_name {
+		position: relative;
+		top: -16px;
+		left: -28px;
+	}
 }
 
 #content {
@@ -620,7 +629,6 @@ h2{
 }
 
 #bg-cap{
-	//background:url(../img/retina_wood.png);
 	width:100%;
 	height:1050px;
 	position:relative;
@@ -645,34 +653,45 @@ h2{
 .orange{
 	color:#ef9d33;
 }
+.the_orange {
+	color: $orange;
+}
+.blue {
+	color: $rouge;
+}
+
 
 .valid-cap {
 	margin: auto;
-	background:url(../img/cap.png) no-repeat;
+	background-image:url(../img/cap.png);
+	background-repeat: no-repeat;
 	width:210px;
 	height:200px;
 	border:none;
 	outline: none;
 	float:left;
-	@include transition(all ease 0.5s);
+	@include transition(all ease 0.3s);
 
 	&:hover{
 		cursor:pointer;
-		@include transform(scale (1.1));
+		opacity: 0.6;
 	}
 }
 
 .pas-cap {
 	margin: auto;
-	background:url(../img/pas-cap.png) no-repeat;
+	background-image:url(../img/pas-cap.png);
+	background-repeat: no-repeat;
 	width:238px;
 	height:200px;
 	border:none;
 	outline: none;
 	float:right;
+	@include transition(all ease 0.3s);
 
 	&:hover{
 		cursor:pointer;
+		opacity: 0.6;
 	}
 }
 
@@ -696,7 +715,7 @@ h2{
 	padding:10px;
 	text-transform: uppercase;
 	color:white;
-	background: $vert;
+	background-color: $vert;
 	border: solid 2px $vert;
 	@include transition( all 0.5s );
 	width:30%;
@@ -707,36 +726,34 @@ h2{
 
 	&:hover{
 		cursor:pointer;
-		background: lighten($vert, 15%);
+		background-color: lighten($vert, 15%);
 		border-color: lighten($vert, 15%);
 	}
-
 }
 
 .publish {
 	padding:10px;
 	text-transform: uppercase;
 	color:white;
-	background: $vert;
+	background-color: $vert;
 	border: solid 2px $vert;
 	@include transition( all 0.5s );
 	width:30%;
 	font-family: "Lato";
-	//font-weight: 100;
 	font-size: 1.1em;
 	margin-top:50px;
 
 	&:hover{
 		cursor:pointer;
-		background: lighten($vert, 15%);
+		background-color: lighten($vert, 15%);
 		border-color: lighten($vert, 15%);
 	}
 }
 
 .publish_cap{
-	background:$vert;
+	background:$rouge;
 	border:none;
-	font-family: 'CabinSketch-Regular';
+	font-family: "CabinSketch-Regular";
 	color:#f0f0f0;
 	font-size: 1.8em;
 	text-transform: uppercase;
@@ -745,12 +762,12 @@ h2{
 
 	&:hover{
 		cursor:pointer;
-		background:lighten($vert, 15%);
+		background-color:darken($rouge, 15%);
 	}
 }
 
 .defi{
-	font-family: 'CabinSketch-Regular';
+	font-family: "CabinSketch-Regular";
 	color:black;
 	font-size: 3em;
 	text-transform: uppercase;
@@ -783,14 +800,14 @@ h2{
 	margin-bottom: 50px;
 
 	p{
-		font-family: 'Lato';
+		font-family: "Lato";
 		margin-top:25px;
 		margin-right:10px;
 		font-weight: 300;
 	}
 }
 #propose-cap{
-	width:90%;
+	width:60%;
 	position:relative;
 	margin:auto;
 	padding-top: 50px;
@@ -798,7 +815,7 @@ h2{
 	margin-bottom: 50px;
 
 	p{
-		font-family: 'Lato';
+		font-family: "Lato";
 		margin-top:25px;
 		margin-right:10px;
 		font-weight: 300;
@@ -853,20 +870,17 @@ h2{
 	display: none;
 	text-align: center;
 	padding: 30px 90px 30px 90px;
-	box-shadow: 0px 0px 25px 0px black;
+	@include single-box-shadow(0px, 0px, 25px, 0px, #000);
 	margin-top: -290px;
 	margin-left: -300px; 
 	z-index: 1;
-
-
 
 	form {
 		padding: 10px;
 		margin-top: 10px;
 	}
-	input{
+	input {
 		margin-bottom: 10px;
-		/*font-style: italic;*/
 		padding:10px;
 		width:100%;
 		border:none;
@@ -876,20 +890,17 @@ h2{
 		width: 100px;
 	}
 
-	p{
-		font-family: 'Lato';
+	p {
+		font-family: "Lato";
 		font-size: 1em;
-		//font-weight: 100;
 		text-align: left;
 
-		img{
-			/*height:18px;*/
+		img {
 			margin-left: 11px;
 			vertical-align: sub;
 		}
 	}
 }
-
 
 .style_input {
 	text-align: left;
@@ -920,12 +931,11 @@ h2{
 		padding:10px;
 		text-transform: uppercase;
 		color:black;
-		background: white;
+		background-color: white;
 		border: solid 2px white;
 		@include transition( all 0.5s );
 		width:100%;
-		font-family: 'Lato';
-		//font-weight: 100;
+		font-family: "Lato";
 		font-size: 1.1em;
 
 		&:hover{
@@ -952,13 +962,12 @@ h2{
 .form_add_cap, .form_add_pseudo, .add_publication{
 
 
-	h2{
+	h2 {
 		font-family: "Lato";
 		font-size:1.5em;
 		color:white;
 		margin:auto;
 		text-transform: uppercase;
-		//font-weight: 100;
 	}
 }
 
@@ -983,12 +992,12 @@ h2{
 	position:relative;
 	text-align: center;
 
-	p{
-		font-family: 'Lato';
+	p {
+		font-family: "Lato";
 		font-size: 1em;
 	}
 
-	a{
+	a {
 		text-decoration: none;
 	}
 }
@@ -999,7 +1008,7 @@ h2{
 	text-align: center;
 	position:relative;
 
-	p{
+	p {
 		font-family: "CabinSketch-Bold", cursive;
 		font-size: 1.8em;
 		margin:0;
@@ -1019,14 +1028,14 @@ h2{
 .frame{
 	height:auto;
 	position:relative;
-	background:#fff;
+	background-color:#fff;
 	padding:20px;
 	margin-top: 90px;
 	margin-bottom: 50px;
     border: solid 1px #ddd;
     @include border-radius(6px);
 
-    p{
+    p {
 		font-family: "Lato";
 		line-height: 1.4;
 		font-weight: 300;
@@ -1041,17 +1050,15 @@ h2{
 	ul{
 		margin-top: 4em;
 		padding:0;
-
 	}
 
 	li{
 		display: inline-block;
 		list-style: none;
 		padding-right: 0.6em;
-		
 	}
 
-	p{
+	p {
 		font-family: "Nothing You Could Do", cursive;
 		font-size: 1.8em;
 	}
@@ -1081,15 +1088,10 @@ h2{
 .reseaux-footer{
 	width: 100%;
 
-	ul{
-
-	}
-
 	li{
 		display: inline-block;
 		list-style: none;
 		margin-right: 0.9em;
-		
 	}
 
 	p{
@@ -1097,105 +1099,45 @@ h2{
 		font-size: 1.8em;
 	}
 
-	a#fb_icon{
-		background-image: url("../img/fb-footer.png");
-		width: 40px;
-		height: 40px;
-		display: block;
-		@include transition( all 0.5s );
+	a {
+		&#fb_icon{
+			background-image: url("../img/fb-footer.png");
+			width: 40px;
+			height: 40px;
+			display: block;
+			@include transition( all 0.5s );
+
+			&:hover{
+				background-image: url("../img/facebook.png");
+			}
+		}
+		&#twitter_icon{
+			background-image: url("../img/tw-footer.png");
+			width: 40px;
+			height: 40px;
+			display: block;
+			@include transition( all 0.5s );
+
+			&:hover{
+				background-image: url("../img/twitter.png");
+			}
+		}
+		&#youtube_icon{
+			background-image: url("../img/you-footer.png");
+			width: 40px;
+			height: 40px;
+			display: block;
+			@include transition( all 0.5s );
+
+			&:hover{
+				background-image: url("../img/youtube.png");
+			}
+		}
+		
 	}
-
-	a#twitter_icon{
-		background-image: url("../img/tw-footer.png");
-		width: 40px;
-		height: 40px;
-		display: block;
-		@include transition( all 0.5s );
-	}
-
-	a#youtube_icon{
-		background-image: url("../img/you-footer.png");
-		width: 40px;
-		height: 40px;
-		display: block;
-		@include transition( all 0.5s );
-	}
-
-	a#fb_icon:hover{
-		background-image: url("../img/facebook.png");
-	}
-
-	a#twitter_icon:hover{
-		background-image: url("../img/twitter.png");
-	}
-
-	a#youtube_icon:hover{
-		background-image: url("../img/youtube.png");
-	}
-
 }
 
-.timer{
-	position:relative;
-	display:block;
-	height:100px;
-}
-
-#alwaysShow span span:nth-child(1) span:first-child {
-	border: solid 1px $jaune;
-	@include border-radius(10px);
-}
-#alwaysShow span span:nth-child(2) span:first-child {
-	border: solid 1px $jaune;
-	@include border-radius(10px);
-}
-#alwaysShow span span:nth-child(3) span:first-child {
-	border: solid 1px $jaune;
-	@include border-radius(10px);
-}
-#alwaysShow span span:nth-child(4) span:first-child {
-	border: solid 1px $jaune;
-	@include border-radius(10px);
-}
-
-.countdown-period {
-	color: white;
-}
-
-.lancement {
-	color: #eb282e;
-	font-family: "CabinSketch-Bold";
-}
-
-.nos {
-	color: white;
-	font-weight: bold;
-	font-size: 2.3em;
-	text-align: center;
-	margin-bottom: 20px;
-	font-family: 'Angelina';
-	text-transform: none;
-}
-
-#alwaysShow span span:nth-child(1) .countdown-period {
-	background-color: $jaune;
-	color: black;
-}
-
-#alwaysShow span span:nth-child(2) .countdown-period {
-	background-color: $jaune;
-	color: black;
-}
-#alwaysShow span span:nth-child(3) .countdown-period {
-	background-color: $jaune;
-	color: black;
-}
-#alwaysShow span span:nth-child(4) .countdown-period {
-	background-color: $jaune;
-	color: black;
-}
-
-.mentions{
+.mentions {
 	width:50%;
 	color:#fff;
 	font-family: "Lato";
@@ -1215,8 +1157,7 @@ h2{
 .picture_home {
 	background-image: url('../img/picture_home.jpg');
 	background-repeat: no-repeat;
-	background-size: cover;
-	-webkit-background-size: cover;
+	@include background-size(cover);
 	width: 100%;
 	position: relative;
 }
@@ -1231,10 +1172,10 @@ h2{
 		vertical-align: top;
 		height: 600px;
 		border-sizing: border-box;
-		background: #f0f0f0;
+		background-color: #f0f0f0;
 
 		.list_bottom_title  {
-			font-family: 'CabinSketch-Regular';
+			font-family: "CabinSketch-Regular";
 			color: $rouge;
 			font-size: 2em;
 			text-align: center;
@@ -1249,12 +1190,12 @@ h2{
 			&.list_bottom_content_cdg, &.list_bottom_content_isolement {
 				background-image : url('../img/image_home_cdg.jpg');
 				background-repeat: no-repeat;
-				background-size: cover;
-				-webkit-background-size: cover;
+				@include background-size(cover);
 				width: 100%;
 			}
 			&.list_bottom_content_isolement {
 				background-image : url('../img/picture_isolement2.jpg');
+				background-repeat: no-repeat;
 			}
 
 			&.list_bottom_content_cap {
@@ -1268,7 +1209,7 @@ h2{
 
 				.cap_comment {
 					border-top: 0;
-					background: #f0f0f0;
+					background-color: #f0f0f0;
 
 					.picture_comment {
 						max-width: 120px;
@@ -1278,8 +1219,6 @@ h2{
 						img{
 							width:100px;
 						}
-
-
 					}
 					.text_comment {
 						width: 62%;
@@ -1308,8 +1247,8 @@ h2{
 
 			.list_bottom_link {
 				@include transition(0.4s);
-				background-color: black;
 				background-color: rgba(0, 0, 0, 0.8);
+				background-color: #000;
 				color: white;
 				position: absolute;
 				bottom: 0;
@@ -1389,10 +1328,10 @@ h2{
 }
 
 .div_red {
-	background: $rouge;
+	background-color: $rouge;
 	padding: 20px;
 	text-align: center;
-	padding: 30px 0;
+	padding: 50px 0;
 	color: white;
 	margin-bottom: 40px;
 
@@ -1449,6 +1388,7 @@ h2{
 
 .bulle_jaune {
 	background-image: url('../img/bulle_jaune.png');
+	background-repeat: no-repeat;
 
 	.bulle_title, .bulle_description {
 		color: #f0f0f0;
@@ -1460,11 +1400,6 @@ h2{
 	margin: 0 auto;
 	padding: 300px 0;
 	position: relative;
-
-	&.wrapper_isolement_yellow {
-	}
-	&.wrapper_isolement_red {
-	}
 }
 
 .page_isolement {
@@ -1475,6 +1410,9 @@ h2{
 	strong {
 		color: #343434;
 	}
+	h1 {
+		margin-top: 60px;
+	}
 }
 
 .points {
@@ -1482,19 +1420,10 @@ h2{
 	left: 49%;
 	top: 20px;
 
-	.point {
+	.point, .big_point {
 		width: 0px;
 		height: 0px;
-		background-color: $jaune;
-		@include border-radius(40px);
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
-	.big_point {
-		width: 0px;
-		height: 0px;
-		background-color: $jaune;
+		background-color: $orange;
 		@include border-radius(40px);
 		position: absolute;
 		top: 0;
@@ -1507,12 +1436,6 @@ h2{
 	}
 }
 
-.points.points_rouges 
-.points {
-	.point {
-
-	}
-}
 /*Solutions*/
 
 .grand-bloc{
@@ -1522,7 +1445,7 @@ h2{
 	font-weight: 300;
 	padding:30px;
 	margin-bottom: 20px;
-	background:white;
+	background-color:white;
 	text-align: left;
 	@include box-sizing(border-box);
 	text-align: center;
@@ -1545,10 +1468,10 @@ h2{
 .grand-bloc-social{
 	width:100%;
 	position:relative;
-	font-family: 'Lato';
+	font-family: "Lato";
 	padding:30px;
 	margin-bottom: 20px;
-	background:white;
+	background-color:#fff;
 	border: solid 1px $bleu-clair;
 	background-position: -100px;
 	overflow: hidden;
@@ -1561,7 +1484,6 @@ h2{
 		text-transform: uppercase;
 		text-align: left;
 	}
-
 
 	.pseudo-com{
 		text-align: right;
@@ -1585,19 +1507,19 @@ h2{
 	float:left;
 	margin-right: 2.4%;
 	margin-bottom: 20px;
-	background:white;
+	background-color:white;
 	text-align: left;
 	@include box-sizing(border-box); 
 	border:solid 1px $bleu-clair;
 
-	h1{
+	h1 {
 		font-size: 1.3em;
 		color:$bleu-clair;
 		text-transform: uppercase;
 		text-align: left;
 	}
 
-	a{
+	a {
 		color: $orange-clair;
 		text-align: right !important;
 		text-decoration: none;
@@ -1606,7 +1528,6 @@ h2{
 			text-decoration:underline;
 		}
 	}
-
 }
 
 .petit-bloc-wrapper{
@@ -1634,38 +1555,36 @@ h2{
 	border: solid 2px $vert;
 	@include transition( all 0.5s );
 	width:30%;
-	font-family: 'Lato';
+	font-family: "Lato";
 	font-size: 1.1em;
 
 	&:hover{
 		cursor:pointer;
 		background-color: darken($orange, 20%);
 	}
-
 }
 
 .btn-forum-publish {
 	padding:10px;
 	text-transform: uppercase;
 	color:white;
-	background: $orange;
+	background-color: $orange;
 	@include transition( all 0.5s );
 	width:100%;
-	font-family: 'Lato';
+	font-family: "Lato";
 	font-size: 1.1em;
 	margin-top: 50px;
 	margin-bottom: 20px;
+	border: none;
 
 	&:hover{
 		cursor:pointer;
 		background-color: darken($orange, 20%);
 	}
-
 }
 
 .avatar{
-
-	img{
+	img {
 		width:20%;
 		position:relative;
 		float:left;
@@ -1674,8 +1593,7 @@ h2{
 }
 
 .image-publication{
-
-	img{
+	img {
 		width:40%;
 		position:relative;
 		float:left;
@@ -1687,8 +1605,8 @@ h2{
 	position:relative;
 	display:block;
 
-	h2{
-		font-family: 'Lato';
+	h2 {
+		font-family: "Lato";
 	}
 }
 
@@ -1699,7 +1617,6 @@ h2{
 		margin: 0 auto;
 		margin-top: 20px;
 	}
-
 	.picture_scroll {
 		background-image: url('../img/scroll.png');
 		background-repeat: no-repeat;
@@ -1774,8 +1691,6 @@ h2{
 		float: right;
 		background-position: -40px 0px;
 	}
-	
-
 }
 
 .abonne {
@@ -1825,17 +1740,17 @@ h2{
   header {
 	height: 130px;
 	text-align: center;
-	background: #fff;
+	background-color: #fff;
 	position: relative;
 
-		ul{
+		ul {
 			margin: 0 auto;
 			width: 63%;
 			padding-top: 3em;
 
 		}
 
-		li{
+		li {
 			text-align: center;
 			display: inline-block;
 			vertical-align: middle;
@@ -1843,7 +1758,7 @@ h2{
 			padding-right: 0.8em;
 		}
 
-		a{
+		a {
 			font-family : "CabinSketch-Regular";
 			text-decoration: none;
 			color: black;
@@ -1869,7 +1784,6 @@ h2{
 				color: #333;
 			}
 		}
-
 	}
 
 	#logo{
@@ -1881,6 +1795,7 @@ h2{
 	}
   
 }
+
 @media screen and (max-width: 1250px) {
 	.bloc-home {
 		display: block;
@@ -1898,27 +1813,26 @@ h2{
   header {
 	height: 200px;
 	text-align: center;
-	background: #fff;
+	background-color: #fff;
 	position: relative;
 
-		ul{
+		ul {
 			margin: 0 auto;
 			width: 55%;
 			padding-top: 3%;
-
 		}
 
-		li{
+		li {
 			display: inherit;
 			vertical-align: middle;
 			list-style: none;
 			padding-right: 1em;
 			padding-bottom: 1em;
 		}
-		a{
+		a {
 			font-family : "CabinSketch-Regular";
 			text-decoration: none;
-			color: black;
+			color: #000;
 			font-size: 1.2em;
 
 			&:hover{
@@ -1928,6 +1842,7 @@ h2{
 
 		.capoupascap{
 			background-image: url("../img/fond_cap.png");
+			background-repeat: no-repeat;
 			position: absolute;
 			top: 0;
 			right: 7%;
@@ -1940,7 +1855,6 @@ h2{
 				color: white;
 			}
 		}
-
 	}
 
 	#logo{
@@ -1960,7 +1874,6 @@ h2{
 		padding: 20px;
 		width: 300px;
 		
-
 		textarea  {
 			height: 90px;
 		}
@@ -1971,14 +1884,15 @@ h2{
 
 @media screen and (max-width: 1106px) {
   
-  .bloc-footer-d{
-	width:33%;
-	text-align: center;
-	display:block;
-	position:relative;
-	top: -7em;
-	float:right;
-	vertical-align: middle;
+	.bloc-footer-d{
+		width:33%;
+		text-align: center;
+		display:block;
+		position:relative;
+		top: -7em;
+		float:right;
+		vertical-align: middle;
+
 		ul {
 			padding: 0;
 		}
@@ -2051,7 +1965,6 @@ h2{
 			padding: 10px 6px 2px;
 		}
 	}
-
 }
 
 @media screen and (min-width: 1400px) {

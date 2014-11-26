@@ -8,17 +8,18 @@
 				Mamie découvre le scrabble et quelle découverte !
 			</p>
 		</div>
-		<div class="video_comment">
+		<!--<div class="video_comment">
 			Il m'a fait mourir de rire, il mérite sa place à Golden moustache !
-		</div>
+		</div>-->
 	</div>
 	<div class="video">
 		<iframe width="800" height="450" src="//www.youtube.com/embed/BUjKYjFOSdc" frameborder="0" allowfullscreen></iframe>
 	</div>
+	<br />
 
 	<div class="fb-share-button" data-href="https://www.facebook.com/pages/Comme-des-Gosses/602780313159165?fref=ts" data-layout="button_count"></div>
 
-
+	<br />
 	<div class="abonne"><span class="red">Abonne toi à la chaine youtube</span> “comme des gosses„ 
 		<div class="g-ytsubscribe" data-channel="CommeDesGosses" data-layout="default" data-count="hidden"></div>
 	</div>
@@ -28,16 +29,7 @@
 	    <div class="swiper-container">
 	      <div class="swiper-wrapper">
 	        <div class="swiper-slide">
-	          <img src="img/cover_slider.jpg" alt="" />
-	        </div>
-	        <div class="swiper-slide">
-	          <img src="img/cover_slider.jpg" alt="" />
-	        </div>
-	        <div class="swiper-slide">
-	          <img src="img/cover_slider.jpg" alt="" />
-	        </div>
-	        <div class="swiper-slide">
-	          <img src="img/cover_slider.jpg" alt="" />
+	          <img src="img/cover_video1.png" width="260" alt="" />
 	        </div>
 	      </div>
 	    </div>

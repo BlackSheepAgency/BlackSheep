@@ -310,6 +310,13 @@ $(document).ready(function() {
 		$('.picture_home').height(($(window).height()-130));
 	});
 
+	var window_height = $(window).height();
+	// header: 103 px, h1 : 50px + 60px top + 20px bottom
+	var header_height = 183;
+
+	$('.div_red_first').css('margin-top', (window_height-header_height)-(window_height /1.65)+'px');
+	$('.scroll_down').css('margin-top', (window_height-header_height)-(window_height /1.65)+'px')
+
 	$('.affiche').hide();
 	$('.affiche2').show();
 
