@@ -361,7 +361,7 @@ $(document).ready(function() {
             name: "J'ai été cap !",
             description: "Venez vous aussi sur Comme des gosses et prouvez que vous êtes cap de faire quelque chose !",
             link:'http://commedesgosses.com/',
-            picture: 'http://commedesgosses.com/img/logo.png',
+            picture: 'http://commedesgosses.com/img/logo2.png',
             display     : 'dialog',
 			method      : 'feed'
         };
