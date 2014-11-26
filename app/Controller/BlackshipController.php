@@ -44,7 +44,7 @@ class BlackshipController extends AppController {
 		$messages['tweet'] = array();
 
 
-		//*
+		/*
 
 
 
@@ -67,6 +67,9 @@ class BlackshipController extends AppController {
 		$page = json_decode(curl_exec($c), true);
 		//close the connection
 		curl_close($c);
+
+		//debug($page);
+		//die;
 		
 		$n = 0;
 		foreach ($page as $key => $the_page) {

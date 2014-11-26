@@ -80,7 +80,7 @@
 
 	<div class="div_red">
 		<div>
-			<span class="uppercase_isolement">1</span> personne âgée sur <span class="uppercase_isolement">2</span> de plus de 75 ans n‘ont pas de relations sociales.
+			<span class="uppercase_isolement">1</span> personne âgée sur <span class="uppercase_isolement">2</span> de plus de 75 ans n‘a pas de relations sociales.
 		</div>
 	</div>
 

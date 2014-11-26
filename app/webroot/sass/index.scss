@@ -1030,6 +1030,14 @@ h2{
 	a {
 		text-decoration: none;
 	}
+	.link-social {
+		color: $rouge;
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
 }
 
 .msg_reseaux{
