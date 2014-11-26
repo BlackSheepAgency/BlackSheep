@@ -474,7 +474,7 @@ footer {
 	.btn-bloc  {
 		position: absolute;
 		bottom: 25px;
-		left: 40%;
+		left: 36%;
 	}
 }
 .comment-home{
@@ -648,6 +648,13 @@ h2{
 	left:0;
 	top:0;	
 	margin-bottom: 133px;
+}
+
+#bg-forum{
+	width:100%;
+	position:relative;
+	left:0;
+	top:0;	
 }
 
 .red {
@@ -1010,7 +1017,7 @@ h2{
 }
 
 .wrapper{
-	width:60%;
+	width:669px;
 	margin:auto;
 	position:relative;
 	text-align: center;
@@ -1809,7 +1816,7 @@ h2{
     	line-height: 1.5;
 
 		&:before{
-			content:"• ";
+			content:"&bull; ";
 			color:$orange;
 			margin-right: 10px;
 		}
@@ -1884,6 +1891,10 @@ h2{
 		top: 0;
 		left: 5%;
 		height: 114px;
+	}
+
+	#propose{
+		width:100%;
 	}
   
 }
@@ -1983,6 +1994,25 @@ h2{
 			height: 90px;
 		}
 	}
+
+	.publish_cap{
+		width:100%;
+		text-align:center;
+		position:relative;
+	}
+
+	#propose-cap{
+		width:100%;
+	}
+
+	#propose{
+		width:100%;
+	}
+
+	.btn-capoupascap{
+		width:100%;
+	}
+
 }
 
 @media screen and (max-width: 1106px) {
@@ -1998,6 +2028,9 @@ h2{
 		li {
 			left: 1000px;
 		}
+
+	#propose{
+		width:57%;
 	}
 }
 
@@ -2067,6 +2100,22 @@ h2{
 		a {
 			padding: 10px 6px 2px;
 		}
+	}
+
+	.defi{
+		display:none;
+	}
+
+	.fleche{
+		display:none;
+	}
+
+	.btn-capoupascap{
+		width:100%;
+	}
+
+	#propose{
+		width:100%;
 	}
 }
 
