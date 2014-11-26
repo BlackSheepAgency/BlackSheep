@@ -2013,7 +2013,7 @@ h2 {
 }
 /* line 1798, ../sass/index.scss */
 .plan-du-site li:before {
-  content: "&bull; ";
+  content: "\2022 ";
   color: #efab59;
   margin-right: 10px;
 }

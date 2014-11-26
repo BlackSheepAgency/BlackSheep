@@ -1796,7 +1796,7 @@ h2{
     	line-height: 1.5;
 
 		&:before{
-			content:"&bull; ";
+			content:"\2022 ";
 			color:$orange;
 			margin-right: 10px;
 		}
