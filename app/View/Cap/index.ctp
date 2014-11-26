@@ -35,6 +35,7 @@
 		</div>
 
 		<div class="cap">
+			<div class="author-cap"></div>
 			<div class="txt-cap">
 				
 			</div>
@@ -51,8 +52,8 @@
 			</div>
 		</div>
 		
-		<a href="forum" class="btn-bloc">Accéder au Forum</a>
 		<p>Tu veux partager ton expérience ou consulter celle des autres ? Rends-toi sur le forum !</p>
+		<a href="forum" class="btn-bloc">Accéder au Forum</a>
 
 	</div>
 		<div class="overlay" id="overlay" style="display: none;"></div>

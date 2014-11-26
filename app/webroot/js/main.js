@@ -128,8 +128,15 @@ $(document).ready(function() {
 					$('.valid-cap').hide();
 				} else {
 					$('.txt-cap').fadeOut(400);
+					$('.author-cap').fadeOut(400);
 					setTimeout(function(){
 						$('.txt-cap').text(response.current_cap.Cap.text).fadeIn();
+						if(response.current_cap.Cap.author != 'Admin') {
+							$('.author-cap').text(response.current_cap.Cap.author).fadeIn();
+						} else {
+							$('.author-cap').text('');
+						}
+						
 						if(response.current_cap.Cap.picture != null && response.current_cap.Cap.picture != undefined) {
 							$('#visuel').html('<img height="250" src="'+response.current_cap.Cap.picture+'" />');
 						}
@@ -231,6 +238,21 @@ $(document).ready(function() {
 
 		});
 	};
+
+	setTimeout(function() {
+		$('.button_home1')
+       .animate({"left":"0px"},600);
+	}, 500);
+
+	setTimeout(function() {
+		$('.button_home2')
+       .animate({"left":"0px"},600);
+	}, 1000);
+
+	setTimeout(function() {
+		$('.button_home3')
+       .animate({"left":"0px"},600);
+	}, 1500);
 
 	$(".forum-fixed").hover(
 		function(){
