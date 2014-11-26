@@ -23,7 +23,7 @@ $vert: #8fc549;
 $bleu: #2873b7;
 $violet: #9a5599;
 $rouge : #64c4db; 
-$rouge : #fd5454;
+//$rouge : #fd5454;
 $orange: #efab59;
 $jaune: #fcd541;
 $prouge: #fd5454;
@@ -57,7 +57,7 @@ body {
 	margin:0;
 	padding:0;
 	overflow-x: hidden;
-	background-image: url('../img/texture.jpg');
+	background: url('../img/texture.jpg');
 	background-repeat: repeat;
 }
 
@@ -109,7 +109,7 @@ header {
 	}
 
 	.capoupascap{
-		background-image: url("../img/fond_cap.png");
+		background: url("../img/fond_cap.png");
 		position: absolute;
 		top: 0;
 		right: 5%;
@@ -183,39 +183,39 @@ footer {
 	top: -2px;
 
 	#fb_icon2{
-		background-image: url("../img/fb_icon2.png");
+		background: url("../img/fb_icon2.png");
 		width: 42px;
 		height: 42px;
 		display: block;
 
 		&:hover{
-			background-image: url("../img/fb_icon3.png");
+			background: url("../img/fb_icon3.png");
 			width: 42px;
 			height: 42px;
 			display: block;
 		}
 	}
 	#twitter_icon2{
-		background-image: url("../img/twitter_icon2.png");
+		background: url("../img/twitter_icon2.png");
 		width: 42px;
 		height: 42px;
 		display: block;
 
 		&:hover{
-			background-image: url("../img/twitter_icon3.png");
+			background: url("../img/twitter_icon3.png");
 			width: 42px;
 			height: 42px;
 			display: block;
 		}
 	}
 	#youtube_icon2{
-		background-image: url("../img/youtube_icon2.png");
+		background: url("../img/youtube_icon2.png");
 		width: 42px;
 		height: 42px;
 		display: block;
 
 		&:hover{
-			background-image: url("../img/youtube_icon3.png");
+			background: url("../img/youtube_icon3.png");
 			width: 42px;
 			height: 42px;
 			display: block;
@@ -663,7 +663,7 @@ h2{
 
 .valid-cap {
 	margin: auto;
-	background-image:url(../img/cap.png);
+	background:url(../img/cap.png);
 	background-repeat: no-repeat;
 	width:210px;
 	height:200px;
@@ -680,7 +680,7 @@ h2{
 
 .pas-cap {
 	margin: auto;
-	background-image:url(../img/pas-cap.png);
+	background:url(../img/pas-cap.png);
 	background-repeat: no-repeat;
 	width:238px;
 	height:200px;
@@ -807,7 +807,7 @@ h2{
 	}
 }
 #propose-cap{
-	width:60%;
+	width:670px;
 	position:relative;
 	margin:auto;
 	padding-top: 50px;
@@ -870,7 +870,6 @@ h2{
 	display: none;
 	text-align: center;
 	padding: 30px 90px 30px 90px;
-	@include single-box-shadow(0px, 0px, 25px, 0px, #000);
 	margin-top: -290px;
 	margin-left: -300px; 
 	z-index: 1;
@@ -973,13 +972,13 @@ h2{
 }
 
 .overlay{
-    background:transparent url(img/overlay.png) repeat top left;
+    background:transparent url(../img/overlay.png) repeat top left;
     position:fixed;
     top:0px;
     bottom:0px;
     left:0px;
     right:0px;
-    z-index:100;
+    z-index:1;
 }
 
 .close{
@@ -1075,21 +1074,21 @@ h2{
 	}
 
 	a#fb_icon{
-		background-image: url("../img/fb_icon.png");
+		background: url("../img/fb_icon.png");
 		width: 40px;
 		height: 40px;
 		display: block;
 	}
 
 	a#twitter_icon{
-		background-image: url("../img/twitter_icon.png");
+		background: url("../img/twitter_icon.png");
 		width: 40px;
 		height: 40px;
 		display: block;
 	}
 
 	a#youtube_icon{
-		background-image: url("../img/youtube_icon.png");
+		background: url("../img/youtube_icon.png");
 		width: 40px;
 		height: 40px;
 		display: block;
@@ -1112,36 +1111,36 @@ h2{
 
 	a {
 		&#fb_icon{
-			background-image: url("../img/fb-footer.png");
+			background: url("../img/fb-footer.png");
 			width: 40px;
 			height: 40px;
 			display: block;
 			@include transition( all 0.5s );
 
 			&:hover{
-				background-image: url("../img/facebook.png");
+				background: url("../img/facebook.png");
 			}
 		}
 		&#twitter_icon{
-			background-image: url("../img/tw-footer.png");
+			background: url("../img/tw-footer.png");
 			width: 40px;
 			height: 40px;
 			display: block;
 			@include transition( all 0.5s );
 
 			&:hover{
-				background-image: url("../img/twitter.png");
+				background: url("../img/twitter.png");
 			}
 		}
 		&#youtube_icon{
-			background-image: url("../img/you-footer.png");
+			background: url("../img/you-footer.png");
 			width: 40px;
 			height: 40px;
 			display: block;
 			@include transition( all 0.5s );
 
 			&:hover{
-				background-image: url("../img/youtube.png");
+				background: url("../img/youtube.png");
 			}
 		}
 		
@@ -1166,7 +1165,7 @@ h2{
 }
 
 .picture_home {
-	background-image: url('../img/picture_home.jpg');
+	background: url('../img/picture_home.jpg');
 	background-repeat: no-repeat;
 	@include background-size(cover);
 	width: 100%;
@@ -1199,13 +1198,13 @@ h2{
 			height: 90%;
 
 			&.list_bottom_content_cdg, &.list_bottom_content_isolement {
-				background-image : url('../img/image_home_cdg.jpg');
+				background : url('../img/image_home_cdg.jpg');
 				background-repeat: no-repeat;
 				@include background-size(cover);
 				width: 100%;
 			}
 			&.list_bottom_content_isolement {
-				background-image : url('../img/picture_isolement2.jpg');
+				background : url('../img/picture_isolement2.jpg');
 				background-repeat: no-repeat;
 			}
 
@@ -1359,7 +1358,7 @@ h2{
 }
 
 .bulle_jaune, .bulle_rouge {
-	background-image: url('../img/bulle_rouge.png');
+	background: url('../img/bulle_rouge.png');
 	background-repeat: no-repeat;
 	width: 380px;
 	height: 334px;
@@ -1398,7 +1397,7 @@ h2{
 }
 
 .bulle_jaune {
-	background-image: url('../img/bulle_jaune.png');
+	background: url('../img/bulle_jaune.png');
 	background-repeat: no-repeat;
 
 	.bulle_title, .bulle_description {
@@ -1629,7 +1628,7 @@ h2{
 		margin-top: 20px;
 	}
 	.picture_scroll {
-		background-image: url('../img/scroll.png');
+		background: url('../img/scroll.png');
 		background-repeat: no-repeat;
 		width: 86px;
 		height: 62px;
@@ -1687,7 +1686,7 @@ h2{
 	}
 
 	.button_previous, .button_next {
-		background-image: url('../img/sprite_buttons_video.png');
+		background: url('../img/sprite_buttons_video.png');
 		background-repeat: no-repeat;
 		width: 35px;
 		height: 67px;
@@ -1816,7 +1815,7 @@ h2{
 		}
 
 		.capoupascap{
-			background-image: url("../img/fond_cap.png");
+			background: url("../img/fond_cap.png");
 			position: absolute;
 			top: 0;
 			right: 5%;
@@ -1887,7 +1886,7 @@ h2{
 		}
 
 		.capoupascap{
-			background-image: url("../img/fond_cap.png");
+			background: url("../img/fond_cap.png");
 			background-repeat: no-repeat;
 			position: absolute;
 			top: 0;

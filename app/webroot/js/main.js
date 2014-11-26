@@ -268,6 +268,20 @@ $(document).ready(function() {
 		}
 	);
 
+	/*--------POPUP OVERLAY--------*/
+
+    $('.activator').click(function(){
+       	$('#overlay').fadeIn('fast');
+    });
+
+    $('.close').click(function(){
+        $('#overlay').fadeOut('fast');
+    });
+ 
+	
+
+	/*--------POPUP OVERLAY--------*/
+
 
 	/*--------HOVER RESEAUX--------*/
 		$('#fb_icon').hover(

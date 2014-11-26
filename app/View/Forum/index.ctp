@@ -1,6 +1,7 @@
 <div id="bg-solutions">
 	<div class="wrapper clearfix">
-		<div class="btn-forum-publish">moi aussi je publie !</div>
+		<div class="btn-forum-publish activator">moi aussi je publie !</div>
+		<div class="overlay" id="overlay" style="display: none;"></div>
 
 		<?php foreach ($publications as $key => $publication) { ?>
 			<div class="grand-bloc clearfix">

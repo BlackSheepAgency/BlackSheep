@@ -41,13 +41,13 @@
 			<div id="visuel">
 		</div>
 			<div id="cap-btns" class="clearfix">
-				<button class="valid-cap"> </button>
+				<button class="valid-cap activator"> </button>
 
 				<button class="pas-cap"> </button>
 			</div>
 			
 			<div id="propose-cap">
-				<span class="defi">ou alors</span><img src="app/webroot/img/red-arrow.png" class="fleche"/><button class="publish_cap">je propose un défi</button>
+				<span class="defi">ou alors</span><img src="app/webroot/img/red-arrow.png" class="fleche"/><button class="publish_cap activator">je propose un défi</button>
 			</div>
 		</div>
 		
@@ -55,7 +55,7 @@
 		<p>Tu veux partager ton expérience ou consulter celle des autres ? Rends-toi sur le forum !</p>
 
 	</div>
-
+		<div class="overlay" id="overlay" style="display: none;"></div>
 		<div class="pop-up-pseudo pop-up">
 			<div class="form_add_pseudo"> 
 				<h2>Prouve le !</h2>
@@ -85,7 +85,7 @@
 
 			<div class="close"><img src="app/webroot/img/close.png"></div>
 		</div>
-
+		
 		<div class="pop-up-publish-cap pop-up">
 			<div class="form_add_cap"> 
 				<h2>Propose un défi !</h2>
