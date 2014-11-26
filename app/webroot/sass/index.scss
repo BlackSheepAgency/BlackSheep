@@ -431,17 +431,33 @@ footer {
 	}
 }
 
-.btn-bloc{
+.btn-bloc {
 	max-width: 200px;
-	margin:auto;
-	margin-top: 22px;
-	margin-bottom: 20px;
-	background:$orange;
-	color:white;
-	padding:10px;
+	background: #efab59;
+	color: white;
+	padding: 10px;
 	text-transform: uppercase;
-	@include box-sizing(border-box);
-	@include transition(all ease 0.5s);
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	position: absolute;
+	bottom: 25px;
+	left: 40%;
+
+	&.btn-bloc-cap  {
+		position: relative;
+		top: 0;
+		left: 0;
+		margin: 0 auto;
+
+		&:hover{
+			background-color: darken($orange, 20%);		
+		}
+	}
 
 	a{
 		text-decoration: none;
@@ -1831,7 +1847,7 @@ h2{
 			font-family : "CabinSketch-Regular";
 			text-decoration: none;
 			color: black;
-			font-size: 0.8em;
+			font-size: 1em;
 
 			&:hover{
 				color: $rouge;
@@ -2036,4 +2052,30 @@ h2{
 		}
 	}
 
+}
+
+@media screen and (min-width: 1400px) {
+	.bloc-home {
+		height: 500px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.wrapper_isolement {
+		width: 95%;
+
+		.bulle_rouge, .bulle_jaune  {
+			margin-left: -40px;
+		}
+	}
+
+	#propose {
+		width: 90%;
+	}
+}
+@media screen and (min-width: 640px) and (max-width: 800px) {
+	header {
+		a {
+			font-size: 0.8em;
+		}
+	}
 }

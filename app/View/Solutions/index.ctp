@@ -3,7 +3,7 @@
 		<div class="grand-bloc margin-top clearfix">
 			<h1>Cap de faire une bonne action ?</h1>
 			<p>Cap de partager une heure de ton temps avec une personne âgée pour jouer aux échecs avec elle ?</p>
-			<div class="btn-bloc"><a href="cap">Cap</a></div>
+			<a class="btn-bloc btn-bloc-cap" href="cap">Cap</a>
 		</div>
 		<div class="petit-bloc-wrapper clearfix">
 			<div class="petit-bloc">

@@ -44,13 +44,13 @@ class BlackshipController extends AppController {
 		$messages['tweet'] = array();
 
 
-		/*
+		//*
 
 
 
 		$fb_id="602780313159165";
 		//be sure to update this access token
-		$myFBToken="CAAKTUrSoBpkBANuUwh5IbuwvpBcbH0Cju9R4YbRHAoauIkZCDunhvfXfZATxFnHOb5hNFNe2ZC2LyGBAoot4aQOgyPSs2h1IHYmb0ubjnmSJ7FteKOeko0JAbuMTzN3308S0XSjLADKO2og4rZBjbgZCvS3XkhTc5ZAO5urZCrKy3G7IwL1o3AatE4alrFGYNqMiFOLZAIN1nbg6qoZB1EZAIiPu4k2j1jhNgZD";
+		$myFBToken="CAAKTUrSoBpkBAEeChu7LTAhWlbo7YUWXvQPJQ2Bq3JaPjU8PC9D2GNlJPjZA0f8SgzVacCbVR0bPMAPsk0uYLtpNT5PRGeI6dC0z7aKT1n2kJvAPPIX9AsOOAGYnuXUS054x5z8pMyHPa6IUPGZCNoRhSmkM8THDjrSZABtgrZADa7n8iZCgnr752lcZAaaHFr3G9TDznFtyo9ZBxMw4ZAZCeuG4BQPsUiPwZD";
 
 		// link for FB
 		// https://graph.facebook.com/oauth/authorize?type=user_agent&client_id=724933380933273&redirect_uri=http://www.commedesgosses.com/&scope=read_stream,offline_access
