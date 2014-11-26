@@ -5,7 +5,7 @@
 				Mamie découvre
 			</li>
 			<li class="button_home2">
-				Une Web série mettant en scène Genneviève, une mamie pleine de joie de vivre qui découvre l'univers des jeunes d'aujourd'hui
+				Une Web série mettant en scène Geneviève, une mamie pleine de joie de vivre qui découvre l'univers des jeunes d'aujourd'hui
 			</li>
 			<li class="button_home3">
 				<a href="webseries">Accéder à la Web Série</a>

@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 
-	window.current_cap = 1; // On initie la variable pour récupérer le CAP à l'ID 1
+	window.current_cap = 1; // On initialise la variable pour récupérer le CAP à l'ID 1
 	var pseudo = '';
 	var cap = '';
 
@@ -29,9 +29,6 @@ $(document).ready(function() {
 		var publi_comment = $(this).find('.get_comment').val();
 		var publi_file = window.picture_uploaded;
 
-		//console.log(publi_file);
-		//return false;
-
 		if(publi_pseudo == '' || publi_pseudo == undefined || publi_pseudo == null) {
 			publi_pseudo = 'Anonyme';
 		}
@@ -48,7 +45,6 @@ $(document).ready(function() {
 				url : publi_file
 			},
 			success: function(response){
-				console.log('done');
 				$('.form_add_pseudo .info_add').text('');
 				if(response.check === 'KO') {
 					$('.form_add_pseudo .info_add_error').text('Erreur');
@@ -60,7 +56,6 @@ $(document).ready(function() {
 			},
 
 			error: function(){
-				console.log('error');
             }
 		});
 		return false;
@@ -91,7 +86,6 @@ $(document).ready(function() {
 				email : email
 			},
 			success: function(response){
-				console.log(response);
 				parent.find('.info_add').text('');
 				parent.find('.get_cap').val('');
 				if(response.check === 'KO') {
@@ -102,7 +96,6 @@ $(document).ready(function() {
 			},
 
 			error: function(){
-				console.log('error');
             }
 		});
 		return false;
@@ -118,14 +111,11 @@ $(document).ready(function() {
 	getPublications();
 
 	function displayCap(cap, callback) {
-		//console.log('called');
-		console.log(window.current_cap);
 
 		$.ajax({
 			type : "POST",
 			url : "Cap/switchCap/"+window.current_cap,
 			success: function(response){
-				//console.log(response);
 
 				if(response.check === 'KO') {
 					$('.txt-cap').hide(400);
@@ -151,7 +141,6 @@ $(document).ready(function() {
 			},
 
 			error: function(){
-				console.log('error');
             }
 		});
 
@@ -183,7 +172,6 @@ $(document).ready(function() {
 			type : "POST",
 			url : "Cap/addPublication/"+publi_pseudo+'/'+publi_url+'/Comment',
 			success: function(response){
-				//console.log(response);
 				$('.form_add_pseudo .info_add').text('');
 				if(response.check === 'KO') {
 					$('.form_add_pseudo .info_add_error').text('Erreur');
@@ -197,7 +185,6 @@ $(document).ready(function() {
 			},
 
 			error: function(){
-				console.log('error');
             }
 		});
 		return false;
@@ -209,12 +196,10 @@ $(document).ready(function() {
 			type : "POST",
 			url : "Cap/getPublications/",
 			success: function(response){
-				//console.log(response);
 
 				$('.publications').empty();
 
 				for (var p = 0; p < response.publications.length; p++) {
-					//console.log(response.publications[p].Publication);
 					var publi = response.publications[p].Publication;
 					var publication =
 						' <li class="publication">' +
@@ -387,7 +372,7 @@ $(document).ready(function() {
         },
         'onUploadSuccess' : function(file, data, response) {
         	window.picture_uploaded = data;
-            console.log('The file was saved to: ' + data);
+            //console.log('The file was saved to: ' + data);
         }
     });
 
