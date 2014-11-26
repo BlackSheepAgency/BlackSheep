@@ -24,12 +24,14 @@
 			<div class="grand-bloc-social clearfix">
 				<img src="img/twitter-bg.png" class="grand-bloc-twitter"/>
 				<div class="publication-reseaux-sociaux">
-					<!--<div class="avatar">
-						<img src="img/avatar.jpg"/>
-					</div>-->
 					<h1><?= $the_tweet['Message']['author'] ?></h1>
 					<h2>@<?= $the_tweet['Message']['screen_name'] ?></h2>
 					<p><?= $the_tweet['Message']['message'] ?></p>
+					<?php if($the_tweet['Message']['url'] !=  null || $the_tweet['Message']['url'] != '') { ?>
+						<div>
+							<a target="_blank" class="link-social" href="<?= $the_tweet['Message']['url'] ?>">Lien vers la publication</a>
+						</div>
+					<?php } ?>
 				</div>
 			</div>
 
@@ -37,14 +39,16 @@
 
 		<?php foreach ($facebook as $key => $the_facebook) { ?>
 
-			<div class="grand-bloc-social clearfix">
-				<img src="img/twitter-bg.png" class="grand-bloc-bg"/>
+			<div class="bloc-facebook grand-bloc-social clearfix">
+				<img src="img/fb-bg.png" class="grand-bloc-fb"/>
 				<div class="publication-reseaux-sociaux">
-					<!--<div class="avatar">
-						<img src="img/avatar.jpg"/>
-					</div>-->
 					<h1><?= $the_facebook['Message']['author'] ?></h1>
 					<p><?= $the_facebook['Message']['message'] ?></p>
+					<?php if($the_facebook['Message']['url'] != 'no_url' || $the_facebook['Message']['url'] != '') { ?>
+						<div>
+							<a target="_blank" class="link-social" href="<?= $the_facebook['Message']['url'] ?>">Lien vers la publication</a>
+						</div>
+					<?php } ?>
 				</div>
 			</div>
 
