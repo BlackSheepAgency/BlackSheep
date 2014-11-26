@@ -22,7 +22,7 @@
 		<?php foreach ($tweet as $key => $the_tweet) { ?>
 
 			<div class="grand-bloc-social clearfix">
-				<img src="img/twitter-bg.png" class="grand-bloc-bg"/>
+				<img src="img/twitter-bg.png" class="grand-bloc-twitter"/>
 				<div class="publication-reseaux-sociaux">
 					<!--<div class="avatar">
 						<img src="img/avatar.jpg"/>
