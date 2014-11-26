@@ -37,7 +37,7 @@
 
 		<?php foreach ($facebook as $key => $the_facebook) { ?>
 
-			<div class="grand-bloc-social clearfix">
+			<div class="bloc-facebook grand-bloc-social clearfix">
 				<img src="img/twitter-bg.png" class="grand-bloc-bg"/>
 				<div class="publication-reseaux-sociaux">
 					<!--<div class="avatar">

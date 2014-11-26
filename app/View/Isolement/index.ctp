@@ -3,7 +3,7 @@
 
 	<div class="div_red div_red_first">
 		<div>
-			L‘isolement des personnes âgés est très souvent lié à un sentiment <strong>d‘incompréhension</strong> et de <strong>manque d‘écoute</strong> à leur égard.
+			L‘isolement des personnes âgées est très souvent lié à un sentiment <strong>d‘incompréhension</strong> et de <strong>manque d‘écoute</strong> à leur égard.
 		</div>
 	</div>
 
@@ -80,7 +80,7 @@
 
 	<div class="div_red">
 		<div>
-			<span class="uppercase_isolement">1/2</span> de personnes âgées de plus de 75 ans n‘ont pas de relations sociales.
+			<span class="uppercase_isolement">1</span> personne âgée sur <span class="uppercase_isolement">2</span> de plus de 75 ans n‘ont pas de relations sociales.
 		</div>
 	</div>
 
