@@ -474,7 +474,7 @@ footer {
 	.btn-bloc  {
 		position: absolute;
 		bottom: 25px;
-		left: 40%;
+		left: 36%;
 	}
 }
 .comment-home{
@@ -637,6 +637,13 @@ h2{
 }
 
 #bg-solutions{
+	width:100%;
+	position:relative;
+	left:0;
+	top:0;	
+}
+
+#bg-forum{
 	width:100%;
 	position:relative;
 	left:0;
@@ -997,7 +1004,7 @@ h2{
 }
 
 .wrapper{
-	width:60%;
+	width:669px;
 	margin:auto;
 	position:relative;
 	text-align: center;
@@ -1963,6 +1970,17 @@ h2{
 			height: 90px;
 		}
 	}
+
+	.publish_cap{
+		width:100%;
+		text-align:center;
+		position:relative;
+	}
+
+	#propose-cap{
+		width:100%;
+	}
+
 }
 
 @media screen and (max-width: 1106px) {
@@ -2040,6 +2058,14 @@ h2{
 		a {
 			padding: 10px 6px 2px;
 		}
+	}
+
+	.defi{
+		display:none;
+	}
+
+	.fleche{
+		display:none;
 	}
 }
 

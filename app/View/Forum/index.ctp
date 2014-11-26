@@ -1,4 +1,4 @@
-<div id="bg-solutions">
+<div id="bg-forum">
 	<div class="wrapper">
 		<div class="btn-forum-publish activator">moi aussi je publie !</div>
 		<div class="overlay" id="overlay" style="display: none;"></div>
