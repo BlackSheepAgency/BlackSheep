@@ -23,7 +23,7 @@ $vert: #8fc549;
 $bleu: #2873b7;
 $violet: #9a5599;
 $rouge : #64c4db; 
-// $rouge : #fd5454;
+$rouge : #fd5454;
 $orange: #efab59;
 $jaune: #fcd541;
 $prouge: #fd5454;
@@ -845,7 +845,7 @@ h2{
 
 .pop-up {
 	width: 400px;
-	background-color: $vert;
+	background-color: white; 
 	position: fixed;
 	left: 50%;
 	top: 50%;
@@ -853,10 +853,10 @@ h2{
 	display: none;
 	text-align: center;
 	padding: 30px 90px 30px 90px;
-	box-shadow: 0px 0px 25px 0px black;
 	margin-top: -290px;
 	margin-left: -300px; 
 	z-index: 1;
+	border: solid 5px $bleu-clair;
 
 
 
@@ -905,6 +905,7 @@ h2{
 		text-align: left;
 		vertical-align: top;
 		font-weight: 500;
+		border: solid 2px $bleu-clair;
 	}
 	input[type=text], textarea {
 		width: 100%;
@@ -914,25 +915,22 @@ h2{
 		margin-bottom: 10px;
 		border:none;
 		@include box-sizing(border-box);
+		border: solid 2px $bleu-clair;
 	}
 
 	input[type=submit]{
 		padding:10px;
 		text-transform: uppercase;
-		color:black;
-		background: white;
-		border: solid 2px white;
+		color:white;
+		background: $orange;
 		@include transition( all 0.5s );
-		width:100%;
+		width:60%;
 		font-family: 'Lato';
-		//font-weight: 100;
 		font-size: 1.1em;
 
 		&:hover{
 			cursor:pointer;
-			background:transparent;
-			border: solid 2px white;
-			color:white;
+			background-color: darken($orange, 20%);
 		}
 	}
 
@@ -941,7 +939,7 @@ h2{
 		padding:10px;
 		font-size: 15px;
 		margin-top: 10px;
-		border:none;
+		border: solid 2px $bleu-clair;
 		@include box-sizing(border-box);
 	}
 	textarea {
@@ -953,13 +951,23 @@ h2{
 
 
 	h2{
-		font-family: "Lato";
+		font-family: "CabinSketch-Regular";
 		font-size:1.5em;
-		color:white;
+		color:$bleu-clair;
 		margin:auto;
 		text-transform: uppercase;
 		//font-weight: 100;
 	}
+}
+
+.overlay{
+    background:transparent url(img/overlay.png) repeat top left;
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    z-index:100;
 }
 
 .close{
@@ -1817,6 +1825,41 @@ h2{
 	.picture_affiche {
 		padding-top: 74px;
 	}
+}
+
+.plan-du-site{
+
+	margin-top: 130px;
+	margin-bottom: 100px;
+
+	ul{
+		list-style: none;
+		padding:0;
+    	margin:0;
+	}
+
+	li{
+		padding-left: 1em; 
+    	text-indent: 2em;
+    	line-height: 1.5;
+
+		&:before{
+			content:"• ";
+			color:$orange;
+			margin-right: 10px;
+		}
+
+		a{
+			color:$bleu-clair;	
+			font-family: 'CabinSketch-Regular';	
+			font-size: 1.5em;
+			/*text-transform: uppercase;*/
+		}
+
+	}
+
+
+
 }
 
 
