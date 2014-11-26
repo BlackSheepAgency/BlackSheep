@@ -59,6 +59,16 @@
 				</div>
 
 				<script>
+					(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+					m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+					})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+					ga('create', 'UA-56787107-1', 'auto');
+					ga('send', 'pageview');
+				</script>
+
+				<script>
 				  window.fbAsyncInit = function() {
 				    FB.init({
 				      appId      : '724933380933273',
@@ -75,7 +85,7 @@
 		<footer id="footer">
 			<div class="bloc-footer-m">
 				<a href="mentions">Mentions légales</a> ⎢ <a href="plan">Plan du site</a><br/>
-				©<span class="name">Comme des gosses</span> ⎢ 2014 ⎢ Tous droits reservés ⎢ <a href="mailto:blacksheep.iesa@gmail.com">blacksheep.iesa@gmail.com</a>
+				©<span class="name">Comme des gosses</span> ⎢ 2014 ⎢ Tous droits reservés ⎢ <a href="mailto:blacksheepiesa@gmail.com">blacksheep.iesa@gmail.com</a>
 				<br/>
 				Créé par l'agence <span class="name">Black Sheep</span><br/>
 				
