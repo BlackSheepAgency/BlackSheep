@@ -46,7 +46,7 @@
 
 	<div class="div_red">
 		<div>
-			<span class="uppercase_isolement">3/4</span> des personnes âgées déclarent se sentir isolée.
+			<span class="uppercase_isolement">3/4</span> des personnes âgées déclarent se sentir isolées.
 		</div>
 	</div>
 
