@@ -1001,6 +1001,10 @@ h2{
     z-index:1;
 }
 
+a img {
+	border: none;
+}
+
 .close{
 	position: absolute;
 	right: 9px;
@@ -1929,11 +1933,18 @@ h2{
 
 @media screen and (max-width: 642px) {
   
-  header {
-	height: 350px;
-	text-align: center;
-	background-color: #fff;
-	position: relative;
+	.top_video .video_description {
+		width: 80%;
+	}
+	.top_video .video_comment {
+		text-align: left;
+	}
+
+  	header {
+		height: 350px;
+		text-align: center;
+		background-color: #fff;
+		position: relative;
 
 		ul {
 			margin: 0 auto;

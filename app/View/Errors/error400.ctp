@@ -15,10 +15,10 @@
  */
 ?>
 <h2><?php echo $message; ?></h2>
-<p class="error">
+<p style="margin-left: 240px;" class="error">
 	<strong><?php echo __d('cake', 'Error'); ?>: </strong>
 	<?php printf(
-		__d('cake', 'The requested address %s was not found on this server.'),
+		__d('cake', 'La page n\'a pas été trouvée ! <br /> <a style="text-decoration: underline;" href="home">Si vous cherchez l\'accueil, c\'est ici !'),
 		"<strong>'{$url}'</strong>"
 	); ?>
 </p>

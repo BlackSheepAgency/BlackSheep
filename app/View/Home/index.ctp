@@ -20,7 +20,7 @@
 				<div class="separation">
 						&nbsp;
 				</div> 
-				<p>“Comme des gosses” est une campagne visant à t’informer, ainsi que tes amis et ta famille sur <strong>l’isolement des personnes âgées</strong>.<br/><br/> Le but c’est de te montrer que les plus vieux ne sont pas <strong>les plus ennuyants, bien au contraire</strong> ! Mais détends-toi, nous avons compris que tu ne sais pas forcément comment t’amuser avec les grands-parents et c’est pourquoi nous t’avons concocter un tas de solutions. <br/><br/>Tout ce que tu as à faire, c’est <strong>naviguer à travers le site</strong> !</p>
+				<p>“Comme des gosses” est une campagne visant à t’informer, ainsi que tes amis et ta famille sur <strong>l’isolement des personnes âgées</strong>.<br/><br/> Le but c’est de te montrer que les plus vieux ne sont pas <strong>les plus ennuyants, bien au contraire</strong> ! Mais détends-toi, nous avons compris que tu ne sais pas forcément comment t’amuser avec les grands-parents et c’est pourquoi nous t’avons concocté un tas de solutions. <br/><br/>Tout ce que tu as à faire, c’est <strong>naviguer à travers le site</strong> !</p>
 			</div>
 			<div class="bloc-home">
 				<h1>comme des gosses</h1>
