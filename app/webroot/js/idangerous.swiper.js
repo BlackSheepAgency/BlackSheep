@@ -1791,6 +1791,9 @@ var Swiper = function (selector, params) {
         }
         if (newPosition === currentPosition) return false;
         swipeToPosition(newPosition, 'next');
+
+        $('.video iframe').attr('src', '//www.youtube.com/embed/v1zbD6oon_0');
+        $('.video_description p').text('Dans ce second épisode, Célia propose à sa grand-mère de prendre ensemble une selfie. Geneviève accepte et s\'amuse avec sa petite fille à se prendre en photo.');
         return true;
     };
     _this.swipePrev = function (internal) {
@@ -1822,6 +1825,11 @@ var Swiper = function (selector, params) {
 
         if (newPosition === currentPosition) return false;
         swipeToPosition(newPosition, 'prev');
+
+                 $('.video iframe').attr('src', '//www.youtube.com/embed/BUjKYjFOSdc');
+                 $('.video_description p').text('Dans ce premier épisode, Célia propose à sa grand-mère de jouer à son jeu préféré. Geneviève, enthousiasmée par cette proposition, va vite être confrontée à de nouvelles règles de jeu.');
+
+
         return true;
 
     };

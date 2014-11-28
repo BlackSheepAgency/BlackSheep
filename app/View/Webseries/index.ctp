@@ -28,8 +28,11 @@
     
 	    <div class="swiper-container">
 	      <div class="swiper-wrapper">
-	        <div class="swiper-slide">
+	        <div class="swiper-slide" data-id="1">
 	          <img src="img/cover_video1.png" width="260" alt="" />
+	        </div>
+	        <div class="swiper-slide" data-id="2">
+	          <img src="img/covervideo2.png" width="260" alt="" />
 	        </div>
 	      </div>
 	    </div>

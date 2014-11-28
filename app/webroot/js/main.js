@@ -169,6 +169,9 @@ $(document).ready(function() {
 		$('.pop-up').fadeOut();
 	});
 
+	//www.youtube.com/embed/v1zbD6oon_0
+	//swiper-slide-visible
+
 	$('.add_publication').off('submit');
 	$('.add_publication').on('submit', function() {
 		var publi_pseudo = $('.publi_pseudo').val();
@@ -262,6 +265,8 @@ $(document).ready(function() {
 			$(this).removeClass('active');
 		}
 	);
+
+	// 
 
 	/*--------POPUP OVERLAY--------*/
 
